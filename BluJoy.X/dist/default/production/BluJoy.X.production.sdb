@@ -1,0 +1,1682 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF18446 ]
+[d frameptr 6 ]
+"96 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+[e E10885 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+]
+"102
+[e E10902 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_T6POSTSCALED 3
+TMR2_CCP1_OUT 4
+TMR2_CCP2_OUT 5
+TMR2_CCP3_OUT 6
+TMR2_CCP4_OUT 7
+TMR2_PWM6_OUT 8
+TMR2_PWM7_OUT 9
+TMR2_CMP1_OUT 10
+TMR2_CMP2_OUT 11
+TMR2_ZCD_OUTPUT 12
+TMR2_CLC1_OUT 13
+TMR2_CLC2_OUT 14
+TMR2_CLC3_OUT 15
+TMR2_CLC4_OUT 16
+TMR2_RESERVED_2 17
+]
+"15 D:\MyPicProjects\BluJoy.X\configure.c
+[v _initConfiguration initConfiguration `(v  1 e 1 0 ]
+"21
+[v _SetSlaveTXRX SetSlaveTXRX `(v  1 e 1 0 ]
+"28
+[v _SetDualReceive SetDualReceive `(v  1 e 1 0 ]
+"35
+[v _SetMasterTXRX SetMasterTXRX `(v  1 e 1 0 ]
+"42
+[v _SetSlaveTXMasterRX SetSlaveTXMasterRX `(v  1 e 1 0 ]
+"50
+[v _turnPowerOn turnPowerOn `(v  1 e 1 0 ]
+[v i1_turnPowerOn turnPowerOn `(v  1 e 1 0 ]
+"55
+[v _turnPowerOff turnPowerOff `(v  1 e 1 0 ]
+"60
+[v _powerIsOn powerIsOn `(a  1 e 1 0 ]
+"64
+[v _setSerialBaud setSerialBaud `(v  1 e 1 0 ]
+"78
+[v _pairBluetoothDevices pairBluetoothDevices `(v  1 e 1 0 ]
+"110
+[v _setBTBaudRatesTo38400 setBTBaudRatesTo38400 `(v  1 e 1 0 ]
+"128
+[v _getBTAddress getBTAddress `(a  1 e 1 0 ]
+"164
+[v _setBTConnection setBTConnection `(v  1 e 1 0 ]
+"185
+[v _doFactoryReset doFactoryReset `(v  1 e 1 0 ]
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+"10 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"3 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.5uc  1 e 1 0 ]
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"3 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+[v _strstr strstr `(*.5uc  1 e 1 0 ]
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"104
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"150
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"56 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _enableJoystick enableJoystick `(v  1 e 1 0 ]
+"62
+[v _disableJoystick disableJoystick `(v  1 e 1 0 ]
+"67
+[v _initJoystick initJoystick `(v  1 e 1 0 ]
+"76
+[v _readJoystick readJoystick `(v  1 e 1 0 ]
+"153
+[v _calculateMotion calculateMotion `(v  1 e 1 0 ]
+"159
+[v _limitSpeed limitSpeed `(s  1 e 2 0 ]
+"20 D:\MyPicProjects\BluJoy.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"88 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+"132
+[v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+[v i1_EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+"137
+[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+[v i1_EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+"151
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+[v i1_EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+"173
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+[v i1_EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+"197
+[v _EUSART1_Transmit_ISR EUSART1_Transmit_ISR `(v  1 e 1 0 ]
+"216
+[v _EUSART1_Receive_ISR EUSART1_Receive_ISR `(v  1 e 1 0 ]
+"240
+[v _EUSART1_RxDataHandler EUSART1_RxDataHandler `(v  1 e 1 0 ]
+"250
+[v _EUSART1_DefaultFramingErrorHandler EUSART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"252
+[v _EUSART1_DefaultOverrunErrorHandler EUSART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"260
+[v _EUSART1_DefaultErrorHandler EUSART1_DefaultErrorHandler `(v  1 e 1 0 ]
+"264
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+"268
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"272
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+"276
+[v _EUSART1_SetTxInterruptHandler EUSART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+"280
+[v _EUSART1_SetRxInterruptHandler EUSART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+"52 D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"75
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"58 D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"140
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"157
+[v _IOCCF0_ISR IOCCF0_ISR `(v  1 e 1 0 ]
+"172
+[v _IOCCF0_SetInterruptHandler IOCCF0_SetInterruptHandler `(v  1 e 1 0 ]
+"179
+[v _IOCCF0_DefaultInterruptHandler IOCCF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"187
+[v _IOCCF2_ISR IOCCF2_ISR `(v  1 e 1 0 ]
+"202
+[v _IOCCF2_SetInterruptHandler IOCCF2_SetInterruptHandler `(v  1 e 1 0 ]
+"209
+[v _IOCCF2_DefaultInterruptHandler IOCCF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"99
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"105
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+"127
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"164
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+"185
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"189
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"119
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"130
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"144
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"155
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"165
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"186
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"190
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+"127
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+"164
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+"176
+[v _TMR3_CallBack TMR3_CallBack `(v  1 e 1 0 ]
+"185
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+"189
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+"14 D:\MyPicProjects\BluJoy.X\serial.c
+[v _initSerial initSerial `(v  1 e 1 0 ]
+"25
+[v _sendBTSpeedCmd sendBTSpeedCmd `(a  1 e 1 0 ]
+"32
+[v _sendBTEstopCmd sendBTEstopCmd `(a  1 e 1 0 ]
+"37
+[v _sendBTString sendBTString `(v  1 e 1 0 ]
+"42
+[v _sendBTBuffer sendBTBuffer `(a  1 e 1 0 ]
+[v i1_sendBTBuffer sendBTBuffer `(a  1 e 1 0 ]
+"59
+[v _flushBTRXbuffer flushBTRXbuffer `(v  1 e 1 0 ]
+"74
+[v _receiveBTBuffer receiveBTBuffer `(uc  1 e 1 0 ]
+"91
+[v _calcCRC calcCRC `(us  1 e 2 0 ]
+"117
+[v _int16ToBytes int16ToBytes `(v  1 e 1 0 ]
+"11 D:\MyPicProjects\BluJoy.X\timers.c
+[v _initTimers initTimers `(v  1 e 1 0 ]
+"18
+[v _timeKeeper timeKeeper `(v  1 e 1 0 ]
+"26
+[v _oneSec oneSec `(a  1 e 1 0 ]
+"35
+[v _sleep sleep `(v  1 e 1 0 ]
+"40
+[v _getTicks getTicks `(ul  1 e 4 0 ]
+[v i1_getTicks getTicks `(ul  1 e 4 0 ]
+"44
+[v _getTicksSince getTicksSince `(l  1 e 4 0 ]
+[v i1_getTicksSince getTicksSince `(l  1 e 4 0 ]
+"49
+[v _resetBTTimer resetBTTimer `(v  1 e 1 0 ]
+[v i1_resetBTTimer resetBTTimer `(v  1 e 1 0 ]
+"53
+[v _setBTTimeout setBTTimeout `(v  1 e 1 0 ]
+[v i1_setBTTimeout setBTTimeout `(v  1 e 1 0 ]
+"57
+[v _BTTimeRemaining BTTimeRemaining `(l  1 e 4 0 ]
+"45 D:\MyPicProjects\BluJoy.X\ui.c
+[v _initUI initUI `(v  1 e 1 0 ]
+"66
+[v _runUI runUI `(v  1 e 1 0 ]
+"169
+[v _bumpUISpeedMode bumpUISpeedMode `(v  1 e 1 0 ]
+"179
+[v _bumpUIBrakeMode bumpUIBrakeMode `(v  1 e 1 0 ]
+"189
+[v _showStartup showStartup `(v  1 e 1 0 ]
+"200
+[v _showShutdown showShutdown `(v  1 e 1 0 ]
+"214
+[v _setLEDColor setLEDColor `(v  1 e 1 0 ]
+"220
+[v _pulseLEDColor pulseLEDColor `(v  1 e 1 0 ]
+"227
+[v _blinkLEDColor blinkLEDColor `(v  1 e 1 0 ]
+"235
+[v _UI_PWM_handler UI_PWM_handler `(v  1 e 1 0 ]
+"268
+[v _USER1_pressed USER1_pressed `(a  1 e 1 0 ]
+"272
+[v _USER2_pressed USER2_pressed `(a  1 e 1 0 ]
+"8 D:\MyPicProjects\BluJoy.X\configure.c
+[v _slaveMAC slaveMAC `[12]uc  1 e 12 0 ]
+"9
+[v _masterMAC masterMAC `[12]uc  1 e 12 0 ]
+"11
+[v _RX_Buffer RX_Buffer `[40]uc  1 e 40 0 ]
+"12
+[v _charsRead charsRead `uc  1 e 1 0 ]
+"13
+[v _powerOn powerOn `a  1 e 1 0 ]
+[s S1833 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"187 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
+[s S1839 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S1843 . 1 `S1833 1 . 1 0 `S1839 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES1843  1 e 1 @3 ]
+[s S1135 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"426
+[u S1140 . 1 `S1135 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1140  1 e 1 @11 ]
+[s S1350 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"461
+[u S1357 . 1 `S1350 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1357  1 e 1 @12 ]
+[s S1735 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"510
+[u S1741 . 1 `S1735 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1741  1 e 1 @13 ]
+[s S1316 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"552
+[u S1325 . 1 `S1316 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1325  1 e 1 @14 ]
+"597
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"647
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+"686
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"748
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+[s S1552 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"763
+[u S1559 . 1 `S1552 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1559  1 e 1 @24 ]
+"798
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+[s S1683 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"812
+[u S1689 . 1 `S1683 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1689  1 e 1 @25 ]
+"837
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"5042
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"5096
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"5157
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"5227
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"5281
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S608 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"5307
+[u S617 . 1 `S608 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES617  1 e 1 @285 ]
+"5461
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S586 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5487
+[u S595 . 1 `S586 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES595  1 e 1 @286 ]
+"5641
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"7773
+[v _TMR1L TMR1L `VEuc  1 e 1 @524 ]
+"7843
+[v _TMR1H TMR1H `VEuc  1 e 1 @525 ]
+"7913
+[v _T1CON T1CON `VEuc  1 e 1 @526 ]
+[s S73 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 NOT_SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"7949
+[s S79 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 T1RD16 1 0 :1:1 
+`uc 1 NOT_T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S86 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S90 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD161 1 0 :1:1 
+]
+[u S93 . 1 `S73 1 . 1 0 `S79 1 . 1 0 `S86 1 . 1 0 `S90 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES93  1 e 1 @526 ]
+"8103
+[v _T1GCON T1GCON `VEuc  1 e 1 @527 ]
+[s S119 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GVAL 1 0 :1:2 
+`uc 1 GGO 1 0 :1:3 
+`uc 1 GSPM 1 0 :1:4 
+`uc 1 GTM 1 0 :1:5 
+`uc 1 GPOL 1 0 :1:6 
+`uc 1 GE 1 0 :1:7 
+]
+"8141
+[s S127 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 T1GE 1 0 :1:7 
+]
+[s S135 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_DONE 1 0 :1:3 
+]
+[s S138 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T1DONE 1 0 :1:3 
+]
+[u S141 . 1 `S119 1 . 1 0 `S127 1 . 1 0 `S135 1 . 1 0 `S138 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES141  1 e 1 @527 ]
+"8317
+[v _T1GATE T1GATE `VEuc  1 e 1 @528 ]
+"8483
+[v _T1CLK T1CLK `VEuc  1 e 1 @529 ]
+"8649
+[v _TMR3L TMR3L `VEuc  1 e 1 @530 ]
+"8719
+[v _TMR3H TMR3H `VEuc  1 e 1 @531 ]
+"8789
+[v _T3CON T3CON `VEuc  1 e 1 @532 ]
+"8825
+[s S977 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 T3RD16 1 0 :1:1 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+]
+[s S988 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD163 1 0 :1:1 
+]
+[u S991 . 1 `S73 1 . 1 0 `S977 1 . 1 0 `S86 1 . 1 0 `S988 1 . 1 0 ]
+[v _T3CONbits T3CONbits `VES991  1 e 1 @532 ]
+"8979
+[v _T3GCON T3GCON `VEuc  1 e 1 @533 ]
+"9017
+[s S1025 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 T3GE 1 0 :1:7 
+]
+[s S1036 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T3DONE 1 0 :1:3 
+]
+[u S1039 . 1 `S119 1 . 1 0 `S1025 1 . 1 0 `S135 1 . 1 0 `S1036 1 . 1 0 ]
+[v _T3GCONbits T3GCONbits `VES1039  1 e 1 @533 ]
+"9193
+[v _T3GATE T3GATE `VEuc  1 e 1 @534 ]
+"9359
+[v _T3CLK T3CLK `VEuc  1 e 1 @535 ]
+"10471
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"10476
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"10525
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"10530
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"10579
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S391 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"10615
+[s S395 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S403 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S407 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S416 . 1 `S391 1 . 1 0 `S395 1 . 1 0 `S403 1 . 1 0 `S407 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES416  1 e 1 @654 ]
+"10725
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S284 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"10758
+[s S289 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S295 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S300 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S306 . 1 `S284 1 . 1 0 `S289 1 . 1 0 `S295 1 . 1 0 `S300 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES306  1 e 1 @655 ]
+"10853
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"10933
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S353 . 1 `uc 1 RSEL 1 0 :5:0 
+]
+"10960
+[s S355 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+]
+[s S361 . 1 `uc 1 T2RSEL 1 0 :5:0 
+]
+[s S363 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+]
+[u S369 . 1 `S353 1 . 1 0 `S355 1 . 1 0 `S361 1 . 1 0 `S363 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES369  1 e 1 @657 ]
+[s S1121 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"19020
+[u S1126 . 1 `S1121 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1126  1 e 1 @1804 ]
+[s S1181 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+"19127
+[u S1188 . 1 `S1181 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES1188  1 e 1 @1807 ]
+[s S28 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"19177
+[u S35 . 1 `S28 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES35  1 e 1 @1808 ]
+[s S863 . 1 `uc 1 INTE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"19391
+[u S868 . 1 `S863 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES868  1 e 1 @1814 ]
+[s S514 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+"19498
+[u S521 . 1 `S514 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES521  1 e 1 @1817 ]
+[s S45 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"19548
+[u S52 . 1 `S45 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES52  1 e 1 @1818 ]
+"19758
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"19803
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"19859
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"19880
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"19925
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"19976
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"20003
+[v _PMD6 PMD6 `VEuc  1 e 1 @1948 ]
+"20036
+[v _PMD7 PMD7 `VEuc  1 e 1 @1949 ]
+"20710
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @2074 ]
+"20772
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @2075 ]
+"20835
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
+"20897
+[v _NVMDATH NVMDATH `VEuc  1 e 1 @2077 ]
+[s S1810 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 NVMREGS 1 0 :1:6 
+]
+"20963
+[u S1818 . 1 `S1810 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES1818  1 e 1 @2078 ]
+"21003
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
+"21088
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"21228
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"21325
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"21376
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"21434
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"29263
+[v _RX1DTPPS RX1DTPPS `VEuc  1 e 1 @7883 ]
+"30396
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7972 ]
+"30512
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @7974 ]
+"30628
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"30673
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"30723
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"30768
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"30813
+[v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
+"31013
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"31052
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"31091
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"31130
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @8006 ]
+"31169
+[v _INLVLB INLVLB `VEuc  1 e 1 @8007 ]
+"31325
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"31387
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"31449
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"31511
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"31573
+[v _INLVLC INLVLC `VEuc  1 e 1 @8018 ]
+[s S822 . 1 `uc 1 IOCCP0 1 0 :1:0 
+`uc 1 IOCCP1 1 0 :1:1 
+`uc 1 IOCCP2 1 0 :1:2 
+`uc 1 IOCCP3 1 0 :1:3 
+`uc 1 IOCCP4 1 0 :1:4 
+`uc 1 IOCCP5 1 0 :1:5 
+`uc 1 IOCCP6 1 0 :1:6 
+`uc 1 IOCCP7 1 0 :1:7 
+]
+"31652
+[u S831 . 1 `S822 1 . 1 0 ]
+[v _IOCCPbits IOCCPbits `VES831  1 e 1 @8019 ]
+[s S801 . 1 `uc 1 IOCCN0 1 0 :1:0 
+`uc 1 IOCCN1 1 0 :1:1 
+`uc 1 IOCCN2 1 0 :1:2 
+`uc 1 IOCCN3 1 0 :1:3 
+`uc 1 IOCCN4 1 0 :1:4 
+`uc 1 IOCCN5 1 0 :1:5 
+`uc 1 IOCCN6 1 0 :1:6 
+`uc 1 IOCCN7 1 0 :1:7 
+]
+"31714
+[u S810 . 1 `S801 1 . 1 0 ]
+[v _IOCCNbits IOCCNbits `VES810  1 e 1 @8020 ]
+[s S780 . 1 `uc 1 IOCCF0 1 0 :1:0 
+`uc 1 IOCCF1 1 0 :1:1 
+`uc 1 IOCCF2 1 0 :1:2 
+`uc 1 IOCCF3 1 0 :1:3 
+`uc 1 IOCCF4 1 0 :1:4 
+`uc 1 IOCCF5 1 0 :1:5 
+`uc 1 IOCCF6 1 0 :1:6 
+`uc 1 IOCCF7 1 0 :1:7 
+]
+"31776
+[u S789 . 1 `S780 1 . 1 0 ]
+[v _IOCCFbits IOCCFbits `VES789  1 e 1 @8021 ]
+"32 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _joystickEnabled joystickEnabled `a  1 e 1 0 ]
+"33
+[v _estopPending estopPending `a  1 e 1 0 ]
+"34
+[v _estopActive estopActive `a  1 e 1 0 ]
+"35
+[v _estopTimer estopTimer `ul  1 e 4 0 ]
+"38
+[v _targetAxialFP targetAxialFP `s  1 e 2 0 ]
+"39
+[v _targetYawFP targetYawFP `s  1 e 2 0 ]
+"41
+[v _limitedAxialFP limitedAxialFP `s  1 e 2 0 ]
+"42
+[v _limitedYawFP limitedYawFP `s  1 e 2 0 ]
+"44
+[v _accelAxialFP accelAxialFP `s  1 e 2 0 ]
+"45
+[v _accelYawFP accelYawFP `s  1 e 2 0 ]
+"47
+[v _accelLimitAxialFP accelLimitAxialFP `s  1 e 2 0 ]
+"48
+[v _accelLimitYawFP accelLimitYawFP `s  1 e 2 0 ]
+"49
+[v _accelLimitYawStopFP accelLimitYawStopFP `s  1 e 2 0 ]
+"50
+[v _accelLimitSweepFP accelLimitSweepFP `s  1 e 2 0 ]
+"52
+[v _topAxialSpeedFP topAxialSpeedFP `s  1 e 2 0 ]
+"53
+[v _topYawSpeedFP topYawSpeedFP `s  1 e 2 0 ]
+"54
+[v _topSweepSpeedFP topSweepSpeedFP `s  1 e 2 0 ]
+"62 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _eusart1TxHead eusart1TxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusart1TxTail eusart1TxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusart1TxBuffer eusart1TxBuffer `VE[32]uc  1 e 32 0 ]
+"65
+[v _eusart1TxBufferRemaining eusart1TxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusart1RxHead eusart1RxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusart1RxTail eusart1RxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusart1RxBuffer eusart1RxBuffer `VE[32]uc  1 e 32 0 ]
+[s S501 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"70
+[u S506 . 1 `S501 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxStatusBuffer eusart1RxStatusBuffer `VE[32]S506  1 e 32 0 ]
+"71
+[v _eusart1RxCount eusart1RxCount `VEuc  1 e 1 0 ]
+"72
+[v _eusart1RxLastError eusart1RxLastError `VES506  1 e 1 0 ]
+"77
+[v _EUSART1_TxDefaultInterruptHandler EUSART1_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"78
+[v _EUSART1_RxDefaultInterruptHandler EUSART1_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"80
+[v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"81
+[v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"82
+[v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
+"54 D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+[v _IOCCF0_InterruptHandler IOCCF0_InterruptHandler `*.37(v  1 e 2 0 ]
+"55
+[v _IOCCF2_InterruptHandler IOCCF2_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"58 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+[v _timer3ReloadVal timer3ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR3_InterruptHandler TMR3_InterruptHandler `*.37(v  1 e 2 0 ]
+"11 D:\MyPicProjects\BluJoy.X\serial.c
+[v _speedBuffer speedBuffer `[12]uc  1 e 12 0 ]
+"12
+[v _estopBuffer estopBuffer `[8]uc  1 e 8 0 ]
+"6 D:\MyPicProjects\BluJoy.X\timers.c
+[v _systemTime systemTime `ul  1 e 4 0 ]
+"7
+[v _lastBTTime lastBTTime `ul  1 e 4 0 ]
+"8
+[v _BTTimeout BTTimeout `ul  1 e 4 0 ]
+"9
+[v _oneSecBlink oneSecBlink `a  1 e 1 0 ]
+"17 D:\MyPicProjects\BluJoy.X\ui.c
+[v _EEPROM_uiSpeedMode EEPROM_uiSpeedMode `VEuc  1 e 1 0 ]
+"18
+[v _EEPROM_uiBrakeMode EEPROM_uiBrakeMode `VEuc  1 e 1 0 ]
+"20
+[v _uiSpeedMode uiSpeedMode `uc  1 e 1 0 ]
+"21
+[v _uiBrakeMode uiBrakeMode `uc  1 e 1 0 ]
+"23
+[v _timeoutSequence timeoutSequence `uc  1 e 1 0 ]
+"25
+[v _R_LED R_LED `uc  1 e 1 0 ]
+"26
+[v _G_LED G_LED `uc  1 e 1 0 ]
+"27
+[v _B_LED B_LED `uc  1 e 1 0 ]
+"28
+[v _dutyCycle dutyCycle `uc  1 e 1 0 ]
+"29
+[v _uiState uiState `uc  1 e 1 0 ]
+"30
+[v _uiStateTime uiStateTime `ul  1 e 4 0 ]
+"20 D:\MyPicProjects\BluJoy.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"68
+} 0
+"50 D:\MyPicProjects\BluJoy.X\configure.c
+[v _turnPowerOn turnPowerOn `(v  1 e 1 0 ]
+{
+"53
+} 0
+"55
+[v _turnPowerOff turnPowerOff `(v  1 e 1 0 ]
+{
+"58
+} 0
+"189 D:\MyPicProjects\BluJoy.X\ui.c
+[v _showStartup showStartup `(v  1 e 1 0 ]
+{
+"190
+[v showStartup@ramp ramp `c  1 a 1 23 ]
+"198
+} 0
+"53 D:\MyPicProjects\BluJoy.X\timers.c
+[v _setBTTimeout setBTTimeout `(v  1 e 1 0 ]
+{
+[v setBTTimeout@timeout timeout `ul  1 p 4 6 ]
+"55
+} 0
+"200 D:\MyPicProjects\BluJoy.X\ui.c
+[v _showShutdown showShutdown `(v  1 e 1 0 ]
+{
+"201
+[v showShutdown@ramp ramp `c  1 a 1 23 ]
+"207
+} 0
+"66
+[v _runUI runUI `(v  1 e 1 0 ]
+{
+"67
+[v runUI@timeRemaining timeRemaining `l  1 a 4 2 ]
+"167
+} 0
+"78 D:\MyPicProjects\BluJoy.X\configure.c
+[v _pairBluetoothDevices pairBluetoothDevices `(v  1 e 1 0 ]
+{
+"108
+} 0
+"164
+[v _setBTConnection setBTConnection `(v  1 e 1 0 ]
+{
+[v setBTConnection@MAC MAC `*.5uc  1 a 1 wreg ]
+[v setBTConnection@MAC MAC `*.5uc  1 a 1 wreg ]
+[v setBTConnection@isMaster isMaster `a  1 p 1 28 ]
+"166
+[v setBTConnection@MAC MAC `*.5uc  1 a 1 35 ]
+"183
+} 0
+"110
+[v _setBTBaudRatesTo38400 setBTBaudRatesTo38400 `(v  1 e 1 0 ]
+{
+"126
+} 0
+"128
+[v _getBTAddress getBTAddress `(a  1 e 1 0 ]
+{
+[v getBTAddress@MAC MAC `*.5uc  1 a 1 wreg ]
+"130
+[v getBTAddress@addrPointer addrPointer `*.5uc  1 a 1 34 ]
+"128
+[v getBTAddress@MAC MAC `*.5uc  1 a 1 wreg ]
+[v getBTAddress@isMaster isMaster `a  1 p 1 28 ]
+"132
+[v getBTAddress@MAC MAC `*.5uc  1 a 1 33 ]
+"162
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+{
+[v memcpy@d1 d1 `*.5v  1 a 1 wreg ]
+"8
+[v memcpy@s s `*.5DCuc  1 a 1 13 ]
+"7
+[v memcpy@d d `*.5uc  1 a 1 12 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 10 ]
+"4
+[v memcpy@d1 d1 `*.5v  1 a 1 wreg ]
+[v memcpy@s1 s1 `*.5DCv  1 p 1 6 ]
+[v memcpy@n n `ui  1 p 2 7 ]
+"11
+[v memcpy@d1 d1 `*.5v  1 a 1 11 ]
+"18
+} 0
+"35 D:\MyPicProjects\BluJoy.X\configure.c
+[v _SetMasterTXRX SetMasterTXRX `(v  1 e 1 0 ]
+{
+"40
+} 0
+"272 D:\MyPicProjects\BluJoy.X\ui.c
+[v _USER2_pressed USER2_pressed `(a  1 e 1 0 ]
+{
+"274
+} 0
+"268
+[v _USER1_pressed USER1_pressed `(a  1 e 1 0 ]
+{
+"270
+} 0
+"42 D:\MyPicProjects\BluJoy.X\configure.c
+[v _SetSlaveTXMasterRX SetSlaveTXMasterRX `(v  1 e 1 0 ]
+{
+"48
+} 0
+"26 D:\MyPicProjects\BluJoy.X\timers.c
+[v _oneSec oneSec `(a  1 e 1 0 ]
+{
+"33
+} 0
+"56 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _enableJoystick enableJoystick `(v  1 e 1 0 ]
+{
+"60
+} 0
+"49 D:\MyPicProjects\BluJoy.X\timers.c
+[v _resetBTTimer resetBTTimer `(v  1 e 1 0 ]
+{
+"51
+} 0
+"99 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"185 D:\MyPicProjects\BluJoy.X\configure.c
+[v _doFactoryReset doFactoryReset `(v  1 e 1 0 ]
+{
+"208
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+[v _strstr strstr `(*.5uc  1 e 1 0 ]
+{
+[v strstr@h h `*.5DCuc  1 a 1 wreg ]
+"7
+[v strstr@nl nl `ui  1 a 2 20 ]
+"4
+[v strstr@h h `*.5DCuc  1 a 1 wreg ]
+[v strstr@n n `*.25DCuc  1 p 2 15 ]
+"6
+[v strstr@h h `*.5DCuc  1 a 1 22 ]
+"15
+} 0
+"3 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+[v _strncmp strncmp `(i  1 e 2 0 ]
+{
+[v strncmp@_l _l `*.5DCuc  1 a 1 wreg ]
+"5
+[v strncmp@r r `*.25DCuc  1 a 2 12 ]
+[v strncmp@l l `*.5DCuc  1 a 1 14 ]
+"3
+[v strncmp@_l _l `*.5DCuc  1 a 1 wreg ]
+[v strncmp@_r _r `*.25DCuc  1 p 2 6 ]
+[v strncmp@n n `ui  1 p 2 8 ]
+"5
+[v strncmp@_l _l `*.5DCuc  1 a 1 11 ]
+"9
+} 0
+"3 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.5uc  1 e 1 0 ]
+{
+[v strchr@s s `*.5DCuc  1 a 1 wreg ]
+[v strchr@s s `*.5DCuc  1 a 1 wreg ]
+[v strchr@c c `i  1 p 2 6 ]
+[v strchr@s s `*.5DCuc  1 a 1 8 ]
+"11
+} 0
+"37 D:\MyPicProjects\BluJoy.X\serial.c
+[v _sendBTString sendBTString `(v  1 e 1 0 ]
+{
+[v sendBTString@buffer buffer `*.25uc  1 p 2 22 ]
+"40
+} 0
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.25DCuc  1 a 2 9 ]
+"5
+[v strlen@s s `*.25DCuc  1 p 2 6 ]
+"12
+} 0
+"42 D:\MyPicProjects\BluJoy.X\serial.c
+[v _sendBTBuffer sendBTBuffer `(a  1 e 1 0 ]
+{
+[v sendBTBuffer@buffer buffer `*.26uc  1 p 2 11 ]
+[v sendBTBuffer@length length `uc  1 p 1 13 ]
+[v sendBTBuffer@blockIfBusy blockIfBusy `a  1 p 1 14 ]
+"57
+} 0
+"132 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+{
+"135
+} 0
+"173
+[v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART1_Write@txData txData `uc  1 a 1 7 ]
+"194
+} 0
+"59 D:\MyPicProjects\BluJoy.X\serial.c
+[v _flushBTRXbuffer flushBTRXbuffer `(v  1 e 1 0 ]
+{
+"65
+} 0
+"74
+[v _receiveBTBuffer receiveBTBuffer `(uc  1 e 1 0 ]
+{
+[v receiveBTBuffer@buffer buffer `*.5uc  1 a 1 wreg ]
+"75
+[v receiveBTBuffer@startTime startTime `ul  1 a 4 22 ]
+"76
+[v receiveBTBuffer@charsRead charsRead `uc  1 a 1 26 ]
+"74
+[v receiveBTBuffer@buffer buffer `*.5uc  1 a 1 wreg ]
+[v receiveBTBuffer@maxChars maxChars `uc  1 p 1 14 ]
+[v receiveBTBuffer@timeoutMS timeoutMS `us  1 p 2 15 ]
+[v receiveBTBuffer@buffer buffer `*.5uc  1 a 1 27 ]
+"86
+} 0
+"137 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"140
+} 0
+"151
+[v _EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+{
+"153
+[v EUSART1_Read@readValue readValue `uc  1 a 1 7 ]
+"171
+} 0
+"28 D:\MyPicProjects\BluJoy.X\configure.c
+[v _SetDualReceive SetDualReceive `(v  1 e 1 0 ]
+{
+"33
+} 0
+"62 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _disableJoystick disableJoystick `(v  1 e 1 0 ]
+{
+"65
+} 0
+"105 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"109
+} 0
+"169 D:\MyPicProjects\BluJoy.X\ui.c
+[v _bumpUISpeedMode bumpUISpeedMode `(v  1 e 1 0 ]
+{
+"173
+} 0
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 12 ]
+[v ___awmod@counter counter `uc  1 a 1 11 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 6 ]
+[v ___awmod@dividend dividend `i  1 p 2 8 ]
+"34
+} 0
+"179 D:\MyPicProjects\BluJoy.X\ui.c
+[v _bumpUIBrakeMode bumpUIBrakeMode `(v  1 e 1 0 ]
+{
+"183
+} 0
+"227
+[v _blinkLEDColor blinkLEDColor `(v  1 e 1 0 ]
+{
+"228
+[v blinkLEDColor@blink blink `uc  1 a 1 32 ]
+"227
+[v blinkLEDColor@RGB RGB `us  1 p 2 28 ]
+[v blinkLEDColor@blinks blinks `uc  1 p 1 30 ]
+"233
+} 0
+"220
+[v _pulseLEDColor pulseLEDColor `(v  1 e 1 0 ]
+{
+[v pulseLEDColor@RGB RGB `us  1 p 2 22 ]
+[v pulseLEDColor@onTimeMS onTimeMS `us  1 p 2 24 ]
+[v pulseLEDColor@offTimeMS offTimeMS `us  1 p 2 26 ]
+"225
+} 0
+"214
+[v _setLEDColor setLEDColor `(v  1 e 1 0 ]
+{
+[v setLEDColor@RGB RGB `us  1 p 2 6 ]
+"218
+} 0
+"150 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+{
+[v ___ctoee@addr addr `*.28VEv  1 a 1 wreg ]
+[v ___ctoee@addr addr `*.28VEv  1 a 1 wreg ]
+[v ___ctoee@data data `uc  1 p 1 11 ]
+"152
+[v ___ctoee@addr addr `*.28VEv  1 a 1 13 ]
+"154
+} 0
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+{
+[v ___memcpyee@to to `*.28VEuc  1 a 1 wreg ]
+"41
+[v ___memcpyee@ptr ptr `*.4DCuc  1 a 1 9 ]
+"39
+[v ___memcpyee@to to `*.28VEuc  1 a 1 wreg ]
+[v ___memcpyee@from from `*.4DCuc  1 p 1 6 ]
+[v ___memcpyee@size size `uc  1 p 1 7 ]
+"41
+[v ___memcpyee@to to `*.28VEuc  1 a 1 10 ]
+"101
+} 0
+"57 D:\MyPicProjects\BluJoy.X\timers.c
+[v _BTTimeRemaining BTTimeRemaining `(l  1 e 4 0 ]
+{
+"58
+[v BTTimeRemaining@elapsed elapsed `l  1 a 4 14 ]
+"65
+} 0
+"60 D:\MyPicProjects\BluJoy.X\configure.c
+[v _powerIsOn powerIsOn `(a  1 e 1 0 ]
+{
+"62
+} 0
+"45 D:\MyPicProjects\BluJoy.X\ui.c
+[v _initUI initUI `(v  1 e 1 0 ]
+{
+"64
+} 0
+"104 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+{
+[v ___eetoc@addr addr `*.28VEv  1 a 1 wreg ]
+"106
+[v ___eetoc@data data `uc  1 a 1 13 ]
+"104
+[v ___eetoc@addr addr `*.28VEv  1 a 1 wreg ]
+"107
+[v ___eetoc@addr addr `*.28VEv  1 a 1 12 ]
+"109
+} 0
+"6
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+{
+[v ___eecpymem@to to `*.4VEuc  1 a 1 wreg ]
+"8
+[v ___eecpymem@cp cp `*.4VEuc  1 a 1 9 ]
+"6
+[v ___eecpymem@to to `*.4VEuc  1 a 1 wreg ]
+[v ___eecpymem@from from `*.28VEuc  1 p 1 6 ]
+[v ___eecpymem@size size `uc  1 p 1 7 ]
+"8
+[v ___eecpymem@to to `*.4VEuc  1 a 1 10 ]
+"36
+} 0
+"11 D:\MyPicProjects\BluJoy.X\timers.c
+[v _initTimers initTimers `(v  1 e 1 0 ]
+{
+"16
+} 0
+"14 D:\MyPicProjects\BluJoy.X\serial.c
+[v _initSerial initSerial `(v  1 e 1 0 ]
+{
+"23
+} 0
+"4 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+[v _memset memset `(*.4v  1 e 1 0 ]
+{
+[v memset@dest dest `*.4v  1 a 1 wreg ]
+"7
+[v memset@k k `ui  1 a 2 12 ]
+"6
+[v memset@s s `*.4uc  1 a 1 15 ]
+"4
+[v memset@dest dest `*.4v  1 a 1 wreg ]
+[v memset@c c `i  1 p 2 6 ]
+[v memset@n n `ui  1 p 2 8 ]
+"6
+[v memset@dest dest `*.4v  1 a 1 14 ]
+"90
+} 0
+"67 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _initJoystick initJoystick `(v  1 e 1 0 ]
+{
+"74
+} 0
+"15 D:\MyPicProjects\BluJoy.X\configure.c
+[v _initConfiguration initConfiguration `(v  1 e 1 0 ]
+{
+"19
+} 0
+"64
+[v _setSerialBaud setSerialBaud `(v  1 e 1 0 ]
+{
+[v setSerialBaud@baud baud `us  1 p 2 22 ]
+"75
+} 0
+"21
+[v _SetSlaveTXRX SetSlaveTXRX `(v  1 e 1 0 ]
+{
+"26
+} 0
+"35 D:\MyPicProjects\BluJoy.X\timers.c
+[v _sleep sleep `(v  1 e 1 0 ]
+{
+"36
+[v sleep@start start `ul  1 a 4 18 ]
+"35
+[v sleep@delay delay `ul  1 p 4 14 ]
+"38
+} 0
+"44
+[v _getTicksSince getTicksSince `(l  1 e 4 0 ]
+{
+[v getTicksSince@from from `ul  1 p 4 6 ]
+"46
+} 0
+"40
+[v _getTicks getTicks `(ul  1 e 4 0 ]
+{
+"42
+} 0
+"50 D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+[v _TMR3_Initialize TMR3_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"185
+[v _TMR3_SetInterruptHandler TMR3_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR3_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
+"187
+} 0
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"186
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
+"188
+} 0
+"64 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"185
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
+"187
+} 0
+"75 D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"58 D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"138
+} 0
+"202
+[v _IOCCF2_SetInterruptHandler IOCCF2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCCF2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
+"204
+} 0
+"172
+[v _IOCCF0_SetInterruptHandler IOCCF0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCCF0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 6 ]
+"174
+} 0
+"61 D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"88 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
+{
+"130
+} 0
+"276
+[v _EUSART1_SetTxInterruptHandler EUSART1_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
+"278
+} 0
+"280
+[v _EUSART1_SetRxInterruptHandler EUSART1_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
+"282
+} 0
+"268
+[v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
+"270
+} 0
+"264
+[v _EUSART1_SetFramingErrorHandler EUSART1_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
+"266
+} 0
+"272
+[v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 6 ]
+"274
+} 0
+"52 D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"82
+} 0
+"164 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+[v _TMR3_ISR TMR3_ISR `(v  1 e 1 0 ]
+{
+"174
+} 0
+"127
+[v _TMR3_WriteTimer TMR3_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR3_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"147
+} 0
+"176
+[v _TMR3_CallBack TMR3_CallBack `(v  1 e 1 0 ]
+{
+"183
+} 0
+"189
+[v _TMR3_DefaultInterruptHandler TMR3_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"192
+} 0
+"235 D:\MyPicProjects\BluJoy.X\ui.c
+[v _UI_PWM_handler UI_PWM_handler `(v  1 e 1 0 ]
+{
+"266
+} 0
+"165 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"174
+} 0
+"176
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"184
+} 0
+"190
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"193
+} 0
+"18 D:\MyPicProjects\BluJoy.X\timers.c
+[v _timeKeeper timeKeeper `(v  1 e 1 0 ]
+{
+"24
+} 0
+"164 D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"174
+} 0
+"127
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"147
+} 0
+"176
+[v _TMR1_CallBack TMR1_CallBack `(v  1 e 1 0 ]
+{
+"183
+} 0
+"189
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"192
+} 0
+"76 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _readJoystick readJoystick `(v  1 e 1 0 ]
+{
+"151
+} 0
+"53 D:\MyPicProjects\BluJoy.X\timers.c
+[v i1_setBTTimeout setBTTimeout `(v  1 e 1 0 ]
+{
+[v i1setBTTimeout@timeout timeout `ul  1 p 4 0 ]
+"55
+} 0
+"49
+[v i1_resetBTTimer resetBTTimer `(v  1 e 1 0 ]
+{
+"51
+} 0
+"44
+[v i1_getTicksSince getTicksSince `(l  1 e 4 0 ]
+{
+[v i1getTicksSince@from from `ul  1 p 4 0 ]
+"46
+} 0
+"40
+[v i1_getTicks getTicks `(ul  1 e 4 0 ]
+{
+"42
+} 0
+"137 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v i1_EUSART1_is_rx_ready EUSART1_is_rx_ready `(a  1 e 1 0 ]
+{
+"140
+} 0
+"151
+[v i1_EUSART1_Read EUSART1_Read `(uc  1 e 1 0 ]
+{
+"153
+[v i1EUSART1_Read@readValue readValue `uc  1 a 1 1 ]
+"171
+} 0
+"25 D:\MyPicProjects\BluJoy.X\serial.c
+[v _sendBTSpeedCmd sendBTSpeedCmd `(a  1 e 1 0 ]
+{
+[v sendBTSpeedCmd@axial axial `s  1 p 2 8 ]
+[v sendBTSpeedCmd@yaw yaw `s  1 p 2 10 ]
+[v sendBTSpeedCmd@blockIfBusy blockIfBusy `a  1 p 1 12 ]
+"30
+} 0
+"117
+[v _int16ToBytes int16ToBytes `(v  1 e 1 0 ]
+{
+"118
+[v int16ToBytes@i i `i  1 a 2 6 ]
+"117
+[v int16ToBytes@num num `s  1 p 2 0 ]
+[v int16ToBytes@ndata ndata `*.4uc  1 p 1 2 ]
+"122
+} 0
+"32
+[v _sendBTEstopCmd sendBTEstopCmd `(a  1 e 1 0 ]
+{
+"35
+} 0
+"42
+[v i1_sendBTBuffer sendBTBuffer `(a  1 e 1 0 ]
+{
+[v i1sendBTBuffer@buffer buffer `*.26uc  1 p 2 2 ]
+[v i1sendBTBuffer@length length `uc  1 p 1 4 ]
+[v i1sendBTBuffer@blockIfBusy blockIfBusy `a  1 p 1 5 ]
+"57
+} 0
+"132 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v i1_EUSART1_is_tx_ready EUSART1_is_tx_ready `(a  1 e 1 0 ]
+{
+"135
+} 0
+"173
+[v i1_EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
+{
+[v i1EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v i1EUSART1_Write@txData txData `uc  1 a 1 wreg ]
+[v i1EUSART1_Write@txData txData `uc  1 a 1 1 ]
+"194
+} 0
+"91 D:\MyPicProjects\BluJoy.X\serial.c
+[v _calcCRC calcCRC `(us  1 e 2 0 ]
+{
+[v calcCRC@ptr ptr `*.4uc  1 a 1 wreg ]
+"93
+[v calcCRC@crc crc `us  1 a 2 6 ]
+"95
+[v calcCRC@count count `c  1 a 1 4 ]
+"94
+[v calcCRC@i i `uc  1 a 1 3 ]
+"91
+[v calcCRC@ptr ptr `*.4uc  1 a 1 wreg ]
+"95
+[v calcCRC@ptr ptr `*.4uc  1 a 1 5 ]
+"115
+} 0
+"153 D:\MyPicProjects\BluJoy.X\joystick.c
+[v _calculateMotion calculateMotion `(v  1 e 1 0 ]
+{
+"157
+} 0
+"159
+[v _limitSpeed limitSpeed `(s  1 e 2 0 ]
+{
+"161
+[v limitSpeed@diffFP diffFP `s  1 a 2 11 ]
+"162
+[v limitSpeed@speedFP speedFP `s  1 a 2 9 ]
+"159
+[v limitSpeed@targetFP targetFP `s  1 p 2 0 ]
+[v limitSpeed@limitedFP limitedFP `s  1 p 2 2 ]
+[v limitSpeed@accelFP accelFP `s  1 p 2 4 ]
+"180
+} 0
+"140 D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"152
+} 0
+"187
+[v _IOCCF2_ISR IOCCF2_ISR `(v  1 e 1 0 ]
+{
+"197
+} 0
+"179
+[v _IOCCF0_DefaultInterruptHandler IOCCF0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"182
+} 0
+"50 D:\MyPicProjects\BluJoy.X\configure.c
+[v i1_turnPowerOn turnPowerOn `(v  1 e 1 0 ]
+{
+"53
+} 0
+"209 D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+[v _IOCCF2_DefaultInterruptHandler IOCCF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"212
+} 0
+"157
+[v _IOCCF0_ISR IOCCF0_ISR `(v  1 e 1 0 ]
+{
+"167
+} 0
+"197 D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+[v _EUSART1_Transmit_ISR EUSART1_Transmit_ISR `(v  1 e 1 0 ]
+{
+"214
+} 0
+"216
+[v _EUSART1_Receive_ISR EUSART1_Receive_ISR `(v  1 e 1 0 ]
+{
+"238
+} 0
+"252
+[v _EUSART1_DefaultOverrunErrorHandler EUSART1_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+{
+"258
+} 0
+"250
+[v _EUSART1_DefaultFramingErrorHandler EUSART1_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+{
+} 0
+"260
+[v _EUSART1_DefaultErrorHandler EUSART1_DefaultErrorHandler `(v  1 e 1 0 ]
+{
+"262
+} 0
+"240
+[v _EUSART1_RxDataHandler EUSART1_RxDataHandler `(v  1 e 1 0 ]
+{
+"248
+} 0

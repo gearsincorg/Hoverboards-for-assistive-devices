@@ -1,0 +1,32 @@
+[Eagle]
+Version="09 06 02"
+Platform="Windows"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibraryUrn="urn:adsk.eagle:library:204"
+UsedLibraryUrn="urn:adsk.eagle:library:294"
+UsedLibraryUrn="urn:adsk.eagle:library:347"
+UsedLibraryUrn="urn:adsk.eagle:library:348"
+UsedLibraryUrn="urn:adsk.eagle:library:11396253"
+UsedLibraryUrn="urn:adsk.eagle:library:535"
+UsedLibraryUrn="urn:adsk.eagle:library:172"
+UsedLibrary="C:/Users/Phil/Documents/EAGLE/libraries/SamacSys_Parts.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/Blinky1.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/HM-11.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/JNHuaMao.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/LTV-844.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/PIC16LF15345.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/Rembrandt Electronics - JST XH Connectors v1-0.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/diy-modules.lbr"
+UsedLibrary="D:/Users/Phil/My Documents/eagle/external_libs/philbot.lbr"
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="3840 1080"
+Window="Win_1"

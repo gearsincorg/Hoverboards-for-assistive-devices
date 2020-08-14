@@ -1,0 +1,2700 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\BluJoy.X.production.o
+cinit CODE 0 5D 5D 45 2
+text1 CODE 0 1547 1547 9 2
+text2 CODE 0 1483 1483 4 2
+text3 CODE 0 9E0 9E0 2B 2
+text4 CODE 0 1671 1671 11 2
+text5 CODE 0 832 832 1E 2
+text6 CODE 0 A2 A2 202 2
+text7 CODE 0 60D 60D A7 2
+text8 CODE 0 54F 54F BE 2
+text9 CODE 0 759 759 74 2
+text10 CODE 0 3BD 3BD D3 2
+text11 CODE 0 7CD 7CD 30 2
+text12 CODE 0 16D6 16D6 15 2
+text13 CODE 0 14B0 14B0 7 2
+text14 CODE 0 14A9 14A9 7 2
+text15 CODE 0 16C1 16C1 15 2
+text16 CODE 0 1578 1578 B 2
+text17 CODE 0 153E 153E 9 2
+text18 CODE 0 1660 1660 11 2
+text19 CODE 0 7FD 7FD 3 2
+text20 CODE 0 490 490 BF 2
+text21 CODE 0 D3C D3C 4E 2
+text22 CODE 0 EEA EEA 5C 2
+text23 CODE 0 1792 1792 1A 2
+text24 CODE 0 1778 1778 1A 2
+text25 CODE 0 175E 175E 1A 2
+text26 CODE 0 B45 B45 2E 2
+text27 CODE 0 1535 1535 9 2
+text28 CODE 0 A63 A63 2C 2
+text29 CODE 0 8D1 8D1 21 2
+text30 CODE 0 E8E E8E 5C 2
+text31 CODE 0 152C 152C 9 2
+text32 CODE 0 ABC ABC 2D 2
+text33 CODE 0 16AC 16AC 15 2
+text34 CODE 0 148C 148C 5 2
+text35 CODE 0 1478 1478 3 2
+text36 CODE 0 960 960 2A 2
+text37 CODE 0 DDE DDE 54 2
+text38 CODE 0 17E3 17E3 1D 2
+text39 CODE 0 814 814 1E 2
+text40 CODE 0 915 915 24 2
+text41 CODE 0 1744 1744 1A 2
+text42 CODE 0 15B6 15B6 D 2
+text43 CODE 0 CEF CEF 4D 2
+text44 CODE 0 E32 E32 5C 2
+text45 CODE 0 1475 1475 3 2
+text46 CODE 0 C62 C62 46 2
+text47 CODE 0 15FD 15FD F 2
+text48 CODE 0 B73 B73 2F 2
+text49 CODE 0 17C7 17C7 1C 2
+text50 CODE 0 939 939 27 2
+text51 CODE 0 6B4 6B4 A5 2
+text52 CODE 0 1697 1697 15 2
+text53 CODE 0 1583 1583 C 2
+text54 CODE 0 850 850 1F 2
+text55 CODE 0 1682 1682 15 2
+text56 CODE 0 9B5 9B5 2B 2
+text57 CODE 0 1717 1717 16 2
+text58 CODE 0 156E 156E A 2
+text59 CODE 0 1701 1701 16 2
+text60 CODE 0 8B0 8B0 21 2
+text61 CODE 0 1523 1523 9 2
+text62 CODE 0 172D 172D 17 2
+text63 CODE 0 151A 151A 9 2
+text64 CODE 0 88F 88F 21 2
+text65 CODE 0 1511 1511 9 2
+text66 CODE 0 1564 1564 A 2
+text67 CODE 0 CA8 CA8 47 2
+text68 CODE 0 1508 1508 9 2
+text69 CODE 0 14FF 14FF 9 2
+text70 CODE 0 14F6 14F6 9 2
+text71 CODE 0 C1E C1E 44 2
+text72 CODE 0 14ED 14ED 9 2
+text73 CODE 0 14E4 14E4 9 2
+text74 CODE 0 14DB 14DB 9 2
+text75 CODE 0 14D2 14D2 9 2
+text76 CODE 0 14C9 14C9 9 2
+text78 CODE 0 15D1 15D1 E 2
+text79 CODE 0 164F 164F 11 2
+text80 CODE 0 15A9 15A9 D 2
+text81 CODE 0 3 3 1 2
+text82 CODE 0 BA2 BA2 3B 2
+text83 CODE 0 1491 1491 6 2
+text84 CODE 0 159C 159C D 2
+text85 CODE 0 2 2 1 2
+text86 CODE 0 86F 86F 20 2
+text87 CODE 0 15C3 15C3 E 2
+text88 CODE 0 163E 163E 11 2
+text89 CODE 0 158F 158F D 2
+text90 CODE 0 801 801 1 2
+text91 CODE 0 2A4 2A4 119 2
+text92 CODE 0 155A 155A A 2
+text93 CODE 0 162D 162D 11 2
+text94 CODE 0 16EB 16EB 16 2
+text95 CODE 0 1550 1550 A 2
+text96 CODE 0 14C0 14C0 9 2
+text97 CODE 0 A37 A37 2C 2
+text98 CODE 0 A8F A8F 2D 2
+text99 CODE 0 B17 B17 2E 2
+nvBANK0 BANK0 1 68 68 1 1
+nvBANK1 BANK1 1 C2 C2 18 1
+maintext CODE 0 FA3 FA3 5D 2
+cstackCOMMON COMMON 1 70 70 D 1
+cstackBANK0 BANK0 1 20 20 25 1
+cstackBANK1 BANK1 1 EA EA 6 1
+inittext CODE 0 149D 149D 6 2
+stringtext1 STRCODE 0 1800 1800 9 2
+stringtext2 STRCODE 0 1809 1809 9 2
+stringtext3 STRCODE 0 1812 1812 9 2
+stringtext4 STRCODE 0 181B 181B 9 2
+stringtext5 STRCODE 0 1824 1824 9 2
+stringtext6 STRCODE 0 182D 182D 9 2
+stringtext7 STRCODE 0 1836 1836 9 2
+stringtext8 STRCODE 0 183F 183F 7 2
+stringtext9 STRCODE 0 1846 1846 6 2
+intentry CODE 0 4 4 57 2
+bssBANK0 BANK0 1 45 45 1D 1
+bssBANK1 BANK1 1 A0 A0 22 1
+bssBANK2 BANK2 1 120 120 40 1
+bssBANK3 BANK3 1 1A0 1A0 48 1
+bssBANK4 BANK4 1 220 220 20 1
+idataBANK0 CODE 0 14A3 14A3 6 2
+idataBANK1 CODE 0 160C 160C 10 2
+dataBANK0 BANK0 1 62 62 6 1
+dataBANK1 BANK1 1 DA DA 10 1
+clrtext CODE 0 1497 1497 6 2
+text100 CODE 0 802 802 12 2
+text101 CODE 0 A0B A0B 2C 2
+text102 CODE 0 14B7 14B7 9 2
+text103 CODE 0 98A 98A 2B 2
+text104 CODE 0 F46 F46 5D 2
+text105 CODE 0 AE9 AE9 2E 2
+text106 CODE 0 D8A D8A 54 2
+text107 CODE 0 161C 161C 11 2
+text108 CODE 0 15EE 15EE F 2
+text109 CODE 0 800 800 1 2
+text110 CODE 0 1487 1487 5 2
+text111 CODE 0 1474 1474 1 2
+text112 CODE 0 15DF 15DF F 2
+text113 CODE 0 8F2 8F2 23 2
+text114 CODE 0 BDD BDD 41 2
+text115 CODE 0 147F 147F 4 2
+text116 CODE 0 1473 1473 1 2
+text117 CODE 0 147B 147B 4 2
+text118 CODE 0 17AC 17AC 1B 2
+bssCOMMON COMMON 1 7D 7D 1 1
+bssEEDATA EEDATA 3 0 F000 2 2
+stringtext10 STRCODE 0 184C 184C 6 2
+stringtext11 STRCODE 0 1852 1852 3 2
+stringtext12 STRCODE 0 1855 1855 3 2
+config CONFIG 4 8007 8007 5 2
+$C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 5B 5B 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 69-6F 1
+RAM 160-16F 1
+RAM 1E8-1EF 1
+RAM 240-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-66F 1
+RAM 6A0-6EF 1
+RAM 720-76F 1
+RAM 7A0-7EF 1
+RAM 820-86F 1
+RAM 8A0-8EF 1
+RAM 920-96F 1
+RAM 9A0-9EF 1
+RAM A20-A6F 1
+RAM AA0-AEF 1
+RAM B20-B6F 1
+RAM BA0-BEF 1
+RAM C20-C6F 1
+RAM CA0-CBF 1
+BANK0 69-6F 1
+BANK2 160-16F 1
+BANK3 1E8-1EF 1
+BANK4 240-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 1000-1472 2
+CONST 1858-3FFF 2
+ENTRY 1000-1472 2
+ENTRY 1858-3FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-69F 1
+SFR14 700-71F 1
+SFR15 780-79F 1
+SFR16 800-81F 1
+SFR17 880-89F 1
+SFR18 900-91F 1
+SFR19 980-99F 1
+SFR20 A00-A1F 1
+SFR21 A80-A9F 1
+SFR22 B00-B1F 1
+SFR23 B80-B9F 1
+SFR24 C00-C1F 1
+SFR25 C80-C9F 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+SFR32 1000-106F 1
+SFR33 1080-10EF 1
+SFR34 1100-116F 1
+SFR35 1180-11EF 1
+SFR36 1200-126F 1
+SFR37 1280-12EF 1
+SFR38 1300-136F 1
+SFR39 1380-13EF 1
+SFR40 1400-146F 1
+SFR41 1480-14EF 1
+SFR42 1500-156F 1
+SFR43 1580-15EF 1
+SFR44 1600-166F 1
+SFR45 1680-16EF 1
+SFR46 1700-176F 1
+SFR47 1780-17EF 1
+SFR48 1800-186F 1
+SFR49 1880-18EF 1
+SFR50 1900-196F 1
+SFR51 1980-19EF 1
+SFR52 1A00-1A6F 1
+SFR53 1A80-1AEF 1
+SFR54 1B00-1B6F 1
+SFR55 1B80-1BEF 1
+SFR56 1C00-1C6F 1
+SFR57 1C80-1CEF 1
+SFR58 1D00-1D6F 1
+SFR59 1D80-1DEF 1
+SFR60 1E00-1E6F 1
+SFR61 1E80-1EEF 1
+SFR62 1F00-1F6F 1
+SFR63 1F80-1FEF 1
+STACK 2160-27EF 1
+CODE 1000-1472 2
+CODE 1858-3FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-66F 1
+BANK13 6A0-6EF 1
+BANK14 720-76F 1
+BANK15 7A0-7EF 1
+BANK16 820-86F 1
+BANK17 8A0-8EF 1
+BANK18 920-96F 1
+BANK19 9A0-9EF 1
+BANK20 A20-A6F 1
+BANK21 AA0-AEF 1
+BANK22 B20-B6F 1
+BANK23 BA0-BEF 1
+BANK24 C20-C6F 1
+BANK25 CA0-CBF 1
+BIGRAM 2000-27EF 1
+EEDATA F002-F0FF 2
+STRCODE 1000-1472 2
+STRCODE 1858-3FFF 2
+STRING 1000-1472 2
+STRING 1858-3FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\BluJoy.X.production.o
+5D cinit CODE >13518:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+5D cinit CODE >13521:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+5D cinit CODE >13733:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+5E cinit CODE >13734:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+5F cinit CODE >13735:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+60 cinit CODE >13736:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+61 cinit CODE >13737:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+62 cinit CODE >13738:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+63 cinit CODE >13739:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+64 cinit CODE >13740:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+65 cinit CODE >13741:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+66 cinit CODE >13742:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+69 cinit CODE >13746:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6A cinit CODE >13747:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6B cinit CODE >13748:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6C cinit CODE >13749:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6D cinit CODE >13750:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6E cinit CODE >13751:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+6F cinit CODE >13752:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+70 cinit CODE >13753:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+71 cinit CODE >13754:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+72 cinit CODE >13755:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+75 cinit CODE >13772:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+76 cinit CODE >13776:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+77 cinit CODE >13777:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+78 cinit CODE >13778:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+79 cinit CODE >13779:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+7A cinit CODE >13780:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+7B cinit CODE >13781:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+7E cinit CODE >13785:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+7F cinit CODE >13786:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+80 cinit CODE >13787:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+81 cinit CODE >13788:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+82 cinit CODE >13789:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+83 cinit CODE >13790:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+86 cinit CODE >13794:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+87 cinit CODE >13795:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+88 cinit CODE >13796:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+89 cinit CODE >13797:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+8A cinit CODE >13798:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+8B cinit CODE >13799:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+8E cinit CODE >13803:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+8F cinit CODE >13804:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+90 cinit CODE >13805:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+91 cinit CODE >13806:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+92 cinit CODE >13807:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+93 cinit CODE >13808:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+96 cinit CODE >13812:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+97 cinit CODE >13813:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+98 cinit CODE >13814:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+99 cinit CODE >13815:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+9A cinit CODE >13816:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+9B cinit CODE >13817:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+9E cinit CODE >13823:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+9E cinit CODE >13825:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+9F cinit CODE >13826:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+A0 cinit CODE >13827:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+4 intentry CODE >52:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+F intentry CODE >57:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+12 intentry CODE >58:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+13 intentry CODE >59:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+17 intentry CODE >61:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+1F intentry CODE >63:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+22 intentry CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+23 intentry CODE >65:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+2B intentry CODE >67:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+2E intentry CODE >68:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+2F intentry CODE >69:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+37 intentry CODE >71:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+3A intentry CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+3B intentry CODE >73:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+43 intentry CODE >75:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+49 intentry CODE >76:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+4A intentry CODE >77:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+52 intentry CODE >79:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+59 intentry CODE >80:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+59 intentry CODE >82:D:\MyPicProjects\BluJoy.X\mcc_generated_files/interrupt_manager.c
+17AC text118 CODE >240:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+17AC text118 CODE >242:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+17BB text118 CODE >243:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+17C1 text118 CODE >245:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+17C2 text118 CODE >247:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+17C6 text118 CODE >248:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+147B text117 CODE >260:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+147B text117 CODE >261:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+147E text117 CODE >262:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1473 text116 CODE >250:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+147F text115 CODE >252:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+147F text115 CODE >255:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1481 text115 CODE >256:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1482 text115 CODE >258:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BDD text114 CODE >216:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BDD text114 CODE >219:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BE4 text114 CODE >221:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BE9 text114 CODE >222:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BF0 text114 CODE >223:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BF6 text114 CODE >226:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+BFB text114 CODE >227:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C02 text114 CODE >228:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C08 text114 CODE >231:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C13 text114 CODE >232:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C19 text114 CODE >233:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C1A text114 CODE >234:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C1D text114 CODE >238:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+8F2 text113 CODE >197:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+8F2 text113 CODE >201:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+8F9 text113 CODE >203:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+906 text113 CODE >204:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+90C text113 CODE >206:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+90D text113 CODE >208:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+911 text113 CODE >209:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+912 text113 CODE >210:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+912 text113 CODE >212:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+914 text113 CODE >214:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+15DF text112 CODE >157:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15DF text112 CODE >162:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15E6 text112 CODE >164:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15EB text112 CODE >166:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15ED text112 CODE >167:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1474 text111 CODE >209:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1474 text111 CODE >212:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1487 text110 CODE >50:D:\MyPicProjects\BluJoy.X\configure.c
+1487 text110 CODE >51:D:\MyPicProjects\BluJoy.X\configure.c
+1489 text110 CODE >52:D:\MyPicProjects\BluJoy.X\configure.c
+148B text110 CODE >53:D:\MyPicProjects\BluJoy.X\configure.c
+800 text109 CODE >179:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+800 text109 CODE >182:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15EE text108 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15EE text108 CODE >192:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15F5 text108 CODE >194:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15FA text108 CODE >196:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+15FC text108 CODE >197:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+161C text107 CODE >140:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+161C text107 CODE >143:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1621 text107 CODE >145:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1624 text107 CODE >148:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1629 text107 CODE >150:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+162C text107 CODE >152:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+D8A text106 CODE >159:D:\MyPicProjects\BluJoy.X\joystick.c
+D8A text106 CODE >161:D:\MyPicProjects\BluJoy.X\joystick.c
+D90 text106 CODE >162:D:\MyPicProjects\BluJoy.X\joystick.c
+D94 text106 CODE >165:D:\MyPicProjects\BluJoy.X\joystick.c
+D9A text106 CODE >166:D:\MyPicProjects\BluJoy.X\joystick.c
+D9F text106 CODE >169:D:\MyPicProjects\BluJoy.X\joystick.c
+DA5 text106 CODE >170:D:\MyPicProjects\BluJoy.X\joystick.c
+DA9 text106 CODE >173:D:\MyPicProjects\BluJoy.X\joystick.c
+DB7 text106 CODE >174:D:\MyPicProjects\BluJoy.X\joystick.c
+DBD text106 CODE >175:D:\MyPicProjects\BluJoy.X\joystick.c
+DD3 text106 CODE >176:D:\MyPicProjects\BluJoy.X\joystick.c
+DD9 text106 CODE >179:D:\MyPicProjects\BluJoy.X\joystick.c
+DDD text106 CODE >180:D:\MyPicProjects\BluJoy.X\joystick.c
+AE9 text105 CODE >153:D:\MyPicProjects\BluJoy.X\joystick.c
+AE9 text105 CODE >155:D:\MyPicProjects\BluJoy.X\joystick.c
+AFF text105 CODE >156:D:\MyPicProjects\BluJoy.X\joystick.c
+B16 text105 CODE >157:D:\MyPicProjects\BluJoy.X\joystick.c
+F46 text104 CODE >91:D:\MyPicProjects\BluJoy.X\serial.c
+F47 text104 CODE >95:D:\MyPicProjects\BluJoy.X\serial.c
+F4F text104 CODE >96:D:\MyPicProjects\BluJoy.X\serial.c
+F51 text104 CODE >98:D:\MyPicProjects\BluJoy.X\serial.c
+F52 text104 CODE >100:D:\MyPicProjects\BluJoy.X\serial.c
+F65 text104 CODE >101:D:\MyPicProjects\BluJoy.X\serial.c
+F69 text104 CODE >104:D:\MyPicProjects\BluJoy.X\serial.c
+F6D text104 CODE >105:D:\MyPicProjects\BluJoy.X\serial.c
+F7A text104 CODE >107:D:\MyPicProjects\BluJoy.X\serial.c
+F7E text104 CODE >108:D:\MyPicProjects\BluJoy.X\serial.c
+F84 text104 CODE >98:D:\MyPicProjects\BluJoy.X\serial.c
+F8C text104 CODE >111:D:\MyPicProjects\BluJoy.X\serial.c
+F97 text104 CODE >112:D:\MyPicProjects\BluJoy.X\serial.c
+FA2 text104 CODE >115:D:\MyPicProjects\BluJoy.X\serial.c
+98A text103 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+98B text103 CODE >175:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+991 text103 CODE >179:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+996 text103 CODE >181:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+999 text103 CODE >182:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+99A text103 CODE >183:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+99A text103 CODE >185:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+99B text103 CODE >186:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+9A9 text103 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+9AF text103 CODE >189:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+9B0 text103 CODE >191:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+9B2 text103 CODE >193:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+9B4 text103 CODE >194:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14B7 text102 CODE >132:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14B7 text102 CODE >134:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14BF text102 CODE >135:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A0B text101 CODE >42:D:\MyPicProjects\BluJoy.X\serial.c
+A0B text101 CODE >43:D:\MyPicProjects\BluJoy.X\serial.c
+A18 text101 CODE >46:D:\MyPicProjects\BluJoy.X\serial.c
+A20 text101 CODE >49:D:\MyPicProjects\BluJoy.X\serial.c
+A2C text101 CODE >50:D:\MyPicProjects\BluJoy.X\serial.c
+A2E text101 CODE >44:D:\MyPicProjects\BluJoy.X\serial.c
+A33 text101 CODE >52:D:\MyPicProjects\BluJoy.X\serial.c
+A35 text101 CODE >55:D:\MyPicProjects\BluJoy.X\serial.c
+A36 text101 CODE >57:D:\MyPicProjects\BluJoy.X\serial.c
+802 text100 CODE >32:D:\MyPicProjects\BluJoy.X\serial.c
+802 text100 CODE >33:D:\MyPicProjects\BluJoy.X\serial.c
+806 text100 CODE >34:D:\MyPicProjects\BluJoy.X\serial.c
+813 text100 CODE >35:D:\MyPicProjects\BluJoy.X\serial.c
+B17 text99 CODE >117:D:\MyPicProjects\BluJoy.X\serial.c
+B17 text99 CODE >118:D:\MyPicProjects\BluJoy.X\serial.c
+B19 text99 CODE >119:D:\MyPicProjects\BluJoy.X\serial.c
+B24 text99 CODE >120:D:\MyPicProjects\BluJoy.X\serial.c
+B33 text99 CODE >121:D:\MyPicProjects\BluJoy.X\serial.c
+B44 text99 CODE >122:D:\MyPicProjects\BluJoy.X\serial.c
+A8F text98 CODE >25:D:\MyPicProjects\BluJoy.X\serial.c
+A8F text98 CODE >26:D:\MyPicProjects\BluJoy.X\serial.c
+A9B text98 CODE >27:D:\MyPicProjects\BluJoy.X\serial.c
+AA7 text98 CODE >28:D:\MyPicProjects\BluJoy.X\serial.c
+AAB text98 CODE >29:D:\MyPicProjects\BluJoy.X\serial.c
+ABB text98 CODE >30:D:\MyPicProjects\BluJoy.X\serial.c
+A37 text97 CODE >151:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A37 text97 CODE >153:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A37 text97 CODE >155:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A3D text97 CODE >159:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A46 text97 CODE >161:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A53 text97 CODE >162:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A59 text97 CODE >164:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A5A text97 CODE >166:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A5C text97 CODE >167:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A5F text97 CODE >168:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A61 text97 CODE >170:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A62 text97 CODE >171:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14C0 text96 CODE >137:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14C0 text96 CODE >139:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14C8 text96 CODE >140:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1550 text95 CODE >40:D:\MyPicProjects\BluJoy.X\timers.c
+1550 text95 CODE >41:D:\MyPicProjects\BluJoy.X\timers.c
+1559 text95 CODE >42:D:\MyPicProjects\BluJoy.X\timers.c
+16EB text94 CODE >44:D:\MyPicProjects\BluJoy.X\timers.c
+16EB text94 CODE >45:D:\MyPicProjects\BluJoy.X\timers.c
+1700 text94 CODE >46:D:\MyPicProjects\BluJoy.X\timers.c
+162D text93 CODE >49:D:\MyPicProjects\BluJoy.X\timers.c
+162D text93 CODE >50:D:\MyPicProjects\BluJoy.X\timers.c
+163D text93 CODE >51:D:\MyPicProjects\BluJoy.X\timers.c
+155A text92 CODE >53:D:\MyPicProjects\BluJoy.X\timers.c
+155A text92 CODE >54:D:\MyPicProjects\BluJoy.X\timers.c
+1563 text92 CODE >55:D:\MyPicProjects\BluJoy.X\timers.c
+2A4 text91 CODE >76:D:\MyPicProjects\BluJoy.X\joystick.c
+2A4 text91 CODE >78:D:\MyPicProjects\BluJoy.X\joystick.c
+2A9 text91 CODE >79:D:\MyPicProjects\BluJoy.X\joystick.c
+2AD text91 CODE >81:D:\MyPicProjects\BluJoy.X\joystick.c
+2B2 text91 CODE >84:D:\MyPicProjects\BluJoy.X\joystick.c
+2B7 text91 CODE >85:D:\MyPicProjects\BluJoy.X\joystick.c
+2BC text91 CODE >86:D:\MyPicProjects\BluJoy.X\joystick.c
+2D8 text91 CODE >87:D:\MyPicProjects\BluJoy.X\joystick.c
+2DC text91 CODE >90:D:\MyPicProjects\BluJoy.X\joystick.c
+2E8 text91 CODE >91:D:\MyPicProjects\BluJoy.X\joystick.c
+2EC text91 CODE >94:D:\MyPicProjects\BluJoy.X\joystick.c
+2ED text91 CODE >95:D:\MyPicProjects\BluJoy.X\joystick.c
+2EE text91 CODE >98:D:\MyPicProjects\BluJoy.X\joystick.c
+2F4 text91 CODE >99:D:\MyPicProjects\BluJoy.X\joystick.c
+2F7 text91 CODE >101:D:\MyPicProjects\BluJoy.X\joystick.c
+2FA text91 CODE >102:D:\MyPicProjects\BluJoy.X\joystick.c
+2FD text91 CODE >103:D:\MyPicProjects\BluJoy.X\joystick.c
+300 text91 CODE >104:D:\MyPicProjects\BluJoy.X\joystick.c
+302 text91 CODE >105:D:\MyPicProjects\BluJoy.X\joystick.c
+303 text91 CODE >108:D:\MyPicProjects\BluJoy.X\joystick.c
+307 text91 CODE >109:D:\MyPicProjects\BluJoy.X\joystick.c
+30C text91 CODE >110:D:\MyPicProjects\BluJoy.X\joystick.c
+310 text91 CODE >111:D:\MyPicProjects\BluJoy.X\joystick.c
+31C text91 CODE >113:D:\MyPicProjects\BluJoy.X\joystick.c
+31E text91 CODE >115:D:\MyPicProjects\BluJoy.X\joystick.c
+322 text91 CODE >116:D:\MyPicProjects\BluJoy.X\joystick.c
+328 text91 CODE >117:D:\MyPicProjects\BluJoy.X\joystick.c
+330 text91 CODE >119:D:\MyPicProjects\BluJoy.X\joystick.c
+335 text91 CODE >120:D:\MyPicProjects\BluJoy.X\joystick.c
+33E text91 CODE >123:D:\MyPicProjects\BluJoy.X\joystick.c
+342 text91 CODE >124:D:\MyPicProjects\BluJoy.X\joystick.c
+348 text91 CODE >125:D:\MyPicProjects\BluJoy.X\joystick.c
+357 text91 CODE >127:D:\MyPicProjects\BluJoy.X\joystick.c
+369 text91 CODE >128:D:\MyPicProjects\BluJoy.X\joystick.c
+372 text91 CODE >132:D:\MyPicProjects\BluJoy.X\joystick.c
+375 text91 CODE >133:D:\MyPicProjects\BluJoy.X\joystick.c
+379 text91 CODE >137:D:\MyPicProjects\BluJoy.X\joystick.c
+37C text91 CODE >138:D:\MyPicProjects\BluJoy.X\joystick.c
+39E text91 CODE >143:D:\MyPicProjects\BluJoy.X\joystick.c
+3A6 text91 CODE >144:D:\MyPicProjects\BluJoy.X\joystick.c
+3A9 text91 CODE >145:D:\MyPicProjects\BluJoy.X\joystick.c
+3B4 text91 CODE >142:D:\MyPicProjects\BluJoy.X\joystick.c
+3B4 text91 CODE >147:D:\MyPicProjects\BluJoy.X\joystick.c
+3BC text91 CODE >151:D:\MyPicProjects\BluJoy.X\joystick.c
+801 text90 CODE >189:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+801 text90 CODE >192:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+158F text89 CODE >176:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+158F text89 CODE >179:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1596 text89 CODE >181:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+159B text89 CODE >183:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+163E text88 CODE >127:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+163E text88 CODE >129:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1643 text88 CODE >132:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1644 text88 CODE >135:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1646 text88 CODE >136:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1648 text88 CODE >139:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1649 text88 CODE >140:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+164A text88 CODE >144:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+164C text88 CODE >145:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+164E text88 CODE >147:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+15C3 text87 CODE >164:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+15C3 text87 CODE >168:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+15C5 text87 CODE >169:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+15CD text87 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+15D0 text87 CODE >174:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+86F text86 CODE >18:D:\MyPicProjects\BluJoy.X\timers.c
+86F text86 CODE >19:D:\MyPicProjects\BluJoy.X\timers.c
+878 text86 CODE >22:D:\MyPicProjects\BluJoy.X\timers.c
+88C text86 CODE >23:D:\MyPicProjects\BluJoy.X\timers.c
+88E text86 CODE >24:D:\MyPicProjects\BluJoy.X\timers.c
+2 text85 CODE >190:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+2 text85 CODE >193:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+159C text84 CODE >176:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+159C text84 CODE >180:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+15A3 text84 CODE >182:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+15A8 text84 CODE >184:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1491 text83 CODE >165:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1491 text83 CODE >169:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1493 text83 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1496 text83 CODE >174:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+BA2 text82 CODE >235:D:\MyPicProjects\BluJoy.X\ui.c
+BA2 text82 CODE >239:D:\MyPicProjects\BluJoy.X\ui.c
+BA9 text82 CODE >241:D:\MyPicProjects\BluJoy.X\ui.c
+BAE text82 CODE >242:D:\MyPicProjects\BluJoy.X\ui.c
+BB3 text82 CODE >243:D:\MyPicProjects\BluJoy.X\ui.c
+BB5 text82 CODE >245:D:\MyPicProjects\BluJoy.X\ui.c
+BB6 text82 CODE >247:D:\MyPicProjects\BluJoy.X\ui.c
+BBB text82 CODE >248:D:\MyPicProjects\BluJoy.X\ui.c
+BBD text82 CODE >250:D:\MyPicProjects\BluJoy.X\ui.c
+BBE text82 CODE >252:D:\MyPicProjects\BluJoy.X\ui.c
+BC3 text82 CODE >253:D:\MyPicProjects\BluJoy.X\ui.c
+BC5 text82 CODE >255:D:\MyPicProjects\BluJoy.X\ui.c
+BC7 text82 CODE >258:D:\MyPicProjects\BluJoy.X\ui.c
+BCD text82 CODE >259:D:\MyPicProjects\BluJoy.X\ui.c
+BCE text82 CODE >260:D:\MyPicProjects\BluJoy.X\ui.c
+BD4 text82 CODE >261:D:\MyPicProjects\BluJoy.X\ui.c
+BD5 text82 CODE >262:D:\MyPicProjects\BluJoy.X\ui.c
+BDB text82 CODE >263:D:\MyPicProjects\BluJoy.X\ui.c
+BDC text82 CODE >266:D:\MyPicProjects\BluJoy.X\ui.c
+3 text81 CODE >189:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+3 text81 CODE >192:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15A9 text80 CODE >176:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15A9 text80 CODE >179:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15B0 text80 CODE >181:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15B5 text80 CODE >183:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+164F text79 CODE >127:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+164F text79 CODE >129:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1654 text79 CODE >132:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1655 text79 CODE >135:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1657 text79 CODE >136:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1659 text79 CODE >139:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+165A text79 CODE >140:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+165B text79 CODE >144:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+165D text79 CODE >145:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+165F text79 CODE >147:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15D1 text78 CODE >164:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15D1 text78 CODE >168:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15D3 text78 CODE >169:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15DB text78 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+15DE text78 CODE >174:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+14C9 text76 CODE >272:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14C9 text76 CODE >273:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14D1 text76 CODE >274:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14D2 text75 CODE >264:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14D2 text75 CODE >265:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14DA text75 CODE >266:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14DB text74 CODE >268:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14DB text74 CODE >269:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14E3 text74 CODE >270:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14E4 text73 CODE >280:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14E4 text73 CODE >281:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14EC text73 CODE >282:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14ED text72 CODE >276:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14ED text72 CODE >277:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14F5 text72 CODE >278:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C1E text71 CODE >88:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C1E text71 CODE >91:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C20 text71 CODE >92:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C28 text71 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C2A text71 CODE >94:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C32 text71 CODE >98:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C35 text71 CODE >101:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C37 text71 CODE >104:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C39 text71 CODE >107:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C3B text71 CODE >110:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C3C text71 CODE >113:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C44 text71 CODE >114:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C4C text71 CODE >115:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C54 text71 CODE >117:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C56 text71 CODE >120:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C57 text71 CODE >121:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C58 text71 CODE >122:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C5C text71 CODE >124:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C5D text71 CODE >125:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C5E text71 CODE >126:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C5F text71 CODE >129:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+C61 text71 CODE >130:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+14F6 text70 CODE >61:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14F6 text70 CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14F9 text70 CODE >66:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14FA text70 CODE >68:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14FB text70 CODE >70:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14FD text70 CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14FE text70 CODE >73:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+14FF text69 CODE >172:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+14FF text69 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1507 text69 CODE >174:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1508 text68 CODE >202:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1508 text68 CODE >203:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1510 text68 CODE >204:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CA8 text67 CODE >58:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CA8 text67 CODE >63:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CAB text67 CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CAD text67 CODE >65:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CAF text67 CODE >70:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CB1 text67 CODE >71:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CB3 text67 CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CB5 text67 CODE >77:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CB8 text67 CODE >78:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CB9 text67 CODE >79:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CBB text67 CODE >84:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CBD text67 CODE >85:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CBF text67 CODE >86:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC1 text67 CODE >91:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC2 text67 CODE >92:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC3 text67 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC4 text67 CODE >98:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC6 text67 CODE >99:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CC8 text67 CODE >100:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CCA text67 CODE >105:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CCC text67 CODE >106:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CCE text67 CODE >107:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD0 text67 CODE >114:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD1 text67 CODE >116:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD2 text67 CODE >118:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD3 text67 CODE >120:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD4 text67 CODE >122:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD5 text67 CODE >124:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CD6 text67 CODE >129:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CDE text67 CODE >130:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CE6 text67 CODE >133:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CE8 text67 CODE >136:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CEB text67 CODE >137:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+CEE text67 CODE >138:D:\MyPicProjects\BluJoy.X\mcc_generated_files/pin_manager.c
+1564 text66 CODE >75:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1564 text66 CODE >78:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1566 text66 CODE >80:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1567 text66 CODE >82:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1568 text66 CODE >84:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1569 text66 CODE >86:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+156A text66 CODE >88:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+156B text66 CODE >90:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+156C text66 CODE >92:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+156D text66 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1511 text65 CODE >185:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1511 text65 CODE >186:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1519 text65 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+88F text64 CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+88F text64 CODE >69:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+891 text64 CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+892 text64 CODE >75:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+894 text64 CODE >78:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+896 text64 CODE >81:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+898 text64 CODE >84:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+89A text64 CODE >87:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+8A2 text64 CODE >90:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+8A4 text64 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+8AC text64 CODE >96:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+8AF text64 CODE >97:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+151A text63 CODE >186:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+151A text63 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1522 text63 CODE >188:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+172D text62 CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+172D text62 CODE >69:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1730 text62 CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1731 text62 CODE >75:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1732 text62 CODE >78:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1734 text62 CODE >81:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1735 text62 CODE >84:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1737 text62 CODE >87:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1738 text62 CODE >90:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1740 text62 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1743 text62 CODE >94:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr2.c
+1523 text61 CODE >185:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1523 text61 CODE >186:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+152B text61 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B0 text60 CODE >64:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B0 text60 CODE >69:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B2 text60 CODE >72:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B3 text60 CODE >75:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B5 text60 CODE >78:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B7 text60 CODE >81:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8B9 text60 CODE >84:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8BB text60 CODE >87:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8C3 text60 CODE >90:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8C5 text60 CODE >93:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8CD text60 CODE >96:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+8D0 text60 CODE >97:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr3.c
+1701 text59 CODE >50:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1701 text59 CODE >52:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1704 text59 CODE >53:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1707 text59 CODE >54:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+170A text59 CODE >55:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+170D text59 CODE >56:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1710 text59 CODE >57:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1713 text59 CODE >58:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+1716 text59 CODE >59:D:\MyPicProjects\BluJoy.X\mcc_generated_files/mcc.c
+156E text58 CODE >40:D:\MyPicProjects\BluJoy.X\timers.c
+156E text58 CODE >41:D:\MyPicProjects\BluJoy.X\timers.c
+1577 text58 CODE >42:D:\MyPicProjects\BluJoy.X\timers.c
+1717 text57 CODE >44:D:\MyPicProjects\BluJoy.X\timers.c
+1717 text57 CODE >45:D:\MyPicProjects\BluJoy.X\timers.c
+172C text57 CODE >46:D:\MyPicProjects\BluJoy.X\timers.c
+9B5 text56 CODE >35:D:\MyPicProjects\BluJoy.X\timers.c
+9B5 text56 CODE >36:D:\MyPicProjects\BluJoy.X\timers.c
+9C1 text56 CODE >37:D:\MyPicProjects\BluJoy.X\timers.c
+9DF text56 CODE >38:D:\MyPicProjects\BluJoy.X\timers.c
+1682 text55 CODE >21:D:\MyPicProjects\BluJoy.X\configure.c
+1682 text55 CODE >22:D:\MyPicProjects\BluJoy.X\configure.c
+1685 text55 CODE >23:D:\MyPicProjects\BluJoy.X\configure.c
+1688 text55 CODE >24:D:\MyPicProjects\BluJoy.X\configure.c
+168A text55 CODE >25:D:\MyPicProjects\BluJoy.X\configure.c
+1696 text55 CODE >26:D:\MyPicProjects\BluJoy.X\configure.c
+850 text54 CODE >64:D:\MyPicProjects\BluJoy.X\configure.c
+850 text54 CODE >65:D:\MyPicProjects\BluJoy.X\configure.c
+858 text54 CODE >67:D:\MyPicProjects\BluJoy.X\configure.c
+85B text54 CODE >68:D:\MyPicProjects\BluJoy.X\configure.c
+85C text54 CODE >69:D:\MyPicProjects\BluJoy.X\configure.c
+85D text54 CODE >71:D:\MyPicProjects\BluJoy.X\configure.c
+860 text54 CODE >72:D:\MyPicProjects\BluJoy.X\configure.c
+862 text54 CODE >74:D:\MyPicProjects\BluJoy.X\configure.c
+86E text54 CODE >75:D:\MyPicProjects\BluJoy.X\configure.c
+1583 text53 CODE >15:D:\MyPicProjects\BluJoy.X\configure.c
+1583 text53 CODE >17:D:\MyPicProjects\BluJoy.X\configure.c
+158B text53 CODE >18:D:\MyPicProjects\BluJoy.X\configure.c
+158E text53 CODE >19:D:\MyPicProjects\BluJoy.X\configure.c
+1697 text52 CODE >67:D:\MyPicProjects\BluJoy.X\joystick.c
+1697 text52 CODE >68:D:\MyPicProjects\BluJoy.X\joystick.c
+169F text52 CODE >69:D:\MyPicProjects\BluJoy.X\joystick.c
+16A2 text52 CODE >70:D:\MyPicProjects\BluJoy.X\joystick.c
+16A5 text52 CODE >71:D:\MyPicProjects\BluJoy.X\joystick.c
+16A8 text52 CODE >72:D:\MyPicProjects\BluJoy.X\joystick.c
+16AA text52 CODE >73:D:\MyPicProjects\BluJoy.X\joystick.c
+16AB text52 CODE >74:D:\MyPicProjects\BluJoy.X\joystick.c
+6B4 text51 CODE >4:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6B6 text51 CODE >6:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6BA text51 CODE >13:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6C1 text51 CODE >14:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6C8 text51 CODE >15:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6D3 text51 CODE >16:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6DD text51 CODE >17:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6E4 text51 CODE >18:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6EC text51 CODE >19:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+6F7 text51 CODE >20:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+702 text51 CODE >21:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+70C text51 CODE >22:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+714 text51 CODE >23:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+71F text51 CODE >24:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+729 text51 CODE >31:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+736 text51 CODE >32:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+73A text51 CODE >33:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+73E text51 CODE >34:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+742 text51 CODE >86:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+758 text51 CODE >90:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memset.c
+939 text50 CODE >14:D:\MyPicProjects\BluJoy.X\serial.c
+939 text50 CODE >16:D:\MyPicProjects\BluJoy.X\serial.c
+945 text50 CODE >17:D:\MyPicProjects\BluJoy.X\serial.c
+94B text50 CODE >18:D:\MyPicProjects\BluJoy.X\serial.c
+951 text50 CODE >19:D:\MyPicProjects\BluJoy.X\serial.c
+952 text50 CODE >20:D:\MyPicProjects\BluJoy.X\serial.c
+958 text50 CODE >21:D:\MyPicProjects\BluJoy.X\serial.c
+959 text50 CODE >22:D:\MyPicProjects\BluJoy.X\serial.c
+95F text50 CODE >23:D:\MyPicProjects\BluJoy.X\serial.c
+17C7 text49 CODE >11:D:\MyPicProjects\BluJoy.X\timers.c
+17C7 text49 CODE >12:D:\MyPicProjects\BluJoy.X\timers.c
+17D0 text49 CODE >13:D:\MyPicProjects\BluJoy.X\timers.c
+17D9 text49 CODE >14:D:\MyPicProjects\BluJoy.X\timers.c
+17DB text49 CODE >15:D:\MyPicProjects\BluJoy.X\timers.c
+17E2 text49 CODE >16:D:\MyPicProjects\BluJoy.X\timers.c
+B73 text48 CODE >6:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B75 text48 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B79 text48 CODE >22:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B79 text48 CODE >24:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B7E text48 CODE >25:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B7F text48 CODE >26:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B83 text48 CODE >27:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B85 text48 CODE >28:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B86 text48 CODE >29:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B88 text48 CODE >30:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B94 text48 CODE >31:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+B99 text48 CODE >28:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+BA1 text48 CODE >36:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+15FD text47 CODE >104:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+15FF text47 CODE >107:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+1609 text47 CODE >108:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+160B text47 CODE >109:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+C62 text46 CODE >45:D:\MyPicProjects\BluJoy.X\ui.c
+C62 text46 CODE >46:D:\MyPicProjects\BluJoy.X\ui.c
+C64 text46 CODE >47:D:\MyPicProjects\BluJoy.X\ui.c
+C65 text46 CODE >48:D:\MyPicProjects\BluJoy.X\ui.c
+C66 text46 CODE >49:D:\MyPicProjects\BluJoy.X\ui.c
+C67 text46 CODE >50:D:\MyPicProjects\BluJoy.X\ui.c
+C68 text46 CODE >51:D:\MyPicProjects\BluJoy.X\ui.c
+C7B text46 CODE >52:D:\MyPicProjects\BluJoy.X\ui.c
+C7D text46 CODE >54:D:\MyPicProjects\BluJoy.X\ui.c
+C7E text46 CODE >55:D:\MyPicProjects\BluJoy.X\ui.c
+C7F text46 CODE >56:D:\MyPicProjects\BluJoy.X\ui.c
+C80 text46 CODE >58:D:\MyPicProjects\BluJoy.X\ui.c
+C88 text46 CODE >59:D:\MyPicProjects\BluJoy.X\ui.c
+C90 text46 CODE >61:D:\MyPicProjects\BluJoy.X\ui.c
+C97 text46 CODE >62:D:\MyPicProjects\BluJoy.X\ui.c
+C9F text46 CODE >63:D:\MyPicProjects\BluJoy.X\ui.c
+CA7 text46 CODE >64:D:\MyPicProjects\BluJoy.X\ui.c
+1475 text45 CODE >60:D:\MyPicProjects\BluJoy.X\configure.c
+1475 text45 CODE >61:D:\MyPicProjects\BluJoy.X\configure.c
+1477 text45 CODE >62:D:\MyPicProjects\BluJoy.X\configure.c
+E32 text44 CODE >57:D:\MyPicProjects\BluJoy.X\timers.c
+E32 text44 CODE >58:D:\MyPicProjects\BluJoy.X\timers.c
+E4E text44 CODE >60:D:\MyPicProjects\BluJoy.X\timers.c
+E68 text44 CODE >61:D:\MyPicProjects\BluJoy.X\timers.c
+E71 text44 CODE >63:D:\MyPicProjects\BluJoy.X\timers.c
+E8D text44 CODE >65:D:\MyPicProjects\BluJoy.X\timers.c
+CEF text43 CODE >39:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+CF1 text43 CODE >41:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+CF5 text43 CODE >69:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+CF5 text43 CODE >71:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+CFA text43 CODE >72:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+CFB text43 CODE >73:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D00 text43 CODE >74:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D02 text43 CODE >75:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D03 text43 CODE >76:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D04 text43 CODE >77:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D04 text43 CODE >79:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D09 text43 CODE >80:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D15 text43 CODE >81:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D1A text43 CODE >82:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D1C text43 CODE >83:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D20 text43 CODE >84:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D21 text43 CODE >85:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D21 text43 CODE >86:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D23 text43 CODE >87:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D25 text43 CODE >88:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D27 text43 CODE >89:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D28 text43 CODE >90:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D28 text43 CODE >92:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D2C text43 CODE >93:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D2D text43 CODE >94:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D32 text43 CODE >95:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D33 text43 CODE >76:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+D3B text43 CODE >101:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+15B6 text42 CODE >150:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+15B8 text42 CODE >152:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+15C2 text42 CODE >154:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\pic\__eeprom.c
+1744 text41 CODE >214:D:\MyPicProjects\BluJoy.X\ui.c
+1744 text41 CODE >215:D:\MyPicProjects\BluJoy.X\ui.c
+174A text41 CODE >216:D:\MyPicProjects\BluJoy.X\ui.c
+1758 text41 CODE >217:D:\MyPicProjects\BluJoy.X\ui.c
+175D text41 CODE >218:D:\MyPicProjects\BluJoy.X\ui.c
+915 text40 CODE >220:D:\MyPicProjects\BluJoy.X\ui.c
+915 text40 CODE >221:D:\MyPicProjects\BluJoy.X\ui.c
+91D text40 CODE >222:D:\MyPicProjects\BluJoy.X\ui.c
+927 text40 CODE >223:D:\MyPicProjects\BluJoy.X\ui.c
+92E text40 CODE >224:D:\MyPicProjects\BluJoy.X\ui.c
+938 text40 CODE >225:D:\MyPicProjects\BluJoy.X\ui.c
+814 text39 CODE >227:D:\MyPicProjects\BluJoy.X\ui.c
+814 text39 CODE >230:D:\MyPicProjects\BluJoy.X\ui.c
+817 text39 CODE >231:D:\MyPicProjects\BluJoy.X\ui.c
+826 text39 CODE >232:D:\MyPicProjects\BluJoy.X\ui.c
+831 text39 CODE >233:D:\MyPicProjects\BluJoy.X\ui.c
+17E3 text38 CODE >179:D:\MyPicProjects\BluJoy.X\ui.c
+17E3 text38 CODE >180:D:\MyPicProjects\BluJoy.X\ui.c
+17EA text38 CODE >181:D:\MyPicProjects\BluJoy.X\ui.c
+17F2 text38 CODE >182:D:\MyPicProjects\BluJoy.X\ui.c
+17FF text38 CODE >183:D:\MyPicProjects\BluJoy.X\ui.c
+DDE text37 CODE >5:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DDE text37 CODE >12:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DE0 text37 CODE >13:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DE4 text37 CODE >14:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DE9 text37 CODE >15:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DEB text37 CODE >17:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DEF text37 CODE >18:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DF4 text37 CODE >19:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DFA text37 CODE >20:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DFC text37 CODE >21:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+DFD text37 CODE >22:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E02 text37 CODE >23:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E06 text37 CODE >21:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E0A text37 CODE >26:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E14 text37 CODE >27:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E18 text37 CODE >28:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E1D text37 CODE >29:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E23 text37 CODE >31:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E28 text37 CODE >32:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E2D text37 CODE >33:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+E31 text37 CODE >34:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\awmod.c
+960 text36 CODE >169:D:\MyPicProjects\BluJoy.X\ui.c
+960 text36 CODE >170:D:\MyPicProjects\BluJoy.X\ui.c
+974 text36 CODE >171:D:\MyPicProjects\BluJoy.X\ui.c
+97C text36 CODE >172:D:\MyPicProjects\BluJoy.X\ui.c
+989 text36 CODE >173:D:\MyPicProjects\BluJoy.X\ui.c
+1478 text35 CODE >105:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1478 text35 CODE >108:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+147A text35 CODE >109:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+148C text34 CODE >62:D:\MyPicProjects\BluJoy.X\joystick.c
+148C text34 CODE >63:D:\MyPicProjects\BluJoy.X\joystick.c
+148F text34 CODE >64:D:\MyPicProjects\BluJoy.X\joystick.c
+1490 text34 CODE >65:D:\MyPicProjects\BluJoy.X\joystick.c
+16AC text33 CODE >28:D:\MyPicProjects\BluJoy.X\configure.c
+16AC text33 CODE >29:D:\MyPicProjects\BluJoy.X\configure.c
+16AF text33 CODE >30:D:\MyPicProjects\BluJoy.X\configure.c
+16B2 text33 CODE >31:D:\MyPicProjects\BluJoy.X\configure.c
+16B4 text33 CODE >32:D:\MyPicProjects\BluJoy.X\configure.c
+16C0 text33 CODE >33:D:\MyPicProjects\BluJoy.X\configure.c
+ABC text32 CODE >151:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+ABC text32 CODE >153:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+ABC text32 CODE >155:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AC2 text32 CODE >159:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+ACB text32 CODE >161:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AD8 text32 CODE >162:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+ADE text32 CODE >164:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+ADF text32 CODE >166:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AE1 text32 CODE >167:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AE4 text32 CODE >168:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AE6 text32 CODE >170:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+AE8 text32 CODE >171:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+152C text31 CODE >137:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+152C text31 CODE >139:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1534 text31 CODE >140:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+E8E text30 CODE >74:D:\MyPicProjects\BluJoy.X\serial.c
+E90 text30 CODE >75:D:\MyPicProjects\BluJoy.X\serial.c
+E9C text30 CODE >76:D:\MyPicProjects\BluJoy.X\serial.c
+E9D text30 CODE >79:D:\MyPicProjects\BluJoy.X\serial.c
+E9E text30 CODE >80:D:\MyPicProjects\BluJoy.X\serial.c
+EA6 text30 CODE >81:D:\MyPicProjects\BluJoy.X\serial.c
+EB5 text30 CODE >82:D:\MyPicProjects\BluJoy.X\serial.c
+EB9 text30 CODE >79:D:\MyPicProjects\BluJoy.X\serial.c
+EE8 text30 CODE >85:D:\MyPicProjects\BluJoy.X\serial.c
+EE9 text30 CODE >86:D:\MyPicProjects\BluJoy.X\serial.c
+8D1 text29 CODE >59:D:\MyPicProjects\BluJoy.X\serial.c
+8D1 text29 CODE >60:D:\MyPicProjects\BluJoy.X\serial.c
+8D2 text29 CODE >61:D:\MyPicProjects\BluJoy.X\serial.c
+8D5 text29 CODE >62:D:\MyPicProjects\BluJoy.X\serial.c
+8DD text29 CODE >63:D:\MyPicProjects\BluJoy.X\serial.c
+8E9 text29 CODE >60:D:\MyPicProjects\BluJoy.X\serial.c
+8E9 text29 CODE >64:D:\MyPicProjects\BluJoy.X\serial.c
+8F1 text29 CODE >65:D:\MyPicProjects\BluJoy.X\serial.c
+A63 text28 CODE >173:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A65 text28 CODE >175:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A6A text28 CODE >179:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A6F text28 CODE >181:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A73 text28 CODE >182:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A74 text28 CODE >183:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A74 text28 CODE >185:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A75 text28 CODE >186:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A83 text28 CODE >187:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A89 text28 CODE >189:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A8A text28 CODE >191:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A8C text28 CODE >193:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+A8E text28 CODE >194:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1535 text27 CODE >132:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+1535 text27 CODE >134:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+153D text27 CODE >135:D:\MyPicProjects\BluJoy.X\mcc_generated_files/eusart1.c
+B45 text26 CODE >42:D:\MyPicProjects\BluJoy.X\serial.c
+B45 text26 CODE >43:D:\MyPicProjects\BluJoy.X\serial.c
+B52 text26 CODE >46:D:\MyPicProjects\BluJoy.X\serial.c
+B5A text26 CODE >49:D:\MyPicProjects\BluJoy.X\serial.c
+B68 text26 CODE >50:D:\MyPicProjects\BluJoy.X\serial.c
+B6A text26 CODE >44:D:\MyPicProjects\BluJoy.X\serial.c
+B6F text26 CODE >52:D:\MyPicProjects\BluJoy.X\serial.c
+B71 text26 CODE >55:D:\MyPicProjects\BluJoy.X\serial.c
+B72 text26 CODE >57:D:\MyPicProjects\BluJoy.X\serial.c
+175E text25 CODE >5:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+175E text25 CODE >7:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1763 text25 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1764 text25 CODE >9:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1768 text25 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1771 text25 CODE >11:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1777 text25 CODE >12:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strlen.c
+1778 text24 CODE >37:D:\MyPicProjects\BluJoy.X\serial.c
+1778 text24 CODE >38:D:\MyPicProjects\BluJoy.X\serial.c
+177B text24 CODE >39:D:\MyPicProjects\BluJoy.X\serial.c
+1791 text24 CODE >40:D:\MyPicProjects\BluJoy.X\serial.c
+1792 text23 CODE >3:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+1794 text23 CODE >5:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+1794 text23 CODE >6:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+179E text23 CODE >7:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+17A0 text23 CODE >9:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+17AA text23 CODE >10:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+17AB text23 CODE >11:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strchr.c
+EEA text22 CODE >3:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+EEC text22 CODE >5:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+EF4 text22 CODE >6:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+F03 text22 CODE >7:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+F37 text22 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+F45 text22 CODE >9:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strncmp.c
+D3C text21 CODE >4:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D3E text21 CODE >6:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D44 text21 CODE >7:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D50 text21 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D51 text21 CODE >9:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D64 text21 CODE >10:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D66 text21 CODE >11:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D7A text21 CODE >8:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D88 text21 CODE >14:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+D89 text21 CODE >15:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\strstr.c
+490 text20 CODE >185:D:\MyPicProjects\BluJoy.X\configure.c
+490 text20 CODE >188:D:\MyPicProjects\BluJoy.X\configure.c
+493 text20 CODE >189:D:\MyPicProjects\BluJoy.X\configure.c
+49B text20 CODE >190:D:\MyPicProjects\BluJoy.X\configure.c
+4A7 text20 CODE >192:D:\MyPicProjects\BluJoy.X\configure.c
+4AF text20 CODE >193:D:\MyPicProjects\BluJoy.X\configure.c
+4BB text20 CODE >194:D:\MyPicProjects\BluJoy.X\configure.c
+4C3 text20 CODE >195:D:\MyPicProjects\BluJoy.X\configure.c
+4CF text20 CODE >196:D:\MyPicProjects\BluJoy.X\configure.c
+4D7 text20 CODE >197:D:\MyPicProjects\BluJoy.X\configure.c
+4E3 text20 CODE >198:D:\MyPicProjects\BluJoy.X\configure.c
+4EB text20 CODE >199:D:\MyPicProjects\BluJoy.X\configure.c
+4F7 text20 CODE >200:D:\MyPicProjects\BluJoy.X\configure.c
+4FF text20 CODE >202:D:\MyPicProjects\BluJoy.X\configure.c
+507 text20 CODE >203:D:\MyPicProjects\BluJoy.X\configure.c
+518 text20 CODE >204:D:\MyPicProjects\BluJoy.X\configure.c
+53F text20 CODE >205:D:\MyPicProjects\BluJoy.X\configure.c
+54B text20 CODE >207:D:\MyPicProjects\BluJoy.X\configure.c
+54E text20 CODE >208:D:\MyPicProjects\BluJoy.X\configure.c
+7FD text19 CODE >99:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+7FD text19 CODE >102:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+7FF text19 CODE >103:D:\MyPicProjects\BluJoy.X\mcc_generated_files/tmr1.c
+1660 text18 CODE >49:D:\MyPicProjects\BluJoy.X\timers.c
+1660 text18 CODE >50:D:\MyPicProjects\BluJoy.X\timers.c
+1670 text18 CODE >51:D:\MyPicProjects\BluJoy.X\timers.c
+153E text17 CODE >56:D:\MyPicProjects\BluJoy.X\joystick.c
+153E text17 CODE >57:D:\MyPicProjects\BluJoy.X\joystick.c
+1540 text17 CODE >58:D:\MyPicProjects\BluJoy.X\joystick.c
+1543 text17 CODE >59:D:\MyPicProjects\BluJoy.X\joystick.c
+1546 text17 CODE >60:D:\MyPicProjects\BluJoy.X\joystick.c
+1578 text16 CODE >26:D:\MyPicProjects\BluJoy.X\timers.c
+1578 text16 CODE >27:D:\MyPicProjects\BluJoy.X\timers.c
+157E text16 CODE >28:D:\MyPicProjects\BluJoy.X\timers.c
+157F text16 CODE >29:D:\MyPicProjects\BluJoy.X\timers.c
+1581 text16 CODE >31:D:\MyPicProjects\BluJoy.X\timers.c
+1582 text16 CODE >33:D:\MyPicProjects\BluJoy.X\timers.c
+16C1 text15 CODE >42:D:\MyPicProjects\BluJoy.X\configure.c
+16C1 text15 CODE >43:D:\MyPicProjects\BluJoy.X\configure.c
+16C4 text15 CODE >45:D:\MyPicProjects\BluJoy.X\configure.c
+16C7 text15 CODE >46:D:\MyPicProjects\BluJoy.X\configure.c
+16C9 text15 CODE >47:D:\MyPicProjects\BluJoy.X\configure.c
+16D5 text15 CODE >48:D:\MyPicProjects\BluJoy.X\configure.c
+14A9 text14 CODE >268:D:\MyPicProjects\BluJoy.X\ui.c
+14A9 text14 CODE >269:D:\MyPicProjects\BluJoy.X\ui.c
+14AF text14 CODE >270:D:\MyPicProjects\BluJoy.X\ui.c
+14B0 text13 CODE >272:D:\MyPicProjects\BluJoy.X\ui.c
+14B0 text13 CODE >273:D:\MyPicProjects\BluJoy.X\ui.c
+14B6 text13 CODE >274:D:\MyPicProjects\BluJoy.X\ui.c
+16D6 text12 CODE >35:D:\MyPicProjects\BluJoy.X\configure.c
+16D6 text12 CODE >36:D:\MyPicProjects\BluJoy.X\configure.c
+16D9 text12 CODE >37:D:\MyPicProjects\BluJoy.X\configure.c
+16DC text12 CODE >38:D:\MyPicProjects\BluJoy.X\configure.c
+16DE text12 CODE >39:D:\MyPicProjects\BluJoy.X\configure.c
+16EA text12 CODE >40:D:\MyPicProjects\BluJoy.X\configure.c
+7CD text11 CODE >4:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7CF text11 CODE >11:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7D3 text11 CODE >12:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7D7 text11 CODE >13:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7D8 text11 CODE >14:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7E4 text11 CODE >15:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7F0 text11 CODE >13:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7F0 text11 CODE >16:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+7FC text11 CODE >18:D:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\memcpy.c
+3BD text10 CODE >128:D:\MyPicProjects\BluJoy.X\configure.c
+3BF text10 CODE >132:D:\MyPicProjects\BluJoy.X\configure.c
+3C4 text10 CODE >133:D:\MyPicProjects\BluJoy.X\configure.c
+3C8 text10 CODE >135:D:\MyPicProjects\BluJoy.X\configure.c
+3CB text10 CODE >137:D:\MyPicProjects\BluJoy.X\configure.c
+3D3 text10 CODE >138:D:\MyPicProjects\BluJoy.X\configure.c
+3DF text10 CODE >139:D:\MyPicProjects\BluJoy.X\configure.c
+3EB text10 CODE >140:D:\MyPicProjects\BluJoy.X\configure.c
+3F1 text10 CODE >141:D:\MyPicProjects\BluJoy.X\configure.c
+3F9 text10 CODE >143:D:\MyPicProjects\BluJoy.X\configure.c
+400 text10 CODE >145:D:\MyPicProjects\BluJoy.X\configure.c
+411 text10 CODE >146:D:\MyPicProjects\BluJoy.X\configure.c
+438 text10 CODE >150:D:\MyPicProjects\BluJoy.X\configure.c
+440 text10 CODE >151:D:\MyPicProjects\BluJoy.X\configure.c
+451 text10 CODE >152:D:\MyPicProjects\BluJoy.X\configure.c
+45D text10 CODE >154:D:\MyPicProjects\BluJoy.X\configure.c
+462 text10 CODE >155:D:\MyPicProjects\BluJoy.X\configure.c
+46F text10 CODE >156:D:\MyPicProjects\BluJoy.X\configure.c
+480 text10 CODE >159:D:\MyPicProjects\BluJoy.X\configure.c
+48F text10 CODE >162:D:\MyPicProjects\BluJoy.X\configure.c
+759 text9 CODE >110:D:\MyPicProjects\BluJoy.X\configure.c
+759 text9 CODE >113:D:\MyPicProjects\BluJoy.X\configure.c
+75C text9 CODE >114:D:\MyPicProjects\BluJoy.X\configure.c
+764 text9 CODE >115:D:\MyPicProjects\BluJoy.X\configure.c
+774 text9 CODE >117:D:\MyPicProjects\BluJoy.X\configure.c
+77C text9 CODE >118:D:\MyPicProjects\BluJoy.X\configure.c
+788 text9 CODE >119:D:\MyPicProjects\BluJoy.X\configure.c
+790 text9 CODE >120:D:\MyPicProjects\BluJoy.X\configure.c
+79C text9 CODE >121:D:\MyPicProjects\BluJoy.X\configure.c
+7A4 text9 CODE >122:D:\MyPicProjects\BluJoy.X\configure.c
+7B0 text9 CODE >123:D:\MyPicProjects\BluJoy.X\configure.c
+7B8 text9 CODE >124:D:\MyPicProjects\BluJoy.X\configure.c
+7C4 text9 CODE >125:D:\MyPicProjects\BluJoy.X\configure.c
+7CC text9 CODE >126:D:\MyPicProjects\BluJoy.X\configure.c
+54F text8 CODE >164:D:\MyPicProjects\BluJoy.X\configure.c
+551 text8 CODE >166:D:\MyPicProjects\BluJoy.X\configure.c
+556 text8 CODE >167:D:\MyPicProjects\BluJoy.X\configure.c
+55A text8 CODE >169:D:\MyPicProjects\BluJoy.X\configure.c
+55D text8 CODE >171:D:\MyPicProjects\BluJoy.X\configure.c
+569 text8 CODE >172:D:\MyPicProjects\BluJoy.X\configure.c
+571 text8 CODE >173:D:\MyPicProjects\BluJoy.X\configure.c
+582 text8 CODE >174:D:\MyPicProjects\BluJoy.X\configure.c
+5A9 text8 CODE >176:D:\MyPicProjects\BluJoy.X\configure.c
+5B5 text8 CODE >177:D:\MyPicProjects\BluJoy.X\configure.c
+5BF text8 CODE >178:D:\MyPicProjects\BluJoy.X\configure.c
+5C6 text8 CODE >179:D:\MyPicProjects\BluJoy.X\configure.c
+5D4 text8 CODE >180:D:\MyPicProjects\BluJoy.X\configure.c
+5E5 text8 CODE >181:D:\MyPicProjects\BluJoy.X\configure.c
+60C text8 CODE >183:D:\MyPicProjects\BluJoy.X\configure.c
+60D text7 CODE >78:D:\MyPicProjects\BluJoy.X\configure.c
+60D text7 CODE >79:D:\MyPicProjects\BluJoy.X\configure.c
+610 text7 CODE >82:D:\MyPicProjects\BluJoy.X\configure.c
+616 text7 CODE >83:D:\MyPicProjects\BluJoy.X\configure.c
+61D text7 CODE >86:D:\MyPicProjects\BluJoy.X\configure.c
+624 text7 CODE >87:D:\MyPicProjects\BluJoy.X\configure.c
+62A text7 CODE >90:D:\MyPicProjects\BluJoy.X\configure.c
+62D text7 CODE >92:D:\MyPicProjects\BluJoy.X\configure.c
+62E text7 CODE >93:D:\MyPicProjects\BluJoy.X\configure.c
+636 text7 CODE >94:D:\MyPicProjects\BluJoy.X\configure.c
+648 text7 CODE >95:D:\MyPicProjects\BluJoy.X\configure.c
+656 text7 CODE >96:D:\MyPicProjects\BluJoy.X\configure.c
+667 text7 CODE >98:D:\MyPicProjects\BluJoy.X\configure.c
+678 text7 CODE >100:D:\MyPicProjects\BluJoy.X\configure.c
+688 text7 CODE >101:D:\MyPicProjects\BluJoy.X\configure.c
+688 text7 CODE >102:D:\MyPicProjects\BluJoy.X\configure.c
+694 text7 CODE >92:D:\MyPicProjects\BluJoy.X\configure.c
+6A4 text7 CODE >106:D:\MyPicProjects\BluJoy.X\configure.c
+6A7 text7 CODE >107:D:\MyPicProjects\BluJoy.X\configure.c
+6B3 text7 CODE >108:D:\MyPicProjects\BluJoy.X\configure.c
+A2 text6 CODE >66:D:\MyPicProjects\BluJoy.X\ui.c
+A2 text6 CODE >69:D:\MyPicProjects\BluJoy.X\ui.c
+A3 text6 CODE >71:D:\MyPicProjects\BluJoy.X\ui.c
+AB text6 CODE >72:D:\MyPicProjects\BluJoy.X\ui.c
+BE text6 CODE >73:D:\MyPicProjects\BluJoy.X\ui.c
+C3 text6 CODE >74:D:\MyPicProjects\BluJoy.X\ui.c
+CC text6 CODE >75:D:\MyPicProjects\BluJoy.X\ui.c
+DF text6 CODE >76:D:\MyPicProjects\BluJoy.X\ui.c
+E5 text6 CODE >81:D:\MyPicProjects\BluJoy.X\ui.c
+ED text6 CODE >82:D:\MyPicProjects\BluJoy.X\ui.c
+112 text6 CODE >83:D:\MyPicProjects\BluJoy.X\ui.c
+114 text6 CODE >84:D:\MyPicProjects\BluJoy.X\ui.c
+124 text6 CODE >88:D:\MyPicProjects\BluJoy.X\ui.c
+127 text6 CODE >93:D:\MyPicProjects\BluJoy.X\ui.c
+12F text6 CODE >94:D:\MyPicProjects\BluJoy.X\ui.c
+154 text6 CODE >95:D:\MyPicProjects\BluJoy.X\ui.c
+15A text6 CODE >96:D:\MyPicProjects\BluJoy.X\ui.c
+16A text6 CODE >106:D:\MyPicProjects\BluJoy.X\ui.c
+172 text6 CODE >107:D:\MyPicProjects\BluJoy.X\ui.c
+175 text6 CODE >108:D:\MyPicProjects\BluJoy.X\ui.c
+177 text6 CODE >110:D:\MyPicProjects\BluJoy.X\ui.c
+17F text6 CODE >111:D:\MyPicProjects\BluJoy.X\ui.c
+18F text6 CODE >112:D:\MyPicProjects\BluJoy.X\ui.c
+196 text6 CODE >118:D:\MyPicProjects\BluJoy.X\ui.c
+19E text6 CODE >119:D:\MyPicProjects\BluJoy.X\ui.c
+1A1 text6 CODE >120:D:\MyPicProjects\BluJoy.X\ui.c
+1A3 text6 CODE >122:D:\MyPicProjects\BluJoy.X\ui.c
+1AC text6 CODE >129:D:\MyPicProjects\BluJoy.X\ui.c
+1CF text6 CODE >130:D:\MyPicProjects\BluJoy.X\ui.c
+1DE text6 CODE >131:D:\MyPicProjects\BluJoy.X\ui.c
+1E4 text6 CODE >134:D:\MyPicProjects\BluJoy.X\ui.c
+1F4 text6 CODE >135:D:\MyPicProjects\BluJoy.X\ui.c
+1F7 text6 CODE >136:D:\MyPicProjects\BluJoy.X\ui.c
+1FA text6 CODE >137:D:\MyPicProjects\BluJoy.X\ui.c
+1FE text6 CODE >144:D:\MyPicProjects\BluJoy.X\ui.c
+20E text6 CODE >145:D:\MyPicProjects\BluJoy.X\ui.c
+211 text6 CODE >147:D:\MyPicProjects\BluJoy.X\ui.c
+215 text6 CODE >155:D:\MyPicProjects\BluJoy.X\ui.c
+236 text6 CODE >158:D:\MyPicProjects\BluJoy.X\ui.c
+23E text6 CODE >159:D:\MyPicProjects\BluJoy.X\ui.c
+251 text6 CODE >160:D:\MyPicProjects\BluJoy.X\ui.c
+261 text6 CODE >161:D:\MyPicProjects\BluJoy.X\ui.c
+272 text6 CODE >162:D:\MyPicProjects\BluJoy.X\ui.c
+282 text6 CODE >163:D:\MyPicProjects\BluJoy.X\ui.c
+293 text6 CODE >165:D:\MyPicProjects\BluJoy.X\ui.c
+2A3 text6 CODE >167:D:\MyPicProjects\BluJoy.X\ui.c
+832 text5 CODE >200:D:\MyPicProjects\BluJoy.X\ui.c
+832 text5 CODE >201:D:\MyPicProjects\BluJoy.X\ui.c
+832 text5 CODE >203:D:\MyPicProjects\BluJoy.X\ui.c
+837 text5 CODE >204:D:\MyPicProjects\BluJoy.X\ui.c
+83B text5 CODE >205:D:\MyPicProjects\BluJoy.X\ui.c
+846 text5 CODE >206:D:\MyPicProjects\BluJoy.X\ui.c
+84F text5 CODE >207:D:\MyPicProjects\BluJoy.X\ui.c
+1671 text4 CODE >53:D:\MyPicProjects\BluJoy.X\timers.c
+1671 text4 CODE >54:D:\MyPicProjects\BluJoy.X\timers.c
+1681 text4 CODE >55:D:\MyPicProjects\BluJoy.X\timers.c
+9E0 text3 CODE >189:D:\MyPicProjects\BluJoy.X\ui.c
+9E0 text3 CODE >190:D:\MyPicProjects\BluJoy.X\ui.c
+9E2 text3 CODE >192:D:\MyPicProjects\BluJoy.X\ui.c
+9E3 text3 CODE >193:D:\MyPicProjects\BluJoy.X\ui.c
+9E7 text3 CODE >194:D:\MyPicProjects\BluJoy.X\ui.c
+9F2 text3 CODE >195:D:\MyPicProjects\BluJoy.X\ui.c
+9FE text3 CODE >196:D:\MyPicProjects\BluJoy.X\ui.c
+9FF text3 CODE >197:D:\MyPicProjects\BluJoy.X\ui.c
+A0A text3 CODE >198:D:\MyPicProjects\BluJoy.X\ui.c
+1483 text2 CODE >55:D:\MyPicProjects\BluJoy.X\configure.c
+1483 text2 CODE >56:D:\MyPicProjects\BluJoy.X\configure.c
+1485 text2 CODE >57:D:\MyPicProjects\BluJoy.X\configure.c
+1486 text2 CODE >58:D:\MyPicProjects\BluJoy.X\configure.c
+1547 text1 CODE >50:D:\MyPicProjects\BluJoy.X\configure.c
+154B text1 CODE >51:D:\MyPicProjects\BluJoy.X\configure.c
+154D text1 CODE >52:D:\MyPicProjects\BluJoy.X\configure.c
+154F text1 CODE >53:D:\MyPicProjects\BluJoy.X\configure.c
+FA3 maintext CODE >20:D:\MyPicProjects\BluJoy.X\main.c
+FA3 maintext CODE >23:D:\MyPicProjects\BluJoy.X\main.c
+FA6 maintext CODE >24:D:\MyPicProjects\BluJoy.X\main.c
+FA9 maintext CODE >25:D:\MyPicProjects\BluJoy.X\main.c
+FAC maintext CODE >26:D:\MyPicProjects\BluJoy.X\main.c
+FAF maintext CODE >27:D:\MyPicProjects\BluJoy.X\main.c
+FB2 maintext CODE >30:D:\MyPicProjects\BluJoy.X\main.c
+FB3 maintext CODE >33:D:\MyPicProjects\BluJoy.X\main.c
+FB4 maintext CODE >35:D:\MyPicProjects\BluJoy.X\main.c
+FB7 maintext CODE >37:D:\MyPicProjects\BluJoy.X\main.c
+FBA maintext CODE >38:D:\MyPicProjects\BluJoy.X\main.c
+FBD maintext CODE >40:D:\MyPicProjects\BluJoy.X\main.c
+FC9 maintext CODE >41:D:\MyPicProjects\BluJoy.X\main.c
+FCC maintext CODE >44:D:\MyPicProjects\BluJoy.X\main.c
+FCF maintext CODE >47:D:\MyPicProjects\BluJoy.X\main.c
+FDB maintext CODE >48:D:\MyPicProjects\BluJoy.X\main.c
+FDE maintext CODE >49:D:\MyPicProjects\BluJoy.X\main.c
+FE1 maintext CODE >51:D:\MyPicProjects\BluJoy.X\main.c
+FE2 maintext CODE >52:D:\MyPicProjects\BluJoy.X\main.c
+FE3 maintext CODE >54:D:\MyPicProjects\BluJoy.X\main.c
+FEB maintext CODE >56:D:\MyPicProjects\BluJoy.X\main.c
+FEE maintext CODE >57:D:\MyPicProjects\BluJoy.X\main.c
+FF1 maintext CODE >58:D:\MyPicProjects\BluJoy.X\main.c
+FF1 maintext CODE >60:D:\MyPicProjects\BluJoy.X\main.c
+1497 clrtext CODE >13761:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+1497 clrtext CODE >13762:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+1498 clrtext CODE >13763:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+1498 clrtext CODE >13764:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+1499 clrtext CODE >13765:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149A clrtext CODE >13766:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149B clrtext CODE >13767:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149C clrtext CODE >13768:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149D inittext CODE >13722:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149D inittext CODE >13723:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149E inittext CODE >13724:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149E inittext CODE >13725:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+149F inittext CODE >13726:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+14A0 inittext CODE >13727:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+14A1 inittext CODE >13728:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+14A2 inittext CODE >13729:C:\Users\Phil\AppData\Local\Temp\s1b9jk.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 3 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_SetSlaveTXRX 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_StopTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+i1_sendBTBuffer 1416 0 CODE 0 text101 dist/default/production\BluJoy.X.production.o
+_initConfiguration 2B06 0 CODE 0 text53 dist/default/production\BluJoy.X.production.o
+__Hspace_0 1858 0 ABS 0 - -
+__Hspace_1 240 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 2 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+TMR3_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+pulseLEDColor@offTimeMS 3A 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_showShutdown 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+blinkLEDColor@blinks 3E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_TMR3_SetInterruptHandler 2A58 0 CODE 0 text61 dist/default/production\BluJoy.X.production.o
+strncmp@_l 2B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strncmp@_r 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_ofi1_EUSART1_is_rx_ready 2992 0 CODE 0 text96 dist/default/production\BluJoy.X.production.o
+EUSART1_SetErrorHandler@interruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_SetMasterTXRX 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_limitedAxialFP 4B 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_EUSART1_Initialize 183C 0 CODE 0 text71 dist/default/production\BluJoy.X.production.o
+__size_of_IOCCF2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCF2_InterruptHandler C6 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+_setBTBaudRatesTo38400 EB2 0 CODE 0 text9 dist/default/production\BluJoy.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_EEPROM_uiBrakeMode 0 1E000 EEDATA 3 bssEEDATA dist/default/production\BluJoy.X.production.o
+_T1CONbits 20E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD_Initialize 2AC8 0 CODE 0 text66 dist/default/production\BluJoy.X.production.o
+__end_of_PIN_MANAGER_IOC 2C5A 0 CODE 0 text107 dist/default/production\BluJoy.X.production.o
+getBTAddress@MAC 41 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_DefaultErrorHandler 28FE 0 CODE 0 text117 dist/default/production\BluJoy.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_LATA 18 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_LATB 19 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_LATC 1A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD6 79C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PMD7 79D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2PR 28D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR2 28C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_WPUA 1F39 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_WPUB 1F44 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_WPUC 1F4F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+_main 1F46 0 CODE 0 maintext dist/default/production\BluJoy.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_getBTAddress 77A 0 CODE 0 text10 dist/default/production\BluJoy.X.production.o
+_speedBuffer B6 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+start B6 0 CODE 0 init C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+__end_of_SetSlaveTXRX 2D2E 0 CODE 0 text55 dist/default/production\BluJoy.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of___ctoee 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of___eetoc 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_is_rx_ready 2A6A 0 CODE 0 text31 dist/default/production\BluJoy.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hstringtext10 0 0 ABS 0 stringtext10 -
+__Hstringtext11 0 0 ABS 0 stringtext11 -
+__Hstringtext12 0 0 ABS 0 stringtext12 -
+__Hstringtext13 0 0 ABS 0 stringtext13 -
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_disableJoystick 2918 0 CODE 0 text34 dist/default/production\BluJoy.X.production.o
+_EEPROM_uiSpeedMode 2 1E000 EEDATA 3 bssEEDATA dist/default/production\BluJoy.X.production.o
+__end_of_showShutdown 10A0 0 CODE 0 text5 dist/default/production\BluJoy.X.production.o
+i1_EUSART1_is_rx_ready 2980 0 CODE 0 text96 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_Receive_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+limitSpeed@accelFP 74 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_SetTxInterruptHandler 29EC 0 CODE 0 text72 dist/default/production\BluJoy.X.production.o
+_accelLimitYawStopFP DC 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+_topAxialSpeedFP 64 0 BANK0 1 dataBANK0 dist/default/production\BluJoy.X.production.o
+_limitedYawFP 49 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__HbssEEDATA 0 0 ABS 0 bssEEDATA -
+_flushBTRXbuffer 11A2 0 CODE 0 text29 dist/default/production\BluJoy.X.production.o
+__size_of___eecpymem 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_bumpUIBrakeMode 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+pulseLEDColor@RGB 36 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_showStartup 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_SetMasterTXRX 2DD6 0 CODE 0 text12 dist/default/production\BluJoy.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_IOCCF0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_StartTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_calculateMotion 162E 0 CODE 0 text105 dist/default/production\BluJoy.X.production.o
+___awmod@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_TMR2_Initialize 2E5A 0 CODE 0 text62 dist/default/production\BluJoy.X.production.o
+_setBTTimeout 2CE2 0 CODE 0 text4 dist/default/production\BluJoy.X.production.o
+___memcpyee 19DE 0 CODE 0 text43 dist/default/production\BluJoy.X.production.o
+showStartup@ramp 37 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1_getTicks 2AA0 0 CODE 0 text95 dist/default/production\BluJoy.X.production.o
+__end_ofi1_sendBTBuffer 146E 0 CODE 0 text101 dist/default/production\BluJoy.X.production.o
+__size_of_SetDualReceive 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1_EUSART1_Read 146E 0 CODE 0 text97 dist/default/production\BluJoy.X.production.o
+__size_of_initSerial 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_readJoystick 548 0 CODE 0 text91 dist/default/production\BluJoy.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+__ptext100 1004 0 CODE 0 text100 dist/default/production\BluJoy.X.production.o
+__ptext101 1416 0 CODE 0 text101 dist/default/production\BluJoy.X.production.o
+__ptext102 296E 0 CODE 0 text102 dist/default/production\BluJoy.X.production.o
+__ptext103 1314 0 CODE 0 text103 dist/default/production\BluJoy.X.production.o
+__ptext104 1E8C 0 CODE 0 text104 dist/default/production\BluJoy.X.production.o
+__ptext105 15D2 0 CODE 0 text105 dist/default/production\BluJoy.X.production.o
+__ptext106 1B14 0 CODE 0 text106 dist/default/production\BluJoy.X.production.o
+__ptext107 2C38 0 CODE 0 text107 dist/default/production\BluJoy.X.production.o
+__ptext108 2BDC 0 CODE 0 text108 dist/default/production\BluJoy.X.production.o
+__ptext109 1000 0 CODE 0 text109 dist/default/production\BluJoy.X.production.o
+__ptext110 290E 0 CODE 0 text110 dist/default/production\BluJoy.X.production.o
+__ptext111 28E8 0 CODE 0 text111 dist/default/production\BluJoy.X.production.o
+__ptext112 2BBE 0 CODE 0 text112 dist/default/production\BluJoy.X.production.o
+__ptext113 11E4 0 CODE 0 text113 dist/default/production\BluJoy.X.production.o
+__ptext114 17BA 0 CODE 0 text114 dist/default/production\BluJoy.X.production.o
+__ptext115 28FE 0 CODE 0 text115 dist/default/production\BluJoy.X.production.o
+__ptext116 28E6 0 CODE 0 text116 dist/default/production\BluJoy.X.production.o
+__ptext117 28F6 0 CODE 0 text117 dist/default/production\BluJoy.X.production.o
+__ptext118 2F58 0 CODE 0 text118 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_bumpUISpeedMode 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCF0_DefaultInterruptHandler 1000 0 CODE 0 text109 dist/default/production\BluJoy.X.production.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+__size_of_timeKeeper 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_limitSpeed 1B14 0 CODE 0 text106 dist/default/production\BluJoy.X.production.o
+_IOCCF0_ISR 2BBE 0 CODE 0 text112 dist/default/production\BluJoy.X.production.o
+_IOCCF2_ISR 2BDC 0 CODE 0 text108 dist/default/production\BluJoy.X.production.o
+__size_of_initTimers 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_ofi1_setBTTimeout 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__LbssEEDATA 0 0 ABS 0 bssEEDATA -
+_RC1STAbits 11D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_timeoutSequence 54 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+int16ToBytes@ndata 72 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_getBTAddress 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+?_getTicksSince 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_UI_PWM_handler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PIN_MANAGER_IOC 2C38 0 CODE 0 text107 dist/default/production\BluJoy.X.production.o
+__end_of_PMD_Initialize 2ADC 0 CODE 0 text66 dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+BTTimeRemaining@elapsed 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+EUSART1_Write@txData 27 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_pairBluetoothDevices C1A 0 CODE 0 text7 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_RxDataHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCF0_InterruptHandler C8 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+blinkLEDColor@blink 40 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_turnPowerOff 2906 0 CODE 0 text2 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_DefaultInterruptHandler 1004 0 CODE 0 text90 dist/default/production\BluJoy.X.production.o
+_EUSART1_Receive_ISR 17BA 0 CODE 0 text114 dist/default/production\BluJoy.X.production.o
+__end_of_TMR3_Initialize 11A2 0 CODE 0 text60 dist/default/production\BluJoy.X.production.o
+_dutyCycle 50 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_TMR3_WriteTimer 2CC0 0 CODE 0 text79 dist/default/production\BluJoy.X.production.o
+_uiStateTime A0 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+_ANSELA 1F38 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_ANSELB 1F43 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_ANSELC 1F4E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_INTERRUPT_InterruptManager B6 0 CODE 0 intentry dist/default/production\BluJoy.X.production.o
+__size_of_setBTTimeout 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR3_DefaultInterruptHandler 6 0 CODE 0 text81 dist/default/production\BluJoy.X.production.o
+_USER1_pressed 2952 0 CODE 0 text14 dist/default/production\BluJoy.X.production.o
+_IOCCF0_SetInterruptHandler 29FE 0 CODE 0 text69 dist/default/production\BluJoy.X.production.o
+__end_of_getBTAddress 920 0 CODE 0 text10 dist/default/production\BluJoy.X.production.o
+sendBTString@buffer 36 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_SetRxInterruptHandler 29DA 0 CODE 0 text73 dist/default/production\BluJoy.X.production.o
+__size_of_readJoystick 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_calculateMotion 15D2 0 CODE 0 text105 dist/default/production\BluJoy.X.production.o
+i1_resetBTTimer 2C5A 0 CODE 0 text93 dist/default/production\BluJoy.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_ofi1_EUSART1_Write 136A 0 CODE 0 text103 dist/default/production\BluJoy.X.production.o
+_targetAxialFP 4D 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+?i1_getTicksSince 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+EUSART1_SetTxInterruptHandler@interruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___memcpyee@from 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___memcpyee@size 27 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_systemTime 45 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+__end_ofi1_EUSART1_Read 14C6 0 CODE 0 text97 dist/default/production\BluJoy.X.production.o
+setBTTimeout@timeout 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of___awmod 1C64 0 CODE 0 text37 dist/default/production\BluJoy.X.production.o
+__end_of___ctoee 2B86 0 CODE 0 text42 dist/default/production\BluJoy.X.production.o
+EUSART1_SetFramingErrorHandler@interruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of___eetoc 2C18 0 CODE 0 text47 dist/default/production\BluJoy.X.production.o
+__end_of___memcpyee 1A78 0 CODE 0 text43 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF2_DefaultInterruptHandler 28EA 0 CODE 0 text111 dist/default/production\BluJoy.X.production.o
+__end_ofi1_getTicks 2AB4 0 CODE 0 text95 dist/default/production\BluJoy.X.production.o
+__end_ofi1_getTicksSince 2E02 0 CODE 0 text94 dist/default/production\BluJoy.X.production.o
+__size_of_disableJoystick 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_INLVLA 1F3C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_INLVLB 1F47 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_INLVLC 1F52 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+?_strlen 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_SetSlaveTXMasterRX 2DAC 0 CODE 0 text15 dist/default/production\BluJoy.X.production.o
+setBTConnection@isMaster 3C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_limitSpeed 1BBC 0 CODE 0 text106 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF0_ISR 2BDC 0 CODE 0 text112 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF2_ISR 2BFA 0 CODE 0 text108 dist/default/production\BluJoy.X.production.o
+___stackhi 27EF 0 ABS 0 - C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+___stacklo 2160 0 ABS 0 - C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+__end_of_setBTTimeout 2D04 0 CODE 0 text4 dist/default/production\BluJoy.X.production.o
+__size_of_strncmp 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_turnPowerOn 2A8E 0 CODE 0 text1 dist/default/production\BluJoy.X.production.o
+__size_of_turnPowerOff 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_flushBTRXbuffer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+setLEDColor@RGB 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_sendBTSpeedCmd 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_enableJoystick 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_calcCRC 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_readJoystick 77A 0 CODE 0 text91 dist/default/production\BluJoy.X.production.o
+_TMR2_SetInterruptHandler 2A34 0 CODE 0 text63 dist/default/production\BluJoy.X.production.o
+__size_of_runUI 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_sleep 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+memcpy@tmp 2A 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_TMR3_Initialize 1160 0 CODE 0 text60 dist/default/production\BluJoy.X.production.o
+_TMR3_WriteTimer 2C9E 0 CODE 0 text79 dist/default/production\BluJoy.X.production.o
+_PIN_MANAGER_Initialize 1950 0 CODE 0 text67 dist/default/production\BluJoy.X.production.o
+__Lstringtext10 0 0 ABS 0 stringtext10 -
+__Lstringtext11 0 0 ABS 0 stringtext11 -
+__Lstringtext12 0 0 ABS 0 stringtext12 -
+__Lstringtext13 0 0 ABS 0 stringtext13 -
+__end_of_initUI 1950 0 CODE 0 text46 dist/default/production\BluJoy.X.production.o
+start_initialization BA 0 CODE 0 cinit dist/default/production\BluJoy.X.production.o
+int16ToBytes@num 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_uiState 4F 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_eusart1RxLastError 5C 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_ODCONA 1F3A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_ODCONB 1F45 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_ODCONC 1F50 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_setLEDColor 2E88 0 CODE 0 text41 dist/default/production\BluJoy.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+IOCCF0_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_setBTConnection C1A 0 CODE 0 text8 dist/default/production\BluJoy.X.production.o
+__size_ofi1_EUSART1_is_tx_ready 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_turnPowerOff 290E 0 CODE 0 text2 dist/default/production\BluJoy.X.production.o
+_RC1REG 119 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_RC4PPS 1F24 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_RC6PPS 1F26 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_memcpy FFA 0 CODE 0 text11 dist/default/production\BluJoy.X.production.o
+__end_of_memset EB2 0 CODE 0 text51 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_SYSTEM_Initialize 2E2E 0 CODE 0 text59 dist/default/production\BluJoy.X.production.o
+_T3GCONbits 215 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_ofi1_resetBTTimer 2C7C 0 CODE 0 text93 dist/default/production\BluJoy.X.production.o
+_SetSlaveTXMasterRX 2D82 0 CODE 0 text15 dist/default/production\BluJoy.X.production.o
+i1_EUSART1_Write 1314 0 CODE 0 text103 dist/default/production\BluJoy.X.production.o
+clear_ram0 292E 0 CODE 0 clrtext dist/default/production\BluJoy.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__pcstackBANK1 EA 0 BANK1 1 cstackBANK1 dist/default/production\BluJoy.X.production.o
+_T1GATE 210 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T1GCON 20F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T3GATE 216 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T3GCON 215 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2CLKCON 290 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+receiveBTBuffer@charsRead 3A 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_oneSec 2B06 0 CODE 0 text16 dist/default/production\BluJoy.X.production.o
+_TX1REG 11A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1EUSART1_Write@txData 71 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+i1_getTicksSince 2DD6 0 CODE 0 text94 dist/default/production\BluJoy.X.production.o
+_EUSART1_DefaultFramingErrorHandler 28E6 0 CODE 0 text116 dist/default/production\BluJoy.X.production.o
+_EUSART1_DefaultOverrunErrorHandler 28FE 0 CODE 0 text115 dist/default/production\BluJoy.X.production.o
+?_BTTimeRemaining 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+TMR2_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_Receive_ISR 183C 0 CODE 0 text114 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_SetInterruptHandler 2A34 0 CODE 0 text65 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1sendBTBuffer@buffer 72 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_setSerialBaud 10A0 0 CODE 0 text54 dist/default/production\BluJoy.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+__end_of_BTTimeRemaining 1D1C 0 CODE 0 text44 dist/default/production\BluJoy.X.production.o
+_EUSART1_Write 14C6 0 CODE 0 text28 dist/default/production\BluJoy.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 144 0 CODE 0 cinit -
+__size_of_doFactoryReset 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_strchr 2F58 0 CODE 0 text23 dist/default/production\BluJoy.X.production.o
+__end_of_strlen 2EF0 0 CODE 0 text25 dist/default/production\BluJoy.X.production.o
+__end_of_strstr 1B14 0 CODE 0 text21 dist/default/production\BluJoy.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_sendBTEstopCmd 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr32 0 0 ABS 0 sfr32 -
+__Hsfr33 0 0 ABS 0 sfr33 -
+__Hsfr34 0 0 ABS 0 sfr34 -
+__Hsfr35 0 0 ABS 0 sfr35 -
+__Hsfr36 0 0 ABS 0 sfr36 -
+__Hsfr37 0 0 ABS 0 sfr37 -
+__Hsfr38 0 0 ABS 0 sfr38 -
+__Hsfr39 0 0 ABS 0 sfr39 -
+__Hsfr40 0 0 ABS 0 sfr40 -
+__Hsfr41 0 0 ABS 0 sfr41 -
+__Hsfr42 0 0 ABS 0 sfr42 -
+__Hsfr43 0 0 ABS 0 sfr43 -
+__Hsfr44 0 0 ABS 0 sfr44 -
+__Hsfr45 0 0 ABS 0 sfr45 -
+__Hsfr46 0 0 ABS 0 sfr46 -
+__Hsfr47 0 0 ABS 0 sfr47 -
+__Hsfr48 0 0 ABS 0 sfr48 -
+__Hsfr49 0 0 ABS 0 sfr49 -
+__Hsfr50 0 0 ABS 0 sfr50 -
+__Hsfr51 0 0 ABS 0 sfr51 -
+__Hsfr52 0 0 ABS 0 sfr52 -
+__Hsfr53 0 0 ABS 0 sfr53 -
+__Hsfr54 0 0 ABS 0 sfr54 -
+__Hsfr55 0 0 ABS 0 sfr55 -
+__Hsfr56 0 0 ABS 0 sfr56 -
+__Hsfr57 0 0 ABS 0 sfr57 -
+__Hsfr58 0 0 ABS 0 sfr58 -
+__Hsfr59 0 0 ABS 0 sfr59 -
+__Hsfr60 0 0 ABS 0 sfr60 -
+__Hsfr61 0 0 ABS 0 sfr61 -
+__Hsfr62 0 0 ABS 0 sfr62 -
+__Hsfr63 0 0 ABS 0 sfr63 -
+__Hstack 0 0 STACK 2 stack -
+calcCRC@count 74 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_USER1_pressed 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_Transmit_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+setBTConnection@MAC 43 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_NVMADRH 81B 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_NVMADRL 81A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_NVMCON2 81F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_NVMDATH 81D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_NVMDATL 81C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 ABS 0 bank13 -
+__Hbank14 0 0 ABS 0 bank14 -
+__Hbank15 0 0 ABS 0 bank15 -
+__Hbank16 0 0 ABS 0 bank16 -
+__Hbank17 0 0 ABS 0 bank17 -
+__Hbank18 0 0 ABS 0 bank18 -
+__Hbank19 0 0 ABS 0 bank19 -
+__Hbank20 0 0 ABS 0 bank20 -
+__Hbank21 0 0 ABS 0 bank21 -
+__Hbank22 0 0 ABS 0 bank22 -
+__Hbank23 0 0 ABS 0 bank23 -
+__Hbank24 0 0 ABS 0 bank24 -
+__Hbank25 0 0 ABS 0 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank32 0 0 BANK32 1 bank32 -
+__Hbank33 0 0 BANK33 1 bank33 -
+__Hbank34 0 0 BANK34 1 bank34 -
+__Hbank35 0 0 BANK35 1 bank35 -
+__Hbank36 0 0 BANK36 1 bank36 -
+__Hbank37 0 0 BANK37 1 bank37 -
+__Hbank38 0 0 BANK38 1 bank38 -
+__Hbank39 0 0 BANK39 1 bank39 -
+__Hbank40 0 0 BANK40 1 bank40 -
+__Hbank41 0 0 BANK41 1 bank41 -
+__Hbank42 0 0 BANK42 1 bank42 -
+__Hbank43 0 0 BANK43 1 bank43 -
+__Hbank44 0 0 BANK44 1 bank44 -
+__Hbank45 0 0 BANK45 1 bank45 -
+__Hbank46 0 0 BANK46 1 bank46 -
+__Hbank47 0 0 BANK47 1 bank47 -
+__Hbank48 0 0 BANK48 1 bank48 -
+__Hbank49 0 0 BANK49 1 bank49 -
+__Hbank50 0 0 BANK50 1 bank50 -
+__Hbank51 0 0 BANK51 1 bank51 -
+__Hbank52 0 0 BANK52 1 bank52 -
+__Hbank53 0 0 BANK53 1 bank53 -
+__Hbank54 0 0 BANK54 1 bank54 -
+__Hbank55 0 0 BANK55 1 bank55 -
+__Hbank56 0 0 BANK56 1 bank56 -
+__Hbank57 0 0 BANK57 1 bank57 -
+__Hbank58 0 0 BANK58 1 bank58 -
+__Hbank59 0 0 BANK59 1 bank59 -
+__Hbank60 0 0 BANK60 1 bank60 -
+__Hbank61 0 0 BANK61 1 bank61 -
+__Hbank62 0 0 BANK62 1 bank62 -
+__Hbank63 0 0 BANK63 1 bank63 -
+__size_of_calculateMotion 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+setSerialBaud@baud 36 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_getTicksSince 2E2E 0 CODE 0 text57 dist/default/production\BluJoy.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+blinkLEDColor@RGB 3C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_showStartup 13C0 0 CODE 0 text3 dist/default/production\BluJoy.X.production.o
+_RX_Buffer 1C0 0 BANK3 1 bssBANK3 dist/default/production\BluJoy.X.production.o
+TMR3_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+___eetoc@addr 2C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___eetoc@data 2D 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_T2HLTbits 28F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit BA 0 CODE 0 cinit -
+_T1GCONbits 20F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+calcCRC@crc 76 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+calcCRC@ptr 75 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_setBTConnection A9E 0 CODE 0 text8 dist/default/production\BluJoy.X.production.o
+_eusart1TxBufferRemaining 68 0 BANK0 1 nvBANK0 dist/default/production\BluJoy.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr32 0 0 ABS 0 sfr32 -
+__Lsfr33 0 0 ABS 0 sfr33 -
+__Lsfr34 0 0 ABS 0 sfr34 -
+__Lsfr35 0 0 ABS 0 sfr35 -
+__Lsfr36 0 0 ABS 0 sfr36 -
+__Lsfr37 0 0 ABS 0 sfr37 -
+__Lsfr38 0 0 ABS 0 sfr38 -
+__Lsfr39 0 0 ABS 0 sfr39 -
+__Lsfr40 0 0 ABS 0 sfr40 -
+__Lsfr41 0 0 ABS 0 sfr41 -
+__Lsfr42 0 0 ABS 0 sfr42 -
+__Lsfr43 0 0 ABS 0 sfr43 -
+__Lsfr44 0 0 ABS 0 sfr44 -
+__Lsfr45 0 0 ABS 0 sfr45 -
+__Lsfr46 0 0 ABS 0 sfr46 -
+__Lsfr47 0 0 ABS 0 sfr47 -
+__Lsfr48 0 0 ABS 0 sfr48 -
+__Lsfr49 0 0 ABS 0 sfr49 -
+__Lsfr50 0 0 ABS 0 sfr50 -
+__Lsfr51 0 0 ABS 0 sfr51 -
+__Lsfr52 0 0 ABS 0 sfr52 -
+__Lsfr53 0 0 ABS 0 sfr53 -
+__Lsfr54 0 0 ABS 0 sfr54 -
+__Lsfr55 0 0 ABS 0 sfr55 -
+__Lsfr56 0 0 ABS 0 sfr56 -
+__Lsfr57 0 0 ABS 0 sfr57 -
+__Lsfr58 0 0 ABS 0 sfr58 -
+__Lsfr59 0 0 ABS 0 sfr59 -
+__Lsfr60 0 0 ABS 0 sfr60 -
+__Lsfr61 0 0 ABS 0 sfr61 -
+__Lsfr62 0 0 ABS 0 sfr62 -
+__Lsfr63 0 0 ABS 0 sfr63 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_setBTBaudRatesTo38400 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_FramingErrorHandler CE 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+_EUSART1_OverrunErrorHandler CC 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+init_ram 293A 0 CODE 0 inittext dist/default/production\BluJoy.X.production.o
+_TMR1_StopTimer 28F0 0 CODE 0 text35 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+limitSpeed@diffFP 7B 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_topSweepSpeedFP DA 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_PORTAbits C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PORTCbits E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_Transmit_ISR 122A 0 CODE 0 text113 dist/default/production\BluJoy.X.production.o
+i1setBTTimeout@timeout 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_estopActive 5A 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_strncmp 1E8C 0 CODE 0 text22 dist/default/production\BluJoy.X.production.o
+memcpy@d1 2B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memcpy@s1 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_INTCONbits B 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit B6 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit B6 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+memcpy@d 2C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memcpy@n 27 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memcpy@s 2D 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\BluJoy.X.production.o
+__pstringtext2 3012 0 STRCODE 0 stringtext2 dist/default/production\BluJoy.X.production.o
+__pstringtext3 3024 0 STRCODE 0 stringtext3 dist/default/production\BluJoy.X.production.o
+__pstringtext4 3036 0 STRCODE 0 stringtext4 dist/default/production\BluJoy.X.production.o
+__pstringtext5 3048 0 STRCODE 0 stringtext5 dist/default/production\BluJoy.X.production.o
+__pstringtext6 305A 0 STRCODE 0 stringtext6 dist/default/production\BluJoy.X.production.o
+__pstringtext7 306C 0 STRCODE 0 stringtext7 dist/default/production\BluJoy.X.production.o
+__pstringtext8 307E 0 STRCODE 0 stringtext8 dist/default/production\BluJoy.X.production.o
+__pstringtext9 308C 0 STRCODE 0 stringtext9 dist/default/production\BluJoy.X.production.o
+__pnvBANK0 68 0 BANK0 1 nvBANK0 dist/default/production\BluJoy.X.production.o
+__pnvBANK1 C2 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+memset@dest 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memset@c 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memset@k 2C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memset@n 28 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+memset@s 2F 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__pstringtext10 3098 0 STRCODE 0 stringtext10 dist/default/production\BluJoy.X.production.o
+__pstringtext11 30A4 0 STRCODE 0 stringtext11 dist/default/production\BluJoy.X.production.o
+__pstringtext12 30AA 0 STRCODE 0 stringtext12 dist/default/production\BluJoy.X.production.o
+__pstringtext13 0 0 STRCODE 0 stringtext13 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF2_SetInterruptHandler 2A22 0 CODE 0 text68 dist/default/production\BluJoy.X.production.o
+i1_turnPowerOn 290E 0 CODE 0 text110 dist/default/production\BluJoy.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_estopBuffer E2 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+__end_of_calcCRC 1F46 0 CODE 0 text104 dist/default/production\BluJoy.X.production.o
+int$flags 7E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCF2_DefaultInterruptHandler 28E8 0 CODE 0 text111 dist/default/production\BluJoy.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+i1sendBTBuffer@length 74 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_RxDefaultInterruptHandler D0 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+_PR2 28D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__S0 1858 0 ABS 0 - -
+__S1 240 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 F002 0 ABS 0 - -
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR2_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_ofi1_EUSART1_is_rx_ready 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_USER1_pressed 2960 0 CODE 0 text14 dist/default/production\BluJoy.X.production.o
+_masterMAC 148 0 BANK2 1 bssBANK2 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_SetRxInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_DefaultErrorHandler 28F6 0 CODE 0 text117 dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_WriteTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_setBTConnection$1669 3F 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_setBTConnection$1672 41 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_initJoystick 2D2E 0 CODE 0 text52 dist/default/production\BluJoy.X.production.o
+_BTTimeout A4 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+_T2RSTbits 291 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_int16ToBytes 162E 0 CODE 0 text99 dist/default/production\BluJoy.X.production.o
+receiveBTBuffer@timeoutMS 2F 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_BTTimeRemaining 1C64 0 CODE 0 text44 dist/default/production\BluJoy.X.production.o
+_sendBTBuffer 168A 0 CODE 0 text26 dist/default/production\BluJoy.X.production.o
+__end_of_TMR3_DefaultInterruptHandler 8 0 CODE 0 text81 dist/default/production\BluJoy.X.production.o
+_uiBrakeMode 55 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_TMR2_SetInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR1_CallBack 2B1E 0 CODE 0 text89 dist/default/production\BluJoy.X.production.o
+_SYSTEM_Initialize 2E02 0 CODE 0 text59 dist/default/production\BluJoy.X.production.o
+_accelLimitAxialFP E0 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+_TMR2_DefaultInterruptHandler 4 0 CODE 0 text85 dist/default/production\BluJoy.X.production.o
+__size_ofi1_EUSART1_Write 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_accelLimitYawFP DE 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+_TMR2_CallBack 2B38 0 CODE 0 text84 dist/default/production\BluJoy.X.production.o
+___memcpyee@ptr 29 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 8 0 CODE 0 intentry -
+__size_of_getTicks 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_ofi1_sendBTBuffer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+sendBTSpeedCmd@blockIfBusy 7C 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+strchr@c 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strchr@s 28 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Phil\AppData\Local\Temp\s1b9jk.o
+_doFactoryReset$1680 3E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strlen@a 29 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strlen@s 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strstr@h 36 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strstr@n 2F 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of___memcpyee 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR3_CallBack 2B52 0 CODE 0 text80 dist/default/production\BluJoy.X.production.o
+_uiSpeedMode 56 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__size_ofi1_getTicksSince 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_initUI 18C4 0 CODE 0 text46 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_StopTimer 28F6 0 CODE 0 text35 dist/default/production\BluJoy.X.production.o
+__end_of_receiveBTBuffer 1DD4 0 CODE 0 text30 dist/default/production\BluJoy.X.production.o
+__size_ofi1_getTicks 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+receiveBTBuffer@maxChars 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__pdataBANK0 62 0 BANK0 1 dataBANK0 dist/default/production\BluJoy.X.production.o
+__pdataBANK1 DA 0 BANK1 1 dataBANK1 dist/default/production\BluJoy.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+__LbssBANK4 0 0 ABS 0 bssBANK4 -
+_SetDualReceive 2D58 0 CODE 0 text33 dist/default/production\BluJoy.X.production.o
+__size_of_limitSpeed 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_IOCCF0_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_IOCCF2_ISR 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+__Lstringtext8 0 0 ABS 0 stringtext8 -
+__Lstringtext9 0 0 ABS 0 stringtext9 -
+IOCCF2_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\BluJoy.X.production.o
+__size_of_setSerialBaud 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+___awmod@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PIE0bits 716 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_initConfiguration 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PIE4bits 71A 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1_setBTTimeout 2AB4 0 CODE 0 text92 dist/default/production\BluJoy.X.production.o
+?i1_getTicks 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_memcpy F9A 0 CODE 0 text11 dist/default/production\BluJoy.X.production.o
+_memset D68 0 CODE 0 text51 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_Write 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_initJoystick 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_eusart1RxHead 5F 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_eusart1RxTail 5E 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_UI_PWM_handler 1744 0 CODE 0 text82 dist/default/production\BluJoy.X.production.o
+_TMR1_ISR 2B86 0 CODE 0 text87 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_is_tx_ready 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_int16ToBytes 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR2_ISR 2922 0 CODE 0 text83 dist/default/production\BluJoy.X.production.o
+__ptext10 77A 0 CODE 0 text10 dist/default/production\BluJoy.X.production.o
+__ptext11 F9A 0 CODE 0 text11 dist/default/production\BluJoy.X.production.o
+__ptext12 2DAC 0 CODE 0 text12 dist/default/production\BluJoy.X.production.o
+__ptext13 2960 0 CODE 0 text13 dist/default/production\BluJoy.X.production.o
+__ptext14 2952 0 CODE 0 text14 dist/default/production\BluJoy.X.production.o
+__ptext15 2D82 0 CODE 0 text15 dist/default/production\BluJoy.X.production.o
+__ptext16 2AF0 0 CODE 0 text16 dist/default/production\BluJoy.X.production.o
+__ptext17 2A7C 0 CODE 0 text17 dist/default/production\BluJoy.X.production.o
+__ptext18 2CC0 0 CODE 0 text18 dist/default/production\BluJoy.X.production.o
+__ptext19 FFA 0 CODE 0 text19 dist/default/production\BluJoy.X.production.o
+__ptext20 920 0 CODE 0 text20 dist/default/production\BluJoy.X.production.o
+__ptext21 1A78 0 CODE 0 text21 dist/default/production\BluJoy.X.production.o
+__ptext22 1DD4 0 CODE 0 text22 dist/default/production\BluJoy.X.production.o
+__ptext23 2F24 0 CODE 0 text23 dist/default/production\BluJoy.X.production.o
+__ptext24 2EF0 0 CODE 0 text24 dist/default/production\BluJoy.X.production.o
+__ptext25 2EBC 0 CODE 0 text25 dist/default/production\BluJoy.X.production.o
+__ptext26 168A 0 CODE 0 text26 dist/default/production\BluJoy.X.production.o
+__ptext27 2A6A 0 CODE 0 text27 dist/default/production\BluJoy.X.production.o
+__ptext28 14C6 0 CODE 0 text28 dist/default/production\BluJoy.X.production.o
+__ptext29 11A2 0 CODE 0 text29 dist/default/production\BluJoy.X.production.o
+__ptext30 1D1C 0 CODE 0 text30 dist/default/production\BluJoy.X.production.o
+__ptext31 2A58 0 CODE 0 text31 dist/default/production\BluJoy.X.production.o
+__ptext32 1578 0 CODE 0 text32 dist/default/production\BluJoy.X.production.o
+__ptext33 2D58 0 CODE 0 text33 dist/default/production\BluJoy.X.production.o
+__ptext34 2918 0 CODE 0 text34 dist/default/production\BluJoy.X.production.o
+__ptext35 28F0 0 CODE 0 text35 dist/default/production\BluJoy.X.production.o
+__ptext36 12C0 0 CODE 0 text36 dist/default/production\BluJoy.X.production.o
+__ptext37 1BBC 0 CODE 0 text37 dist/default/production\BluJoy.X.production.o
+__ptext38 2FC6 0 CODE 0 text38 dist/default/production\BluJoy.X.production.o
+__ptext39 1028 0 CODE 0 text39 dist/default/production\BluJoy.X.production.o
+__ptext40 122A 0 CODE 0 text40 dist/default/production\BluJoy.X.production.o
+__ptext41 2E88 0 CODE 0 text41 dist/default/production\BluJoy.X.production.o
+__ptext42 2B6C 0 CODE 0 text42 dist/default/production\BluJoy.X.production.o
+__ptext43 19DE 0 CODE 0 text43 dist/default/production\BluJoy.X.production.o
+__ptext44 1C64 0 CODE 0 text44 dist/default/production\BluJoy.X.production.o
+__ptext45 28EA 0 CODE 0 text45 dist/default/production\BluJoy.X.production.o
+__ptext46 18C4 0 CODE 0 text46 dist/default/production\BluJoy.X.production.o
+__ptext47 2BFA 0 CODE 0 text47 dist/default/production\BluJoy.X.production.o
+__ptext48 16E6 0 CODE 0 text48 dist/default/production\BluJoy.X.production.o
+__ptext49 2F8E 0 CODE 0 text49 dist/default/production\BluJoy.X.production.o
+__ptext50 1272 0 CODE 0 text50 dist/default/production\BluJoy.X.production.o
+__ptext51 D68 0 CODE 0 text51 dist/default/production\BluJoy.X.production.o
+__ptext52 2D2E 0 CODE 0 text52 dist/default/production\BluJoy.X.production.o
+__ptext53 2B06 0 CODE 0 text53 dist/default/production\BluJoy.X.production.o
+__ptext54 10A0 0 CODE 0 text54 dist/default/production\BluJoy.X.production.o
+__ptext55 2D04 0 CODE 0 text55 dist/default/production\BluJoy.X.production.o
+__ptext56 136A 0 CODE 0 text56 dist/default/production\BluJoy.X.production.o
+__ptext57 2E2E 0 CODE 0 text57 dist/default/production\BluJoy.X.production.o
+__ptext58 2ADC 0 CODE 0 text58 dist/default/production\BluJoy.X.production.o
+__ptext59 2E02 0 CODE 0 text59 dist/default/production\BluJoy.X.production.o
+__ptext60 1160 0 CODE 0 text60 dist/default/production\BluJoy.X.production.o
+__ptext61 2A46 0 CODE 0 text61 dist/default/production\BluJoy.X.production.o
+__ptext62 2E5A 0 CODE 0 text62 dist/default/production\BluJoy.X.production.o
+__ptext63 2A34 0 CODE 0 text63 dist/default/production\BluJoy.X.production.o
+__ptext64 111E 0 CODE 0 text64 dist/default/production\BluJoy.X.production.o
+__ptext65 2A22 0 CODE 0 text65 dist/default/production\BluJoy.X.production.o
+__ptext66 2AC8 0 CODE 0 text66 dist/default/production\BluJoy.X.production.o
+__ptext67 1950 0 CODE 0 text67 dist/default/production\BluJoy.X.production.o
+__ptext68 2A10 0 CODE 0 text68 dist/default/production\BluJoy.X.production.o
+__ptext69 29FE 0 CODE 0 text69 dist/default/production\BluJoy.X.production.o
+__ptext70 29EC 0 CODE 0 text70 dist/default/production\BluJoy.X.production.o
+__ptext71 183C 0 CODE 0 text71 dist/default/production\BluJoy.X.production.o
+__ptext72 29DA 0 CODE 0 text72 dist/default/production\BluJoy.X.production.o
+__ptext73 29C8 0 CODE 0 text73 dist/default/production\BluJoy.X.production.o
+__ptext74 29B6 0 CODE 0 text74 dist/default/production\BluJoy.X.production.o
+__ptext75 29A4 0 CODE 0 text75 dist/default/production\BluJoy.X.production.o
+__ptext76 2992 0 CODE 0 text76 dist/default/production\BluJoy.X.production.o
+__ptext78 2BA2 0 CODE 0 text78 dist/default/production\BluJoy.X.production.o
+__ptext79 2C9E 0 CODE 0 text79 dist/default/production\BluJoy.X.production.o
+__ptext80 2B52 0 CODE 0 text80 dist/default/production\BluJoy.X.production.o
+__ptext81 6 0 CODE 0 text81 dist/default/production\BluJoy.X.production.o
+__ptext82 1744 0 CODE 0 text82 dist/default/production\BluJoy.X.production.o
+__ptext83 2922 0 CODE 0 text83 dist/default/production\BluJoy.X.production.o
+__ptext84 2B38 0 CODE 0 text84 dist/default/production\BluJoy.X.production.o
+__ptext85 4 0 CODE 0 text85 dist/default/production\BluJoy.X.production.o
+__ptext86 10DE 0 CODE 0 text86 dist/default/production\BluJoy.X.production.o
+__ptext87 2B86 0 CODE 0 text87 dist/default/production\BluJoy.X.production.o
+__ptext88 2C7C 0 CODE 0 text88 dist/default/production\BluJoy.X.production.o
+__ptext89 2B1E 0 CODE 0 text89 dist/default/production\BluJoy.X.production.o
+__ptext90 1002 0 CODE 0 text90 dist/default/production\BluJoy.X.production.o
+__ptext91 548 0 CODE 0 text91 dist/default/production\BluJoy.X.production.o
+__ptext92 2AB4 0 CODE 0 text92 dist/default/production\BluJoy.X.production.o
+__ptext93 2C5A 0 CODE 0 text93 dist/default/production\BluJoy.X.production.o
+__ptext94 2DD6 0 CODE 0 text94 dist/default/production\BluJoy.X.production.o
+__ptext95 2AA0 0 CODE 0 text95 dist/default/production\BluJoy.X.production.o
+__ptext96 2980 0 CODE 0 text96 dist/default/production\BluJoy.X.production.o
+__ptext97 146E 0 CODE 0 text97 dist/default/production\BluJoy.X.production.o
+__ptext98 151E 0 CODE 0 text98 dist/default/production\BluJoy.X.production.o
+__ptext99 162E 0 CODE 0 text99 dist/default/production\BluJoy.X.production.o
+_TMR3_ISR 2BA2 0 CODE 0 text78 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_DefaultFramingErrorHandler 28E8 0 CODE 0 text116 dist/default/production\BluJoy.X.production.o
+_IOCCFbits 1F55 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR3_SetInterruptHandler 2A46 0 CODE 0 text61 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_DefaultOverrunErrorHandler 2906 0 CODE 0 text115 dist/default/production\BluJoy.X.production.o
+?_limitSpeed 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_IOCCNbits 1F54 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCPbits 1F53 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_PIN_MANAGER_Initialize 19DE 0 CODE 0 text67 dist/default/production\BluJoy.X.production.o
+limitSpeed@speedFP 79 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+___awmod 1BBC 0 CODE 0 text37 dist/default/production\BluJoy.X.production.o
+___ctoee 2B6C 0 CODE 0 text42 dist/default/production\BluJoy.X.production.o
+___eetoc 2BFA 0 CODE 0 text47 dist/default/production\BluJoy.X.production.o
+_EUSART1_ErrorHandler CA 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 ABS 0 bank13 -
+__Lbank14 0 0 ABS 0 bank14 -
+__Lbank15 0 0 ABS 0 bank15 -
+__Lbank16 0 0 ABS 0 bank16 -
+__Lbank17 0 0 ABS 0 bank17 -
+__Lbank18 0 0 ABS 0 bank18 -
+__Lbank19 0 0 ABS 0 bank19 -
+__Lbank20 0 0 ABS 0 bank20 -
+__Lbank21 0 0 ABS 0 bank21 -
+__Lbank22 0 0 ABS 0 bank22 -
+__Lbank23 0 0 ABS 0 bank23 -
+__Lbank24 0 0 ABS 0 bank24 -
+__Lbank25 0 0 ABS 0 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank32 0 0 BANK32 1 bank32 -
+__Lbank33 0 0 BANK33 1 bank33 -
+__Lbank34 0 0 BANK34 1 bank34 -
+__Lbank35 0 0 BANK35 1 bank35 -
+__Lbank36 0 0 BANK36 1 bank36 -
+__Lbank37 0 0 BANK37 1 bank37 -
+__Lbank38 0 0 BANK38 1 bank38 -
+__Lbank39 0 0 BANK39 1 bank39 -
+__Lbank40 0 0 BANK40 1 bank40 -
+__Lbank41 0 0 BANK41 1 bank41 -
+__Lbank42 0 0 BANK42 1 bank42 -
+__Lbank43 0 0 BANK43 1 bank43 -
+__Lbank44 0 0 BANK44 1 bank44 -
+__Lbank45 0 0 BANK45 1 bank45 -
+__Lbank46 0 0 BANK46 1 bank46 -
+__Lbank47 0 0 BANK47 1 bank47 -
+__Lbank48 0 0 BANK48 1 bank48 -
+__Lbank49 0 0 BANK49 1 bank49 -
+__Lbank50 0 0 BANK50 1 bank50 -
+__Lbank51 0 0 BANK51 1 bank51 -
+__Lbank52 0 0 BANK52 1 bank52 -
+__Lbank53 0 0 BANK53 1 bank53 -
+__Lbank54 0 0 BANK54 1 bank54 -
+__Lbank55 0 0 BANK55 1 bank55 -
+__Lbank56 0 0 BANK56 1 bank56 -
+__Lbank57 0 0 BANK57 1 bank57 -
+__Lbank58 0 0 BANK58 1 bank58 -
+__Lbank59 0 0 BANK59 1 bank59 -
+__Lbank60 0 0 BANK60 1 bank60 -
+__Lbank61 0 0 BANK61 1 bank61 -
+__Lbank62 0 0 BANK62 1 bank62 -
+__Lbank63 0 0 BANK63 1 bank63 -
+__pmaintext 1F46 0 CODE 0 maintext dist/default/production\BluJoy.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+_eusart1TxHead 61 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_eusart1TxTail 60 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_oneSec 2AF0 0 CODE 0 text16 dist/default/production\BluJoy.X.production.o
+__size_of_sendBTBuffer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_getTicksSince 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+___ctoee@addr 2D 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___ctoee@data 2B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__size_of_setBTConnection 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+strncmp@l 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strncmp@n 28 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+strncmp@r 2C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_ISR 2BA2 0 CODE 0 text87 dist/default/production\BluJoy.X.production.o
+__end_of_TMR2_ISR 292E 0 CODE 0 text83 dist/default/production\BluJoy.X.production.o
+__end_of_TMR3_ISR 2BBE 0 CODE 0 text78 dist/default/production\BluJoy.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+_LATAbits 18 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_LATBbits 19 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_SetErrorHandler 2992 0 CODE 0 text76 dist/default/production\BluJoy.X.production.o
+_EUSART1_Read 1578 0 CODE 0 text32 dist/default/production\BluJoy.X.production.o
+___eecpymem 16E6 0 CODE 0 text48 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_SetErrorHandler 29A4 0 CODE 0 text76 dist/default/production\BluJoy.X.production.o
+int16ToBytes@i 76 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_strchr 2F24 0 CODE 0 text23 dist/default/production\BluJoy.X.production.o
+_strlen 2EBC 0 CODE 0 text25 dist/default/production\BluJoy.X.production.o
+_strstr 1A78 0 CODE 0 text21 dist/default/production\BluJoy.X.production.o
+__end_of_initJoystick 2D58 0 CODE 0 text52 dist/default/production\BluJoy.X.production.o
+_USER2_pressed 2960 0 CODE 0 text13 dist/default/production\BluJoy.X.production.o
+__end_of_setSerialBaud 10DE 0 CODE 0 text54 dist/default/production\BluJoy.X.production.o
+__end_of_int16ToBytes 168A 0 CODE 0 text99 dist/default/production\BluJoy.X.production.o
+__size_of_initUI 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_ofi1_turnPowerOn 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_turnPowerOn 2AA0 0 CODE 0 text1 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_SetFramingErrorHandler 29B6 0 CODE 0 text75 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_SetOverrunErrorHandler 29C8 0 CODE 0 text74 dist/default/production\BluJoy.X.production.o
+_getTicks 2ADC 0 CODE 0 text58 dist/default/production\BluJoy.X.production.o
+___eecpymem@cp 29 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___eecpymem@to 2A 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_sendBTString 2EF0 0 CODE 0 text24 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_Write 151E 0 CODE 0 text28 dist/default/production\BluJoy.X.production.o
+__size_ofi1_EUSART1_Read 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_sendBTBuffer 16E6 0 CODE 0 text26 dist/default/production\BluJoy.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_receiveBTBuffer 1D1C 0 CODE 0 text30 dist/default/production\BluJoy.X.production.o
+strstr@nl 34 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_initSerial 1272 0 CODE 0 text50 dist/default/production\BluJoy.X.production.o
+receiveBTBuffer@buffer 3B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_IOCCF0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_pulseLEDColor 122A 0 CODE 0 text40 dist/default/production\BluJoy.X.production.o
+_timeKeeper 10DE 0 CODE 0 text86 dist/default/production\BluJoy.X.production.o
+_slaveMAC 154 0 BANK2 1 bssBANK2 dist/default/production\BluJoy.X.production.o
+_initTimers 2F8E 0 CODE 0 text49 dist/default/production\BluJoy.X.production.o
+__end_of_SetDualReceive 2D82 0 CODE 0 text33 dist/default/production\BluJoy.X.production.o
+__size_of_pairBluetoothDevices 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_getTicksSince 2E5A 0 CODE 0 text57 dist/default/production\BluJoy.X.production.o
+__pbssCOMMON 7D 0 COMMON 1 bssCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_memcpy 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_memset 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_BTTimeRemaining 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_TMR2_SetInterruptHandler 2A46 0 CODE 0 text63 dist/default/production\BluJoy.X.production.o
+__end_of_getTicks 2AF0 0 CODE 0 text58 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_RxDataHandler 2F8E 0 CODE 0 text118 dist/default/production\BluJoy.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR0bits 70C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_is_tx_ready 2A6A 0 CODE 0 text27 dist/default/production\BluJoy.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_PIR4bits 710 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Lend_init B6 0 CODE 0 end_init -
+__end_ofi1_setBTTimeout 2AC8 0 CODE 0 text92 dist/default/production\BluJoy.X.production.o
+__size_of_SetSlaveTXMasterRX 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_blinkLEDColor 1028 0 CODE 0 text39 dist/default/production\BluJoy.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pbssEEDATA 0 1E000 EEDATA 3 bssEEDATA dist/default/production\BluJoy.X.production.o
+__end_of_setLEDColor 2EBC 0 CODE 0 text41 dist/default/production\BluJoy.X.production.o
+sendBTSpeedCmd@axial 78 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+receiveBTBuffer@startTime 36 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_UI_PWM_handler 17BA 0 CODE 0 text82 dist/default/production\BluJoy.X.production.o
+_eusart1TxBuffer 1A0 0 BANK3 1 bssBANK3 dist/default/production\BluJoy.X.production.o
+__size_of_oneSec 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_SetTxInterruptHandler 29DA 0 CODE 0 text72 dist/default/production\BluJoy.X.production.o
+end_of_initialization 13C 0 CODE 0 cinit dist/default/production\BluJoy.X.production.o
+EUSART1_Read@readValue 27 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_accelYawFP B0 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+__size_of_TMR1_CallBack 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hintentry B6 0 CODE 0 intentry -
+_joystickEnabled 7D 0 COMMON 1 bssCOMMON dist/default/production\BluJoy.X.production.o
+_sendBTSpeedCmd 151E 0 CODE 0 text98 dist/default/production\BluJoy.X.production.o
+_enableJoystick 2A7C 0 CODE 0 text17 dist/default/production\BluJoy.X.production.o
+_TX1STAbits 11E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_IOCCF2_SetInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___awmod 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_pairBluetoothDevices D68 0 CODE 0 text7 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_Read 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1getTicksSince@from 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__size_of_TMR2_CallBack 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_ofi1_turnPowerOn 2918 0 CODE 0 text110 dist/default/production\BluJoy.X.production.o
+_getBTAddress$1661 3F 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_resetBTTimer 2CC0 0 CODE 0 text18 dist/default/production\BluJoy.X.production.o
+EUSART1_SetRxInterruptHandler@interruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__HbssBANK4 0 0 ABS 0 bssBANK4 -
+_EUSART1_RxDataHandler 2F58 0 CODE 0 text118 dist/default/production\BluJoy.X.production.o
+___awmod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_is_rx_ready 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_strchr 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_strstr 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_CallBack 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+sendBTBuffer@blockIfBusy 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__ptext1 2A8E 0 CODE 0 text1 dist/default/production\BluJoy.X.production.o
+__ptext2 2906 0 CODE 0 text2 dist/default/production\BluJoy.X.production.o
+__ptext3 13C0 0 CODE 0 text3 dist/default/production\BluJoy.X.production.o
+__ptext4 2CE2 0 CODE 0 text4 dist/default/production\BluJoy.X.production.o
+__ptext5 1064 0 CODE 0 text5 dist/default/production\BluJoy.X.production.o
+__ptext6 144 0 CODE 0 text6 dist/default/production\BluJoy.X.production.o
+__ptext7 C1A 0 CODE 0 text7 dist/default/production\BluJoy.X.production.o
+__ptext8 A9E 0 CODE 0 text8 dist/default/production\BluJoy.X.production.o
+__ptext9 EB2 0 CODE 0 text9 dist/default/production\BluJoy.X.production.o
+_RX1DTPPS 1ECB 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_sendBTString 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of___eecpymem 1744 0 CODE 0 text48 dist/default/production\BluJoy.X.production.o
+__end_of_powerIsOn 28F0 0 CODE 0 text45 dist/default/production\BluJoy.X.production.o
+__size_ofi1_resetBTTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_bumpUIBrakeMode 3000 0 CODE 0 text38 dist/default/production\BluJoy.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__size_of_powerIsOn 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___memcpyee@to 2A 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_estopTimer AC 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_Initialize 1160 0 CODE 0 text64 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_Read 15D2 0 CODE 0 text32 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_StartTimer 1000 0 CODE 0 text19 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_WriteTimer 2C9E 0 CODE 0 text88 dist/default/production\BluJoy.X.production.o
+_estopPending 5B 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_TMR1_CallBack 2B38 0 CODE 0 text89 dist/default/production\BluJoy.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__Hstringtext8 0 0 ABS 0 stringtext8 -
+__Hstringtext9 0 0 ABS 0 stringtext9 -
+__end_of_initSerial 12C0 0 CODE 0 text50 dist/default/production\BluJoy.X.production.o
+_strncmp 1DD4 0 CODE 0 text22 dist/default/production\BluJoy.X.production.o
+__end_of_initConfiguration 2B1E 0 CODE 0 text53 dist/default/production\BluJoy.X.production.o
+__end_of_timeKeeper 111E 0 CODE 0 text86 dist/default/production\BluJoy.X.production.o
+__end_of_TMR2_CallBack 2B52 0 CODE 0 text84 dist/default/production\BluJoy.X.production.o
+_SetMasterTXRX 2DAC 0 CODE 0 text12 dist/default/production\BluJoy.X.production.o
+_EUSART1_TxDefaultInterruptHandler D2 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+sendBTSpeedCmd@yaw 7A 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_SLRCONA 1F3B 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_SLRCONB 1F46 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_SLRCONC 1F51 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__end_of_initTimers 2FC6 0 CODE 0 text49 dist/default/production\BluJoy.X.production.o
+__end_of_bumpUISpeedMode 1314 0 CODE 0 text36 dist/default/production\BluJoy.X.production.o
+__end_of_showStartup 1416 0 CODE 0 text3 dist/default/production\BluJoy.X.production.o
+__size_of_TMR2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+limitSpeed@targetFP 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__end_of__initialization 13C 0 CODE 0 cinit dist/default/production\BluJoy.X.production.o
+_calcCRC 1E8C 0 CODE 0 text104 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF0_SetInterruptHandler 2A10 0 CODE 0 text69 dist/default/production\BluJoy.X.production.o
+___awmod@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_sendBTString 2F24 0 CODE 0 text24 dist/default/production\BluJoy.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_TMR3_CallBack 2B6C 0 CODE 0 text80 dist/default/production\BluJoy.X.production.o
+_powerIsOn 28EA 0 CODE 0 text45 dist/default/production\BluJoy.X.production.o
+__size_of_TMR3_SetInterruptHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_IOCCF2_SetInterruptHandler 2A10 0 CODE 0 text68 dist/default/production\BluJoy.X.production.o
+limitSpeed@limitedFP 72 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_NVMCON1bits 81E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_resetBTTimer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+___eecpymem@from 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+___eecpymem@size 27 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__pidataBANK0 2946 0 CODE 0 idataBANK0 dist/default/production\BluJoy.X.production.o
+__pidataBANK1 2C18 0 CODE 0 idataBANK1 dist/default/production\BluJoy.X.production.o
+_targetYawFP B4 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+_TMR3_InterruptHandler C2 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+__end_of_sendBTSpeedCmd 1578 0 CODE 0 text98 dist/default/production\BluJoy.X.production.o
+__end_of_TMR2_DefaultInterruptHandler 6 0 CODE 0 text85 dist/default/production\BluJoy.X.production.o
+_doFactoryReset 920 0 CODE 0 text20 dist/default/production\BluJoy.X.production.o
+__end_of_enableJoystick 2A8E 0 CODE 0 text17 dist/default/production\BluJoy.X.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_sendBTEstopCmd 1004 0 CODE 0 text100 dist/default/production\BluJoy.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_accelAxialFP B2 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+_timer1ReloadVal D8 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+__size_of_USER2_pressed 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_EUSART1_SetRxInterruptHandler 29C8 0 CODE 0 text73 dist/default/production\BluJoy.X.production.o
+_EUSART1_is_rx_ready 2A58 0 CODE 0 text31 dist/default/production\BluJoy.X.production.o
+_TMR1_DefaultInterruptHandler 1002 0 CODE 0 text90 dist/default/production\BluJoy.X.production.o
+__end_ofi1_EUSART1_is_tx_ready 2980 0 CODE 0 text102 dist/default/production\BluJoy.X.production.o
+__size_of_receiveBTBuffer 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_powerOn 57 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+showShutdown@ramp 37 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_eusart1RxBuffer 220 0 BANK4 1 bssBANK4 dist/default/production\BluJoy.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+getTicksSince@from 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_EUSART1_Transmit_ISR 11E4 0 CODE 0 text113 dist/default/production\BluJoy.X.production.o
+_T3CONbits 214 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_lastBTTime A8 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+__size_of_pulseLEDColor 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__Hend_init BA 0 CODE 0 end_init -
+_timer3ReloadVal C4 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+_EUSART1_SetFramingErrorHandler 29A4 0 CODE 0 text75 dist/default/production\BluJoy.X.production.o
+sendBTBuffer@buffer 2B 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_EUSART1_SetOverrunErrorHandler 29B6 0 CODE 0 text74 dist/default/production\BluJoy.X.production.o
+_SetSlaveTXRX 2D04 0 CODE 0 text55 dist/default/production\BluJoy.X.production.o
+__end_of_main 2000 0 CODE 0 maintext dist/default/production\BluJoy.X.production.o
+calcCRC@i 73 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+_bumpUIBrakeMode 2FC6 0 CODE 0 text38 dist/default/production\BluJoy.X.production.o
+__end_of_IOCCF0_DefaultInterruptHandler 1002 0 CODE 0 text109 dist/default/production\BluJoy.X.production.o
+pulseLEDColor@onTimeMS 38 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_is_tx_ready 2A7C 0 CODE 0 text27 dist/default/production\BluJoy.X.production.o
+_B_LED 51 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_resetBTTimer 2CE2 0 CODE 0 text18 dist/default/production\BluJoy.X.production.o
+_G_LED 52 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_showShutdown 1064 0 CODE 0 text5 dist/default/production\BluJoy.X.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_blinkLEDColor 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_R_LED 53 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+_T1CLK 211 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T1CON 20E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2CON 28E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2HLT 28F 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2RST 291 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T2TMR 28C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T3CLK 217 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_T3CON 214 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR1H 20D 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR1L 20C 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR3H 213 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TMR3L 212 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TRISA 12 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TRISB 13 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_TRISC 14 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_oneSecBlink 59 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_runUI 548 0 CODE 0 text6 dist/default/production\BluJoy.X.production.o
+__end_of_sleep 13C0 0 CODE 0 text56 dist/default/production\BluJoy.X.production.o
+_turnPowerOn$intlevel0 2A96 0 CODE 0 text1 dist/default/production\BluJoy.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+i1_EUSART1_is_tx_ready 296E 0 CODE 0 text102 dist/default/production\BluJoy.X.production.o
+_TMR1_Initialize 111E 0 CODE 0 text64 dist/default/production\BluJoy.X.production.o
+_TMR1_StartTimer FFA 0 CODE 0 text19 dist/default/production\BluJoy.X.production.o
+_TMR1_WriteTimer 2C7C 0 CODE 0 text88 dist/default/production\BluJoy.X.production.o
+_TMR2_InterruptHandler D4 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+runUI@timeRemaining EC 0 BANK1 1 cstackBANK1 dist/default/production\BluJoy.X.production.o
+_runUI 144 0 CODE 0 text6 dist/default/production\BluJoy.X.production.o
+_sleep 136A 0 CODE 0 text56 dist/default/production\BluJoy.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+_eusart1RxCount 5D 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\BluJoy.X.production.o
+?_getTicks 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+_topYawSpeedFP 62 0 BANK0 1 dataBANK0 dist/default/production\BluJoy.X.production.o
+_accelLimitSweepFP 66 0 BANK0 1 dataBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_EUSART1_Initialize 18C4 0 CODE 0 text71 dist/default/production\BluJoy.X.production.o
+__end_of_OSCILLATOR_Initialize 29FE 0 CODE 0 text70 dist/default/production\BluJoy.X.production.o
+__end_of_USER2_pressed 296E 0 CODE 0 text13 dist/default/production\BluJoy.X.production.o
+_bumpUISpeedMode 12C0 0 CODE 0 text36 dist/default/production\BluJoy.X.production.o
+__size_of_turnPowerOn 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+?_strncmp 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__initialization BA 0 CODE 0 cinit dist/default/production\BluJoy.X.production.o
+__pbssBANK0 45 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\BluJoy.X.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\BluJoy.X.production.o
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\BluJoy.X.production.o
+__pbssBANK4 220 0 BANK4 1 bssBANK4 dist/default/production\BluJoy.X.production.o
+__end_of_disableJoystick 2922 0 CODE 0 text34 dist/default/production\BluJoy.X.production.o
+_T2CONbits 28E 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+i1EUSART1_Read@readValue 71 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__end_of_pulseLEDColor 1272 0 CODE 0 text40 dist/default/production\BluJoy.X.production.o
+_eusart1RxStatusBuffer 120 0 BANK2 1 bssBANK2 dist/default/production\BluJoy.X.production.o
+getBTAddress@isMaster 3C 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_doFactoryReset A9E 0 CODE 0 text20 dist/default/production\BluJoy.X.production.o
+_charsRead 58 0 BANK0 1 bssBANK0 dist/default/production\BluJoy.X.production.o
+__end_of_sendBTEstopCmd 1028 0 CODE 0 text100 dist/default/production\BluJoy.X.production.o
+_TMR1_SetInterruptHandler 2A22 0 CODE 0 text65 dist/default/production\BluJoy.X.production.o
+__end_of_flushBTRXbuffer 11E4 0 CODE 0 text29 dist/default/production\BluJoy.X.production.o
+__end_of_setBTBaudRatesTo38400 F9A 0 CODE 0 text9 dist/default/production\BluJoy.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+__size_of_EUSART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+sendBTBuffer@length 2D 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+EUSART1_SetOverrunErrorHandler@interruptHandler 26 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+sleep@delay 2E 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+getBTAddress@addrPointer 42 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+__size_of_setLEDColor 0 0 ABS 0 - dist/default/production\BluJoy.X.production.o
+sleep@start 32 0 BANK0 1 cstackBANK0 dist/default/production\BluJoy.X.production.o
+_TMR1_InterruptHandler D6 0 BANK1 1 nvBANK1 dist/default/production\BluJoy.X.production.o
+i1sendBTBuffer@blockIfBusy 75 0 COMMON 1 cstackCOMMON dist/default/production\BluJoy.X.production.o
+__end_of_blinkLEDColor 1064 0 CODE 0 text39 dist/default/production\BluJoy.X.production.o
+_OSCILLATOR_Initialize 29EC 0 CODE 0 text70 dist/default/production\BluJoy.X.production.o
+__end_of_TMR2_Initialize 2E88 0 CODE 0 text62 dist/default/production\BluJoy.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1547 2A8E 9 2
+text2 0 1483 2906 4 2
+text3 0 9E0 13C0 2B 2
+text4 0 1671 2CE2 11 2
+text5 0 832 1064 1E 2
+text12 0 16D6 2DAC 15 2
+text13 0 14B0 2960 7 2
+text14 0 14A9 2952 7 2
+text15 0 16C1 2D82 15 2
+text16 0 1578 2AF0 B 2
+text17 0 153E 2A7C 9 2
+text18 0 1660 2CC0 11 2
+text21 0 D3C 1A78 4E 2
+text22 0 EEA 1DD4 5C 2
+text23 0 1792 2F24 1A 2
+text24 0 1778 2EF0 1A 2
+text25 0 175E 2EBC 1A 2
+text26 0 B45 168A 2E 2
+text27 0 1535 2A6A 9 2
+text28 0 A63 14C6 2C 2
+text29 0 8D1 11A2 21 2
+text30 0 E8E 1D1C 5C 2
+text31 0 152C 2A58 9 2
+text32 0 ABC 1578 2D 2
+text33 0 16AC 2D58 15 2
+text34 0 148C 2918 5 2
+text35 0 1478 28F0 3 2
+text36 0 960 12C0 2A 2
+text37 0 DDE 1BBC 54 2
+text38 0 17E3 2FC6 1D 2
+text39 0 814 1028 1E 2
+text40 0 915 122A 24 2
+text41 0 1744 2E88 1A 2
+text42 0 15B6 2B6C D 2
+text43 0 CEF 19DE 4D 2
+text44 0 E32 1C64 5C 2
+text45 0 1475 28EA 3 2
+text46 0 C62 18C4 46 2
+text47 0 15FD 2BFA F 2
+text48 0 B73 16E6 2F 2
+text49 0 17C7 2F8E 1C 2
+text50 0 939 1272 27 2
+text52 0 1697 2D2E 15 2
+text53 0 1583 2B06 C 2
+text54 0 850 10A0 1F 2
+text55 0 1682 2D04 15 2
+text56 0 9B5 136A 2B 2
+text57 0 1717 2E2E 16 2
+text58 0 156E 2ADC A 2
+text59 0 1701 2E02 16 2
+text60 0 8B0 1160 21 2
+text61 0 1523 2A46 9 2
+text62 0 172D 2E5A 17 2
+text63 0 151A 2A34 9 2
+text64 0 88F 111E 21 2
+text65 0 1511 2A22 9 2
+text66 0 1564 2AC8 A 2
+text67 0 CA8 1950 47 2
+text68 0 1508 2A10 9 2
+text69 0 14FF 29FE 9 2
+text70 0 14F6 29EC 9 2
+text71 0 C1E 183C 44 2
+text72 0 14ED 29DA 9 2
+text73 0 14E4 29C8 9 2
+text74 0 14DB 29B6 9 2
+text75 0 14D2 29A4 9 2
+text76 0 14C9 2992 9 2
+text78 0 15D1 2BA2 E 2
+text79 0 164F 2C9E 11 2
+text80 0 15A9 2B52 D 2
+text81 0 3 6 1 2
+text82 0 BA2 1744 3B 2
+text83 0 1491 2922 6 2
+text84 0 159C 2B38 D 2
+text86 0 86F 10DE 20 2
+text87 0 15C3 2B86 E 2
+text88 0 163E 2C7C 11 2
+text89 0 158F 2B1E D 2
+text90 0 801 1002 1 2
+text92 0 155A 2AB4 A 2
+text93 0 162D 2C5A 11 2
+text94 0 16EB 2DD6 16 2
+text95 0 1550 2AA0 A 2
+text96 0 14C0 2980 9 2
+text97 0 A37 146E 2C 2
+text98 0 A8F 151E 2D 2
+text99 0 B17 162E 2E 2
+maintext 0 FA3 1F46 5D 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 49 1
+inittext 0 149D 293A 6 2
+stringtext1 0 1800 3000 58 2
+intentry 0 4 8 7FD 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 50 1
+bssBANK2 1 120 120 40 1
+bssBANK3 1 1A0 1A0 48 1
+bssBANK4 1 220 220 20 1
+idataBANK0 0 14A3 2946 6 2
+idataBANK1 0 160C 2C18 10 2
+clrtext 0 1497 292E 6 2
+text100 0 802 1004 12 2
+text101 0 A0B 1416 2C 2
+text102 0 14B7 296E 9 2
+text103 0 98A 1314 2B 2
+text104 0 F46 1E8C 5D 2
+text105 0 AE9 15D2 2E 2
+text106 0 D8A 1B14 54 2
+text107 0 161C 2C38 11 2
+text108 0 15EE 2BDC F 2
+text110 0 1487 290E 5 2
+text111 0 1474 28E8 1 2
+text112 0 15DF 2BBE F 2
+text113 0 8F2 11E4 23 2
+text114 0 BDD 17BA 41 2
+text115 0 147F 28FE 4 2
+text116 0 1473 28E6 1 2
+text117 0 147B 28F6 4 2
+text118 0 17AC 2F58 1B 2
+bssEEDATA 3 0 1E000 2 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
