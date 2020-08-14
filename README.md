@@ -2,6 +2,8 @@
 ### Hoverboards for Assistive Devices (HAD) 
 By: Phil Malone
 
+Project page:  https://hackaday.io/project/170932-hoverboards-for-assistive-devices
+
 
 ### Purpose:
 The HAD project goal is to enable Hoverboards, or Hoverboard drive components to be re-purposed to provide low-cost mobility for assistive devices.
