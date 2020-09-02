@@ -1,4 +1,4 @@
-/*
+ /*
  * ui.c :  Reads switch inputs and generates axis motions.
  * Implements acceleration limits
  * Assumes constant 50mS cycle time from Timer 1 (20 updates per second)
@@ -81,7 +81,7 @@ void    runUI(void) {
             if (USER1_pressed()){
                 if (getTicksSince(uiStateTime) > UI_DEBOUNCE) {
                     uiState = UI_USER1_HOLD;
-                    pulseLEDColor(COLOR_RED, 50, 100);
+                    pulseLEDColor(COLOR_RED, 100, 100);
                 }
             }
             else {       
@@ -93,9 +93,8 @@ void    runUI(void) {
             if (USER2_pressed()){
                 if (getTicksSince(uiStateTime) > UI_DEBOUNCE) {
                     uiState = UI_USER2_HOLD;
-                    pulseLEDColor(COLOR_GREEN, 50, 100);
+                    pulseLEDColor(COLOR_GREEN, 100, 100);
                 }
-
             }
             else {       
                 uiState = UI_IDLE;
@@ -111,7 +110,6 @@ void    runUI(void) {
                 pulseLEDColor(COLOR_BLUE, 50, 100);
                 uiState = UI_USER12_HOLD;
             }
-            
             break;
             
         case UI_USER2_HOLD:
@@ -127,7 +125,7 @@ void    runUI(void) {
             
         case UI_USER12_HOLD:
             if (getTicksSince(uiStateTime) > UI_LONG_HOLD) {
-                pulseLEDColor(COLOR_WHITE, 50, 100);
+                pulseLEDColor(COLOR_WHITE, 500, 500);
                 uiState = UI_USER12_LONG_HOLD;
             }
             
@@ -137,7 +135,6 @@ void    runUI(void) {
                 enableJoystick();
                 uiState = UI_IDLE;
             }
-                
             break;
             
         case UI_USER12_LONG_HOLD:
@@ -147,6 +144,7 @@ void    runUI(void) {
                 doFactoryReset();
                 enableJoystick();
                 uiState = UI_IDLE;
+ 
             }
             break;
             
@@ -190,10 +188,21 @@ void    showStartup(void){
     int8_t ramp = 0;
     
     for (ramp = 0 ; ramp < 7; ramp++) {
+        R_LED = ramp;
+        sleep(40);
+    }
+    R_LED = 0;
+    for (ramp = 0 ; ramp < 7; ramp++) {
         G_LED = ramp;
         sleep(40);
     }
     G_LED = 0;
+
+    for (ramp = 0 ; ramp < 7; ramp++) {
+        B_LED = ramp;
+        sleep(40);
+    }
+    B_LED = 0;
     setBTTimeout(BT_STARTTIME);  // Start out with a shorter timeout
 }
 

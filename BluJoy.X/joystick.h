@@ -16,6 +16,7 @@
 // Function declarations
 void    enableJoystick(void);
 void    disableJoystick(void);
+void    stopMotion(void);
 
 void    initJoystick(void);
 void    readJoystick(void);

@@ -53,6 +53,12 @@ int16_t     topAxialSpeedFP   = (TOP_AXIAL_SPEED << SHIFT_BITS) ;
 int16_t     topYawSpeedFP     = (TOP_YAW_SPEED   << SHIFT_BITS) ;
 int16_t     topSweepSpeedFP   = (TOP_SWEEP_SPEED << SHIFT_BITS) ;
 
+void    initJoystick(void) {
+    TMR1_SetInterruptHandler(readJoystick);
+    joystickEnabled = false;
+    stopMotion();
+}
+
 void    enableJoystick(){
     joystickEnabled = true;
     resetBTTimer();
@@ -62,15 +68,16 @@ void    enableJoystick(){
 void    disableJoystick(){
     TMR1_StopTimer();
     joystickEnabled = false;
+    TMR1_StopTimer();
 }
 
-void    initJoystick(void) {
-    TMR1_SetInterruptHandler(readJoystick);
+void    stopMotion(void) {
     targetAxialFP   = 0;
     targetYawFP     = 0;
     limitedAxialFP  = 0;
     limitedYawFP    = 0;
-    joystickEnabled = false;
+    if (joystickEnabled)
+        sendBTSpeedCmd(0, 0, false);
 }
 
 void    readJoystick(void) {
@@ -89,6 +96,9 @@ void    readJoystick(void) {
             } else {
                 estopTimer = getTicks();
                 estopPending = true;
+                
+                // Stop any pending motion
+                stopMotion();
             }
         } else {
             estopPending = false;
@@ -145,9 +155,7 @@ void    readJoystick(void) {
                 setBTTimeout(BT_TIMEOUT);  // engage longer timeout
             }
         }
-        
     }
-    
 }
     
 void    calculateMotion(void) {

@@ -112,7 +112,6 @@ void    setBTBaudRatesTo38400() {
     // This will be ignored if they are already there.
     SetDualReceive();
     setSerialBaud(9600);
-    pulseLEDColor(COLOR_CYAN, 100, 900);
     
     sendBTString("AT");
     sleep(100);
@@ -185,13 +184,15 @@ void    setBTConnection(uint8_t * MAC, bool isMaster){
 void    doFactoryReset() {
     // switch to 38400 baud and tell modules to run at 9600
     // This will be ignored if they are already there.
+    pulseLEDColor(COLOR_BLUE, 1000, 200);
+    
     SetDualReceive();
     setSerialBaud(38400);
     sleep(500);
 
     sendBTString("AT");
     sleep(100);
-    sendBTString("AT");
+    sendBTString("AT+CLEAR");
     sleep(100);
     sendBTString("AT+BAUD0");
     sleep(500);

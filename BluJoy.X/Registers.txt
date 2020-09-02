@@ -1,0 +1,44 @@
+void PIN_MANAGER_Initialize(void)
+{
+    /* LATx registers */
+    LATA = 0x20;
+    LATB = 0x00;
+    LATC = 0x00;
+
+    /* TRISx registers */
+    TRISA = 0x1F;
+    TRISB = 0x80;
+    TRISC = 0xD7;
+
+    /* ANSELx registers */
+    ANSELC = 0x80;
+    ANSELB = 0x00;
+    ANSELA = 0x01;
+
+    /* WPUx registers */
+    WPUB = 0x80;
+    WPUA = 0x16;
+    WPUC = 0x57;
+
+    /* ODx registers */
+    ODCONA = 0x00;
+    ODCONB = 0x70;
+    ODCONC = 0x00;
+
+    /* SLRCONx registers */
+    SLRCONA = 0x37;
+    SLRCONB = 0xF0;
+    SLRCONC = 0xFF;
+
+    /* INLVLx registers */
+    INLVLA = 0x3F;
+    INLVLB = 0xF0;
+    INLVLC = 0xFF;
+	
+    RC5PPS   = 0x0F;   //RC5->EUSART1:TX1;    
+    RX1DTPPS = 0x14;   //RC4->EUSART1:RX1;   
+    
+    RC3PPS   = 0x0F;   //RC3->EUSART1:TX1;    
+    RX1DTPPS = 0x16;   //RC6->EUSART1:RX1;    
+
+}
