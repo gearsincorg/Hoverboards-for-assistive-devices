@@ -1574,3 +1574,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;timers.c: 65: }
 [e :UE 1529 ]
 }
+"67
+[; ;timers.c: 67: int32_t BTTimeWaiting(void){
+[v _BTTimeWaiting `(l ~T0 @X0 1 ef ]
+{
+[e :U _BTTimeWaiting ]
+[f ]
+"68
+[; ;timers.c: 68:     return (systemTime - lastBTTime);
+[e ) -> - _systemTime _lastBTTime `l ]
+[e $UE 1532  ]
+"69
+[; ;timers.c: 69: }
+[e :UE 1532 ]
+}

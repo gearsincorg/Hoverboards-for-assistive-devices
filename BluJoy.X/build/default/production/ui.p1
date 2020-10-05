@@ -13,29 +13,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 "812
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 812: extern volatile LATBbits_t LATBbits __attribute__((address(0x019)));
 [v _LATBbits `VS46 ~T0 @X0 0 e@25 ]
-[v F10928 `(v ~T0 @X0 0 tf ]
+[v F10974 `(v ~T0 @X0 0 tf ]
 "403 ./mcc_generated_files/tmr3.h
 [; ;./mcc_generated_files/tmr3.h: 403:  void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR3_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10928 ]
-"30 ./ui.h
-[; ;./ui.h: 30: void UI_PWM_handler(void);
+[v _TMR3_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10974 ]
+"31 ./ui.h
+[; ;./ui.h: 31: void UI_PWM_handler(void);
 [v _UI_PWM_handler `(v ~T0 @X0 0 ef ]
 [v F10859 `(v ~T0 @X0 0 tf ]
-"410 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 410: void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
+"430 ./mcc_generated_files/pin_manager.h
+[; ;./mcc_generated_files/pin_manager.h: 430: void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCCF0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10859 ]
-"26 ./configure.h
-[; ;./configure.h: 26: void turnPowerOn(void);
+"27 ./configure.h
+[; ;./configure.h: 27: void turnPowerOn(void);
 [v _turnPowerOn `(v ~T0 @X0 0 ef ]
 [v F10867 `(v ~T0 @X0 0 tf ]
-"494 ./mcc_generated_files/pin_manager.h
-[; ;./mcc_generated_files/pin_manager.h: 494: void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
+"514 ./mcc_generated_files/pin_manager.h
+[; ;./mcc_generated_files/pin_manager.h: 514: void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
 [v _IOCCF2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10867 ]
-"31 ./ui.h
-[; ;./ui.h: 31: _Bool USER1_pressed(void);
+"32 ./ui.h
+[; ;./ui.h: 32: _Bool USER1_pressed(void);
 [v _USER1_pressed `(a ~T0 @X0 0 ef ]
-"32
-[; ;./ui.h: 32: _Bool USER2_pressed(void);
+"33
+[; ;./ui.h: 33: _Bool USER2_pressed(void);
 [v _USER2_pressed `(a ~T0 @X0 0 ef ]
 "22 ./timers.h
 [; ;./timers.h: 22: int32_t getTicksSince(uint32_t from);
@@ -46,20 +46,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "26
 [; ;./ui.h: 26: void bumpUISpeedMode();
 [v _bumpUISpeedMode `(v ~T0 @X0 0 e? ]
-"27
-[; ;./ui.h: 27: void bumpUIBrakeMode();
-[v _bumpUIBrakeMode `(v ~T0 @X0 0 e? ]
-"18 ./joystick.h
-[; ;./joystick.h: 18: void disableJoystick(void);
+"28
+[; ;./ui.h: 28: void bumpUIType();
+[v _bumpUIType `(v ~T0 @X0 0 e? ]
+"24 ./joystick.h
+[; ;./joystick.h: 24: void disableJoystick(void);
 [v _disableJoystick `(v ~T0 @X0 0 ef ]
 "12 ./configure.h
 [; ;./configure.h: 12: void pairBluetoothDevices(void);
 [v _pairBluetoothDevices `(v ~T0 @X0 0 ef ]
-"17 ./joystick.h
-[; ;./joystick.h: 17: void enableJoystick(void);
+"23 ./joystick.h
+[; ;./joystick.h: 23: void enableJoystick(void);
 [v _enableJoystick `(v ~T0 @X0 0 ef ]
-"25 ./configure.h
-[; ;./configure.h: 25: void doFactoryReset(void);
+"26 ./configure.h
+[; ;./configure.h: 26: void doFactoryReset(void);
 [v _doFactoryReset `(v ~T0 @X0 0 ef ]
 "23 ./timers.h
 [; ;./timers.h: 23: _Bool oneSec(void);
@@ -67,9 +67,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27
 [; ;./timers.h: 27: int32_t BTTimeRemaining(void);
 [v _BTTimeRemaining `(l ~T0 @X0 0 ef ]
+"28
+[; ;./timers.h: 28: int32_t BTTimeWaiting(void);
+[v _BTTimeWaiting `(l ~T0 @X0 0 ef ]
 "23 ./ui.h
 [; ;./ui.h: 23: void blinkLEDColor(uint16_t RGB, uint8_t blinks);
 [v _blinkLEDColor `(v ~T0 @X0 0 ef2`us`uc ]
+"30 ./joystick.h
+[; ;./joystick.h: 30: void setJoystickSpeed(int8_t jsSpeedMode);
+[v _setJoystickSpeed `(v ~T0 @X0 0 ef1`c ]
+"29
+[; ;./joystick.h: 29: void setJoystickType(uint8_t jsType);
+[v _setJoystickType `(v ~T0 @X0 0 ef1`uc ]
 "20 ./timers.h
 [; ;./timers.h: 20: void sleep(uint32_t delay);
 [v _sleep `(v ~T0 @X0 0 ef1`ul ]
@@ -1467,8 +1476,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ui.c: 20: uint8_t uiSpeedMode ;
 [v _uiSpeedMode `uc ~T0 @X0 1 e ]
 "21
-[; ;ui.c: 21: uint8_t uiBrakeMode ;
-[v _uiBrakeMode `uc ~T0 @X0 1 e ]
+[; ;ui.c: 21: uint8_t uiType ;
+[v _uiType `uc ~T0 @X0 1 e ]
 "23
 [; ;ui.c: 23: uint8_t timeoutSequence = 0;
 [v _timeoutSequence `uc ~T0 @X0 1 e ]
@@ -1545,8 +1554,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;ui.c: 58:     uiSpeedMode = EEPROM_uiSpeedMode;
 [e = _uiSpeedMode _EEPROM_uiSpeedMode ]
 "59
-[; ;ui.c: 59:     uiBrakeMode = EEPROM_uiBrakeMode;
-[e = _uiBrakeMode _EEPROM_uiBrakeMode ]
+[; ;ui.c: 59:     uiType = EEPROM_uiBrakeMode;
+[e = _uiType _EEPROM_uiBrakeMode ]
 "61
 [; ;ui.c: 61:     TMR3_SetInterruptHandler(UI_PWM_handler);
 [e ( _TMR3_SetInterruptHandler (1 &U _UI_PWM_handler ]
@@ -1566,267 +1575,264 @@ Version 4.0 HI-TECH Software Intermediate Code
 {
 [e :U _runUI ]
 [f ]
-"67
-[; ;ui.c: 67:     int32_t timeRemaining;
-[v _timeRemaining `l ~T0 @X0 1 a ]
-"69
-[; ;ui.c: 69:     switch (uiState) {
+"68
+[; ;ui.c: 68:     switch (uiState) {
 [e $U 1529  ]
 {
-"70
-[; ;ui.c: 70:         case 0:
+"69
+[; ;ui.c: 69:         case 0:
 [e :U 1530 ]
-"71
-[; ;ui.c: 71:             if (USER1_pressed()) {
+"70
+[; ;ui.c: 70:             if (USER1_pressed()) {
 [e $ ! != -> ( _USER1_pressed ..  `i -> 0 `i 1531  ]
 {
-"72
-[; ;ui.c: 72:                 uiStateTime = getTicks();
+"71
+[; ;ui.c: 71:                 uiStateTime = getTicks();
 [e = _uiStateTime ( _getTicks ..  ]
-"73
-[; ;ui.c: 73:                 uiState = 2;
+"72
+[; ;ui.c: 72:                 uiState = 2;
 [e = _uiState -> -> 2 `i `uc ]
-"74
-[; ;ui.c: 74:             } else if (USER2_pressed()) {
+"73
+[; ;ui.c: 73:             } else if (USER2_pressed()) {
 }
 [e $U 1532  ]
 [e :U 1531 ]
 [e $ ! != -> ( _USER2_pressed ..  `i -> 0 `i 1533  ]
 {
-"75
-[; ;ui.c: 75:                 uiStateTime = getTicks();
+"74
+[; ;ui.c: 74:                 uiStateTime = getTicks();
 [e = _uiStateTime ( _getTicks ..  ]
-"76
-[; ;ui.c: 76:                 uiState = 4;
+"75
+[; ;ui.c: 75:                 uiState = 4;
 [e = _uiState -> -> 4 `i `uc ]
-"77
-[; ;ui.c: 77:             }
+"76
+[; ;ui.c: 76:             }
 }
 [e :U 1533 ]
 [e :U 1532 ]
-"78
-[; ;ui.c: 78:             break;
+"77
+[; ;ui.c: 77:             break;
 [e $U 1528  ]
-"80
-[; ;ui.c: 80:         case 2:
+"79
+[; ;ui.c: 79:         case 2:
 [e :U 1534 ]
-"81
-[; ;ui.c: 81:             if (USER1_pressed()){
+"80
+[; ;ui.c: 80:             if (USER1_pressed()){
 [e $ ! != -> ( _USER1_pressed ..  `i -> 0 `i 1535  ]
 {
-"82
-[; ;ui.c: 82:                 if (getTicksSince(uiStateTime) > 200) {
-[e $ ! > ( _getTicksSince (1 _uiStateTime -> -> 200 `i `l 1536  ]
+"81
+[; ;ui.c: 81:                 if (getTicksSince(uiStateTime) > 100) {
+[e $ ! > ( _getTicksSince (1 _uiStateTime -> -> 100 `i `l 1536  ]
 {
+"82
+[; ;ui.c: 82:                     pulseLEDColor(0x300, 20, 100);
+[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 20 `i `us -> -> 100 `i `us ]
 "83
 [; ;ui.c: 83:                     uiState = 1;
 [e = _uiState -> -> 1 `i `uc ]
 "84
-[; ;ui.c: 84:                     pulseLEDColor(0x300, 50, 100);
-[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 50 `i `us -> -> 100 `i `us ]
-"85
-[; ;ui.c: 85:                 }
+[; ;ui.c: 84:                 }
 }
 [e :U 1536 ]
-"86
-[; ;ui.c: 86:             }
+"85
+[; ;ui.c: 85:             }
 }
 [e $U 1537  ]
-"87
-[; ;ui.c: 87:             else {
+"86
+[; ;ui.c: 86:             else {
 [e :U 1535 ]
 {
-"88
-[; ;ui.c: 88:                 uiState = 0;
+"87
+[; ;ui.c: 87:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"89
-[; ;ui.c: 89:             }
+"88
+[; ;ui.c: 88:             }
 }
 [e :U 1537 ]
-"90
-[; ;ui.c: 90:             break;
+"89
+[; ;ui.c: 89:             break;
 [e $U 1528  ]
-"92
-[; ;ui.c: 92:         case 4:
+"91
+[; ;ui.c: 91:         case 4:
 [e :U 1538 ]
-"93
-[; ;ui.c: 93:             if (USER2_pressed()){
+"92
+[; ;ui.c: 92:             if (USER2_pressed()){
 [e $ ! != -> ( _USER2_pressed ..  `i -> 0 `i 1539  ]
 {
-"94
-[; ;ui.c: 94:                 if (getTicksSince(uiStateTime) > 200) {
-[e $ ! > ( _getTicksSince (1 _uiStateTime -> -> 200 `i `l 1540  ]
+"93
+[; ;ui.c: 93:                 if (getTicksSince(uiStateTime) > 100) {
+[e $ ! > ( _getTicksSince (1 _uiStateTime -> -> 100 `i `l 1540  ]
 {
+"94
+[; ;ui.c: 94:                     pulseLEDColor(0x030, 20, 100);
+[e ( _pulseLEDColor (3 , , -> -> 48 `i `us -> -> 20 `i `us -> -> 100 `i `us ]
 "95
 [; ;ui.c: 95:                     uiState = 3;
 [e = _uiState -> -> 3 `i `uc ]
 "96
-[; ;ui.c: 96:                     pulseLEDColor(0x030, 50, 100);
-[e ( _pulseLEDColor (3 , , -> -> 48 `i `us -> -> 50 `i `us -> -> 100 `i `us ]
-"97
-[; ;ui.c: 97:                 }
+[; ;ui.c: 96:                 }
 }
 [e :U 1540 ]
-"99
-[; ;ui.c: 99:             }
+"97
+[; ;ui.c: 97:             }
 }
 [e $U 1541  ]
-"100
-[; ;ui.c: 100:             else {
+"98
+[; ;ui.c: 98:             else {
 [e :U 1539 ]
 {
-"101
-[; ;ui.c: 101:                 uiState = 0;
+"99
+[; ;ui.c: 99:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"102
-[; ;ui.c: 102:             }
+"100
+[; ;ui.c: 100:             }
 }
 [e :U 1541 ]
-"103
-[; ;ui.c: 103:             break;
+"101
+[; ;ui.c: 101:             break;
 [e $U 1528  ]
-"105
-[; ;ui.c: 105:         case 1:
+"103
+[; ;ui.c: 103:         case 1:
 [e :U 1542 ]
-"106
-[; ;ui.c: 106:             if (!USER1_pressed()){
+"104
+[; ;ui.c: 104:             if (!USER1_pressed()){
 [e $ ! ! != -> ( _USER1_pressed ..  `i -> 0 `i 1543  ]
 {
-"107
-[; ;ui.c: 107:                 bumpUISpeedMode();
+"105
+[; ;ui.c: 105:                 bumpUISpeedMode();
 [e ( _bumpUISpeedMode ..  ]
-"108
-[; ;ui.c: 108:                 uiState = 0;
+"106
+[; ;ui.c: 106:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"109
-[; ;ui.c: 109:             }
+"107
+[; ;ui.c: 107:             }
 }
 [e :U 1543 ]
-"110
-[; ;ui.c: 110:             if (USER2_pressed()){
+"108
+[; ;ui.c: 108:             if (USER2_pressed()){
 [e $ ! != -> ( _USER2_pressed ..  `i -> 0 `i 1544  ]
 {
-"111
-[; ;ui.c: 111:                 pulseLEDColor(0x003, 50, 100);
+"109
+[; ;ui.c: 109:                 pulseLEDColor(0x003, 50, 100);
 [e ( _pulseLEDColor (3 , , -> -> 3 `i `us -> -> 50 `i `us -> -> 100 `i `us ]
-"112
-[; ;ui.c: 112:                 uiState = 5;
+"110
+[; ;ui.c: 110:                 uiState = 5;
 [e = _uiState -> -> 5 `i `uc ]
-"113
-[; ;ui.c: 113:             }
+"111
+[; ;ui.c: 111:             }
 }
 [e :U 1544 ]
-"115
-[; ;ui.c: 115:             break;
+"112
+[; ;ui.c: 112:             break;
 [e $U 1528  ]
-"117
-[; ;ui.c: 117:         case 3:
+"114
+[; ;ui.c: 114:         case 3:
 [e :U 1545 ]
-"118
-[; ;ui.c: 118:             if (!USER2_pressed()){
+"115
+[; ;ui.c: 115:             if (!USER2_pressed()){
 [e $ ! ! != -> ( _USER2_pressed ..  `i -> 0 `i 1546  ]
 {
-"119
-[; ;ui.c: 119:                 bumpUIBrakeMode();
-[e ( _bumpUIBrakeMode ..  ]
-"120
-[; ;ui.c: 120:                 uiState = 0;
+"116
+[; ;ui.c: 116:                 bumpUIType();
+[e ( _bumpUIType ..  ]
+"117
+[; ;ui.c: 117:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"121
-[; ;ui.c: 121:             }
+"118
+[; ;ui.c: 118:             }
 }
 [e :U 1546 ]
-"122
-[; ;ui.c: 122:             if (USER1_pressed()){
+"119
+[; ;ui.c: 119:             if (USER1_pressed()){
 [e $ ! != -> ( _USER1_pressed ..  `i -> 0 `i 1547  ]
 {
-"123
-[; ;ui.c: 123:                 pulseLEDColor(0x003, 50, 100);
+"120
+[; ;ui.c: 120:                 pulseLEDColor(0x003, 50, 100);
 [e ( _pulseLEDColor (3 , , -> -> 3 `i `us -> -> 50 `i `us -> -> 100 `i `us ]
-"124
-[; ;ui.c: 124:                 uiState = 5;
+"121
+[; ;ui.c: 121:                 uiState = 5;
 [e = _uiState -> -> 5 `i `uc ]
-"125
-[; ;ui.c: 125:             }
+"122
+[; ;ui.c: 122:             }
 }
 [e :U 1547 ]
-"126
-[; ;ui.c: 126:             break;
+"123
+[; ;ui.c: 123:             break;
 [e $U 1528  ]
-"128
-[; ;ui.c: 128:         case 5:
+"125
+[; ;ui.c: 125:         case 5:
 [e :U 1548 ]
-"129
-[; ;ui.c: 129:             if (getTicksSince(uiStateTime) > 4000) {
+"126
+[; ;ui.c: 126:             if (getTicksSince(uiStateTime) > 4000) {
 [e $ ! > ( _getTicksSince (1 _uiStateTime -> -> 4000 `i `l 1549  ]
 {
-"130
-[; ;ui.c: 130:                 pulseLEDColor(0x333, 50, 100);
-[e ( _pulseLEDColor (3 , , -> -> 819 `i `us -> -> 50 `i `us -> -> 100 `i `us ]
-"131
-[; ;ui.c: 131:                 uiState = 6;
+"127
+[; ;ui.c: 127:                 pulseLEDColor(0x333, 500, 500);
+[e ( _pulseLEDColor (3 , , -> -> 819 `i `us -> -> 500 `i `us -> -> 500 `i `us ]
+"128
+[; ;ui.c: 128:                 uiState = 6;
 [e = _uiState -> -> 6 `i `uc ]
-"132
-[; ;ui.c: 132:             }
+"129
+[; ;ui.c: 129:             }
 }
 [e :U 1549 ]
-"134
-[; ;ui.c: 134:             if (!USER1_pressed() && !USER2_pressed()) {
+"131
+[; ;ui.c: 131:             if (!USER1_pressed() && !USER2_pressed()) {
 [e $ ! && ! != -> ( _USER1_pressed ..  `i -> 0 `i ! != -> ( _USER2_pressed ..  `i -> 0 `i 1550  ]
 {
-"135
-[; ;ui.c: 135:                 disableJoystick();
+"132
+[; ;ui.c: 132:                 disableJoystick();
 [e ( _disableJoystick ..  ]
-"136
-[; ;ui.c: 136:                 pairBluetoothDevices();
+"133
+[; ;ui.c: 133:                 pairBluetoothDevices();
 [e ( _pairBluetoothDevices ..  ]
-"137
-[; ;ui.c: 137:                 enableJoystick();
+"134
+[; ;ui.c: 134:                 enableJoystick();
 [e ( _enableJoystick ..  ]
-"138
-[; ;ui.c: 138:                 uiState = 0;
+"135
+[; ;ui.c: 135:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"139
-[; ;ui.c: 139:             }
+"136
+[; ;ui.c: 136:             }
 }
 [e :U 1550 ]
-"141
-[; ;ui.c: 141:             break;
+"137
+[; ;ui.c: 137:             break;
 [e $U 1528  ]
-"143
-[; ;ui.c: 143:         case 6:
+"139
+[; ;ui.c: 139:         case 6:
 [e :U 1551 ]
-"144
-[; ;ui.c: 144:             if (!USER1_pressed() && !USER2_pressed()) {
+"140
+[; ;ui.c: 140:             if (!USER1_pressed() && !USER2_pressed()) {
 [e $ ! && ! != -> ( _USER1_pressed ..  `i -> 0 `i ! != -> ( _USER2_pressed ..  `i -> 0 `i 1552  ]
 {
-"145
-[; ;ui.c: 145:                 disableJoystick();
+"141
+[; ;ui.c: 141:                 disableJoystick();
 [e ( _disableJoystick ..  ]
-"147
-[; ;ui.c: 147:                 doFactoryReset();
+"143
+[; ;ui.c: 143:                 doFactoryReset();
 [e ( _doFactoryReset ..  ]
-"148
-[; ;ui.c: 148:                 enableJoystick();
+"144
+[; ;ui.c: 144:                 enableJoystick();
 [e ( _enableJoystick ..  ]
-"149
-[; ;ui.c: 149:                 uiState = 0;
+"145
+[; ;ui.c: 145:                 uiState = 0;
 [e = _uiState -> -> 0 `i `uc ]
-"150
-[; ;ui.c: 150:             }
+"146
+[; ;ui.c: 146:             }
 }
 [e :U 1552 ]
-"151
-[; ;ui.c: 151:             break;
+"147
+[; ;ui.c: 147:             break;
 [e $U 1528  ]
-"153
-[; ;ui.c: 153:         default:
+"149
+[; ;ui.c: 149:         default:
 [e :U 1553 ]
-"154
-[; ;ui.c: 154:             break;
+"150
+[; ;ui.c: 150:             break;
 [e $U 1528  ]
-"155
-[; ;ui.c: 155:     }
+"151
+[; ;ui.c: 151:     }
 }
 [e $U 1528  ]
 [e :U 1529 ]
@@ -1839,208 +1845,267 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 6 `i 1551
  1553 ]
 [e :U 1528 ]
-"158
-[; ;ui.c: 158:     if (oneSec()) {
+"154
+[; ;ui.c: 154:     if (oneSec()) {
 [e $ ! != -> ( _oneSec ..  `i -> 0 `i 1554  ]
 {
-"159
-[; ;ui.c: 159:         timeRemaining = BTTimeRemaining();
-[e = _timeRemaining ( _BTTimeRemaining ..  ]
-"160
-[; ;ui.c: 160:         if (timeRemaining < 5000)
-[e $ ! < _timeRemaining -> -> 5000 `i `l 1555  ]
-"161
-[; ;ui.c: 161:             pulseLEDColor(0x100, 2, 1);
-[e ( _pulseLEDColor (3 , , -> -> 256 `i `us -> -> 2 `i `us -> -> 1 `i `us ]
+"155
+[; ;ui.c: 155:         if (BTTimeRemaining() < 5000) {
+[e $ ! < ( _BTTimeRemaining ..  -> -> 5000 `i `l 1555  ]
+{
+"156
+[; ;ui.c: 156:             pulseLEDColor(0x200, 2, 1);
+[e ( _pulseLEDColor (3 , , -> -> 512 `i `us -> -> 2 `i `us -> -> 1 `i `us ]
+"157
+[; ;ui.c: 157:         } else if (BTTimeWaiting() > 250) {
+}
 [e $U 1556  ]
-"162
-[; ;ui.c: 162:         else if (timeRemaining < 15000)
 [e :U 1555 ]
-[e $ ! < _timeRemaining -> -> 15000 `i `l 1557  ]
-"163
-[; ;ui.c: 163:             pulseLEDColor(0x110, 2, 1);
+[e $ ! > ( _BTTimeWaiting ..  -> -> 250 `i `l 1557  ]
+{
+"158
+[; ;ui.c: 158:             pulseLEDColor(0x110, 2, 1);
 [e ( _pulseLEDColor (3 , , -> -> 272 `i `us -> -> 2 `i `us -> -> 1 `i `us ]
+"159
+[; ;ui.c: 159:         } else {
+}
 [e $U 1558  ]
-"164
-[; ;ui.c: 164:         else
 [e :U 1557 ]
-"165
-[; ;ui.c: 165:             pulseLEDColor(0x010, 2, 1);
+{
+"160
+[; ;ui.c: 160:             pulseLEDColor(0x010, 2, 1);
 [e ( _pulseLEDColor (3 , , -> -> 16 `i `us -> -> 2 `i `us -> -> 1 `i `us ]
+"161
+[; ;ui.c: 161:         }
+}
 [e :U 1558 ]
 [e :U 1556 ]
-"166
-[; ;ui.c: 166:     }
+"162
+[; ;ui.c: 162:     }
 }
 [e :U 1554 ]
-"167
-[; ;ui.c: 167: }
+"163
+[; ;ui.c: 163: }
 [e :UE 1527 ]
 }
-"169
-[; ;ui.c: 169: void bumpUISpeedMode(){
+"165
+[; ;ui.c: 165: void bumpUISpeedMode(){
 [v _bumpUISpeedMode `(v ~T0 @X0 1 ef ]
 {
 [e :U _bumpUISpeedMode ]
 [f ]
-"170
-[; ;ui.c: 170:     uiSpeedMode = ((uiSpeedMode +1) % 3);
-[e = _uiSpeedMode -> % + -> _uiSpeedMode `i -> 1 `i -> 3 `i `uc ]
-"171
-[; ;ui.c: 171:     EEPROM_uiSpeedMode = uiSpeedMode;
+"166
+[; ;ui.c: 166:     uiSpeedMode = ((uiSpeedMode +1) % 10);
+[e = _uiSpeedMode -> % + -> _uiSpeedMode `i -> 1 `i -> 10 `i `uc ]
+"167
+[; ;ui.c: 167:     EEPROM_uiSpeedMode = uiSpeedMode;
 [e = _EEPROM_uiSpeedMode _uiSpeedMode ]
-"172
-[; ;ui.c: 172:     blinkLEDColor(0x330, uiSpeedMode + 1);
+"168
+[; ;ui.c: 168:     blinkLEDColor(0x330, uiSpeedMode + 1);
 [e ( _blinkLEDColor (2 , -> -> 816 `i `us -> + -> _uiSpeedMode `i -> 1 `i `uc ]
-"173
-[; ;ui.c: 173: }
+"169
+[; ;ui.c: 169:     setJoystickSpeed(uiSpeedMode);
+[e ( _setJoystickSpeed (1 -> _uiSpeedMode `c ]
+"170
+[; ;ui.c: 170: }
 [e :UE 1559 ]
 }
-"175
-[; ;ui.c: 175: uint8_t getUISpeedMode(){
+"172
+[; ;ui.c: 172: uint8_t getUISpeedMode(){
 [v _getUISpeedMode `(uc ~T0 @X0 1 ef ]
 {
 [e :U _getUISpeedMode ]
 [f ]
-"176
-[; ;ui.c: 176:     return (uiSpeedMode);
+"173
+[; ;ui.c: 173:     return (uiSpeedMode);
 [e ) _uiSpeedMode ]
 [e $UE 1560  ]
-"177
-[; ;ui.c: 177: }
+"174
+[; ;ui.c: 174: }
 [e :UE 1560 ]
 }
-"179
-[; ;ui.c: 179: void bumpUIBrakeMode(){
-[v _bumpUIBrakeMode `(v ~T0 @X0 1 ef ]
+"176
+[; ;ui.c: 176: void bumpUIType(){
+[v _bumpUIType `(v ~T0 @X0 1 ef ]
 {
-[e :U _bumpUIBrakeMode ]
+[e :U _bumpUIType ]
 [f ]
+"177
+[; ;ui.c: 177:     uiType = ((uiType +1) % 2);
+[e = _uiType -> % + -> _uiType `i -> 1 `i -> 2 `i `uc ]
+"178
+[; ;ui.c: 178:     EEPROM_uiBrakeMode = uiType;
+[e = _EEPROM_uiBrakeMode _uiType ]
+"179
+[; ;ui.c: 179:     blinkLEDColor(0x033, uiType + 1);
+[e ( _blinkLEDColor (2 , -> -> 51 `i `us -> + -> _uiType `i -> 1 `i `uc ]
 "180
-[; ;ui.c: 180:     uiBrakeMode = ((uiBrakeMode +1) % 2);
-[e = _uiBrakeMode -> % + -> _uiBrakeMode `i -> 1 `i -> 2 `i `uc ]
+[; ;ui.c: 180:     setJoystickType(uiType);
+[e ( _setJoystickType (1 _uiType ]
 "181
-[; ;ui.c: 181:     EEPROM_uiBrakeMode = uiBrakeMode;
-[e = _EEPROM_uiBrakeMode _uiBrakeMode ]
-"182
-[; ;ui.c: 182:     blinkLEDColor(0x033, uiBrakeMode + 1);
-[e ( _blinkLEDColor (2 , -> -> 51 `i `us -> + -> _uiBrakeMode `i -> 1 `i `uc ]
-"183
-[; ;ui.c: 183: }
+[; ;ui.c: 181: }
 [e :UE 1561 ]
 }
-"185
-[; ;ui.c: 185: uint8_t getUIBreakMode(){
-[v _getUIBreakMode `(uc ~T0 @X0 1 ef ]
+"183
+[; ;ui.c: 183: uint8_t getUIType(){
+[v _getUIType `(uc ~T0 @X0 1 ef ]
 {
-[e :U _getUIBreakMode ]
+[e :U _getUIType ]
 [f ]
-"186
-[; ;ui.c: 186:     return (uiBrakeMode);
-[e ) _uiBrakeMode ]
+"184
+[; ;ui.c: 184:     return (uiType);
+[e ) _uiType ]
 [e $UE 1562  ]
-"187
-[; ;ui.c: 187: }
+"185
+[; ;ui.c: 185: }
 [e :UE 1562 ]
 }
-"189
-[; ;ui.c: 189: void showStartup(void){
+"187
+[; ;ui.c: 187: void showStartup(void){
 [v _showStartup `(v ~T0 @X0 1 ef ]
 {
 [e :U _showStartup ]
 [f ]
-"190
-[; ;ui.c: 190:     int8_t ramp = 0;
+"188
+[; ;ui.c: 188:     int8_t ramp = 0;
 [v _ramp `c ~T0 @X0 1 a ]
 [e = _ramp -> -> 0 `i `c ]
-"192
-[; ;ui.c: 192:     for (ramp = 0 ; ramp < 7; ramp++) {
+"190
+[; ;ui.c: 190:     for (ramp = 0 ; ramp < 7; ramp++) {
 {
 [e = _ramp -> -> 0 `i `c ]
 [e $ < -> _ramp `i -> 7 `i 1564  ]
 [e $U 1565  ]
 [e :U 1564 ]
 {
-"193
-[; ;ui.c: 193:         G_LED = ramp;
-[e = _G_LED -> _ramp `uc ]
-"194
-[; ;ui.c: 194:         sleep(40);
+"191
+[; ;ui.c: 191:         R_LED = ramp;
+[e = _R_LED -> _ramp `uc ]
+"192
+[; ;ui.c: 192:         sleep(40);
 [e ( _sleep (1 -> -> -> 40 `i `l `ul ]
-"195
-[; ;ui.c: 195:     }
+"193
+[; ;ui.c: 193:     }
 }
 [e ++ _ramp -> -> 1 `i `c ]
 [e $ < -> _ramp `i -> 7 `i 1564  ]
 [e :U 1565 ]
 }
+"194
+[; ;ui.c: 194:     R_LED = 0;
+[e = _R_LED -> -> 0 `i `uc ]
+"195
+[; ;ui.c: 195:     for (ramp = 0 ; ramp < 7; ramp++) {
+{
+[e = _ramp -> -> 0 `i `c ]
+[e $ < -> _ramp `i -> 7 `i 1567  ]
+[e $U 1568  ]
+[e :U 1567 ]
+{
 "196
-[; ;ui.c: 196:     G_LED = 0;
-[e = _G_LED -> -> 0 `i `uc ]
+[; ;ui.c: 196:         G_LED = ramp;
+[e = _G_LED -> _ramp `uc ]
 "197
-[; ;ui.c: 197:     setBTTimeout(10000);
-[e ( _setBTTimeout (1 -> -> -> 10000 `i `l `ul ]
+[; ;ui.c: 197:         sleep(40);
+[e ( _sleep (1 -> -> -> 40 `i `l `ul ]
 "198
-[; ;ui.c: 198: }
+[; ;ui.c: 198:     }
+}
+[e ++ _ramp -> -> 1 `i `c ]
+[e $ < -> _ramp `i -> 7 `i 1567  ]
+[e :U 1568 ]
+}
+"199
+[; ;ui.c: 199:     G_LED = 0;
+[e = _G_LED -> -> 0 `i `uc ]
+"201
+[; ;ui.c: 201:     for (ramp = 0 ; ramp < 7; ramp++) {
+{
+[e = _ramp -> -> 0 `i `c ]
+[e $ < -> _ramp `i -> 7 `i 1570  ]
+[e $U 1571  ]
+[e :U 1570 ]
+{
+"202
+[; ;ui.c: 202:         B_LED = ramp;
+[e = _B_LED -> _ramp `uc ]
+"203
+[; ;ui.c: 203:         sleep(40);
+[e ( _sleep (1 -> -> -> 40 `i `l `ul ]
+"204
+[; ;ui.c: 204:     }
+}
+[e ++ _ramp -> -> 1 `i `c ]
+[e $ < -> _ramp `i -> 7 `i 1570  ]
+[e :U 1571 ]
+}
+"205
+[; ;ui.c: 205:     B_LED = 0;
+[e = _B_LED -> -> 0 `i `uc ]
+"206
+[; ;ui.c: 206:     setBTTimeout(10000);
+[e ( _setBTTimeout (1 -> -> -> 10000 `i `l `ul ]
+"207
+[; ;ui.c: 207: }
 [e :UE 1563 ]
 }
-"200
-[; ;ui.c: 200: void showShutdown(void){
+"209
+[; ;ui.c: 209: void showShutdown(void){
 [v _showShutdown `(v ~T0 @X0 1 ef ]
 {
 [e :U _showShutdown ]
 [f ]
-"201
-[; ;ui.c: 201:     int8_t ramp = 0;
+"210
+[; ;ui.c: 210:     int8_t ramp = 0;
 [v _ramp `c ~T0 @X0 1 a ]
 [e = _ramp -> -> 0 `i `c ]
-"203
-[; ;ui.c: 203:     for (ramp = 7 ; ramp >= 0; ramp--) {
+"212
+[; ;ui.c: 212:     for (ramp = 7 ; ramp >= 0; ramp--) {
 {
 [e = _ramp -> -> 7 `i `c ]
-[e $ >= -> _ramp `i -> 0 `i 1568  ]
-[e $U 1569  ]
-[e :U 1568 ]
+[e $ >= -> _ramp `i -> 0 `i 1574  ]
+[e $U 1575  ]
+[e :U 1574 ]
 {
-"204
-[; ;ui.c: 204:         R_LED = ramp;
+"213
+[; ;ui.c: 213:         R_LED = ramp;
 [e = _R_LED -> _ramp `uc ]
-"205
-[; ;ui.c: 205:         sleep(40);
+"214
+[; ;ui.c: 214:         sleep(40);
 [e ( _sleep (1 -> -> -> 40 `i `l `ul ]
-"206
-[; ;ui.c: 206:     }
+"215
+[; ;ui.c: 215:     }
 }
 [e -- _ramp -> -> 1 `i `c ]
-[e $ >= -> _ramp `i -> 0 `i 1568  ]
-[e :U 1569 ]
+[e $ >= -> _ramp `i -> 0 `i 1574  ]
+[e :U 1575 ]
 }
-"207
-[; ;ui.c: 207: }
-[e :UE 1567 ]
+"216
+[; ;ui.c: 216: }
+[e :UE 1573 ]
 }
-"214
-[; ;ui.c: 214: void setLEDColor(uint16_t RGB) {
+"223
+[; ;ui.c: 223: void setLEDColor(uint16_t RGB) {
 [v _setLEDColor `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _setLEDColor ]
 [v _RGB `us ~T0 @X0 1 r1 ]
 [f ]
-"215
-[; ;ui.c: 215:     B_LED = RGB & 0x0F;
+"224
+[; ;ui.c: 224:     B_LED = RGB & 0x0F;
 [e = _B_LED -> & -> _RGB `ui -> -> 15 `i `ui `uc ]
-"216
-[; ;ui.c: 216:     G_LED = (RGB >> 4) & 0x0F;
+"225
+[; ;ui.c: 225:     G_LED = (RGB >> 4) & 0x0F;
 [e = _G_LED -> & >> -> _RGB `ui -> 4 `i -> -> 15 `i `ui `uc ]
-"217
-[; ;ui.c: 217:     R_LED = (RGB >> 8) & 0x0F;
+"226
+[; ;ui.c: 226:     R_LED = (RGB >> 8) & 0x0F;
 [e = _R_LED -> & >> -> _RGB `ui -> 8 `i -> -> 15 `i `ui `uc ]
-"218
-[; ;ui.c: 218: }
-[e :UE 1571 ]
+"227
+[; ;ui.c: 227: }
+[e :UE 1577 ]
 }
-"220
-[; ;ui.c: 220: void pulseLEDColor(uint16_t RGB, uint16_t onTimeMS, uint16_t offTimeMS){
+"229
+[; ;ui.c: 229: void pulseLEDColor(uint16_t RGB, uint16_t onTimeMS, uint16_t offTimeMS){
 [v _pulseLEDColor `(v ~T0 @X0 1 ef3`us`us`us ]
 {
 [e :U _pulseLEDColor ]
@@ -2048,206 +2113,206 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _onTimeMS `us ~T0 @X0 1 r2 ]
 [v _offTimeMS `us ~T0 @X0 1 r3 ]
 [f ]
-"221
-[; ;ui.c: 221:     setLEDColor(RGB);
+"230
+[; ;ui.c: 230:     setLEDColor(RGB);
 [e ( _setLEDColor (1 _RGB ]
-"222
-[; ;ui.c: 222:     sleep(onTimeMS);
+"231
+[; ;ui.c: 231:     sleep(onTimeMS);
 [e ( _sleep (1 -> _onTimeMS `ul ]
-"223
-[; ;ui.c: 223:     setLEDColor(0x000);
+"232
+[; ;ui.c: 232:     setLEDColor(0x000);
 [e ( _setLEDColor (1 -> -> 0 `i `us ]
-"224
-[; ;ui.c: 224:     sleep(offTimeMS);
+"233
+[; ;ui.c: 233:     sleep(offTimeMS);
 [e ( _sleep (1 -> _offTimeMS `ul ]
-"225
-[; ;ui.c: 225: }
-[e :UE 1572 ]
+"234
+[; ;ui.c: 234: }
+[e :UE 1578 ]
 }
-"227
-[; ;ui.c: 227: void blinkLEDColor(uint16_t RGB, uint8_t blinks){
+"236
+[; ;ui.c: 236: void blinkLEDColor(uint16_t RGB, uint8_t blinks){
 [v _blinkLEDColor `(v ~T0 @X0 1 ef2`us`uc ]
 {
 [e :U _blinkLEDColor ]
 [v _RGB `us ~T0 @X0 1 r1 ]
 [v _blinks `uc ~T0 @X0 1 r2 ]
 [f ]
-"228
-[; ;ui.c: 228:     uint8_t blink;
+"237
+[; ;ui.c: 237:     uint8_t blink;
 [v _blink `uc ~T0 @X0 1 a ]
-"230
-[; ;ui.c: 230:     for(blink=0; blink < blinks; blink++){
+"239
+[; ;ui.c: 239:     for(blink=0; blink < blinks; blink++){
 {
 [e = _blink -> -> 0 `i `uc ]
-[e $U 1577  ]
-[e :U 1574 ]
+[e $U 1583  ]
+[e :U 1580 ]
 {
-"231
-[; ;ui.c: 231:         pulseLEDColor(RGB, 100, 400);
+"240
+[; ;ui.c: 240:         pulseLEDColor(RGB, 100, 400);
 [e ( _pulseLEDColor (3 , , _RGB -> -> 100 `i `us -> -> 400 `i `us ]
-"232
-[; ;ui.c: 232:     }
+"241
+[; ;ui.c: 241:     }
 }
 [e ++ _blink -> -> 1 `i `uc ]
-[e :U 1577 ]
-[e $ < -> _blink `i -> _blinks `i 1574  ]
-[e :U 1575 ]
+[e :U 1583 ]
+[e $ < -> _blink `i -> _blinks `i 1580  ]
+[e :U 1581 ]
 }
-"233
-[; ;ui.c: 233: }
-[e :UE 1573 ]
+"242
+[; ;ui.c: 242: }
+[e :UE 1579 ]
 }
-"235
-[; ;ui.c: 235: void UI_PWM_handler(void){
+"244
+[; ;ui.c: 244: void UI_PWM_handler(void){
 [v _UI_PWM_handler `(v ~T0 @X0 1 ef ]
 {
 [e :U _UI_PWM_handler ]
 [f ]
-"239
-[; ;ui.c: 239:     dutyCycle = (dutyCycle+1) & 0x0F;
+"248
+[; ;ui.c: 248:     dutyCycle = (dutyCycle+1) & 0x0F;
 [e = _dutyCycle -> & + -> _dutyCycle `i -> 1 `i -> 15 `i `uc ]
-"241
-[; ;ui.c: 241:     if (dutyCycle == 0){
-[e $ ! == -> _dutyCycle `i -> 0 `i 1579  ]
+"250
+[; ;ui.c: 250:     if (dutyCycle == 0){
+[e $ ! == -> _dutyCycle `i -> 0 `i 1585  ]
 {
-"242
-[; ;ui.c: 242:         if (R_LED > 0)
-[e $ ! > -> _R_LED `i -> 0 `i 1580  ]
-"243
-[; ;ui.c: 243:             do { LATBbits.LATB6 = 0; } while(0);
-[e :U 1583 ]
+"251
+[; ;ui.c: 251:         if (R_LED > 0)
+[e $ ! > -> _R_LED `i -> 0 `i 1586  ]
+"252
+[; ;ui.c: 252:             do { LATBbits.LATB6 = 0; } while(0);
+[e :U 1589 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 1582 ]
-[e $U 1584  ]
-"244
-[; ;ui.c: 244:         else
-[e :U 1580 ]
-"245
-[; ;ui.c: 245:             do { LATBbits.LATB6 = 1; } while(0);
-[e :U 1587 ]
+[e :U 1588 ]
+[e $U 1590  ]
+"253
+[; ;ui.c: 253:         else
+[e :U 1586 ]
+"254
+[; ;ui.c: 254:             do { LATBbits.LATB6 = 1; } while(0);
+[e :U 1593 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 1586 ]
-[e :U 1584 ]
-"247
-[; ;ui.c: 247:         if (G_LED > 0)
-[e $ ! > -> _G_LED `i -> 0 `i 1588  ]
-"248
-[; ;ui.c: 248:             do { LATBbits.LATB5 = 0; } while(0);
-[e :U 1591 ]
+[e :U 1592 ]
+[e :U 1590 ]
+"256
+[; ;ui.c: 256:         if (G_LED > 0)
+[e $ ! > -> _G_LED `i -> 0 `i 1594  ]
+"257
+[; ;ui.c: 257:             do { LATBbits.LATB5 = 0; } while(0);
+[e :U 1597 ]
 {
 [e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 1590 ]
-[e $U 1592  ]
-"249
-[; ;ui.c: 249:         else
-[e :U 1588 ]
-"250
-[; ;ui.c: 250:             do { LATBbits.LATB5 = 1; } while(0);
-[e :U 1595 ]
+[e :U 1596 ]
+[e $U 1598  ]
+"258
+[; ;ui.c: 258:         else
+[e :U 1594 ]
+"259
+[; ;ui.c: 259:             do { LATBbits.LATB5 = 1; } while(0);
+[e :U 1601 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 1594 ]
-[e :U 1592 ]
-"252
-[; ;ui.c: 252:         if (B_LED > 0)
-[e $ ! > -> _B_LED `i -> 0 `i 1596  ]
-"253
-[; ;ui.c: 253:             do { LATBbits.LATB4 = 0; } while(0);
-[e :U 1599 ]
+[e :U 1600 ]
+[e :U 1598 ]
+"261
+[; ;ui.c: 261:         if (B_LED > 0)
+[e $ ! > -> _B_LED `i -> 0 `i 1602  ]
+"262
+[; ;ui.c: 262:             do { LATBbits.LATB4 = 0; } while(0);
+[e :U 1605 ]
 {
 [e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 1598 ]
-[e $U 1600  ]
-"254
-[; ;ui.c: 254:         else
-[e :U 1596 ]
-"255
-[; ;ui.c: 255:             do { LATBbits.LATB4 = 1; } while(0);
-[e :U 1603 ]
+[e :U 1604 ]
+[e $U 1606  ]
+"263
+[; ;ui.c: 263:         else
+[e :U 1602 ]
+"264
+[; ;ui.c: 264:             do { LATBbits.LATB4 = 1; } while(0);
+[e :U 1609 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 1602 ]
-[e :U 1600 ]
-"256
-[; ;ui.c: 256:     } else {
-}
-[e $U 1604  ]
-[e :U 1579 ]
-{
-"258
-[; ;ui.c: 258:         if (dutyCycle >= R_LED)
-[e $ ! >= -> _dutyCycle `i -> _R_LED `i 1605  ]
-"259
-[; ;ui.c: 259:             do { LATBbits.LATB6 = 1; } while(0);
 [e :U 1608 ]
+[e :U 1606 ]
+"265
+[; ;ui.c: 265:     } else {
+}
+[e $U 1610  ]
+[e :U 1585 ]
+{
+"267
+[; ;ui.c: 267:         if (dutyCycle >= R_LED)
+[e $ ! >= -> _dutyCycle `i -> _R_LED `i 1611  ]
+"268
+[; ;ui.c: 268:             do { LATBbits.LATB6 = 1; } while(0);
+[e :U 1614 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 1607 ]
-[e :U 1605 ]
-"260
-[; ;ui.c: 260:         if (dutyCycle >= G_LED)
-[e $ ! >= -> _dutyCycle `i -> _G_LED `i 1609  ]
-"261
-[; ;ui.c: 261:             do { LATBbits.LATB5 = 1; } while(0);
-[e :U 1612 ]
+[e :U 1613 ]
+[e :U 1611 ]
+"269
+[; ;ui.c: 269:         if (dutyCycle >= G_LED)
+[e $ ! >= -> _dutyCycle `i -> _G_LED `i 1615  ]
+"270
+[; ;ui.c: 270:             do { LATBbits.LATB5 = 1; } while(0);
+[e :U 1618 ]
 {
 [e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 1611 ]
-[e :U 1609 ]
-"262
-[; ;ui.c: 262:         if (dutyCycle >= B_LED)
-[e $ ! >= -> _dutyCycle `i -> _B_LED `i 1613  ]
-"263
-[; ;ui.c: 263:             do { LATBbits.LATB4 = 1; } while(0);
-[e :U 1616 ]
+[e :U 1617 ]
+[e :U 1615 ]
+"271
+[; ;ui.c: 271:         if (dutyCycle >= B_LED)
+[e $ ! >= -> _dutyCycle `i -> _B_LED `i 1619  ]
+"272
+[; ;ui.c: 272:             do { LATBbits.LATB4 = 1; } while(0);
+[e :U 1622 ]
 {
 [e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 1615 ]
-[e :U 1613 ]
-"264
-[; ;ui.c: 264:     }
+[e :U 1621 ]
+[e :U 1619 ]
+"273
+[; ;ui.c: 273:     }
 }
-[e :U 1604 ]
-"266
-[; ;ui.c: 266: }
-[e :UE 1578 ]
+[e :U 1610 ]
+"275
+[; ;ui.c: 275: }
+[e :UE 1584 ]
 }
-"268
-[; ;ui.c: 268: _Bool USER1_pressed(void) {
+"277
+[; ;ui.c: 277: _Bool USER1_pressed(void) {
 [v _USER1_pressed `(a ~T0 @X0 1 ef ]
 {
 [e :U _USER1_pressed ]
 [f ]
-"269
-[; ;ui.c: 269:     return PORTBbits.RB7 == 0;
+"278
+[; ;ui.c: 278:     return PORTBbits.RB7 == 0;
 [e ) -> -> == -> . . _PORTBbits 0 4 `i -> 0 `i `i `a ]
-[e $UE 1617  ]
-"270
-[; ;ui.c: 270: }
-[e :UE 1617 ]
+[e $UE 1623  ]
+"279
+[; ;ui.c: 279: }
+[e :UE 1623 ]
 }
-"272
-[; ;ui.c: 272: _Bool USER2_pressed(void) {
+"281
+[; ;ui.c: 281: _Bool USER2_pressed(void) {
 [v _USER2_pressed `(a ~T0 @X0 1 ef ]
 {
 [e :U _USER2_pressed ]
 [f ]
-"273
-[; ;ui.c: 273:     return PORTAbits.RA4 == 0;
+"282
+[; ;ui.c: 282:     return PORTAbits.RA4 == 0;
 [e ) -> -> == -> . . _PORTAbits 0 4 `i -> 0 `i `i `a ]
-[e $UE 1618  ]
-"274
-[; ;ui.c: 274: }
-[e :UE 1618 ]
+[e $UE 1624  ]
+"283
+[; ;ui.c: 283: }
+[e :UE 1624 ]
 }

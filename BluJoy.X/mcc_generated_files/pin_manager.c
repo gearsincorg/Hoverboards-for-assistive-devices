@@ -62,28 +62,28 @@ void PIN_MANAGER_Initialize(void)
     */
     LATA = 0x20;
     LATB = 0x70;
-    LATC = 0x50;
+    LATC = 0x40;
 
     /**
     TRISx registers
     */
     TRISA = 0x1F;
     TRISB = 0x80;
-    TRISC = 0xAF;
+    TRISC = 0x2F;
 
     /**
     ANSELx registers
     */
-    ANSELC = 0x80;
+    ANSELC = 0x00;
     ANSELB = 0x00;
-    ANSELA = 0x01;
+    ANSELA = 0x07;
 
     /**
     WPUx registers
     */
     WPUB = 0xF0;
     WPUA = 0x16;
-    WPUC = 0x57;
+    WPUC = 0x47;
 
     /**
     ODx registers
@@ -131,7 +131,7 @@ void PIN_MANAGER_Initialize(void)
    
     // Enable IOCI interrupt 
     PIE0bits.IOCIE = 1; 
-    
+    	
 	
     RC4PPS = 0x0F;   //RC4->EUSART1:TX1;    
     RX1DTPPS = 0x15;   //RC5->EUSART1:RX1;    

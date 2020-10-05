@@ -18078,25 +18078,25 @@ extern __bank0 __bit __timeout;
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 362 "mcc_generated_files/pin_manager.h"
+# 382 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 374 "mcc_generated_files/pin_manager.h"
+# 394 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 387 "mcc_generated_files/pin_manager.h"
+# 407 "mcc_generated_files/pin_manager.h"
 void IOCCF0_ISR(void);
-# 410 "mcc_generated_files/pin_manager.h"
+# 430 "mcc_generated_files/pin_manager.h"
 void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 434 "mcc_generated_files/pin_manager.h"
+# 454 "mcc_generated_files/pin_manager.h"
 extern void (*IOCCF0_InterruptHandler)(void);
-# 458 "mcc_generated_files/pin_manager.h"
+# 478 "mcc_generated_files/pin_manager.h"
 void IOCCF0_DefaultInterruptHandler(void);
-# 471 "mcc_generated_files/pin_manager.h"
+# 491 "mcc_generated_files/pin_manager.h"
 void IOCCF2_ISR(void);
-# 494 "mcc_generated_files/pin_manager.h"
+# 514 "mcc_generated_files/pin_manager.h"
 void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 518 "mcc_generated_files/pin_manager.h"
+# 538 "mcc_generated_files/pin_manager.h"
 extern void (*IOCCF2_InterruptHandler)(void);
-# 542 "mcc_generated_files/pin_manager.h"
+# 562 "mcc_generated_files/pin_manager.h"
 void IOCCF2_DefaultInterruptHandler(void);
 # 51 "mcc_generated_files/mcc.h" 2
 
@@ -18224,6 +18224,78 @@ extern void cputs(const char *);
 # 1 "mcc_generated_files/interrupt_manager.h" 1
 # 55 "mcc_generated_files/mcc.h" 2
 
+# 1 "mcc_generated_files/adcc.h" 1
+# 72 "mcc_generated_files/adcc.h"
+typedef uint16_t adc_result_t;
+
+typedef __uint24 uint24_t;
+# 89 "mcc_generated_files/adcc.h"
+typedef enum
+{
+    JSLE = 0x1,
+    JSDO = 0x2,
+    channel_Vss = 0x3B,
+    channel_Temp_Sensor = 0x3C,
+    channel_DAC1_Output = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} adcc_channel_t;
+# 132 "mcc_generated_files/adcc.h"
+void ADCC_Initialize(void);
+# 161 "mcc_generated_files/adcc.h"
+void ADCC_StartConversion(adcc_channel_t channel);
+# 191 "mcc_generated_files/adcc.h"
+_Bool ADCC_IsConversionDone(void);
+# 223 "mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetConversionResult(void);
+# 254 "mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+# 279 "mcc_generated_files/adcc.h"
+void ADCC_StopConversion(void);
+# 306 "mcc_generated_files/adcc.h"
+void ADCC_SetStopOnInterrupt(void);
+# 331 "mcc_generated_files/adcc.h"
+void ADCC_DischargeSampleCapacitor(void);
+# 357 "mcc_generated_files/adcc.h"
+void ADCC_LoadAcquisitionRegister(uint16_t);
+# 383 "mcc_generated_files/adcc.h"
+void ADCC_SetPrechargeTime(uint16_t);
+# 408 "mcc_generated_files/adcc.h"
+void ADCC_SetRepeatCount(uint8_t);
+# 436 "mcc_generated_files/adcc.h"
+uint8_t ADCC_GetCurrentCountofConversions(void);
+# 460 "mcc_generated_files/adcc.h"
+void ADCC_ClearAccumulator(void);
+# 485 "mcc_generated_files/adcc.h"
+uint24_t ADCC_GetAccumulatorValue(void);
+# 513 "mcc_generated_files/adcc.h"
+_Bool ADCC_HasAccumulatorOverflowed(void);
+# 538 "mcc_generated_files/adcc.h"
+uint16_t ADCC_GetFilterValue(void);
+# 566 "mcc_generated_files/adcc.h"
+uint16_t ADCC_GetPreviousResult(void);
+# 592 "mcc_generated_files/adcc.h"
+void ADCC_DefineSetPoint(uint16_t);
+# 618 "mcc_generated_files/adcc.h"
+void ADCC_SetUpperThreshold(uint16_t);
+# 644 "mcc_generated_files/adcc.h"
+void ADCC_SetLowerThreshold(uint16_t);
+# 671 "mcc_generated_files/adcc.h"
+uint16_t ADCC_GetErrorCalculation(void);
+# 698 "mcc_generated_files/adcc.h"
+void ADCC_EnableDoubleSampling(void);
+# 722 "mcc_generated_files/adcc.h"
+void ADCC_EnableContinuousConversion(void);
+# 746 "mcc_generated_files/adcc.h"
+void ADCC_DisableContinuousConversion(void);
+# 774 "mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedUpperThreshold(void);
+# 802 "mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedLowerThreshold(void);
+# 829 "mcc_generated_files/adcc.h"
+uint8_t ADCC_GetConversionStageStatus(void);
+# 56 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/tmr3.h" 1
 # 101 "mcc_generated_files/tmr3.h"
 void TMR3_Initialize(void);
@@ -18251,7 +18323,7 @@ void TMR3_CallBack(void);
 extern void (*TMR3_InterruptHandler)(void);
 # 439 "mcc_generated_files/tmr3.h"
 void TMR3_DefaultInterruptHandler(void);
-# 56 "mcc_generated_files/mcc.h" 2
+# 57 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/tmr1.h" 1
 # 101 "mcc_generated_files/tmr1.h"
@@ -18280,7 +18352,7 @@ void TMR1_CallBack(void);
 extern void (*TMR1_InterruptHandler)(void);
 # 439 "mcc_generated_files/tmr1.h"
 void TMR1_DefaultInterruptHandler(void);
-# 57 "mcc_generated_files/mcc.h" 2
+# 58 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/tmr2.h" 1
 # 79 "mcc_generated_files/tmr2.h"
@@ -18473,7 +18545,7 @@ void TMR2_ISR(void);
 extern void (*TMR2_InterruptHandler)(void);
 # 836 "mcc_generated_files/tmr2.h"
 void TMR2_DefaultInterruptHandler(void);
-# 58 "mcc_generated_files/mcc.h" 2
+# 59 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/eusart1.h" 1
 # 75 "mcc_generated_files/eusart1.h"
@@ -18528,12 +18600,12 @@ void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
 # 505 "mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 59 "mcc_generated_files/mcc.h" 2
-# 74 "mcc_generated_files/mcc.h"
+# 60 "mcc_generated_files/mcc.h" 2
+# 75 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "mcc_generated_files/mcc.h"
+# 88 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 100 "mcc_generated_files/mcc.h"
+# 101 "mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -18544,6 +18616,7 @@ void SYSTEM_Initialize(void)
     PMD_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    ADCC_Initialize();
     TMR3_Initialize();
     TMR2_Initialize();
     TMR1_Initialize();

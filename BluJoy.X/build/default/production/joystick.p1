@@ -1,4 +1,26 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"29 ./joystick.h
+[; ;./joystick.h: 29: void setJoystickType(uint8_t jsType);
+[v _setJoystickType `(v ~T0 @X0 0 ef1`uc ]
+"27 ./ui.h
+[; ;./ui.h: 27: uint8_t getUIType();
+[v _getUIType `(uc ~T0 @X0 0 e? ]
+"30 ./joystick.h
+[; ;./joystick.h: 30: void setJoystickSpeed(int8_t jsSpeedMode);
+[v _setJoystickSpeed `(v ~T0 @X0 0 ef1`c ]
+"20 ./ui.h
+[; ;./ui.h: 20: uint8_t getUISpeedMode();
+[v _getUISpeedMode `(uc ~T0 @X0 0 e? ]
+[v F10992 `(v ~T0 @X0 0 tf ]
+"403 ./mcc_generated_files/tmr1.h
+[; ;./mcc_generated_files/tmr1.h: 403:  void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F10992 ]
+"33 ./joystick.h
+[; ;./joystick.h: 33: void readJoystick(void);
+[v _readJoystick `(v ~T0 @X0 0 ef ]
+"25
+[; ;./joystick.h: 25: void stopMotion(void);
+[v _stopMotion `(v ~T0 @X0 0 ef ]
 "25 ./timers.h
 [; ;./timers.h: 25: void resetBTTimer(void);
 [v _resetBTTimer `(v ~T0 @X0 0 ef ]
@@ -8,13 +30,52 @@ Version 4.0 HI-TECH Software Intermediate Code
 "162
 [; ;./mcc_generated_files/tmr1.h: 162: void TMR1_StopTimer(void);
 [v _TMR1_StopTimer `(v ~T0 @X0 0 ef ]
-[v F11321 `(v ~T0 @X0 0 tf ]
-"403
-[; ;./mcc_generated_files/tmr1.h: 403:  void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F11321 ]
-"21 ./joystick.h
-[; ;./joystick.h: 21: void readJoystick(void);
-[v _readJoystick `(v ~T0 @X0 0 ef ]
+"4037 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4037:     struct {
+[s S175 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S175 . GO . FM CS . CONT ON ]
+"4046
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4046:     struct {
+[s S176 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S176 . ADGO . ADFM ADCS . ADCONT ADON ]
+"4055
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4055:     struct {
+[s S177 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S177 . DONE . FM0 FM1 ]
+"4061
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4061:     struct {
+[s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S178 . GO_nDONE . ADFM0 ADFM1 ]
+"4067
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4067:     struct {
+[s S179 :7 `uc 1 :1 `uc 1 ]
+[n S179 . . ADCAL ]
+"4036
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4036: typedef union {
+[u S174 `S175 1 `S176 1 `S177 1 `S178 1 `S179 1 ]
+[n S174 . . . . . . ]
+"4072
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 4072: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x111)));
+[v _ADCON0bits `VS174 ~T0 @X0 0 e@273 ]
+"30628
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 30628: extern volatile unsigned char ANSELA __attribute__((address(0x1F38)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@7992 ]
+"30673
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 30673: extern volatile unsigned char WPUA __attribute__((address(0x1F39)));
+[v _WPUA `Vuc ~T0 @X0 0 e@7993 ]
+"20 ./timers.h
+[; ;./timers.h: 20: void sleep(uint32_t delay);
+[v _sleep `(v ~T0 @X0 0 ef1`ul ]
+"117 joystick.c
+[; ;joystick.c: 117:                 axialCenterSum += ADCC_GetSingleConversion(JSDO);
+[c E10918 1 2 59 60 61 62 63 .. ]
+[n E10918 . JSLE JSDO channel_Vss channel_Temp_Sensor channel_DAC1_Output channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"254 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 254: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E10918 ]
+"17 ./serial.h
+[; ;./serial.h: 17: _Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) ;
+[v _sendBTSpeedCmd `(a ~T0 @X0 0 ef3`s`s`a ]
 "541 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 541:     struct {
 [s S37 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -35,6 +96,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "18 ./serial.h
 [; ;./serial.h: 18: _Bool sendBTEstopCmd(void);
 [v _sendBTEstopCmd `(a ~T0 @X0 0 ef ]
+"34 ./joystick.h
+[; ;./joystick.h: 34: void readButtonJoystick(void);
+[v _readButtonJoystick `(v ~T0 @X0 0 ef ]
+"35
+[; ;./joystick.h: 35: void readPotJoystick(void);
+[v _readPotJoystick `(v ~T0 @X0 0 ef ]
+"328 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 328: uint8_t EUSART1_Read(void);
+[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
+"26 ./timers.h
+[; ;./timers.h: 26: void setBTTimeout(uint32_t timeout);
+[v _setBTTimeout `(v ~T0 @X0 0 ef1`ul ]
+"213 ./mcc_generated_files/eusart1.h
+[; ;./mcc_generated_files/eusart1.h: 213: _Bool EUSART1_is_rx_ready(void);
+[v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
 "452 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 452:     struct {
 [s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -46,23 +122,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "461
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 461: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
 [v _PORTAbits `VS32 ~T0 @X0 0 e@12 ]
-"23 ./joystick.h
-[; ;./joystick.h: 23: void calculateMotion(void);
+"37 ./joystick.h
+[; ;./joystick.h: 37: void calculateMotion(void);
 [v _calculateMotion `(v ~T0 @X0 0 ef ]
-"17 ./serial.h
-[; ;./serial.h: 17: _Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) ;
-[v _sendBTSpeedCmd `(a ~T0 @X0 0 ef3`s`s`a ]
-"328 ./mcc_generated_files/eusart1.h
-[; ;./mcc_generated_files/eusart1.h: 328: uint8_t EUSART1_Read(void);
-[v _EUSART1_Read `(uc ~T0 @X0 0 ef ]
-"26 ./timers.h
-[; ;./timers.h: 26: void setBTTimeout(uint32_t timeout);
-[v _setBTTimeout `(v ~T0 @X0 0 ef1`ul ]
-"213 ./mcc_generated_files/eusart1.h
-[; ;./mcc_generated_files/eusart1.h: 213: _Bool EUSART1_is_rx_ready(void);
-[v _EUSART1_is_rx_ready `(a ~T0 @X0 0 ef ]
-"24 ./joystick.h
-[; ;./joystick.h: 24: int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP);
+"32
+[; ;./joystick.h: 32: int16_t deadband(int16_t jsValue, int16_t center);
+[v _deadband `(s ~T0 @X0 0 ef2`s`s ]
+"38
+[; ;./joystick.h: 38: int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP);
 [v _limitSpeed `(s ~T0 @X0 0 ef3`s`s`s ]
 "110 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 110: __asm("INDF0 equ 00h");
@@ -1423,426 +1490,759 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32104
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 32104: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"32 joystick.c
-[; ;joystick.c: 32: _Bool joystickEnabled = 0;
+"35 joystick.c
+[; ;joystick.c: 35: uint8_t joystickType = 0;
+[v _joystickType `uc ~T0 @X0 1 e ]
+[i _joystickType
+-> -> 0 `i `uc
+]
+"36
+[; ;joystick.c: 36: _Bool joystickEnabled = 0;
 [v _joystickEnabled `a ~T0 @X0 1 e ]
 [i _joystickEnabled
 -> -> 0 `i `a
 ]
-"33
-[; ;joystick.c: 33: _Bool estopPending = 0;
+"37
+[; ;joystick.c: 37: _Bool estopPending = 0;
 [v _estopPending `a ~T0 @X0 1 e ]
 [i _estopPending
 -> -> 0 `i `a
 ]
-"34
-[; ;joystick.c: 34: _Bool estopActive = 0;
+"38
+[; ;joystick.c: 38: _Bool estopActive = 0;
 [v _estopActive `a ~T0 @X0 1 e ]
 [i _estopActive
 -> -> 0 `i `a
 ]
-"35
-[; ;joystick.c: 35: uint32_t estopTimer = 0;
+"39
+[; ;joystick.c: 39: uint32_t estopTimer = 0;
 [v _estopTimer `ul ~T0 @X0 1 e ]
 [i _estopTimer
 -> -> -> 0 `i `l `ul
 ]
-"37
-[; ;joystick.c: 37: uint8_t replyBuffer[4 * 2];
+"41
+[; ;joystick.c: 41: int16_t axialCenter = 2048;
+[v _axialCenter `s ~T0 @X0 1 e ]
+[i _axialCenter
+-> -> 2048 `i `s
+]
+"42
+[; ;joystick.c: 42: int16_t yawCenter = 2048;
+[v _yawCenter `s ~T0 @X0 1 e ]
+[i _yawCenter
+-> -> 2048 `i `s
+]
+"43
+[; ;joystick.c: 43: int32_t axialCenterSum = 0;
+[v _axialCenterSum `l ~T0 @X0 1 e ]
+[i _axialCenterSum
+-> -> 0 `i `l
+]
+"44
+[; ;joystick.c: 44: int32_t yawCenterSum = 0;
+[v _yawCenterSum `l ~T0 @X0 1 e ]
+[i _yawCenterSum
+-> -> 0 `i `l
+]
+"48
+[; ;joystick.c: 48: uint8_t replyBuffer[4 * 2];
 [v _replyBuffer `uc ~T0 @X0 -> 8 `i e ]
-"38
-[; ;joystick.c: 38: int16_t targetAxialFP = 0;
+"49
+[; ;joystick.c: 49: int16_t targetAxialFP = 0;
 [v _targetAxialFP `s ~T0 @X0 1 e ]
 [i _targetAxialFP
 -> -> 0 `i `s
 ]
-"39
-[; ;joystick.c: 39: int16_t targetYawFP = 0;
+"50
+[; ;joystick.c: 50: int16_t targetYawFP = 0;
 [v _targetYawFP `s ~T0 @X0 1 e ]
 [i _targetYawFP
 -> -> 0 `i `s
 ]
-"41
-[; ;joystick.c: 41: int16_t limitedAxialFP = 0;
+"52
+[; ;joystick.c: 52: int16_t limitedAxialFP = 0;
 [v _limitedAxialFP `s ~T0 @X0 1 e ]
 [i _limitedAxialFP
 -> -> 0 `i `s
 ]
-"42
-[; ;joystick.c: 42: int16_t limitedYawFP = 0;
+"53
+[; ;joystick.c: 53: int16_t limitedYawFP = 0;
 [v _limitedYawFP `s ~T0 @X0 1 e ]
 [i _limitedYawFP
 -> -> 0 `i `s
 ]
-"44
-[; ;joystick.c: 44: int16_t accelAxialFP = 0;
+"55
+[; ;joystick.c: 55: int16_t accelAxialFP = 0;
 [v _accelAxialFP `s ~T0 @X0 1 e ]
 [i _accelAxialFP
 -> -> 0 `i `s
 ]
-"45
-[; ;joystick.c: 45: int16_t accelYawFP = 0;
+"56
+[; ;joystick.c: 56: int16_t accelYawFP = 0;
 [v _accelYawFP `s ~T0 @X0 1 e ]
 [i _accelYawFP
 -> -> 0 `i `s
 ]
-"47
-[; ;joystick.c: 47: int16_t accelLimitAxialFP = (600 << 2) / 20 ;
+"58
+[; ;joystick.c: 58: int16_t accelLimitAxialFP = (600 << 2) / 20 ;
 [v _accelLimitAxialFP `s ~T0 @X0 1 e ]
 [i _accelLimitAxialFP
 -> / << -> 600 `i -> 2 `i -> 20 `i `s
 ]
-"48
-[; ;joystick.c: 48: int16_t accelLimitYawFP = (100 << 2) / 20 ;
+"59
+[; ;joystick.c: 59: int16_t accelLimitAxialStopFP = (1024 << 2) / 20 ;
+[v _accelLimitAxialStopFP `s ~T0 @X0 1 e ]
+[i _accelLimitAxialStopFP
+-> / << -> 1024 `i -> 2 `i -> 20 `i `s
+]
+"60
+[; ;joystick.c: 60: int16_t accelLimitYawFP = (800 << 2) / 20 ;
 [v _accelLimitYawFP `s ~T0 @X0 1 e ]
 [i _accelLimitYawFP
--> / << -> 100 `i -> 2 `i -> 20 `i `s
+-> / << -> 800 `i -> 2 `i -> 20 `i `s
 ]
-"49
-[; ;joystick.c: 49: int16_t accelLimitYawStopFP = (1000 << 2) / 20 ;
+"61
+[; ;joystick.c: 61: int16_t accelLimitYawStopFP = (2048 << 2) / 20 ;
 [v _accelLimitYawStopFP `s ~T0 @X0 1 e ]
 [i _accelLimitYawStopFP
--> / << -> 1000 `i -> 2 `i -> 20 `i `s
+-> / << -> 2048 `i -> 2 `i -> 20 `i `s
 ]
-"50
-[; ;joystick.c: 50: int16_t accelLimitSweepFP = (50 << 2) / 20 ;
+"62
+[; ;joystick.c: 62: int16_t accelLimitSweepFP = (200 << 2) / 20 ;
 [v _accelLimitSweepFP `s ~T0 @X0 1 e ]
 [i _accelLimitSweepFP
--> / << -> 50 `i -> 2 `i -> 20 `i `s
+-> / << -> 200 `i -> 2 `i -> 20 `i `s
 ]
-"52
-[; ;joystick.c: 52: int16_t topAxialSpeedFP = (500 << 2) ;
-[v _topAxialSpeedFP `s ~T0 @X0 1 e ]
-[i _topAxialSpeedFP
--> << -> 500 `i -> 2 `i `s
-]
-"53
-[; ;joystick.c: 53: int16_t topYawSpeedFP = (70 << 2) ;
-[v _topYawSpeedFP `s ~T0 @X0 1 e ]
-[i _topYawSpeedFP
--> << -> 70 `i -> 2 `i `s
-]
-"54
-[; ;joystick.c: 54: int16_t topSweepSpeedFP = (50 << 2) ;
-[v _topSweepSpeedFP `s ~T0 @X0 1 e ]
-[i _topSweepSpeedFP
--> << -> 50 `i -> 2 `i `s
-]
-"56
-[; ;joystick.c: 56: void enableJoystick(){
-[v _enableJoystick `(v ~T0 @X0 1 ef ]
-{
-[e :U _enableJoystick ]
-[f ]
-"57
-[; ;joystick.c: 57:     joystickEnabled = 1;
-[e = _joystickEnabled -> -> 1 `i `a ]
-"58
-[; ;joystick.c: 58:     resetBTTimer();
-[e ( _resetBTTimer ..  ]
-"59
-[; ;joystick.c: 59:     TMR1_StartTimer();
-[e ( _TMR1_StartTimer ..  ]
-"60
-[; ;joystick.c: 60: }
-[e :UE 1517 ]
-}
-"62
-[; ;joystick.c: 62: void disableJoystick(){
-[v _disableJoystick `(v ~T0 @X0 1 ef ]
-{
-[e :U _disableJoystick ]
-[f ]
-"63
-[; ;joystick.c: 63:     TMR1_StopTimer();
-[e ( _TMR1_StopTimer ..  ]
 "64
-[; ;joystick.c: 64:     joystickEnabled = 0;
-[e = _joystickEnabled -> -> 0 `i `a ]
+[; ;joystick.c: 64: int16_t topAxialSpeedFP ;
+[v _topAxialSpeedFP `s ~T0 @X0 1 e ]
 "65
-[; ;joystick.c: 65: }
-[e :UE 1518 ]
-}
-"67
-[; ;joystick.c: 67: void initJoystick(void) {
+[; ;joystick.c: 65: int16_t topYawSpeedFP ;
+[v _topYawSpeedFP `s ~T0 @X0 1 e ]
+"66
+[; ;joystick.c: 66: int16_t topSweepSpeedFP ;
+[v _topSweepSpeedFP `s ~T0 @X0 1 e ]
+"69
+[; ;joystick.c: 69: void initJoystick(void) {
 [v _initJoystick `(v ~T0 @X0 1 ef ]
 {
 [e :U _initJoystick ]
 [f ]
-"68
-[; ;joystick.c: 68:     TMR1_SetInterruptHandler(readJoystick);
-[e ( _TMR1_SetInterruptHandler (1 &U _readJoystick ]
-"69
-[; ;joystick.c: 69:     targetAxialFP = 0;
-[e = _targetAxialFP -> -> 0 `i `s ]
 "70
-[; ;joystick.c: 70:     targetYawFP = 0;
-[e = _targetYawFP -> -> 0 `i `s ]
+[; ;joystick.c: 70:     setJoystickType(getUIType());
+[e ( _setJoystickType (1 ( _getUIType ..  ]
 "71
-[; ;joystick.c: 71:     limitedAxialFP = 0;
-[e = _limitedAxialFP -> -> 0 `i `s ]
+[; ;joystick.c: 71:     setJoystickSpeed(getUISpeedMode());
+[e ( _setJoystickSpeed (1 -> ( _getUISpeedMode ..  `c ]
 "72
-[; ;joystick.c: 72:     limitedYawFP = 0;
-[e = _limitedYawFP -> -> 0 `i `s ]
+[; ;joystick.c: 72:     TMR1_SetInterruptHandler(readJoystick);
+[e ( _TMR1_SetInterruptHandler (1 &U _readJoystick ]
 "73
 [; ;joystick.c: 73:     joystickEnabled = 0;
 [e = _joystickEnabled -> -> 0 `i `a ]
 "74
-[; ;joystick.c: 74: }
+[; ;joystick.c: 74:     stopMotion();
+[e ( _stopMotion ..  ]
+"75
+[; ;joystick.c: 75: }
+[e :UE 1517 ]
+}
+"77
+[; ;joystick.c: 77: void setJoystickSpeed(int8_t jsSpeedMode) {
+[v _setJoystickSpeed `(v ~T0 @X0 1 ef1`c ]
+{
+[e :U _setJoystickSpeed ]
+[v _jsSpeedMode `c ~T0 @X0 1 r1 ]
+[f ]
+"78
+[; ;joystick.c: 78:     topAxialSpeedFP = (300 << 2) * (3 + jsSpeedMode) / 3;
+[e = _topAxialSpeedFP -> / * << -> 300 `i -> 2 `i + -> 3 `i -> _jsSpeedMode `i -> 3 `i `s ]
+"79
+[; ;joystick.c: 79:     topYawSpeedFP = (30 << 2) * (3 + jsSpeedMode) / 3;
+[e = _topYawSpeedFP -> / * << -> 30 `i -> 2 `i + -> 3 `i -> _jsSpeedMode `i -> 3 `i `s ]
+"80
+[; ;joystick.c: 80:     topSweepSpeedFP = (15 << 2) * (3 + jsSpeedMode) / 3;
+[e = _topSweepSpeedFP -> / * << -> 15 `i -> 2 `i + -> 3 `i -> _jsSpeedMode `i -> 3 `i `s ]
+"81
+[; ;joystick.c: 81: }
+[e :UE 1518 ]
+}
+"82
+[; ;joystick.c: 82: void enableJoystick(){
+[v _enableJoystick `(v ~T0 @X0 1 ef ]
+{
+[e :U _enableJoystick ]
+[f ]
+"83
+[; ;joystick.c: 83:     joystickEnabled = 1;
+[e = _joystickEnabled -> -> 1 `i `a ]
+"84
+[; ;joystick.c: 84:     resetBTTimer();
+[e ( _resetBTTimer ..  ]
+"85
+[; ;joystick.c: 85:     TMR1_StartTimer();
+[e ( _TMR1_StartTimer ..  ]
+"86
+[; ;joystick.c: 86: }
 [e :UE 1519 ]
 }
-"76
-[; ;joystick.c: 76: void readJoystick(void) {
+"88
+[; ;joystick.c: 88: void disableJoystick(){
+[v _disableJoystick `(v ~T0 @X0 1 ef ]
+{
+[e :U _disableJoystick ]
+[f ]
+"89
+[; ;joystick.c: 89:     TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"90
+[; ;joystick.c: 90:     joystickEnabled = 0;
+[e = _joystickEnabled -> -> 0 `i `a ]
+"91
+[; ;joystick.c: 91:     TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"92
+[; ;joystick.c: 92: }
+[e :UE 1520 ]
+}
+"94
+[; ;joystick.c: 94: uint8_t getJoystickType(void) {
+[v _getJoystickType `(uc ~T0 @X0 1 ef ]
+{
+[e :U _getJoystickType ]
+[f ]
+"95
+[; ;joystick.c: 95:     return joystickType;
+[e ) _joystickType ]
+[e $UE 1521  ]
+"96
+[; ;joystick.c: 96: }
+[e :UE 1521 ]
+}
+"98
+[; ;joystick.c: 98: void setJoystickType(uint8_t jsType) {
+[v _setJoystickType `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setJoystickType ]
+[v _jsType `uc ~T0 @X0 1 r1 ]
+[f ]
+"99
+[; ;joystick.c: 99:     joystickType = jsType;
+[e = _joystickType _jsType ]
+"100
+[; ;joystick.c: 100:     switch (joystickType) {
+[e $U 1524  ]
+{
+"101
+[; ;joystick.c: 101:         case 0:
+[e :U 1525 ]
+"102
+[; ;joystick.c: 102:             ADCON0bits.ADON = 0;
+[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
+"103
+[; ;joystick.c: 103:             ANSELA = 0x01;
+[e = _ANSELA -> -> 1 `i `uc ]
+"104
+[; ;joystick.c: 104:             WPUA = 0x16;
+[e = _WPUA -> -> 22 `i `uc ]
+"105
+[; ;joystick.c: 105:             break;
+[e $U 1523  ]
+"107
+[; ;joystick.c: 107:         case 1:
+[e :U 1526 ]
+"108
+[; ;joystick.c: 108:             ANSELA = 0x07;
+[e = _ANSELA -> -> 7 `i `uc ]
+"109
+[; ;joystick.c: 109:             WPUA = 0x10;
+[e = _WPUA -> -> 16 `i `uc ]
+"110
+[; ;joystick.c: 110:             ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
+"111
+[; ;joystick.c: 111:             sleep(20);
+[e ( _sleep (1 -> -> -> 20 `i `l `ul ]
+"114
+[; ;joystick.c: 114:             axialCenterSum = 0;
+[e = _axialCenterSum -> -> 0 `i `l ]
+"115
+[; ;joystick.c: 115:             yawCenterSum = 0;
+[e = _yawCenterSum -> -> 0 `i `l ]
+"116
+[; ;joystick.c: 116:             for (int i = 0; i < 128; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 128 `i 1527  ]
+[e $U 1528  ]
+[e :U 1527 ]
+{
+"117
+[; ;joystick.c: 117:                 axialCenterSum += ADCC_GetSingleConversion(JSDO);
+[e =+ _axialCenterSum -> ( _ADCC_GetSingleConversion (1 . `E10918 1 `l ]
+"118
+[; ;joystick.c: 118:                 yawCenterSum += ADCC_GetSingleConversion(JSLE);
+[e =+ _yawCenterSum -> ( _ADCC_GetSingleConversion (1 . `E10918 0 `l ]
+"119
+[; ;joystick.c: 119:             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 128 `i 1527  ]
+[e :U 1528 ]
+}
+"120
+[; ;joystick.c: 120:             axialCenter = axialCenterSum >> 7;
+[e = _axialCenter -> >> _axialCenterSum -> 7 `i `s ]
+"121
+[; ;joystick.c: 121:             yawCenter = yawCenterSum >> 7;
+[e = _yawCenter -> >> _yawCenterSum -> 7 `i `s ]
+"122
+[; ;joystick.c: 122:             break;
+[e $U 1523  ]
+"123
+[; ;joystick.c: 123:     }
+}
+[e $U 1523  ]
+[e :U 1524 ]
+[e [\ -> _joystickType `i , $ -> 0 `i 1525
+ , $ -> 1 `i 1526
+ 1523 ]
+[e :U 1523 ]
+"124
+[; ;joystick.c: 124: }
+[e :UE 1522 ]
+}
+"126
+[; ;joystick.c: 126: void stopMotion(void) {
+[v _stopMotion `(v ~T0 @X0 1 ef ]
+{
+[e :U _stopMotion ]
+[f ]
+"127
+[; ;joystick.c: 127:     targetAxialFP = 0;
+[e = _targetAxialFP -> -> 0 `i `s ]
+"128
+[; ;joystick.c: 128:     targetYawFP = 0;
+[e = _targetYawFP -> -> 0 `i `s ]
+"129
+[; ;joystick.c: 129:     limitedAxialFP = 0;
+[e = _limitedAxialFP -> -> 0 `i `s ]
+"130
+[; ;joystick.c: 130:     limitedYawFP = 0;
+[e = _limitedYawFP -> -> 0 `i `s ]
+"131
+[; ;joystick.c: 131:     if (joystickEnabled)
+[e $ ! != -> _joystickEnabled `i -> 0 `i 1531  ]
+"132
+[; ;joystick.c: 132:         sendBTSpeedCmd(0, 0, 0);
+[e ( _sendBTSpeedCmd (3 , , -> -> 0 `i `s -> -> 0 `i `s -> -> 0 `i `a ]
+[e :U 1531 ]
+"133
+[; ;joystick.c: 133: }
+[e :UE 1530 ]
+}
+"135
+[; ;joystick.c: 135: void readJoystick(void) {
 [v _readJoystick `(v ~T0 @X0 1 ef ]
 {
 [e :U _readJoystick ]
 [f ]
-"78
-[; ;joystick.c: 78:     accelAxialFP = accelLimitAxialFP;
-[e = _accelAxialFP _accelLimitAxialFP ]
-"79
-[; ;joystick.c: 79:     accelYawFP = accelLimitYawFP;
-[e = _accelYawFP _accelLimitYawFP ]
-"81
-[; ;joystick.c: 81:     if (joystickEnabled) {
-[e $ ! != -> _joystickEnabled `i -> 0 `i 1521  ]
+"136
+[; ;joystick.c: 136:     if (joystickEnabled) {
+[e $ ! != -> _joystickEnabled `i -> 0 `i 1533  ]
 {
-"84
-[; ;joystick.c: 84:         if (PORTCbits.RC2 == 0) {
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 1522  ]
+"139
+[; ;joystick.c: 139:         if (PORTCbits.RC2 == 0) {
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 1534  ]
 {
-"85
-[; ;joystick.c: 85:             if (estopPending){
-[e $ ! != -> _estopPending `i -> 0 `i 1523  ]
+"140
+[; ;joystick.c: 140:             if (estopPending){
+[e $ ! != -> _estopPending `i -> 0 `i 1535  ]
 {
-"86
-[; ;joystick.c: 86:                 if (getTicksSince(estopTimer) > 1000) {
-[e $ ! > ( _getTicksSince (1 _estopTimer -> -> 1000 `i `l 1524  ]
+"141
+[; ;joystick.c: 141:                 if (getTicksSince(estopTimer) > 1000) {
+[e $ ! > ( _getTicksSince (1 _estopTimer -> -> 1000 `i `l 1536  ]
 {
-"87
-[; ;joystick.c: 87:                     estopActive = 1;
+"142
+[; ;joystick.c: 142:                     estopActive = 1;
 [e = _estopActive -> -> 1 `i `a ]
-"88
-[; ;joystick.c: 88:                 }
+"143
+[; ;joystick.c: 143:                 }
 }
-[e :U 1524 ]
-"89
-[; ;joystick.c: 89:             } else {
+[e :U 1536 ]
+"144
+[; ;joystick.c: 144:             } else {
 }
-[e $U 1525  ]
-[e :U 1523 ]
+[e $U 1537  ]
+[e :U 1535 ]
 {
-"90
-[; ;joystick.c: 90:                 estopTimer = getTicks();
+"145
+[; ;joystick.c: 145:                 estopTimer = getTicks();
 [e = _estopTimer ( _getTicks ..  ]
-"91
-[; ;joystick.c: 91:                 estopPending = 1;
+"146
+[; ;joystick.c: 146:                 estopPending = 1;
 [e = _estopPending -> -> 1 `i `a ]
-"92
-[; ;joystick.c: 92:             }
+"149
+[; ;joystick.c: 149:                 stopMotion();
+[e ( _stopMotion ..  ]
+"150
+[; ;joystick.c: 150:             }
 }
-[e :U 1525 ]
-"93
-[; ;joystick.c: 93:         } else {
+[e :U 1537 ]
+"151
+[; ;joystick.c: 151:         } else {
 }
-[e $U 1526  ]
-[e :U 1522 ]
-{
-"94
-[; ;joystick.c: 94:             estopPending = 0;
-[e = _estopPending -> -> 0 `i `a ]
-"95
-[; ;joystick.c: 95:             estopActive = 0;
-[e = _estopActive -> -> 0 `i `a ]
-"96
-[; ;joystick.c: 96:         }
-}
-[e :U 1526 ]
-"98
-[; ;joystick.c: 98:         if (estopActive){
-[e $ ! != -> _estopActive `i -> 0 `i 1527  ]
-{
-"99
-[; ;joystick.c: 99:             sendBTEstopCmd();
-[e ( _sendBTEstopCmd ..  ]
-"101
-[; ;joystick.c: 101:             targetAxialFP = 0;
-[e = _targetAxialFP -> -> 0 `i `s ]
-"102
-[; ;joystick.c: 102:             targetYawFP = 0;
-[e = _targetYawFP -> -> 0 `i `s ]
-"103
-[; ;joystick.c: 103:             limitedAxialFP = 0;
-[e = _limitedAxialFP -> -> 0 `i `s ]
-"104
-[; ;joystick.c: 104:             limitedYawFP = 0;
-[e = _limitedYawFP -> -> 0 `i `s ]
-"105
-[; ;joystick.c: 105:         } else {
-}
-[e $U 1528  ]
-[e :U 1527 ]
-{
-"108
-[; ;joystick.c: 108:             if (PORTCbits.RC0 == 0)
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 1529  ]
-"109
-[; ;joystick.c: 109:                 targetAxialFP = topAxialSpeedFP;
-[e = _targetAxialFP _topAxialSpeedFP ]
-[e $U 1530  ]
-"110
-[; ;joystick.c: 110:             else if (PORTAbits.RA2 == 0)
-[e :U 1529 ]
-[e $ ! == -> . . _PORTAbits 0 2 `i -> 0 `i 1531  ]
-"111
-[; ;joystick.c: 111:                 targetAxialFP = -topAxialSpeedFP;
-[e = _targetAxialFP -> -U -> _topAxialSpeedFP `i `s ]
-[e $U 1532  ]
-"112
-[; ;joystick.c: 112:             else
-[e :U 1531 ]
-"113
-[; ;joystick.c: 113:                 targetAxialFP = 0;
-[e = _targetAxialFP -> -> 0 `i `s ]
-[e :U 1532 ]
-[e :U 1530 ]
-"115
-[; ;joystick.c: 115:             if (PORTCbits.RC1 == 0){
-[e $ ! == -> . . _PORTCbits 0 1 `i -> 0 `i 1533  ]
-{
-"116
-[; ;joystick.c: 116:                 if (targetAxialFP == 0)
-[e $ ! == -> _targetAxialFP `i -> 0 `i 1534  ]
-"117
-[; ;joystick.c: 117:                     targetYawFP = topYawSpeedFP;
-[e = _targetYawFP _topYawSpeedFP ]
-[e $U 1535  ]
-"118
-[; ;joystick.c: 118:                 else {
+[e $U 1538  ]
 [e :U 1534 ]
 {
-"119
-[; ;joystick.c: 119:                     targetYawFP = topSweepSpeedFP;
-[e = _targetYawFP _topSweepSpeedFP ]
-"120
-[; ;joystick.c: 120:                     accelYawFP = accelLimitSweepFP;
-[e = _accelYawFP _accelLimitSweepFP ]
-"121
-[; ;joystick.c: 121:                 }
+"152
+[; ;joystick.c: 152:             estopPending = 0;
+[e = _estopPending -> -> 0 `i `a ]
+"153
+[; ;joystick.c: 153:             estopActive = 0;
+[e = _estopActive -> -> 0 `i `a ]
+"154
+[; ;joystick.c: 154:         }
 }
-[e :U 1535 ]
-"122
-[; ;joystick.c: 122:             }
-}
-[e $U 1536  ]
-"123
-[; ;joystick.c: 123:             else if (PORTAbits.RA1 == 0){
-[e :U 1533 ]
-[e $ ! == -> . . _PORTAbits 0 1 `i -> 0 `i 1537  ]
-{
-"124
-[; ;joystick.c: 124:                 if (targetAxialFP == 0)
-[e $ ! == -> _targetAxialFP `i -> 0 `i 1538  ]
-"125
-[; ;joystick.c: 125:                     targetYawFP = -topYawSpeedFP;
-[e = _targetYawFP -> -U -> _topYawSpeedFP `i `s ]
-[e $U 1539  ]
-"126
-[; ;joystick.c: 126:                 else {
 [e :U 1538 ]
+"157
+[; ;joystick.c: 157:         if (estopActive){
+[e $ ! != -> _estopActive `i -> 0 `i 1539  ]
 {
-"127
-[; ;joystick.c: 127:                     targetYawFP = -topSweepSpeedFP;
-[e = _targetYawFP -> -U -> _topSweepSpeedFP `i `s ]
-"128
-[; ;joystick.c: 128:                     accelYawFP = accelLimitSweepFP;
-[e = _accelYawFP _accelLimitSweepFP ]
-"129
-[; ;joystick.c: 129:                 }
-}
-[e :U 1539 ]
-"130
-[; ;joystick.c: 130:             }
+"158
+[; ;joystick.c: 158:             sendBTEstopCmd();
+[e ( _sendBTEstopCmd ..  ]
+"160
+[; ;joystick.c: 160:             targetAxialFP = 0;
+[e = _targetAxialFP -> -> 0 `i `s ]
+"161
+[; ;joystick.c: 161:             targetYawFP = 0;
+[e = _targetYawFP -> -> 0 `i `s ]
+"162
+[; ;joystick.c: 162:             limitedAxialFP = 0;
+[e = _limitedAxialFP -> -> 0 `i `s ]
+"163
+[; ;joystick.c: 163:             limitedYawFP = 0;
+[e = _limitedYawFP -> -> 0 `i `s ]
+"164
+[; ;joystick.c: 164:         } else {
 }
 [e $U 1540  ]
-"131
-[; ;joystick.c: 131:             else {
-[e :U 1537 ]
+[e :U 1539 ]
 {
-"132
-[; ;joystick.c: 132:                 targetYawFP = 0;
-[e = _targetYawFP -> -> 0 `i `s ]
-"133
-[; ;joystick.c: 133:                 accelYawFP = accelLimitYawStopFP;
-[e = _accelYawFP _accelLimitYawStopFP ]
-"134
-[; ;joystick.c: 134:             }
+"166
+[; ;joystick.c: 166:             switch (joystickType) {
+[e $U 1542  ]
+{
+"167
+[; ;joystick.c: 167:                 default:
+[e :U 1543 ]
+"168
+[; ;joystick.c: 168:                 case 0:
+[e :U 1544 ]
+"169
+[; ;joystick.c: 169:                     readButtonJoystick();
+[e ( _readButtonJoystick ..  ]
+"170
+[; ;joystick.c: 170:                     break;
+[e $U 1541  ]
+"172
+[; ;joystick.c: 172:                 case 1:
+[e :U 1545 ]
+"173
+[; ;joystick.c: 173:                     readPotJoystick();
+[e ( _readPotJoystick ..  ]
+"174
+[; ;joystick.c: 174:                     break;
+[e $U 1541  ]
+"175
+[; ;joystick.c: 175:             }
 }
-[e :U 1540 ]
-[e :U 1536 ]
-"137
-[; ;joystick.c: 137:             calculateMotion();
-[e ( _calculateMotion ..  ]
-"138
-[; ;joystick.c: 138:             sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
-[e ( _sendBTSpeedCmd (3 , , -> >> -> _limitedAxialFP `i -> 2 `i `s -> >> -> _limitedYawFP `i -> 2 `i `s -> -> 0 `i `a ]
-"139
-[; ;joystick.c: 139:         }
-}
-[e :U 1528 ]
-"142
-[; ;joystick.c: 142:         while (EUSART1_is_rx_ready()) {
 [e $U 1541  ]
 [e :U 1542 ]
-{
-"143
-[; ;joystick.c: 143:             if (EUSART1_Read() == '/') {
-[e $ ! == -> ( _EUSART1_Read ..  `ui -> 47 `ui 1544  ]
-{
-"144
-[; ;joystick.c: 144:                 resetBTTimer();
-[e ( _resetBTTimer ..  ]
-"145
-[; ;joystick.c: 145:                 setBTTimeout(30000);
-[e ( _setBTTimeout (1 -> -> -> 30000 `i `l `ul ]
-"146
-[; ;joystick.c: 146:             }
-}
-[e :U 1544 ]
-"147
-[; ;joystick.c: 147:         }
-}
+[e [\ -> _joystickType `i , $ -> 0 `i 1544
+ , $ -> 1 `i 1545
+ 1543 ]
 [e :U 1541 ]
-"142
-[; ;joystick.c: 142:         while (EUSART1_is_rx_ready()) {
-[e $ != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1542  ]
-[e :U 1543 ]
-"149
-[; ;joystick.c: 149:     }
+"176
+[; ;joystick.c: 176:         }
 }
-[e :U 1521 ]
-"151
-[; ;joystick.c: 151: }
-[e :UE 1520 ]
+[e :U 1540 ]
+"181
+[; ;joystick.c: 181:         while (EUSART1_is_rx_ready()) {
+[e $U 1546  ]
+[e :U 1547 ]
+{
+"182
+[; ;joystick.c: 182:             if (EUSART1_Read() == '/') {
+[e $ ! == -> ( _EUSART1_Read ..  `ui -> 47 `ui 1549  ]
+{
+"183
+[; ;joystick.c: 183:                 resetBTTimer();
+[e ( _resetBTTimer ..  ]
+"184
+[; ;joystick.c: 184:                 setBTTimeout(30000);
+[e ( _setBTTimeout (1 -> -> -> 30000 `i `l `ul ]
+"185
+[; ;joystick.c: 185:             }
 }
-"153
-[; ;joystick.c: 153: void calculateMotion(void) {
+[e :U 1549 ]
+"186
+[; ;joystick.c: 186:         }
+}
+[e :U 1546 ]
+"181
+[; ;joystick.c: 181:         while (EUSART1_is_rx_ready()) {
+[e $ != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1547  ]
+[e :U 1548 ]
+"187
+[; ;joystick.c: 187:     }
+}
+[e :U 1533 ]
+"188
+[; ;joystick.c: 188: }
+[e :UE 1532 ]
+}
+"190
+[; ;joystick.c: 190: void readButtonJoystick(void) {
+[v _readButtonJoystick `(v ~T0 @X0 1 ef ]
+{
+[e :U _readButtonJoystick ]
+[f ]
+"192
+[; ;joystick.c: 192:     accelAxialFP = accelLimitAxialFP;
+[e = _accelAxialFP _accelLimitAxialFP ]
+"193
+[; ;joystick.c: 193:     accelYawFP = accelLimitYawFP;
+[e = _accelYawFP _accelLimitYawFP ]
+"196
+[; ;joystick.c: 196:     if (PORTCbits.RC0 == 0)
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 1551  ]
+"197
+[; ;joystick.c: 197:         targetAxialFP = topAxialSpeedFP;
+[e = _targetAxialFP _topAxialSpeedFP ]
+[e $U 1552  ]
+"198
+[; ;joystick.c: 198:     else if (PORTAbits.RA2 == 0)
+[e :U 1551 ]
+[e $ ! == -> . . _PORTAbits 0 2 `i -> 0 `i 1553  ]
+"199
+[; ;joystick.c: 199:         targetAxialFP = -topAxialSpeedFP;
+[e = _targetAxialFP -> -U -> _topAxialSpeedFP `i `s ]
+[e $U 1554  ]
+"200
+[; ;joystick.c: 200:     else {
+[e :U 1553 ]
+{
+"201
+[; ;joystick.c: 201:         accelAxialFP = accelLimitAxialStopFP;
+[e = _accelAxialFP _accelLimitAxialStopFP ]
+"202
+[; ;joystick.c: 202:         targetAxialFP = 0;
+[e = _targetAxialFP -> -> 0 `i `s ]
+"203
+[; ;joystick.c: 203:     }
+}
+[e :U 1554 ]
+[e :U 1552 ]
+"205
+[; ;joystick.c: 205:     if (PORTCbits.RC1 == 0){
+[e $ ! == -> . . _PORTCbits 0 1 `i -> 0 `i 1555  ]
+{
+"206
+[; ;joystick.c: 206:         if (targetAxialFP == 0) {
+[e $ ! == -> _targetAxialFP `i -> 0 `i 1556  ]
+{
+"207
+[; ;joystick.c: 207:             targetYawFP = topYawSpeedFP;
+[e = _targetYawFP _topYawSpeedFP ]
+"208
+[; ;joystick.c: 208:         }
+}
+[e $U 1557  ]
+"209
+[; ;joystick.c: 209:         else {
+[e :U 1556 ]
+{
+"210
+[; ;joystick.c: 210:             targetYawFP = topSweepSpeedFP;
+[e = _targetYawFP _topSweepSpeedFP ]
+"211
+[; ;joystick.c: 211:             accelYawFP = accelLimitSweepFP;
+[e = _accelYawFP _accelLimitSweepFP ]
+"212
+[; ;joystick.c: 212:         }
+}
+[e :U 1557 ]
+"213
+[; ;joystick.c: 213:     }
+}
+[e $U 1558  ]
+"214
+[; ;joystick.c: 214:     else if (PORTAbits.RA1 == 0){
+[e :U 1555 ]
+[e $ ! == -> . . _PORTAbits 0 1 `i -> 0 `i 1559  ]
+{
+"215
+[; ;joystick.c: 215:         if (targetAxialFP == 0) {
+[e $ ! == -> _targetAxialFP `i -> 0 `i 1560  ]
+{
+"216
+[; ;joystick.c: 216:             targetYawFP = -topYawSpeedFP;
+[e = _targetYawFP -> -U -> _topYawSpeedFP `i `s ]
+"217
+[; ;joystick.c: 217:         }
+}
+[e $U 1561  ]
+"218
+[; ;joystick.c: 218:         else {
+[e :U 1560 ]
+{
+"219
+[; ;joystick.c: 219:             targetYawFP = -topSweepSpeedFP;
+[e = _targetYawFP -> -U -> _topSweepSpeedFP `i `s ]
+"220
+[; ;joystick.c: 220:             accelYawFP = accelLimitSweepFP;
+[e = _accelYawFP _accelLimitSweepFP ]
+"221
+[; ;joystick.c: 221:         }
+}
+[e :U 1561 ]
+"222
+[; ;joystick.c: 222:     }
+}
+[e $U 1562  ]
+"223
+[; ;joystick.c: 223:     else {
+[e :U 1559 ]
+{
+"224
+[; ;joystick.c: 224:         targetYawFP = 0;
+[e = _targetYawFP -> -> 0 `i `s ]
+"225
+[; ;joystick.c: 225:         accelYawFP = accelLimitYawStopFP;
+[e = _accelYawFP _accelLimitYawStopFP ]
+"226
+[; ;joystick.c: 226:     }
+}
+[e :U 1562 ]
+[e :U 1558 ]
+"229
+[; ;joystick.c: 229:     calculateMotion();
+[e ( _calculateMotion ..  ]
+"230
+[; ;joystick.c: 230:     sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
+[e ( _sendBTSpeedCmd (3 , , -> >> -> _limitedAxialFP `i -> 2 `i `s -> >> -> _limitedYawFP `i -> 2 `i `s -> -> 0 `i `a ]
+"231
+[; ;joystick.c: 231: }
+[e :UE 1550 ]
+}
+"233
+[; ;joystick.c: 233: void readPotJoystick(void) {
+[v _readPotJoystick `(v ~T0 @X0 1 ef ]
+{
+[e :U _readPotJoystick ]
+[f ]
+"234
+[; ;joystick.c: 234:     accelAxialFP = 2048;
+[e = _accelAxialFP -> -> 2048 `i `s ]
+"235
+[; ;joystick.c: 235:     accelYawFP = 2048;
+[e = _accelYawFP -> -> 2048 `i `s ]
+"237
+[; ;joystick.c: 237:     int16_t axial = - deadband(ADCC_GetSingleConversion(JSDO), axialCenter);
+[v _axial `s ~T0 @X0 1 a ]
+[e = _axial -> -U -> ( _deadband (2 , -> ( _ADCC_GetSingleConversion (1 . `E10918 1 `s _axialCenter `i `s ]
+"238
+[; ;joystick.c: 238:     int16_t yaw = - deadband(ADCC_GetSingleConversion(JSLE), yawCenter);
+[v _yaw `s ~T0 @X0 1 a ]
+[e = _yaw -> -U -> ( _deadband (2 , -> ( _ADCC_GetSingleConversion (1 . `E10918 0 `s _yawCenter `i `s ]
+"240
+[; ;joystick.c: 240:     targetAxialFP = (int16_t)((topAxialSpeedFP * (int32_t)axial) >> 11);
+[e = _targetAxialFP -> >> * -> _topAxialSpeedFP `l -> _axial `l -> 11 `i `s ]
+"241
+[; ;joystick.c: 241:     targetYawFP = (int16_t)((topYawSpeedFP * (int32_t)yaw) >> 11);
+[e = _targetYawFP -> >> * -> _topYawSpeedFP `l -> _yaw `l -> 11 `i `s ]
+"244
+[; ;joystick.c: 244:     calculateMotion();
+[e ( _calculateMotion ..  ]
+"245
+[; ;joystick.c: 245:     sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
+[e ( _sendBTSpeedCmd (3 , , -> >> -> _limitedAxialFP `i -> 2 `i `s -> >> -> _limitedYawFP `i -> 2 `i `s -> -> 0 `i `a ]
+"247
+[; ;joystick.c: 247: }
+[e :UE 1563 ]
+}
+"249
+[; ;joystick.c: 249: int16_t deadband(int16_t jsValue, int16_t center){
+[v _deadband `(s ~T0 @X0 1 ef2`s`s ]
+{
+[e :U _deadband ]
+[v _jsValue `s ~T0 @X0 1 r1 ]
+[v _center `s ~T0 @X0 1 r2 ]
+[f ]
+"250
+[; ;joystick.c: 250:     jsValue -= center ;
+[e =- _jsValue -> _center `s ]
+"251
+[; ;joystick.c: 251:     if (jsValue > 512) {
+[e $ ! > -> _jsValue `i -> 512 `i 1565  ]
+{
+"252
+[; ;joystick.c: 252:         jsValue = (int16_t)(((int32_t)(jsValue - 512) * 2048) / (2048 - 512));
+[e = _jsValue -> / * -> - -> _jsValue `i -> 512 `i `l -> -> 2048 `i `l -> - -> 2048 `i -> 512 `i `l `s ]
+"253
+[; ;joystick.c: 253:     } else if (jsValue < -512) {
+}
+[e $U 1566  ]
+[e :U 1565 ]
+[e $ ! < -> _jsValue `i -U -> 512 `i 1567  ]
+{
+"254
+[; ;joystick.c: 254:         jsValue = (int16_t)(((int32_t)(jsValue + 512) * 2048) / (2048 - 512));
+[e = _jsValue -> / * -> + -> _jsValue `i -> 512 `i `l -> -> 2048 `i `l -> - -> 2048 `i -> 512 `i `l `s ]
+"255
+[; ;joystick.c: 255:     } else {
+}
+[e $U 1568  ]
+[e :U 1567 ]
+{
+"256
+[; ;joystick.c: 256:         return 0;
+[e ) -> -> 0 `i `s ]
+[e $UE 1564  ]
+"257
+[; ;joystick.c: 257:     }
+}
+[e :U 1568 ]
+[e :U 1566 ]
+"258
+[; ;joystick.c: 258:     return jsValue;
+[e ) _jsValue ]
+[e $UE 1564  ]
+"259
+[; ;joystick.c: 259: }
+[e :UE 1564 ]
+}
+"261
+[; ;joystick.c: 261: void calculateMotion(void) {
 [v _calculateMotion `(v ~T0 @X0 1 ef ]
 {
 [e :U _calculateMotion ]
 [f ]
-"155
-[; ;joystick.c: 155:     limitedAxialFP = limitSpeed(targetAxialFP, limitedAxialFP, accelAxialFP);
+"263
+[; ;joystick.c: 263:     limitedAxialFP = limitSpeed(targetAxialFP, limitedAxialFP, accelAxialFP);
 [e = _limitedAxialFP ( _limitSpeed (3 , , _targetAxialFP _limitedAxialFP _accelAxialFP ]
-"156
-[; ;joystick.c: 156:     limitedYawFP = limitSpeed(targetYawFP, limitedYawFP, accelYawFP);
+"264
+[; ;joystick.c: 264:     limitedYawFP = limitSpeed(targetYawFP, limitedYawFP, accelYawFP);
 [e = _limitedYawFP ( _limitSpeed (3 , , _targetYawFP _limitedYawFP _accelYawFP ]
-"157
-[; ;joystick.c: 157: }
-[e :UE 1545 ]
+"265
+[; ;joystick.c: 265: }
+[e :UE 1569 ]
 }
-"159
-[; ;joystick.c: 159: int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP) {
+"267
+[; ;joystick.c: 267: int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP) {
 [v _limitSpeed `(s ~T0 @X0 1 ef3`s`s`s ]
 {
 [e :U _limitSpeed ]
@@ -1850,55 +2250,55 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _limitedFP `s ~T0 @X0 1 r2 ]
 [v _accelFP `s ~T0 @X0 1 r3 ]
 [f ]
-"161
-[; ;joystick.c: 161:     int16_t diffFP = targetFP - limitedFP;
+"269
+[; ;joystick.c: 269:     int16_t diffFP = targetFP - limitedFP;
 [v _diffFP `s ~T0 @X0 1 a ]
 [e = _diffFP -> - -> _targetFP `i -> _limitedFP `i `s ]
-"162
-[; ;joystick.c: 162:     int16_t speedFP = targetFP;
+"270
+[; ;joystick.c: 270:     int16_t speedFP = targetFP;
 [v _speedFP `s ~T0 @X0 1 a ]
 [e = _speedFP _targetFP ]
-"165
-[; ;joystick.c: 165:     if (targetFP == 0)
-[e $ ! == -> _targetFP `i -> 0 `i 1547  ]
-"166
-[; ;joystick.c: 166:         accelFP *= 2;
+"273
+[; ;joystick.c: 273:     if (targetFP == 0)
+[e $ ! == -> _targetFP `i -> 0 `i 1571  ]
+"274
+[; ;joystick.c: 274:         accelFP *= 2;
 [e =* _accelFP -> -> 2 `i `s ]
-[e :U 1547 ]
-"169
-[; ;joystick.c: 169:     if (accelFP == 0)
-[e $ ! == -> _accelFP `i -> 0 `i 1548  ]
-"170
-[; ;joystick.c: 170:         accelFP = 1;
+[e :U 1571 ]
+"277
+[; ;joystick.c: 277:     if (accelFP == 0)
+[e $ ! == -> _accelFP `i -> 0 `i 1572  ]
+"278
+[; ;joystick.c: 278:         accelFP = 1;
 [e = _accelFP -> -> 1 `i `s ]
-[e :U 1548 ]
-"173
-[; ;joystick.c: 173:     if (diffFP > accelFP){
-[e $ ! > -> _diffFP `i -> _accelFP `i 1549  ]
+[e :U 1572 ]
+"281
+[; ;joystick.c: 281:     if (diffFP > accelFP){
+[e $ ! > -> _diffFP `i -> _accelFP `i 1573  ]
 {
-"174
-[; ;joystick.c: 174:         speedFP = limitedFP + accelFP;
+"282
+[; ;joystick.c: 282:         speedFP = limitedFP + accelFP;
 [e = _speedFP -> + -> _limitedFP `i -> _accelFP `i `s ]
-"175
-[; ;joystick.c: 175:     } else if (diffFP < -accelFP){
+"283
+[; ;joystick.c: 283:     } else if (diffFP < -accelFP){
 }
-[e $U 1550  ]
-[e :U 1549 ]
-[e $ ! < -> _diffFP `i -U -> _accelFP `i 1551  ]
+[e $U 1574  ]
+[e :U 1573 ]
+[e $ ! < -> _diffFP `i -U -> _accelFP `i 1575  ]
 {
-"176
-[; ;joystick.c: 176:         speedFP = limitedFP - accelFP;
+"284
+[; ;joystick.c: 284:         speedFP = limitedFP - accelFP;
 [e = _speedFP -> - -> _limitedFP `i -> _accelFP `i `s ]
-"177
-[; ;joystick.c: 177:     }
+"285
+[; ;joystick.c: 285:     }
 }
-[e :U 1551 ]
-[e :U 1550 ]
-"179
-[; ;joystick.c: 179:     return (speedFP);
+[e :U 1575 ]
+[e :U 1574 ]
+"287
+[; ;joystick.c: 287:     return (speedFP);
 [e ) _speedFP ]
-[e $UE 1546  ]
-"180
-[; ;joystick.c: 180: }
-[e :UE 1546 ]
+[e $UE 1570  ]
+"288
+[; ;joystick.c: 288: }
+[e :UE 1570 ]
 }

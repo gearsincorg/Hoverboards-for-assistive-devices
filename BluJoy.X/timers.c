@@ -23,7 +23,7 @@ void        timeKeeper(void){
         oneSecBlink = true;
 }
 
-bool    oneSec(void) {
+bool        oneSec(void) {
     if (oneSecBlink) {
         oneSecBlink = false;
         return true;
@@ -41,12 +41,12 @@ uint32_t    getTicks(void){
     return systemTime;
 }
 
-int32_t    getTicksSince(uint32_t from){
+int32_t     getTicksSince(uint32_t from){
     return (systemTime - from);
 }
 
 //  BlueTooth activity timer.... 
-void       resetBTTimer(void){
+void        resetBTTimer(void){
     lastBTTime = systemTime;
 }
 
@@ -54,7 +54,7 @@ void        setBTTimeout(uint32_t timeout){
     BTTimeout = timeout;
 }
 
-int32_t   BTTimeRemaining(void){
+int32_t     BTTimeRemaining(void){
     int32_t elapsed = (systemTime - lastBTTime);
     
     if (elapsed >= BTTimeout){
@@ -62,4 +62,8 @@ int32_t   BTTimeRemaining(void){
     } else {
         return (BTTimeout - elapsed);
     }
+}
+
+int32_t     BTTimeWaiting(void){
+    return (systemTime - lastBTTime);
 }

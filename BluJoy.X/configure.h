@@ -14,6 +14,7 @@ void    SetMasterTXRX(void);
 void    SetSlaveTXRX(void);
 void    SetSlaveTXMasterRX(void);
 void    SetDualReceive(void);
+void    SetPowerdownTXRX(void);
 
 void    setSerialBaud(uint16_t baud);
 bool    powerIsOn(void);
@@ -25,6 +26,7 @@ void    setBTConnection(uint8_t * MAC, bool isMaster);
 void    doFactoryReset(void);
 void    turnPowerOn(void);
 void    turnPowerOff(void);
+
 
 #ifdef	__cplusplus
 extern "C" {

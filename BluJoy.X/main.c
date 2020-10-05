@@ -23,8 +23,8 @@ void main(void)
     SYSTEM_Initialize();
     initTimers();   
     initSerial();   
-    initJoystick();   
     initUI();   
+    initJoystick();   
     
     // Enable the Global Interrupts
     INTERRUPT_GlobalInterruptEnable();

@@ -18,7 +18,7 @@ __eeprom uint8_t  EEPROM_uiSpeedMode ;
 __eeprom uint8_t  EEPROM_uiBrakeMode ;
 
 uint8_t  uiSpeedMode ;
-uint8_t  uiBrakeMode ;
+uint8_t  uiType ;
 
 uint8_t  timeoutSequence = 0;
 
@@ -37,10 +37,10 @@ uint32_t uiStateTime;
 #define UI_USER12_HOLD      5
 #define UI_USER12_LONG_HOLD 6
 
-#define UI_SPEED_MODES 3
-#define UI_BRAKE_MODES 2
-#define UI_DEBOUNCE     200
-#define UI_LONG_HOLD   4000
+#define UI_SPEED_MODES     10
+#define UI_BRAKE_MODES      2
+#define UI_DEBOUNCE       100
+#define UI_LONG_HOLD     4000
 
 void    initUI(void) {
     R_LED = 0 ;
@@ -56,7 +56,7 @@ void    initUI(void) {
     BLUE_SetHigh();
     
     uiSpeedMode = EEPROM_uiSpeedMode;
-    uiBrakeMode = EEPROM_uiBrakeMode;
+    uiType      = EEPROM_uiBrakeMode;
     
     TMR3_SetInterruptHandler(UI_PWM_handler);
     IOCCF0_SetInterruptHandler(turnPowerOn);
@@ -64,8 +64,7 @@ void    initUI(void) {
 }
 
 void    runUI(void) {
-    int32_t timeRemaining;
-    
+   
     switch (uiState) {
         case UI_IDLE:
             if (USER1_pressed()) {
@@ -80,8 +79,8 @@ void    runUI(void) {
         case UI_USER1_DEBOUNCE:
             if (USER1_pressed()){
                 if (getTicksSince(uiStateTime) > UI_DEBOUNCE) {
+                    pulseLEDColor(COLOR_RED, 20, 100);
                     uiState = UI_USER1_HOLD;
-                    pulseLEDColor(COLOR_RED, 100, 100);
                 }
             }
             else {       
@@ -92,8 +91,8 @@ void    runUI(void) {
         case UI_USER2_DEBOUNCE:
             if (USER2_pressed()){
                 if (getTicksSince(uiStateTime) > UI_DEBOUNCE) {
+                    pulseLEDColor(COLOR_GREEN, 20, 100);
                     uiState = UI_USER2_HOLD;
-                    pulseLEDColor(COLOR_GREEN, 100, 100);
                 }
             }
             else {       
@@ -114,7 +113,7 @@ void    runUI(void) {
             
         case UI_USER2_HOLD:
             if (!USER2_pressed()){
-                bumpUIBrakeMode();
+                bumpUIType();
                 uiState = UI_IDLE;
             }
             if (USER1_pressed()){
@@ -144,7 +143,6 @@ void    runUI(void) {
                 doFactoryReset();
                 enableJoystick();
                 uiState = UI_IDLE;
- 
             }
             break;
             
@@ -154,13 +152,13 @@ void    runUI(void) {
     
     // Show operational state with 1 sec blink.
     if (oneSec()) {
-        timeRemaining = BTTimeRemaining();
-        if (timeRemaining < 5000)
-            pulseLEDColor(0x100, 2, 1);
-        else if (timeRemaining < 15000)
+        if (BTTimeRemaining() < 5000) {
+            pulseLEDColor(0x200, 2, 1);
+        } else if (BTTimeWaiting() > 250) {
             pulseLEDColor(0x110, 2, 1);
-        else
+        } else {
             pulseLEDColor(0x010, 2, 1);
+        }
     }
 }
 
@@ -168,20 +166,22 @@ void    bumpUISpeedMode(){
     uiSpeedMode = ((uiSpeedMode +1) % UI_SPEED_MODES);
     EEPROM_uiSpeedMode = uiSpeedMode;
     blinkLEDColor(COLOR_YELLOW, uiSpeedMode + 1);
+    setJoystickSpeed(uiSpeedMode);
 }
 
 uint8_t getUISpeedMode(){
     return (uiSpeedMode);
 }
 
-void    bumpUIBrakeMode(){
-    uiBrakeMode = ((uiBrakeMode +1) % UI_BRAKE_MODES);
-    EEPROM_uiBrakeMode = uiBrakeMode;
-    blinkLEDColor(COLOR_CYAN, uiBrakeMode + 1);
+void    bumpUIType(){
+    uiType = ((uiType +1) % UI_BRAKE_MODES);
+    EEPROM_uiBrakeMode = uiType;
+    blinkLEDColor(COLOR_CYAN, uiType + 1);
+    setJoystickType(uiType);
 }
 
-uint8_t getUIBreakMode(){
-    return (uiBrakeMode);
+uint8_t getUIType(){
+    return (uiType);
 }
 
 void    showStartup(void){

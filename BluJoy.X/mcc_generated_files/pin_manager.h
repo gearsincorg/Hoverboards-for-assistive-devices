@@ -349,6 +349,26 @@
 #define M_TX_SetAnalogMode()      do { ANSELCbits.ANSC6 = 1; } while(0)
 #define M_TX_SetDigitalMode()     do { ANSELCbits.ANSC6 = 0; } while(0)
 
+// get/set POT_ENA aliases
+#define POT_ENA_TRIS                 TRISCbits.TRISC7
+#define POT_ENA_LAT                  LATCbits.LATC7
+#define POT_ENA_PORT                 PORTCbits.RC7
+#define POT_ENA_WPU                  WPUCbits.WPUC7
+#define POT_ENA_OD                   ODCONCbits.ODCC7
+#define POT_ENA_ANS                  ANSELCbits.ANSC7
+#define POT_ENA_SetHigh()            do { LATCbits.LATC7 = 1; } while(0)
+#define POT_ENA_SetLow()             do { LATCbits.LATC7 = 0; } while(0)
+#define POT_ENA_Toggle()             do { LATCbits.LATC7 = ~LATCbits.LATC7; } while(0)
+#define POT_ENA_GetValue()           PORTCbits.RC7
+#define POT_ENA_SetDigitalInput()    do { TRISCbits.TRISC7 = 1; } while(0)
+#define POT_ENA_SetDigitalOutput()   do { TRISCbits.TRISC7 = 0; } while(0)
+#define POT_ENA_SetPullup()          do { WPUCbits.WPUC7 = 1; } while(0)
+#define POT_ENA_ResetPullup()        do { WPUCbits.WPUC7 = 0; } while(0)
+#define POT_ENA_SetPushPull()        do { ODCONCbits.ODCC7 = 0; } while(0)
+#define POT_ENA_SetOpenDrain()       do { ODCONCbits.ODCC7 = 1; } while(0)
+#define POT_ENA_SetAnalogMode()      do { ANSELCbits.ANSC7 = 1; } while(0)
+#define POT_ENA_SetDigitalMode()     do { ANSELCbits.ANSC7 = 0; } while(0)
+
 /**
    @Param
     none

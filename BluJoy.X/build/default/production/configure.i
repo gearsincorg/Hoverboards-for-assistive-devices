@@ -18134,25 +18134,25 @@ extern __bank0 __bit __timeout;
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 362 "./mcc_generated_files/pin_manager.h"
+# 382 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 374 "./mcc_generated_files/pin_manager.h"
+# 394 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 387 "./mcc_generated_files/pin_manager.h"
+# 407 "./mcc_generated_files/pin_manager.h"
 void IOCCF0_ISR(void);
-# 410 "./mcc_generated_files/pin_manager.h"
+# 430 "./mcc_generated_files/pin_manager.h"
 void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 434 "./mcc_generated_files/pin_manager.h"
+# 454 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCCF0_InterruptHandler)(void);
-# 458 "./mcc_generated_files/pin_manager.h"
+# 478 "./mcc_generated_files/pin_manager.h"
 void IOCCF0_DefaultInterruptHandler(void);
-# 471 "./mcc_generated_files/pin_manager.h"
+# 491 "./mcc_generated_files/pin_manager.h"
 void IOCCF2_ISR(void);
-# 494 "./mcc_generated_files/pin_manager.h"
+# 514 "./mcc_generated_files/pin_manager.h"
 void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 518 "./mcc_generated_files/pin_manager.h"
+# 538 "./mcc_generated_files/pin_manager.h"
 extern void (*IOCCF2_InterruptHandler)(void);
-# 542 "./mcc_generated_files/pin_manager.h"
+# 562 "./mcc_generated_files/pin_manager.h"
 void IOCCF2_DefaultInterruptHandler(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -18280,6 +18280,78 @@ extern void cputs(const char *);
 # 1 "./mcc_generated_files/interrupt_manager.h" 1
 # 55 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/adcc.h" 1
+# 72 "./mcc_generated_files/adcc.h"
+typedef uint16_t adc_result_t;
+
+typedef __uint24 uint24_t;
+# 89 "./mcc_generated_files/adcc.h"
+typedef enum
+{
+    JSLE = 0x1,
+    JSDO = 0x2,
+    channel_Vss = 0x3B,
+    channel_Temp_Sensor = 0x3C,
+    channel_DAC1_Output = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} adcc_channel_t;
+# 132 "./mcc_generated_files/adcc.h"
+void ADCC_Initialize(void);
+# 161 "./mcc_generated_files/adcc.h"
+void ADCC_StartConversion(adcc_channel_t channel);
+# 191 "./mcc_generated_files/adcc.h"
+_Bool ADCC_IsConversionDone(void);
+# 223 "./mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetConversionResult(void);
+# 254 "./mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+# 279 "./mcc_generated_files/adcc.h"
+void ADCC_StopConversion(void);
+# 306 "./mcc_generated_files/adcc.h"
+void ADCC_SetStopOnInterrupt(void);
+# 331 "./mcc_generated_files/adcc.h"
+void ADCC_DischargeSampleCapacitor(void);
+# 357 "./mcc_generated_files/adcc.h"
+void ADCC_LoadAcquisitionRegister(uint16_t);
+# 383 "./mcc_generated_files/adcc.h"
+void ADCC_SetPrechargeTime(uint16_t);
+# 408 "./mcc_generated_files/adcc.h"
+void ADCC_SetRepeatCount(uint8_t);
+# 436 "./mcc_generated_files/adcc.h"
+uint8_t ADCC_GetCurrentCountofConversions(void);
+# 460 "./mcc_generated_files/adcc.h"
+void ADCC_ClearAccumulator(void);
+# 485 "./mcc_generated_files/adcc.h"
+uint24_t ADCC_GetAccumulatorValue(void);
+# 513 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasAccumulatorOverflowed(void);
+# 538 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetFilterValue(void);
+# 566 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetPreviousResult(void);
+# 592 "./mcc_generated_files/adcc.h"
+void ADCC_DefineSetPoint(uint16_t);
+# 618 "./mcc_generated_files/adcc.h"
+void ADCC_SetUpperThreshold(uint16_t);
+# 644 "./mcc_generated_files/adcc.h"
+void ADCC_SetLowerThreshold(uint16_t);
+# 671 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetErrorCalculation(void);
+# 698 "./mcc_generated_files/adcc.h"
+void ADCC_EnableDoubleSampling(void);
+# 722 "./mcc_generated_files/adcc.h"
+void ADCC_EnableContinuousConversion(void);
+# 746 "./mcc_generated_files/adcc.h"
+void ADCC_DisableContinuousConversion(void);
+# 774 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedUpperThreshold(void);
+# 802 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedLowerThreshold(void);
+# 829 "./mcc_generated_files/adcc.h"
+uint8_t ADCC_GetConversionStageStatus(void);
+# 56 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/tmr3.h" 1
 # 101 "./mcc_generated_files/tmr3.h"
 void TMR3_Initialize(void);
@@ -18307,7 +18379,7 @@ void TMR3_CallBack(void);
 extern void (*TMR3_InterruptHandler)(void);
 # 439 "./mcc_generated_files/tmr3.h"
 void TMR3_DefaultInterruptHandler(void);
-# 56 "./mcc_generated_files/mcc.h" 2
+# 57 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr1.h" 1
 # 101 "./mcc_generated_files/tmr1.h"
@@ -18336,7 +18408,7 @@ void TMR1_CallBack(void);
 extern void (*TMR1_InterruptHandler)(void);
 # 439 "./mcc_generated_files/tmr1.h"
 void TMR1_DefaultInterruptHandler(void);
-# 57 "./mcc_generated_files/mcc.h" 2
+# 58 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr2.h" 1
 # 79 "./mcc_generated_files/tmr2.h"
@@ -18529,7 +18601,7 @@ void TMR2_ISR(void);
 extern void (*TMR2_InterruptHandler)(void);
 # 836 "./mcc_generated_files/tmr2.h"
 void TMR2_DefaultInterruptHandler(void);
-# 58 "./mcc_generated_files/mcc.h" 2
+# 59 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/eusart1.h" 1
 # 75 "./mcc_generated_files/eusart1.h"
@@ -18584,12 +18656,12 @@ void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
 void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
 # 505 "./mcc_generated_files/eusart1.h"
 void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 59 "./mcc_generated_files/mcc.h" 2
-# 74 "./mcc_generated_files/mcc.h"
+# 60 "./mcc_generated_files/mcc.h" 2
+# 75 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "./mcc_generated_files/mcc.h"
+# 88 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 100 "./mcc_generated_files/mcc.h"
+# 101 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 2 "configure.c" 2
 
@@ -18602,6 +18674,7 @@ void SetMasterTXRX(void);
 void SetSlaveTXRX(void);
 void SetSlaveTXMasterRX(void);
 void SetDualReceive(void);
+void SetPowerdownTXRX(void);
 
 void setSerialBaud(uint16_t baud);
 _Bool powerIsOn(void);
@@ -18623,12 +18696,14 @@ _Bool sendBTEstopCmd(void);
 
 void sendBTString(char * command);
 void flushBTRXbuffer(void);
+int16_t clampInt(int16_t num, int16_t limit);
 
 _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
 uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
 
 uint16_t calcCRC(uint8_t *ptr);
 void int16ToBytes(int16_t num, uint8_t * ndata);
+void int16cat(uint8_t * bufP, int16_t num);
 # 4 "configure.c" 2
 
 # 1 "./timers.h" 1
@@ -18643,6 +18718,7 @@ _Bool oneSec(void);
 void resetBTTimer(void);
 void setBTTimeout(uint32_t timeout);
 int32_t BTTimeRemaining(void);
+int32_t BTTimeWaiting(void);
 # 5 "configure.c" 2
 
 # 1 "./ui.h" 1
@@ -18654,13 +18730,34 @@ void blinkLEDColor(uint16_t RGB, uint8_t blinks);
 void runUI(void);
 void setLEDColor(uint16_t RGB);
 void bumpUISpeedMode();
-void bumpUIBrakeMode();
+uint8_t getUIType();
+void bumpUIType();
 void showStartup(void);
 void showShutdown(void);
 void UI_PWM_handler(void);
 _Bool USER1_pressed(void);
 _Bool USER2_pressed(void);
 # 6 "configure.c" 2
+
+# 1 "./joystick.h" 1
+# 23 "./joystick.h"
+void enableJoystick(void);
+void disableJoystick(void);
+void stopMotion(void);
+
+void initJoystick(void);
+uint8_t getJoystickType(void);
+void setJoystickType(uint8_t jsType);
+void setJoystickSpeed(int8_t jsSpeedMode);
+
+int16_t deadband(int16_t jsValue, int16_t center);
+void readJoystick(void);
+void readButtonJoystick(void);
+void readPotJoystick(void);
+void togglePower(void) ;
+void calculateMotion(void);
+int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP);
+# 7 "configure.c" 2
 
 
 uint8_t slaveMAC[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
@@ -18671,7 +18768,6 @@ uint8_t charsRead;
 _Bool powerOn = 0;
 
 void initConfiguration() {
-
     setSerialBaud(38400);
     SetSlaveTXRX();
 }
@@ -18679,6 +18775,13 @@ void initConfiguration() {
 void SetSlaveTXRX(void){
     RX1DTPPS = 0x15;
     RC4PPS = 0x0F;
+    RC6PPS = 0x16;
+
+}
+
+void SetPowerdownTXRX(void){
+    RX1DTPPS = 0x15;
+    RC4PPS = 0x14;
     RC6PPS = 0x16;
     sleep(5);
 }
@@ -18706,12 +18809,17 @@ void SetSlaveTXMasterRX(void){
 }
 
 void turnPowerOn(){
+    do { LATCbits.LATC7 = 1; } while(0);
     do { LATAbits.LATA5 = 0; } while(0);
+    TRISC = 0x2F;
+    SetSlaveTXRX();
     powerOn = 1;
 }
 
 void turnPowerOff(){
     do { LATAbits.LATA5 = 1; } while(0);
+    do { LATCbits.LATC7 = 0; } while(0);
+    SetPowerdownTXRX();
     powerOn = 0;
 }
 
@@ -18770,7 +18878,6 @@ void setBTBaudRatesTo38400() {
 
     SetDualReceive();
     setSerialBaud(9600);
-    pulseLEDColor(0x033, 100, 900);
 
     sendBTString("AT");
     sleep(100);
@@ -18804,7 +18911,7 @@ _Bool getBTAddress(uint8_t * MAC, _Bool isMaster) {
     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
 
 
-
+    sleep(10);
     sendBTString("AT+ADDR?");
     charsRead = receiveBTBuffer(RX_Buffer, 30, 400);
     addrPointer = (void *)strstr((void *)RX_Buffer, "ADDR:");
@@ -18843,13 +18950,15 @@ void setBTConnection(uint8_t * MAC, _Bool isMaster){
 void doFactoryReset() {
 
 
+    pulseLEDColor(0x003, 1000, 200);
+
     SetDualReceive();
     setSerialBaud(38400);
     sleep(500);
 
     sendBTString("AT");
     sleep(100);
-    sendBTString("AT");
+    sendBTString("AT+CLEAR");
     sleep(100);
     sendBTString("AT+BAUD0");
     sleep(500);

@@ -8,499 +8,8 @@
 # 2 "<built-in>" 2
 # 1 "joystick.c" 2
 # 11 "joystick.c"
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 1 3
-
-
-
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 2 3
-
-
-
-
-
-
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
-
-
-
-
-typedef short int16_t;
-
-
-
-
-typedef __int24 int24_t;
-
-
-
-
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-
-
-
-
-typedef __uint24 uint24_t;
-
-
-
-
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 22 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
-
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 139 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int32_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint32_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 139 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
-# 10 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 2 3
-
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\features.h" 1 3
-# 11 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 2 3
-
-
-
-
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 33 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef float float_t;
-
-
-
-
-typedef double double_t;
-# 15 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 2 3
-# 42 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
-int __fpclassifyf(float);
-
-
-
-
-
-
-
-int __signbitf(float);
-# 59 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
-double acos(double);
-float acosf(float);
-long double acosl(long double);
-
-
-
-double acosh(double);
-float acoshf(float);
-long double acoshl(long double);
-
-
-
-double asin(double);
-float asinf(float);
-long double asinl(long double);
-
-
-
-double asinh(double);
-float asinhf(float);
-long double asinhl(long double);
-
-
-
-double atan(double);
-float atanf(float);
-long double atanl(long double);
-
-
-
-double atan2(double, double);
-float atan2f(float, float);
-long double atan2l(long double, long double);
-
-
-
-double atanh(double);
-float atanhf(float);
-long double atanhl(long double);
-
-
-
-double cbrt(double);
-float cbrtf(float);
-long double cbrtl(long double);
-
-
-
-double ceil(double);
-float ceilf(float);
-long double ceill(long double);
-
-
-
-double copysign(double, double);
-float copysignf(float, float);
-long double copysignl(long double, long double);
-
-
-
-double cos(double);
-float cosf(float);
-long double cosl(long double);
-
-
-
-double cosh(double);
-float coshf(float);
-long double coshl(long double);
-
-
-
-double erf(double);
-float erff(float);
-long double erfl(long double);
-
-
-
-double erfc(double);
-float erfcf(float);
-long double erfcl(long double);
-
-
-
-double exp(double);
-float expf(float);
-long double expl(long double);
-
-
-
-double exp2(double);
-float exp2f(float);
-long double exp2l(long double);
-
-
-
-double expm1(double);
-float expm1f(float);
-long double expm1l(long double);
-
-
-
-double fabs(double);
-float fabsf(float);
-long double fabsl(long double);
-
-
-
-double fdim(double, double);
-float fdimf(float, float);
-long double fdiml(long double, long double);
-
-
-
-double floor(double);
-float floorf(float);
-long double floorl(long double);
-
-
-
-double fma(double, double, double);
-float fmaf(float, float, float);
-long double fmal(long double, long double, long double);
-
-
-
-double fmax(double, double);
-float fmaxf(float, float);
-long double fmaxl(long double, long double);
-
-
-
-double fmin(double, double);
-float fminf(float, float);
-long double fminl(long double, long double);
-
-
-
-double fmod(double, double);
-float fmodf(float, float);
-long double fmodl(long double, long double);
-
-
-
-double frexp(double, int *);
-float frexpf(float, int *);
-long double frexpl(long double, int *);
-
-
-
-double hypot(double, double);
-float hypotf(float, float);
-long double hypotl(long double, long double);
-
-
-
-int ilogb(double);
-int ilogbf(float);
-int ilogbl(long double);
-
-
-
-double ldexp(double, int);
-float ldexpf(float, int);
-long double ldexpl(long double, int);
-
-
-
-double lgamma(double);
-float lgammaf(float);
-long double lgammal(long double);
-
-
-
-long long llrint(double);
-long long llrintf(float);
-long long llrintl(long double);
-
-
-
-long long llround(double);
-long long llroundf(float);
-long long llroundl(long double);
-
-
-
-double log(double);
-float logf(float);
-long double logl(long double);
-
-
-
-double log10(double);
-float log10f(float);
-long double log10l(long double);
-
-
-
-double log1p(double);
-float log1pf(float);
-long double log1pl(long double);
-
-
-
-double log2(double);
-float log2f(float);
-long double log2l(long double);
-
-
-
-double logb(double);
-float logbf(float);
-long double logbl(long double);
-
-
-
-long lrint(double);
-long lrintf(float);
-long lrintl(long double);
-
-
-
-long lround(double);
-long lroundf(float);
-long lroundl(long double);
-
-
-
-double modf(double, double *);
-float modff(float, float *);
-long double modfl(long double, long double *);
-
-
-
-double nan(const char *);
-float nanf(const char *);
-long double nanl(const char *);
-
-
-
-double nearbyint(double);
-float nearbyintf(float);
-long double nearbyintl(long double);
-
-
-
-double nextafter(double, double);
-float nextafterf(float, float);
-long double nextafterl(long double, long double);
-
-
-
-double nexttoward(double, long double);
-float nexttowardf(float, long double);
-long double nexttowardl(long double, long double);
-
-
-
-
-double pow(double, double);
-__attribute__((nonreentrant)) float powf(float, float);
-long double powl(long double, long double);
-
-
-
-double remainder(double, double);
-float remainderf(float, float);
-long double remainderl(long double, long double);
-
-
-
-double remquo(double, double, int *);
-float remquof(float, float, int *);
-long double remquol(long double, long double, int *);
-
-
-
-double rint(double);
-float rintf(float);
-long double rintl(long double);
-
-
-
-double round(double);
-float roundf(float);
-long double roundl(long double);
-
-
-
-double scalbln(double, long);
-float scalblnf(float, long);
-long double scalblnl(long double, long);
-
-
-
-double scalbn(double, int);
-float scalbnf(float, int);
-long double scalbnl(long double, int);
-
-
-
-double sin(double);
-float sinf(float);
-long double sinl(long double);
-
-
-
-double sinh(double);
-float sinhf(float);
-long double sinhl(long double);
-
-
-
-double sqrt(double);
-float sqrtf(float);
-long double sqrtl(long double);
-
-
-
-double tan(double);
-float tanf(float);
-long double tanl(long double);
-
-
-
-double tanh(double);
-float tanhf(float);
-long double tanhl(long double);
-
-
-
-double tgamma(double);
-float tgammaf(float);
-long double tgammal(long double);
-
-
-
-double trunc(double);
-float truncf(float);
-long double truncl(long double);
-# 423 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
-extern int signgam;
-
-double j0(double);
-double j1(double);
-double jn(int, double);
-
-double y0(double);
-double y1(double);
-double yn(int, double);
-# 11 "joystick.c" 2
-
-# 1 "./joystick.h" 1
-# 12 "./joystick.h"
+# 1 "./mcc_generated_files/mcc.h" 1
+# 49 "./mcc_generated_files/mcc.h"
 # 1 "D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -514,12 +23,29 @@ extern double __fpnormalize(double);
 
 
 # 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 1 3
+
+
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 2 3
+
+
+
+
+
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\features.h" 1 3
+# 10 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 3
 # 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
 # 18 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
 # 122 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
+# 168 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __int24 int24_t;
+# 204 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef __uint24 uint24_t;
 # 21 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -18546,12 +18072,260 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\\pic\\include\\xc.h" 2 3
-# 12 "./joystick.h" 2
+# 49 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/device_config.h" 1
+# 50 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pin_manager.h" 1
+# 382 "./mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 394 "./mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 407 "./mcc_generated_files/pin_manager.h"
+void IOCCF0_ISR(void);
+# 430 "./mcc_generated_files/pin_manager.h"
+void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 454 "./mcc_generated_files/pin_manager.h"
+extern void (*IOCCF0_InterruptHandler)(void);
+# 478 "./mcc_generated_files/pin_manager.h"
+void IOCCF0_DefaultInterruptHandler(void);
+# 491 "./mcc_generated_files/pin_manager.h"
+void IOCCF2_ISR(void);
+# 514 "./mcc_generated_files/pin_manager.h"
+void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 538 "./mcc_generated_files/pin_manager.h"
+extern void (*IOCCF2_InterruptHandler)(void);
+# 562 "./mcc_generated_files/pin_manager.h"
+void IOCCF2_DefaultInterruptHandler(void);
+# 51 "./mcc_generated_files/mcc.h" 2
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 173 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 139 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int32_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint32_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 139 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
+# 52 "./mcc_generated_files/mcc.h" 2
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdbool.h" 1 3
+# 53 "./mcc_generated_files/mcc.h" 2
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\errno.h" 1 3
+# 10 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\\pic\\include\\__null.h" 1 3
+# 9 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 55 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/adcc.h" 1
+# 72 "./mcc_generated_files/adcc.h"
+typedef uint16_t adc_result_t;
+
+typedef __uint24 uint24_t;
+# 89 "./mcc_generated_files/adcc.h"
+typedef enum
+{
+    JSLE = 0x1,
+    JSDO = 0x2,
+    channel_Vss = 0x3B,
+    channel_Temp_Sensor = 0x3C,
+    channel_DAC1_Output = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} adcc_channel_t;
+# 132 "./mcc_generated_files/adcc.h"
+void ADCC_Initialize(void);
+# 161 "./mcc_generated_files/adcc.h"
+void ADCC_StartConversion(adcc_channel_t channel);
+# 191 "./mcc_generated_files/adcc.h"
+_Bool ADCC_IsConversionDone(void);
+# 223 "./mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetConversionResult(void);
+# 254 "./mcc_generated_files/adcc.h"
+adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+# 279 "./mcc_generated_files/adcc.h"
+void ADCC_StopConversion(void);
+# 306 "./mcc_generated_files/adcc.h"
+void ADCC_SetStopOnInterrupt(void);
+# 331 "./mcc_generated_files/adcc.h"
+void ADCC_DischargeSampleCapacitor(void);
+# 357 "./mcc_generated_files/adcc.h"
+void ADCC_LoadAcquisitionRegister(uint16_t);
+# 383 "./mcc_generated_files/adcc.h"
+void ADCC_SetPrechargeTime(uint16_t);
+# 408 "./mcc_generated_files/adcc.h"
+void ADCC_SetRepeatCount(uint8_t);
+# 436 "./mcc_generated_files/adcc.h"
+uint8_t ADCC_GetCurrentCountofConversions(void);
+# 460 "./mcc_generated_files/adcc.h"
+void ADCC_ClearAccumulator(void);
+# 485 "./mcc_generated_files/adcc.h"
+uint24_t ADCC_GetAccumulatorValue(void);
+# 513 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasAccumulatorOverflowed(void);
+# 538 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetFilterValue(void);
+# 566 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetPreviousResult(void);
+# 592 "./mcc_generated_files/adcc.h"
+void ADCC_DefineSetPoint(uint16_t);
+# 618 "./mcc_generated_files/adcc.h"
+void ADCC_SetUpperThreshold(uint16_t);
+# 644 "./mcc_generated_files/adcc.h"
+void ADCC_SetLowerThreshold(uint16_t);
+# 671 "./mcc_generated_files/adcc.h"
+uint16_t ADCC_GetErrorCalculation(void);
+# 698 "./mcc_generated_files/adcc.h"
+void ADCC_EnableDoubleSampling(void);
+# 722 "./mcc_generated_files/adcc.h"
+void ADCC_EnableContinuousConversion(void);
+# 746 "./mcc_generated_files/adcc.h"
+void ADCC_DisableContinuousConversion(void);
+# 774 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedUpperThreshold(void);
+# 802 "./mcc_generated_files/adcc.h"
+_Bool ADCC_HasErrorCrossedLowerThreshold(void);
+# 829 "./mcc_generated_files/adcc.h"
+uint8_t ADCC_GetConversionStageStatus(void);
+# 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr3.h" 1
+# 101 "./mcc_generated_files/tmr3.h"
+void TMR3_Initialize(void);
+# 130 "./mcc_generated_files/tmr3.h"
+void TMR3_StartTimer(void);
+# 162 "./mcc_generated_files/tmr3.h"
+void TMR3_StopTimer(void);
+# 197 "./mcc_generated_files/tmr3.h"
+uint16_t TMR3_ReadTimer(void);
+# 236 "./mcc_generated_files/tmr3.h"
+void TMR3_WriteTimer(uint16_t timerVal);
+# 272 "./mcc_generated_files/tmr3.h"
+void TMR3_Reload(void);
+# 311 "./mcc_generated_files/tmr3.h"
+void TMR3_StartSinglePulseAcquisition(void);
+# 350 "./mcc_generated_files/tmr3.h"
+uint8_t TMR3_CheckGateValueStatus(void);
+# 368 "./mcc_generated_files/tmr3.h"
+void TMR3_ISR(void);
+# 385 "./mcc_generated_files/tmr3.h"
+void TMR3_CallBack(void);
+# 403 "./mcc_generated_files/tmr3.h"
+ void TMR3_SetInterruptHandler(void (* InterruptHandler)(void));
+# 421 "./mcc_generated_files/tmr3.h"
+extern void (*TMR3_InterruptHandler)(void);
+# 439 "./mcc_generated_files/tmr3.h"
+void TMR3_DefaultInterruptHandler(void);
+# 57 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/tmr1.h" 1
-# 54 "./mcc_generated_files/tmr1.h"
-# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdbool.h" 1 3
-# 54 "./mcc_generated_files/tmr1.h" 2
 # 101 "./mcc_generated_files/tmr1.h"
 void TMR1_Initialize(void);
 # 130 "./mcc_generated_files/tmr1.h"
@@ -18578,118 +18352,8 @@ void TMR1_CallBack(void);
 extern void (*TMR1_InterruptHandler)(void);
 # 439 "./mcc_generated_files/tmr1.h"
 void TMR1_DefaultInterruptHandler(void);
-# 13 "./joystick.h" 2
+# 58 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 362 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 374 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 387 "./mcc_generated_files/pin_manager.h"
-void IOCCF0_ISR(void);
-# 410 "./mcc_generated_files/pin_manager.h"
-void IOCCF0_SetInterruptHandler(void (* InterruptHandler)(void));
-# 434 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCCF0_InterruptHandler)(void);
-# 458 "./mcc_generated_files/pin_manager.h"
-void IOCCF0_DefaultInterruptHandler(void);
-# 471 "./mcc_generated_files/pin_manager.h"
-void IOCCF2_ISR(void);
-# 494 "./mcc_generated_files/pin_manager.h"
-void IOCCF2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 518 "./mcc_generated_files/pin_manager.h"
-extern void (*IOCCF2_InterruptHandler)(void);
-# 542 "./mcc_generated_files/pin_manager.h"
-void IOCCF2_DefaultInterruptHandler(void);
-# 14 "./joystick.h" 2
-
-
-
-void enableJoystick(void);
-void disableJoystick(void);
-
-void initJoystick(void);
-void readJoystick(void);
-void togglePower(void) ;
-void calculateMotion(void);
-int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP);
-# 12 "joystick.c" 2
-
-# 1 "./serial.h" 1
-# 13 "./serial.h"
-# 1 "./mcc_generated_files/eusart1.h" 1
-# 75 "./mcc_generated_files/eusart1.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart1_status_t;
-
-
-
-
-extern volatile uint8_t eusart1TxBufferRemaining;
-extern volatile uint8_t eusart1RxCount;
-
-
-
-
-extern void (*EUSART1_TxDefaultInterruptHandler)(void);
-extern void (*EUSART1_RxDefaultInterruptHandler)(void);
-# 117 "./mcc_generated_files/eusart1.h"
-void EUSART1_Initialize(void);
-# 165 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_ready(void);
-# 213 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_rx_ready(void);
-# 260 "./mcc_generated_files/eusart1.h"
-_Bool EUSART1_is_tx_done(void);
-# 308 "./mcc_generated_files/eusart1.h"
-eusart1_status_t EUSART1_get_last_status(void);
-# 328 "./mcc_generated_files/eusart1.h"
-uint8_t EUSART1_Read(void);
-# 348 "./mcc_generated_files/eusart1.h"
-void EUSART1_Write(uint8_t txData);
-# 369 "./mcc_generated_files/eusart1.h"
-void EUSART1_Transmit_ISR(void);
-# 390 "./mcc_generated_files/eusart1.h"
-void EUSART1_Receive_ISR(void);
-# 411 "./mcc_generated_files/eusart1.h"
-void EUSART1_RxDataHandler(void);
-# 429 "./mcc_generated_files/eusart1.h"
-void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 447 "./mcc_generated_files/eusart1.h"
-void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 465 "./mcc_generated_files/eusart1.h"
-void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
-# 485 "./mcc_generated_files/eusart1.h"
-void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
-# 505 "./mcc_generated_files/eusart1.h"
-void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
-# 13 "./serial.h" 2
-
-
-
-void initSerial(void);
-_Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) ;
-_Bool sendBTEstopCmd(void);
-
-void sendBTString(char * command);
-void flushBTRXbuffer(void);
-
-_Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
-uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
-
-uint16_t calcCRC(uint8_t *ptr);
-void int16ToBytes(int16_t num, uint8_t * ndata);
-# 13 "joystick.c" 2
-
-# 1 "./timers.h" 1
-# 16 "./timers.h"
 # 1 "./mcc_generated_files/tmr2.h" 1
 # 79 "./mcc_generated_files/tmr2.h"
 typedef enum
@@ -18881,9 +18545,484 @@ void TMR2_ISR(void);
 extern void (*TMR2_InterruptHandler)(void);
 # 836 "./mcc_generated_files/tmr2.h"
 void TMR2_DefaultInterruptHandler(void);
-# 16 "./timers.h" 2
+# 59 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/eusart1.h" 1
+# 75 "./mcc_generated_files/eusart1.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart1_status_t;
 
 
+
+
+extern volatile uint8_t eusart1TxBufferRemaining;
+extern volatile uint8_t eusart1RxCount;
+
+
+
+
+extern void (*EUSART1_TxDefaultInterruptHandler)(void);
+extern void (*EUSART1_RxDefaultInterruptHandler)(void);
+# 117 "./mcc_generated_files/eusart1.h"
+void EUSART1_Initialize(void);
+# 165 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_ready(void);
+# 213 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_rx_ready(void);
+# 260 "./mcc_generated_files/eusart1.h"
+_Bool EUSART1_is_tx_done(void);
+# 308 "./mcc_generated_files/eusart1.h"
+eusart1_status_t EUSART1_get_last_status(void);
+# 328 "./mcc_generated_files/eusart1.h"
+uint8_t EUSART1_Read(void);
+# 348 "./mcc_generated_files/eusart1.h"
+void EUSART1_Write(uint8_t txData);
+# 369 "./mcc_generated_files/eusart1.h"
+void EUSART1_Transmit_ISR(void);
+# 390 "./mcc_generated_files/eusart1.h"
+void EUSART1_Receive_ISR(void);
+# 411 "./mcc_generated_files/eusart1.h"
+void EUSART1_RxDataHandler(void);
+# 429 "./mcc_generated_files/eusart1.h"
+void EUSART1_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 447 "./mcc_generated_files/eusart1.h"
+void EUSART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 465 "./mcc_generated_files/eusart1.h"
+void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
+# 485 "./mcc_generated_files/eusart1.h"
+void EUSART1_SetTxInterruptHandler(void (* interruptHandler)(void));
+# 505 "./mcc_generated_files/eusart1.h"
+void EUSART1_SetRxInterruptHandler(void (* interruptHandler)(void));
+# 60 "./mcc_generated_files/mcc.h" 2
+# 75 "./mcc_generated_files/mcc.h"
+void SYSTEM_Initialize(void);
+# 88 "./mcc_generated_files/mcc.h"
+void OSCILLATOR_Initialize(void);
+# 101 "./mcc_generated_files/mcc.h"
+void PMD_Initialize(void);
+# 11 "joystick.c" 2
+
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 1 3
+# 15 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
+# 1 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 33 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef float float_t;
+
+
+
+
+typedef double double_t;
+# 15 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 2 3
+# 42 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
+int __fpclassifyf(float);
+
+
+
+
+
+
+
+int __signbitf(float);
+# 59 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
+double acos(double);
+float acosf(float);
+long double acosl(long double);
+
+
+
+double acosh(double);
+float acoshf(float);
+long double acoshl(long double);
+
+
+
+double asin(double);
+float asinf(float);
+long double asinl(long double);
+
+
+
+double asinh(double);
+float asinhf(float);
+long double asinhl(long double);
+
+
+
+double atan(double);
+float atanf(float);
+long double atanl(long double);
+
+
+
+double atan2(double, double);
+float atan2f(float, float);
+long double atan2l(long double, long double);
+
+
+
+double atanh(double);
+float atanhf(float);
+long double atanhl(long double);
+
+
+
+double cbrt(double);
+float cbrtf(float);
+long double cbrtl(long double);
+
+
+
+double ceil(double);
+float ceilf(float);
+long double ceill(long double);
+
+
+
+double copysign(double, double);
+float copysignf(float, float);
+long double copysignl(long double, long double);
+
+
+
+double cos(double);
+float cosf(float);
+long double cosl(long double);
+
+
+
+double cosh(double);
+float coshf(float);
+long double coshl(long double);
+
+
+
+double erf(double);
+float erff(float);
+long double erfl(long double);
+
+
+
+double erfc(double);
+float erfcf(float);
+long double erfcl(long double);
+
+
+
+double exp(double);
+float expf(float);
+long double expl(long double);
+
+
+
+double exp2(double);
+float exp2f(float);
+long double exp2l(long double);
+
+
+
+double expm1(double);
+float expm1f(float);
+long double expm1l(long double);
+
+
+
+double fabs(double);
+float fabsf(float);
+long double fabsl(long double);
+
+
+
+double fdim(double, double);
+float fdimf(float, float);
+long double fdiml(long double, long double);
+
+
+
+double floor(double);
+float floorf(float);
+long double floorl(long double);
+
+
+
+double fma(double, double, double);
+float fmaf(float, float, float);
+long double fmal(long double, long double, long double);
+
+
+
+double fmax(double, double);
+float fmaxf(float, float);
+long double fmaxl(long double, long double);
+
+
+
+double fmin(double, double);
+float fminf(float, float);
+long double fminl(long double, long double);
+
+
+
+double fmod(double, double);
+float fmodf(float, float);
+long double fmodl(long double, long double);
+
+
+
+double frexp(double, int *);
+float frexpf(float, int *);
+long double frexpl(long double, int *);
+
+
+
+double hypot(double, double);
+float hypotf(float, float);
+long double hypotl(long double, long double);
+
+
+
+int ilogb(double);
+int ilogbf(float);
+int ilogbl(long double);
+
+
+
+double ldexp(double, int);
+float ldexpf(float, int);
+long double ldexpl(long double, int);
+
+
+
+double lgamma(double);
+float lgammaf(float);
+long double lgammal(long double);
+
+
+
+long long llrint(double);
+long long llrintf(float);
+long long llrintl(long double);
+
+
+
+long long llround(double);
+long long llroundf(float);
+long long llroundl(long double);
+
+
+
+double log(double);
+float logf(float);
+long double logl(long double);
+
+
+
+double log10(double);
+float log10f(float);
+long double log10l(long double);
+
+
+
+double log1p(double);
+float log1pf(float);
+long double log1pl(long double);
+
+
+
+double log2(double);
+float log2f(float);
+long double log2l(long double);
+
+
+
+double logb(double);
+float logbf(float);
+long double logbl(long double);
+
+
+
+long lrint(double);
+long lrintf(float);
+long lrintl(long double);
+
+
+
+long lround(double);
+long lroundf(float);
+long lroundl(long double);
+
+
+
+double modf(double, double *);
+float modff(float, float *);
+long double modfl(long double, long double *);
+
+
+
+double nan(const char *);
+float nanf(const char *);
+long double nanl(const char *);
+
+
+
+double nearbyint(double);
+float nearbyintf(float);
+long double nearbyintl(long double);
+
+
+
+double nextafter(double, double);
+float nextafterf(float, float);
+long double nextafterl(long double, long double);
+
+
+
+double nexttoward(double, long double);
+float nexttowardf(float, long double);
+long double nexttowardl(long double, long double);
+
+
+
+
+double pow(double, double);
+__attribute__((nonreentrant)) float powf(float, float);
+long double powl(long double, long double);
+
+
+
+double remainder(double, double);
+float remainderf(float, float);
+long double remainderl(long double, long double);
+
+
+
+double remquo(double, double, int *);
+float remquof(float, float, int *);
+long double remquol(long double, long double, int *);
+
+
+
+double rint(double);
+float rintf(float);
+long double rintl(long double);
+
+
+
+double round(double);
+float roundf(float);
+long double roundl(long double);
+
+
+
+double scalbln(double, long);
+float scalblnf(float, long);
+long double scalblnl(long double, long);
+
+
+
+double scalbn(double, int);
+float scalbnf(float, int);
+long double scalbnl(long double, int);
+
+
+
+double sin(double);
+float sinf(float);
+long double sinl(long double);
+
+
+
+double sinh(double);
+float sinhf(float);
+long double sinhl(long double);
+
+
+
+double sqrt(double);
+float sqrtf(float);
+long double sqrtl(long double);
+
+
+
+double tan(double);
+float tanf(float);
+long double tanl(long double);
+
+
+
+double tanh(double);
+float tanhf(float);
+long double tanhl(long double);
+
+
+
+double tgamma(double);
+float tgammaf(float);
+long double tgammal(long double);
+
+
+
+double trunc(double);
+float truncf(float);
+long double truncl(long double);
+# 423 "D:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\math.h" 3
+extern int signgam;
+
+double j0(double);
+double j1(double);
+double jn(int, double);
+
+double y0(double);
+double y1(double);
+double yn(int, double);
+# 12 "joystick.c" 2
+
+# 1 "./joystick.h" 1
+# 23 "./joystick.h"
+void enableJoystick(void);
+void disableJoystick(void);
+void stopMotion(void);
+
+void initJoystick(void);
+uint8_t getJoystickType(void);
+void setJoystickType(uint8_t jsType);
+void setJoystickSpeed(int8_t jsSpeedMode);
+
+int16_t deadband(int16_t jsValue, int16_t center);
+void readJoystick(void);
+void readButtonJoystick(void);
+void readPotJoystick(void);
+void togglePower(void) ;
+void calculateMotion(void);
+int16_t limitSpeed(int16_t targetFP, int16_t limitedFP, int16_t accelFP);
+# 13 "joystick.c" 2
+
+# 1 "./serial.h" 1
+# 16 "./serial.h"
+void initSerial(void);
+_Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) ;
+_Bool sendBTEstopCmd(void);
+
+void sendBTString(char * command);
+void flushBTRXbuffer(void);
+int16_t clampInt(int16_t num, int16_t limit);
+
+_Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
+uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
+
+uint16_t calcCRC(uint8_t *ptr);
+void int16ToBytes(int16_t num, uint8_t * ndata);
+void int16cat(uint8_t * bufP, int16_t num);
+# 14 "joystick.c" 2
+
+# 1 "./timers.h" 1
+# 18 "./timers.h"
 void initTimers(void);
 void timeKeeper(void);
 void sleep(uint32_t delay);
@@ -18894,7 +19033,8 @@ _Bool oneSec(void);
 void resetBTTimer(void);
 void setBTTimeout(uint32_t timeout);
 int32_t BTTimeRemaining(void);
-# 14 "joystick.c" 2
+int32_t BTTimeWaiting(void);
+# 15 "joystick.c" 2
 
 # 1 "./ui.h" 1
 # 20 "./ui.h"
@@ -18905,18 +19045,27 @@ void blinkLEDColor(uint16_t RGB, uint8_t blinks);
 void runUI(void);
 void setLEDColor(uint16_t RGB);
 void bumpUISpeedMode();
-void bumpUIBrakeMode();
+uint8_t getUIType();
+void bumpUIType();
 void showStartup(void);
 void showShutdown(void);
 void UI_PWM_handler(void);
 _Bool USER1_pressed(void);
 _Bool USER2_pressed(void);
-# 15 "joystick.c" 2
-# 32 "joystick.c"
+# 16 "joystick.c" 2
+# 35 "joystick.c"
+uint8_t joystickType = 0;
 _Bool joystickEnabled = 0;
 _Bool estopPending = 0;
 _Bool estopActive = 0;
 uint32_t estopTimer = 0;
+
+int16_t axialCenter = 2048;
+int16_t yawCenter = 2048;
+int32_t axialCenterSum = 0;
+int32_t yawCenterSum = 0;
+
+
 
 uint8_t replyBuffer[4 * 2];
 int16_t targetAxialFP = 0;
@@ -18929,14 +19078,29 @@ int16_t accelAxialFP = 0;
 int16_t accelYawFP = 0;
 
 int16_t accelLimitAxialFP = (600 << 2) / 20 ;
-int16_t accelLimitYawFP = (100 << 2) / 20 ;
-int16_t accelLimitYawStopFP = (1000 << 2) / 20 ;
-int16_t accelLimitSweepFP = (50 << 2) / 20 ;
+int16_t accelLimitAxialStopFP = (1024 << 2) / 20 ;
+int16_t accelLimitYawFP = (800 << 2) / 20 ;
+int16_t accelLimitYawStopFP = (2048 << 2) / 20 ;
+int16_t accelLimitSweepFP = (200 << 2) / 20 ;
 
-int16_t topAxialSpeedFP = (500 << 2) ;
-int16_t topYawSpeedFP = (70 << 2) ;
-int16_t topSweepSpeedFP = (50 << 2) ;
+int16_t topAxialSpeedFP ;
+int16_t topYawSpeedFP ;
+int16_t topSweepSpeedFP ;
 
+
+void initJoystick(void) {
+    setJoystickType(getUIType());
+    setJoystickSpeed(getUISpeedMode());
+    TMR1_SetInterruptHandler(readJoystick);
+    joystickEnabled = 0;
+    stopMotion();
+}
+
+void setJoystickSpeed(int8_t jsSpeedMode) {
+    topAxialSpeedFP = (300 << 2) * (3 + jsSpeedMode) / 3;
+    topYawSpeedFP = (30 << 2) * (3 + jsSpeedMode) / 3;
+    topSweepSpeedFP = (15 << 2) * (3 + jsSpeedMode) / 3;
+}
 void enableJoystick(){
     joystickEnabled = 1;
     resetBTTimer();
@@ -18946,22 +19110,51 @@ void enableJoystick(){
 void disableJoystick(){
     TMR1_StopTimer();
     joystickEnabled = 0;
+    TMR1_StopTimer();
 }
 
-void initJoystick(void) {
-    TMR1_SetInterruptHandler(readJoystick);
+uint8_t getJoystickType(void) {
+    return joystickType;
+}
+
+void setJoystickType(uint8_t jsType) {
+    joystickType = jsType;
+    switch (joystickType) {
+        case 0:
+            ADCON0bits.ADON = 0;
+            ANSELA = 0x01;
+            WPUA = 0x16;
+            break;
+
+        case 1:
+            ANSELA = 0x07;
+            WPUA = 0x10;
+            ADCON0bits.ADON = 1;
+            sleep(20);
+
+
+            axialCenterSum = 0;
+            yawCenterSum = 0;
+            for (int i = 0; i < 128; i++) {
+                axialCenterSum += ADCC_GetSingleConversion(JSDO);
+                yawCenterSum += ADCC_GetSingleConversion(JSLE);
+            }
+            axialCenter = axialCenterSum >> 7;
+            yawCenter = yawCenterSum >> 7;
+            break;
+    }
+}
+
+void stopMotion(void) {
     targetAxialFP = 0;
     targetYawFP = 0;
     limitedAxialFP = 0;
     limitedYawFP = 0;
-    joystickEnabled = 0;
+    if (joystickEnabled)
+        sendBTSpeedCmd(0, 0, 0);
 }
 
 void readJoystick(void) {
-
-    accelAxialFP = accelLimitAxialFP;
-    accelYawFP = accelLimitYawFP;
-
     if (joystickEnabled) {
 
 
@@ -18973,11 +19166,15 @@ void readJoystick(void) {
             } else {
                 estopTimer = getTicks();
                 estopPending = 1;
+
+
+                stopMotion();
             }
         } else {
             estopPending = 0;
             estopActive = 0;
         }
+
 
         if (estopActive){
             sendBTEstopCmd();
@@ -18988,39 +19185,19 @@ void readJoystick(void) {
             limitedYawFP = 0;
         } else {
 
+            switch (joystickType) {
+                default:
+                case 0:
+                    readButtonJoystick();
+                    break;
 
-            if (PORTCbits.RC0 == 0)
-                targetAxialFP = topAxialSpeedFP;
-            else if (PORTAbits.RA2 == 0)
-                targetAxialFP = -topAxialSpeedFP;
-            else
-                targetAxialFP = 0;
-
-            if (PORTCbits.RC1 == 0){
-                if (targetAxialFP == 0)
-                    targetYawFP = topYawSpeedFP;
-                else {
-                    targetYawFP = topSweepSpeedFP;
-                    accelYawFP = accelLimitSweepFP;
-                }
+                case 1:
+                    readPotJoystick();
+                    break;
             }
-            else if (PORTAbits.RA1 == 0){
-                if (targetAxialFP == 0)
-                    targetYawFP = -topYawSpeedFP;
-                else {
-                    targetYawFP = -topSweepSpeedFP;
-                    accelYawFP = accelLimitSweepFP;
-                }
-            }
-            else {
-                targetYawFP = 0;
-                accelYawFP = accelLimitYawStopFP;
-            }
-
-
-            calculateMotion();
-            sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
         }
+
+
 
 
         while (EUSART1_is_rx_ready()) {
@@ -19029,9 +19206,78 @@ void readJoystick(void) {
                 setBTTimeout(30000);
             }
         }
+    }
+}
 
+void readButtonJoystick(void) {
+
+    accelAxialFP = accelLimitAxialFP;
+    accelYawFP = accelLimitYawFP;
+
+
+    if (PORTCbits.RC0 == 0)
+        targetAxialFP = topAxialSpeedFP;
+    else if (PORTAbits.RA2 == 0)
+        targetAxialFP = -topAxialSpeedFP;
+    else {
+        accelAxialFP = accelLimitAxialStopFP;
+        targetAxialFP = 0;
     }
 
+    if (PORTCbits.RC1 == 0){
+        if (targetAxialFP == 0) {
+            targetYawFP = topYawSpeedFP;
+        }
+        else {
+            targetYawFP = topSweepSpeedFP;
+            accelYawFP = accelLimitSweepFP;
+        }
+    }
+    else if (PORTAbits.RA1 == 0){
+        if (targetAxialFP == 0) {
+            targetYawFP = -topYawSpeedFP;
+        }
+        else {
+            targetYawFP = -topSweepSpeedFP;
+            accelYawFP = accelLimitSweepFP;
+        }
+    }
+    else {
+        targetYawFP = 0;
+        accelYawFP = accelLimitYawStopFP;
+    }
+
+
+    calculateMotion();
+    sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
+}
+
+void readPotJoystick(void) {
+    accelAxialFP = 2048;
+    accelYawFP = 2048;
+
+    int16_t axial = - deadband(ADCC_GetSingleConversion(JSDO), axialCenter);
+    int16_t yaw = - deadband(ADCC_GetSingleConversion(JSLE), yawCenter);
+
+    targetAxialFP = (int16_t)((topAxialSpeedFP * (int32_t)axial) >> 11);
+    targetYawFP = (int16_t)((topYawSpeedFP * (int32_t)yaw) >> 11);
+
+
+    calculateMotion();
+    sendBTSpeedCmd(limitedAxialFP >> 2, limitedYawFP >> 2, 0);
+
+}
+
+int16_t deadband(int16_t jsValue, int16_t center){
+    jsValue -= center ;
+    if (jsValue > 512) {
+        jsValue = (int16_t)(((int32_t)(jsValue - 512) * 2048) / (2048 - 512));
+    } else if (jsValue < -512) {
+        jsValue = (int16_t)(((int32_t)(jsValue + 512) * 2048) / (2048 - 512));
+    } else {
+        return 0;
+    }
+    return jsValue;
 }
 
 void calculateMotion(void) {

@@ -5,11 +5,21 @@
 
 #define SPEED_CMD_LENGTH  12 
 #define ESTOP_CMD_LENGTH  8 
+#define DEBUG_CMD_LENGTH  16
+
+#define MAX_SPEED_MMPS    5000
+#define MAX_YAW_DPS       5000
+
+// #define MAX_YAW_DPS       1300
 
 extern volatile uint8_t eusart1TxBufferRemaining;
 
+bool    sendDebugText = false;
+
 uint8_t speedBuffer[SPEED_CMD_LENGTH] ;
 uint8_t estopBuffer[ESTOP_CMD_LENGTH] = {'/', 0, 0, 0xFF, 0, 0, 0, '\n'};
+
+uint8_t debugBuffer[DEBUG_CMD_LENGTH] ;
 
 void    initSerial(void) {
  
@@ -23,10 +33,25 @@ void    initSerial(void) {
 }
 
 bool    sendBTSpeedCmd(int16_t  axial, int16_t yaw,  bool blockIfBusy) {
-    int16ToBytes(axial, speedBuffer + 5);
-    int16ToBytes(yaw,   speedBuffer + 7);
-    calcCRC(speedBuffer);
-    return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
+    axial = clampInt(axial, MAX_SPEED_MMPS);
+    yaw   = clampInt(yaw,   MAX_YAW_DPS);
+
+    // Send either the debug text or the binary text.
+    if (sendDebugText){
+        debugBuffer[0] = 0;
+        strcat(debugBuffer, "> ");
+        int16cat(debugBuffer, axial);
+        strcat(debugBuffer, ",");
+        int16cat(debugBuffer, yaw);
+        strcat(debugBuffer, "\n");
+                
+        return sendBTBuffer((void *)debugBuffer, strlen(debugBuffer), blockIfBusy);
+    } else {
+        int16ToBytes(axial, speedBuffer + 5);
+        int16ToBytes(yaw,   speedBuffer + 7);
+        calcCRC(speedBuffer);
+        return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
+    }
 }
 
 bool     sendBTEstopCmd(void){
@@ -120,3 +145,44 @@ void	int16ToBytes(int16_t num, uint8_t * ndata) {
 		num = num >> 8;
 	}
 }
+
+int16_t	clampInt(int16_t num, int16_t limit) {
+    if (num > limit)
+        num = limit ;
+    else if (num < -limit)
+        num = - limit;
+    return num;
+}
+
+void    int16cat(uint8_t * bufP, int16_t num){
+    bool    suppress = true;
+    int16_t digit = 0;
+    int16_t divider = 10000;
+
+    // Find the end of the string;
+    while (*bufP != 0)
+        bufP++;
+
+    // Look for negative number
+    if (num < 0) {
+        num = -num;
+        *bufP++ = '-';
+    }
+
+    // Append the number
+    while (divider > 0){
+        digit = num / divider;
+        num = num - (digit * divider);
+        divider /= 10;
+        
+        if ((digit != 0) || !suppress){
+            suppress = false;
+            *bufP++ = '0' + digit;
+        }
+    }
+    
+    if (suppress)
+        *bufP++ = '0';
+        
+    *bufP++ = 0;
+}    

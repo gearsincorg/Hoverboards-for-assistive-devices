@@ -18421,12 +18421,14 @@ _Bool sendBTEstopCmd(void);
 
 void sendBTString(char * command);
 void flushBTRXbuffer(void);
+int16_t clampInt(int16_t num, int16_t limit);
 
 _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
 uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
 
 uint16_t calcCRC(uint8_t *ptr);
 void int16ToBytes(int16_t num, uint8_t * ndata);
+void int16cat(uint8_t * bufP, int16_t num);
 # 3 "serial.c" 2
 
 # 1 "./timers.h" 1
@@ -18635,16 +18637,17 @@ _Bool oneSec(void);
 void resetBTTimer(void);
 void setBTTimeout(uint32_t timeout);
 int32_t BTTimeRemaining(void);
+int32_t BTTimeWaiting(void);
 # 4 "serial.c" 2
-
-
-
-
-
+# 15 "serial.c"
 extern volatile uint8_t eusart1TxBufferRemaining;
+
+_Bool sendDebugText = 0;
 
 uint8_t speedBuffer[12] ;
 uint8_t estopBuffer[8] = {'/', 0, 0, 0xFF, 0, 0, 0, '\n'};
+
+uint8_t debugBuffer[16] ;
 
 void initSerial(void) {
 
@@ -18658,10 +18661,25 @@ void initSerial(void) {
 }
 
 _Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) {
-    int16ToBytes(axial, speedBuffer + 5);
-    int16ToBytes(yaw, speedBuffer + 7);
-    calcCRC(speedBuffer);
-    return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
+    axial = clampInt(axial, 5000);
+    yaw = clampInt(yaw, 5000);
+
+
+    if (sendDebugText){
+        debugBuffer[0] = 0;
+        strcat(debugBuffer, "> ");
+        int16cat(debugBuffer, axial);
+        strcat(debugBuffer, ",");
+        int16cat(debugBuffer, yaw);
+        strcat(debugBuffer, "\n");
+
+        return sendBTBuffer((void *)debugBuffer, strlen(debugBuffer), blockIfBusy);
+    } else {
+        int16ToBytes(axial, speedBuffer + 5);
+        int16ToBytes(yaw, speedBuffer + 7);
+        calcCRC(speedBuffer);
+        return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
+    }
 }
 
 _Bool sendBTEstopCmd(void){
@@ -18698,7 +18716,7 @@ void flushBTRXbuffer(void) {
             sleep(5);
     }
 }
-# 74 "serial.c"
+# 99 "serial.c"
 uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS) {
     uint32_t startTime = getTicks();
     uint8_t charsRead = 0;
@@ -18747,4 +18765,45 @@ void int16ToBytes(int16_t num, uint8_t * ndata) {
   *ndata++ = ((uint8_t)(num & 0xFF));
   num = num >> 8;
  }
+}
+
+int16_t clampInt(int16_t num, int16_t limit) {
+    if (num > limit)
+        num = limit ;
+    else if (num < -limit)
+        num = - limit;
+    return num;
+}
+
+void int16cat(uint8_t * bufP, int16_t num){
+    _Bool suppress = 1;
+    int16_t digit = 0;
+    int16_t divider = 10000;
+
+
+    while (*bufP != 0)
+        bufP++;
+
+
+    if (num < 0) {
+        num = -num;
+        *bufP++ = '-';
+    }
+
+
+    while (divider > 0){
+        digit = num / divider;
+        num = num - (digit * divider);
+        divider /= 10;
+
+        if ((digit != 0) || !suppress){
+            suppress = 0;
+            *bufP++ = '0' + digit;
+        }
+    }
+
+    if (suppress)
+        *bufP++ = '0';
+
+    *bufP++ = 0;
 }

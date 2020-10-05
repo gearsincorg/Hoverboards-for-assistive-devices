@@ -215,7 +215,6 @@ void EUSART1_Transmit_ISR(void)
 
 void EUSART1_Receive_ISR(void)
 {
-    
     eusart1RxStatusBuffer[eusart1RxHead].status = 0;
 
     if(RC1STAbits.FERR){
@@ -250,11 +249,8 @@ void EUSART1_RxDataHandler(void){
 void EUSART1_DefaultFramingErrorHandler(void){}
 
 void EUSART1_DefaultOverrunErrorHandler(void){
-    // EUSART1 error - restart
-
     RC1STAbits.CREN = 0;
     RC1STAbits.CREN = 1;
-
 }
 
 void EUSART1_DefaultErrorHandler(void){

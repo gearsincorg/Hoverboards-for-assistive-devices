@@ -18368,6 +18368,7 @@ _Bool oneSec(void);
 void resetBTTimer(void);
 void setBTTimeout(uint32_t timeout);
 int32_t BTTimeRemaining(void);
+int32_t BTTimeWaiting(void);
 # 4 "timers.c" 2
 
 
@@ -18430,4 +18431,8 @@ int32_t BTTimeRemaining(void){
     } else {
         return (BTTimeout - elapsed);
     }
+}
+
+int32_t BTTimeWaiting(void){
+    return (systemTime - lastBTTime);
 }

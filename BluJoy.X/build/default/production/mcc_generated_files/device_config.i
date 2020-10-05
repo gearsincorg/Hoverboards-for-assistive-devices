@@ -25,10 +25,10 @@
 #pragma config STVREN = ON
 
 
-#pragma config WDTCPS = WDTCPS_31
+#pragma config WDTCPS = WDTCPS_11
 #pragma config WDTE = OFF
 #pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
+#pragma config WDTCCS = LFINTOSC
 
 
 #pragma config BBSIZE = BB512

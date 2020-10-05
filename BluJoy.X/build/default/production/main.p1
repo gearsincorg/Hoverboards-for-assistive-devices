@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"74 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
+"75 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 75: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "18 ./timers.h
 [; ;./timers.h: 18: void initTimers(void);
@@ -9,12 +9,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16 ./serial.h
 [; ;./serial.h: 16: void initSerial(void);
 [v _initSerial `(v ~T0 @X0 0 ef ]
-"20 ./joystick.h
-[; ;./joystick.h: 20: void initJoystick(void);
-[v _initJoystick `(v ~T0 @X0 0 ef ]
 "21 ./ui.h
 [; ;./ui.h: 21: void initUI(void);
 [v _initUI `(v ~T0 @X0 0 ef ]
+"27 ./joystick.h
+[; ;./joystick.h: 27: void initJoystick(void);
+[v _initJoystick `(v ~T0 @X0 0 ef ]
 "419 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 419:     struct {
 [s S32 :1 `uc 1 :5 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -29,17 +29,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10 ./configure.h
 [; ;./configure.h: 10: void initConfiguration(void);
 [v _initConfiguration `(v ~T0 @X0 0 ef ]
-"26
-[; ;./configure.h: 26: void turnPowerOn(void);
+"27
+[; ;./configure.h: 27: void turnPowerOn(void);
 [v _turnPowerOn `(v ~T0 @X0 0 ef ]
-"28 ./ui.h
-[; ;./ui.h: 28: void showStartup(void);
+"29 ./ui.h
+[; ;./ui.h: 29: void showStartup(void);
 [v _showStartup `(v ~T0 @X0 0 ef ]
 "20 ./timers.h
 [; ;./timers.h: 20: void sleep(uint32_t delay);
 [v _sleep `(v ~T0 @X0 0 ef1`ul ]
-"17 ./joystick.h
-[; ;./joystick.h: 17: void enableJoystick(void);
+"23 ./joystick.h
+[; ;./joystick.h: 23: void enableJoystick(void);
 [v _enableJoystick `(v ~T0 @X0 0 ef ]
 "24 ./ui.h
 [; ;./ui.h: 24: void runUI(void);
@@ -47,17 +47,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "27 ./timers.h
 [; ;./timers.h: 27: int32_t BTTimeRemaining(void);
 [v _BTTimeRemaining `(l ~T0 @X0 0 ef ]
-"27 ./configure.h
-[; ;./configure.h: 27: void turnPowerOff(void);
+"28 ./configure.h
+[; ;./configure.h: 28: void turnPowerOff(void);
 [v _turnPowerOff `(v ~T0 @X0 0 ef ]
-"29 ./ui.h
-[; ;./ui.h: 29: void showShutdown(void);
+"30 ./ui.h
+[; ;./ui.h: 30: void showShutdown(void);
 [v _showShutdown `(v ~T0 @X0 0 ef ]
 "31 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\pic.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"19 ./configure.h
-[; ;./configure.h: 19: _Bool powerIsOn(void);
+"20 ./configure.h
+[; ;./configure.h: 20: _Bool powerIsOn(void);
 [v _powerIsOn `(a ~T0 @X0 0 ef ]
 "25 ./timers.h
 [; ;./timers.h: 25: void resetBTTimer(void);
@@ -1440,11 +1440,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 25:     initSerial();
 [e ( _initSerial ..  ]
 "26
-[; ;main.c: 26:     initJoystick();
-[e ( _initJoystick ..  ]
-"27
-[; ;main.c: 27:     initUI();
+[; ;main.c: 26:     initUI();
 [e ( _initUI ..  ]
+"27
+[; ;main.c: 27:     initJoystick();
+[e ( _initJoystick ..  ]
 "30
 [; ;main.c: 30:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]

@@ -64,10 +64,10 @@
 #pragma config STVREN = ON    // Stack Overflow/Underflow Reset Enable bit->Stack Overflow or Underflow will cause a reset
 
 // CONFIG3
-#pragma config WDTCPS = WDTCPS_31    // WDT Period Select bits->Divider ratio 1:65536; software control of WDTPS
+#pragma config WDTCPS = WDTCPS_11    // WDT Period Select bits->Divider ratio 1:65536
 #pragma config WDTE = OFF    // WDT operating mode->WDT Disabled, SWDTEN is ignored
 #pragma config WDTCWS = WDTCWS_7    // WDT Window Select bits->window always open (100%); software control; keyed access not required
-#pragma config WDTCCS = SC    // WDT input clock selector->Software Control
+#pragma config WDTCCS = LFINTOSC    // WDT input clock selector->WDT reference clock is the 31.0kHz LFINTOSC output
 
 // CONFIG4
 #pragma config BBSIZE = BB512    // Boot Block Size Selection bits->512 words boot block size

@@ -25,6 +25,8 @@ bool        oneSec(void);
 void        resetBTTimer(void);
 void        setBTTimeout(uint32_t timeout);
 int32_t     BTTimeRemaining(void);
+int32_t     BTTimeWaiting(void);
+
 
 #ifdef	__cplusplus
 extern "C" {

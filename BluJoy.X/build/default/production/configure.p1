@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"18 ./configure.h
-[; ;./configure.h: 18: void setSerialBaud(uint16_t baud);
+"19 ./configure.h
+[; ;./configure.h: 19: void setSerialBaud(uint16_t baud);
 [v _setSerialBaud `(v ~T0 @X0 0 ef1`us ]
 "14
 [; ;./configure.h: 14: void SetSlaveTXRX(void);
@@ -17,7 +17,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 ./timers.h
 [; ;./timers.h: 20: void sleep(uint32_t delay);
 [v _sleep `(v ~T0 @X0 0 ef1`ul ]
-"754 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
+"843 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 843:     struct {
+[s S50 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S50 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"842
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 842: typedef union {
+[u S49 `S50 1 ]
+[n S49 . . ]
+"854
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 854: extern volatile LATCbits_t LATCbits __attribute__((address(0x01A)));
+[v _LATCbits `VS49 ~T0 @X0 0 e@26 ]
+"754
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 754:     struct {
 [s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S46 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 ]
@@ -28,26 +39,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 "763
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 763: extern volatile LATAbits_t LATAbits __attribute__((address(0x018)));
 [v _LATAbits `VS45 ~T0 @X0 0 e@24 ]
+"686
+[; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 686: extern volatile unsigned char TRISC __attribute__((address(0x014)));
+[v _TRISC `Vuc ~T0 @X0 0 e@20 ]
 "5157
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 5157: extern volatile unsigned char SP1BRGL __attribute__((address(0x11B)));
 [v _SP1BRGL `Vuc ~T0 @X0 0 e@283 ]
 "5227
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 5227: extern volatile unsigned char SP1BRGH __attribute__((address(0x11C)));
 [v _SP1BRGH `Vuc ~T0 @X0 0 e@284 ]
-"21 ./configure.h
-[; ;./configure.h: 21: void setBTBaudRatesTo38400(void);
+"22 ./configure.h
+[; ;./configure.h: 22: void setBTBaudRatesTo38400(void);
 [v _setBTBaudRatesTo38400 `(v ~T0 @X0 0 ef ]
-"22
-[; ;./configure.h: 22: _Bool getBTAddress(uint8_t * MAC, _Bool isMaster);
-[v _getBTAddress `(a ~T0 @X0 0 ef2`*uc`a ]
 "23
-[; ;./configure.h: 23: void setBTConnection(uint8_t * MAC, _Bool isMaster);
+[; ;./configure.h: 23: _Bool getBTAddress(uint8_t * MAC, _Bool isMaster);
+[v _getBTAddress `(a ~T0 @X0 0 ef2`*uc`a ]
+"24
+[; ;./configure.h: 24: void setBTConnection(uint8_t * MAC, _Bool isMaster);
 [v _setBTConnection `(v ~T0 @X0 0 ef2`*uc`a ]
 "20 ./serial.h
 [; ;./serial.h: 20: void sendBTString(char * command);
 [v _sendBTString `(v ~T0 @X0 0 ef1`*uc ]
-"24
-[; ;./serial.h: 24: uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
+"25
+[; ;./serial.h: 25: uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS);
 [v _receiveBTBuffer `(uc ~T0 @X0 0 ef3`*uc`uc`us ]
 "51 D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h
 [; ;D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h: 51: char *strstr (const char *, const char *);
@@ -55,17 +69,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22 ./ui.h
 [; ;./ui.h: 22: void pulseLEDColor(uint16_t RGB, uint16_t onMS, uint16_t offMS);
 [v _pulseLEDColor `(v ~T0 @X0 0 ef3`us`us`us ]
-"31
-[; ;./ui.h: 31: _Bool USER1_pressed(void);
-[v _USER1_pressed `(a ~T0 @X0 0 ef ]
 "32
-[; ;./ui.h: 32: _Bool USER2_pressed(void);
+[; ;./ui.h: 32: _Bool USER1_pressed(void);
+[v _USER1_pressed `(a ~T0 @X0 0 ef ]
+"33
+[; ;./ui.h: 33: _Bool USER2_pressed(void);
 [v _USER2_pressed `(a ~T0 @X0 0 ef ]
 "27 D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h
 [; ;D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
 [v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
-"23 ./serial.h
-[; ;./serial.h: 23: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
+"24 ./serial.h
+[; ;./serial.h: 24: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
 [v _sendBTBuffer `(a ~T0 @X0 0 ef3`*uc`uc`a ]
 "110 D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 110: __asm("INDF0 equ 00h");
@@ -1426,8 +1440,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32104
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 32104: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"8 configure.c
-[; ;configure.c: 8: uint8_t slaveMAC[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
+"9 configure.c
+[; ;configure.c: 9: uint8_t slaveMAC[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
 [v _slaveMAC `uc ~T0 @X0 -> 12 `i e ]
 [i _slaveMAC
 :U ..
@@ -1445,8 +1459,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-"9
-[; ;configure.c: 9: uint8_t masterMAC[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
+"10
+[; ;configure.c: 10: uint8_t masterMAC[12] = {0,0,0,0,0,0,0,0,0,0,0,0};
 [v _masterMAC `uc ~T0 @X0 -> 12 `i e ]
 [i _masterMAC
 :U ..
@@ -1464,20 +1478,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-"11
-[; ;configure.c: 11: uint8_t RX_Buffer[40];
-[v _RX_Buffer `uc ~T0 @X0 -> 40 `i e ]
 "12
-[; ;configure.c: 12: uint8_t charsRead;
-[v _charsRead `uc ~T0 @X0 1 e ]
+[; ;configure.c: 12: uint8_t RX_Buffer[40];
+[v _RX_Buffer `uc ~T0 @X0 -> 40 `i e ]
 "13
-[; ;configure.c: 13: _Bool powerOn = 0;
+[; ;configure.c: 13: uint8_t charsRead;
+[v _charsRead `uc ~T0 @X0 1 e ]
+"14
+[; ;configure.c: 14: _Bool powerOn = 0;
 [v _powerOn `a ~T0 @X0 1 e ]
 [i _powerOn
 -> -> 0 `i `a
 ]
-"15
-[; ;configure.c: 15: void initConfiguration() {
+"16
+[; ;configure.c: 16: void initConfiguration() {
 [v _initConfiguration `(v ~T0 @X0 1 ef ]
 {
 [e :U _initConfiguration ]
@@ -1507,28 +1521,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "24
 [; ;configure.c: 24:     RC6PPS = 0x16;
 [e = _RC6PPS -> -> 22 `i `uc ]
-"25
-[; ;configure.c: 25:     sleep(5);
-[e ( _sleep (1 -> -> -> 5 `i `l `ul ]
 "26
 [; ;configure.c: 26: }
 [e :UE 1519 ]
 }
 "28
-[; ;configure.c: 28: void SetDualReceive(void){
-[v _SetDualReceive `(v ~T0 @X0 1 ef ]
+[; ;configure.c: 28: void SetPowerdownTXRX(void){
+[v _SetPowerdownTXRX `(v ~T0 @X0 1 ef ]
 {
-[e :U _SetDualReceive ]
+[e :U _SetPowerdownTXRX ]
 [f ]
 "29
 [; ;configure.c: 29:     RX1DTPPS = 0x15;
 [e = _RX1DTPPS -> -> 21 `i `uc ]
 "30
-[; ;configure.c: 30:     RC4PPS = 0x0F;
-[e = _RC4PPS -> -> 15 `i `uc ]
+[; ;configure.c: 30:     RC4PPS = 0x14;
+[e = _RC4PPS -> -> 20 `i `uc ]
 "31
-[; ;configure.c: 31:     RC6PPS = 0x0F;
-[e = _RC6PPS -> -> 15 `i `uc ]
+[; ;configure.c: 31:     RC6PPS = 0x16;
+[e = _RC6PPS -> -> 22 `i `uc ]
 "32
 [; ;configure.c: 32:     sleep(5);
 [e ( _sleep (1 -> -> -> 5 `i `l `ul ]
@@ -1537,20 +1548,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 1520 ]
 }
 "35
-[; ;configure.c: 35: void SetMasterTXRX(void){
-[v _SetMasterTXRX `(v ~T0 @X0 1 ef ]
+[; ;configure.c: 35: void SetDualReceive(void){
+[v _SetDualReceive `(v ~T0 @X0 1 ef ]
 {
-[e :U _SetMasterTXRX ]
+[e :U _SetDualReceive ]
 [f ]
 "36
-[; ;configure.c: 36:     RX1DTPPS = 0x13;
-[e = _RX1DTPPS -> -> 19 `i `uc ]
+[; ;configure.c: 36:     RX1DTPPS = 0x15;
+[e = _RX1DTPPS -> -> 21 `i `uc ]
 "37
-[; ;configure.c: 37:     RC6PPS = 0x0F;
-[e = _RC6PPS -> -> 15 `i `uc ]
+[; ;configure.c: 37:     RC4PPS = 0x0F;
+[e = _RC4PPS -> -> 15 `i `uc ]
 "38
-[; ;configure.c: 38:     RC4PPS = 0x14;
-[e = _RC4PPS -> -> 20 `i `uc ]
+[; ;configure.c: 38:     RC6PPS = 0x0F;
+[e = _RC6PPS -> -> 15 `i `uc ]
 "39
 [; ;configure.c: 39:     sleep(5);
 [e ( _sleep (1 -> -> -> 5 `i `l `ul ]
@@ -1559,470 +1570,518 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 1521 ]
 }
 "42
-[; ;configure.c: 42: void SetSlaveTXMasterRX(void){
-[v _SetSlaveTXMasterRX `(v ~T0 @X0 1 ef ]
+[; ;configure.c: 42: void SetMasterTXRX(void){
+[v _SetMasterTXRX `(v ~T0 @X0 1 ef ]
 {
-[e :U _SetSlaveTXMasterRX ]
+[e :U _SetMasterTXRX ]
 [f ]
 "43
 [; ;configure.c: 43:     RX1DTPPS = 0x13;
 [e = _RX1DTPPS -> -> 19 `i `uc ]
+"44
+[; ;configure.c: 44:     RC6PPS = 0x0F;
+[e = _RC6PPS -> -> 15 `i `uc ]
 "45
-[; ;configure.c: 45:     RC4PPS = 0x0F;
-[e = _RC4PPS -> -> 15 `i `uc ]
+[; ;configure.c: 45:     RC4PPS = 0x14;
+[e = _RC4PPS -> -> 20 `i `uc ]
 "46
-[; ;configure.c: 46:     RC6PPS = 0x16;
-[e = _RC6PPS -> -> 22 `i `uc ]
-"47
-[; ;configure.c: 47:     sleep(5);
+[; ;configure.c: 46:     sleep(5);
 [e ( _sleep (1 -> -> -> 5 `i `l `ul ]
-"48
-[; ;configure.c: 48: }
+"47
+[; ;configure.c: 47: }
 [e :UE 1522 ]
 }
+"49
+[; ;configure.c: 49: void SetSlaveTXMasterRX(void){
+[v _SetSlaveTXMasterRX `(v ~T0 @X0 1 ef ]
+{
+[e :U _SetSlaveTXMasterRX ]
+[f ]
 "50
-[; ;configure.c: 50: void turnPowerOn(){
+[; ;configure.c: 50:     RX1DTPPS = 0x13;
+[e = _RX1DTPPS -> -> 19 `i `uc ]
+"52
+[; ;configure.c: 52:     RC4PPS = 0x0F;
+[e = _RC4PPS -> -> 15 `i `uc ]
+"53
+[; ;configure.c: 53:     RC6PPS = 0x16;
+[e = _RC6PPS -> -> 22 `i `uc ]
+"54
+[; ;configure.c: 54:     sleep(5);
+[e ( _sleep (1 -> -> -> 5 `i `l `ul ]
+"55
+[; ;configure.c: 55: }
+[e :UE 1523 ]
+}
+"57
+[; ;configure.c: 57: void turnPowerOn(){
 [v _turnPowerOn `(v ~T0 @X0 1 ef ]
 {
 [e :U _turnPowerOn ]
 [f ]
-"51
-[; ;configure.c: 51:     do { LATAbits.LATA5 = 0; } while(0);
+"58
+[; ;configure.c: 58:     do { LATCbits.LATC7 = 1; } while(0);
+[e :U 1527 ]
+{
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
+}
 [e :U 1526 ]
+"59
+[; ;configure.c: 59:     do { LATAbits.LATA5 = 0; } while(0);
+[e :U 1530 ]
 {
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
 }
-[e :U 1525 ]
-"52
-[; ;configure.c: 52:     powerOn = 1;
+[e :U 1529 ]
+"60
+[; ;configure.c: 60:     TRISC = 0x2F;
+[e = _TRISC -> -> 47 `i `uc ]
+"61
+[; ;configure.c: 61:     SetSlaveTXRX();
+[e ( _SetSlaveTXRX ..  ]
+"62
+[; ;configure.c: 62:     powerOn = 1;
 [e = _powerOn -> -> 1 `i `a ]
-"53
-[; ;configure.c: 53: }
-[e :UE 1523 ]
+"63
+[; ;configure.c: 63: }
+[e :UE 1524 ]
 }
-"55
-[; ;configure.c: 55: void turnPowerOff(){
+"65
+[; ;configure.c: 65: void turnPowerOff(){
 [v _turnPowerOff `(v ~T0 @X0 1 ef ]
 {
 [e :U _turnPowerOff ]
 [f ]
-"56
-[; ;configure.c: 56:     do { LATAbits.LATA5 = 1; } while(0);
-[e :U 1530 ]
+"66
+[; ;configure.c: 66:     do { LATAbits.LATA5 = 1; } while(0);
+[e :U 1534 ]
 {
 [e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 }
-[e :U 1529 ]
-"57
-[; ;configure.c: 57:     powerOn = 0;
-[e = _powerOn -> -> 0 `i `a ]
-"58
-[; ;configure.c: 58: }
-[e :UE 1527 ]
+[e :U 1533 ]
+"67
+[; ;configure.c: 67:     do { LATCbits.LATC7 = 0; } while(0);
+[e :U 1537 ]
+{
+[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
 }
-"60
-[; ;configure.c: 60: _Bool powerIsOn() {
+[e :U 1536 ]
+"68
+[; ;configure.c: 68:     SetPowerdownTXRX();
+[e ( _SetPowerdownTXRX ..  ]
+"69
+[; ;configure.c: 69:     powerOn = 0;
+[e = _powerOn -> -> 0 `i `a ]
+"70
+[; ;configure.c: 70: }
+[e :UE 1531 ]
+}
+"72
+[; ;configure.c: 72: _Bool powerIsOn() {
 [v _powerIsOn `(a ~T0 @X0 1 ef ]
 {
 [e :U _powerIsOn ]
 [f ]
-"61
-[; ;configure.c: 61:     return powerOn;
+"73
+[; ;configure.c: 73:     return powerOn;
 [e ) _powerOn ]
-[e $UE 1531  ]
-"62
-[; ;configure.c: 62: }
-[e :UE 1531 ]
+[e $UE 1538  ]
+"74
+[; ;configure.c: 74: }
+[e :UE 1538 ]
 }
-"64
-[; ;configure.c: 64: void setSerialBaud(uint16_t baud){
+"76
+[; ;configure.c: 76: void setSerialBaud(uint16_t baud){
 [v _setSerialBaud `(v ~T0 @X0 1 ef1`us ]
 {
 [e :U _setSerialBaud ]
 [v _baud `us ~T0 @X0 1 r1 ]
 [f ]
-"65
-[; ;configure.c: 65:     if (baud == 38400) {
-[e $ ! == -> _baud `l -> 38400 `l 1533  ]
+"77
+[; ;configure.c: 77:     if (baud == 38400) {
+[e $ ! == -> _baud `l -> 38400 `l 1540  ]
 {
-"67
-[; ;configure.c: 67:         SP1BRGL = 0x67;
+"79
+[; ;configure.c: 79:         SP1BRGL = 0x67;
 [e = _SP1BRGL -> -> 103 `i `uc ]
-"68
-[; ;configure.c: 68:         SP1BRGH = 0x00;
+"80
+[; ;configure.c: 80:         SP1BRGH = 0x00;
 [e = _SP1BRGH -> -> 0 `i `uc ]
-"69
-[; ;configure.c: 69:     } else {
+"81
+[; ;configure.c: 81:     } else {
 }
-[e $U 1534  ]
-[e :U 1533 ]
+[e $U 1541  ]
+[e :U 1540 ]
 {
-"71
-[; ;configure.c: 71:         SP1BRGL = 0xA0;
+"83
+[; ;configure.c: 83:         SP1BRGL = 0xA0;
 [e = _SP1BRGL -> -> 160 `i `uc ]
-"72
-[; ;configure.c: 72:         SP1BRGH = 0x01;
+"84
+[; ;configure.c: 84:         SP1BRGH = 0x01;
 [e = _SP1BRGH -> -> 1 `i `uc ]
-"73
-[; ;configure.c: 73:     }
+"85
+[; ;configure.c: 85:     }
 }
-[e :U 1534 ]
-"74
-[; ;configure.c: 74:     sleep(200);
+[e :U 1541 ]
+"86
+[; ;configure.c: 86:     sleep(200);
 [e ( _sleep (1 -> -> -> 200 `i `l `ul ]
-"75
-[; ;configure.c: 75: }
-[e :UE 1532 ]
+"87
+[; ;configure.c: 87: }
+[e :UE 1539 ]
 }
-"78
-[; ;configure.c: 78: void pairBluetoothDevices(void){
+"90
+[; ;configure.c: 90: void pairBluetoothDevices(void){
 [v _pairBluetoothDevices `(v ~T0 @X0 1 ef ]
 {
 [e :U _pairBluetoothDevices ]
 [f ]
-"79
-[; ;configure.c: 79:     setBTBaudRatesTo38400();
+"91
+[; ;configure.c: 91:     setBTBaudRatesTo38400();
 [e ( _setBTBaudRatesTo38400 ..  ]
-"82
-[; ;configure.c: 82:     getBTAddress(slaveMAC, 0);
-[e ( _getBTAddress (2 , &U _slaveMAC -> -> 0 `i `a ]
-"83
-[; ;configure.c: 83:     getBTAddress(masterMAC, 1);
-[e ( _getBTAddress (2 , &U _masterMAC -> -> 1 `i `a ]
-"86
-[; ;configure.c: 86:     setBTConnection(slaveMAC, 1);
-[e ( _setBTConnection (2 , &U _slaveMAC -> -> 1 `i `a ]
-"87
-[; ;configure.c: 87:     setBTConnection(masterMAC, 0);
-[e ( _setBTConnection (2 , &U _masterMAC -> -> 0 `i `a ]
-"90
-[; ;configure.c: 90:     SetSlaveTXMasterRX();
-[e ( _SetSlaveTXMasterRX ..  ]
-"92
-[; ;configure.c: 92:     while (!USER1_pressed() && !USER2_pressed()) {
-[e $U 1536  ]
-[e :U 1537 ]
-{
-"93
-[; ;configure.c: 93:         sendBTString("HUGS\n");
-[e ( _sendBTString (1 :s 1C ]
 "94
-[; ;configure.c: 94:         if (receiveBTBuffer(RX_Buffer, 5, 1000) == 5){
-[e $ ! == -> ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 5 `i `uc -> -> 1000 `i `us `i -> 5 `i 1539  ]
-{
+[; ;configure.c: 94:     getBTAddress(slaveMAC, 0);
+[e ( _getBTAddress (2 , &U _slaveMAC -> -> 0 `i `a ]
 "95
-[; ;configure.c: 95:             if (strstr((char *)RX_Buffer, "HUGS\n"))
-[e $ ! != ( _strstr (2 , -> -> &U _RX_Buffer `*uc `*Cuc :s 3C -> -> 0 `i `*uc 1540  ]
-"96
-[; ;configure.c: 96:                 pulseLEDColor( 0x033, 4, 1);
-[e ( _pulseLEDColor (3 , , -> -> 51 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
-[e $U 1541  ]
-"97
-[; ;configure.c: 97:             else
-[e :U 1540 ]
+[; ;configure.c: 95:     getBTAddress(masterMAC, 1);
+[e ( _getBTAddress (2 , &U _masterMAC -> -> 1 `i `a ]
 "98
-[; ;configure.c: 98:                 pulseLEDColor( 0x300, 4, 1);
-[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
-[e :U 1541 ]
+[; ;configure.c: 98:     setBTConnection(slaveMAC, 1);
+[e ( _setBTConnection (2 , &U _slaveMAC -> -> 1 `i `a ]
 "99
-[; ;configure.c: 99:         } else {
-}
-[e $U 1542  ]
-[e :U 1539 ]
-{
-"100
-[; ;configure.c: 100:             pulseLEDColor( 0x330, 4, 1);
-[e ( _pulseLEDColor (3 , , -> -> 816 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
-"101
-[; ;configure.c: 101:         }
-}
-[e :U 1542 ]
+[; ;configure.c: 99:     setBTConnection(masterMAC, 0);
+[e ( _setBTConnection (2 , &U _masterMAC -> -> 0 `i `a ]
 "102
-[; ;configure.c: 102:         sleep(50);
-[e ( _sleep (1 -> -> -> 50 `i `l `ul ]
-"103
-[; ;configure.c: 103:     }
-}
-[e :U 1536 ]
-"92
-[; ;configure.c: 92:     while (!USER1_pressed() && !USER2_pressed()) {
-[e $ && ! != -> ( _USER1_pressed ..  `i -> 0 `i ! != -> ( _USER2_pressed ..  `i -> 0 `i 1537  ]
-[e :U 1538 ]
+[; ;configure.c: 102:     SetSlaveTXMasterRX();
+[e ( _SetSlaveTXMasterRX ..  ]
+"104
+[; ;configure.c: 104:     while (!USER1_pressed() && !USER2_pressed()) {
+[e $U 1543  ]
+[e :U 1544 ]
+{
+"105
+[; ;configure.c: 105:         sendBTString("HUGS\n");
+[e ( _sendBTString (1 :s 1C ]
 "106
-[; ;configure.c: 106:     SetSlaveTXRX();
-[e ( _SetSlaveTXRX ..  ]
+[; ;configure.c: 106:         if (receiveBTBuffer(RX_Buffer, 5, 1000) == 5){
+[e $ ! == -> ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 5 `i `uc -> -> 1000 `i `us `i -> 5 `i 1546  ]
+{
 "107
-[; ;configure.c: 107:     sleep(1000);
-[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
+[; ;configure.c: 107:             if (strstr((char *)RX_Buffer, "HUGS\n"))
+[e $ ! != ( _strstr (2 , -> -> &U _RX_Buffer `*uc `*Cuc :s 3C -> -> 0 `i `*uc 1547  ]
 "108
-[; ;configure.c: 108: }
-[e :UE 1535 ]
-}
+[; ;configure.c: 108:                 pulseLEDColor( 0x033, 4, 1);
+[e ( _pulseLEDColor (3 , , -> -> 51 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
+[e $U 1548  ]
+"109
+[; ;configure.c: 109:             else
+[e :U 1547 ]
 "110
-[; ;configure.c: 110: void setBTBaudRatesTo38400() {
+[; ;configure.c: 110:                 pulseLEDColor( 0x300, 4, 1);
+[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
+[e :U 1548 ]
+"111
+[; ;configure.c: 111:         } else {
+}
+[e $U 1549  ]
+[e :U 1546 ]
+{
+"112
+[; ;configure.c: 112:             pulseLEDColor( 0x330, 4, 1);
+[e ( _pulseLEDColor (3 , , -> -> 816 `i `us -> -> 4 `i `us -> -> 1 `i `us ]
+"113
+[; ;configure.c: 113:         }
+}
+[e :U 1549 ]
+"114
+[; ;configure.c: 114:         sleep(50);
+[e ( _sleep (1 -> -> -> 50 `i `l `ul ]
+"115
+[; ;configure.c: 115:     }
+}
+[e :U 1543 ]
+"104
+[; ;configure.c: 104:     while (!USER1_pressed() && !USER2_pressed()) {
+[e $ && ! != -> ( _USER1_pressed ..  `i -> 0 `i ! != -> ( _USER2_pressed ..  `i -> 0 `i 1544  ]
+[e :U 1545 ]
+"118
+[; ;configure.c: 118:     SetSlaveTXRX();
+[e ( _SetSlaveTXRX ..  ]
+"119
+[; ;configure.c: 119:     sleep(1000);
+[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
+"120
+[; ;configure.c: 120: }
+[e :UE 1542 ]
+}
+"122
+[; ;configure.c: 122: void setBTBaudRatesTo38400() {
 [v _setBTBaudRatesTo38400 `(v ~T0 @X0 1 ef ]
 {
 [e :U _setBTBaudRatesTo38400 ]
 [f ]
-"113
-[; ;configure.c: 113:     SetDualReceive();
-[e ( _SetDualReceive ..  ]
-"114
-[; ;configure.c: 114:     setSerialBaud(9600);
-[e ( _setSerialBaud (1 -> -> 9600 `i `us ]
-"115
-[; ;configure.c: 115:     pulseLEDColor(0x033, 100, 900);
-[e ( _pulseLEDColor (3 , , -> -> 51 `i `us -> -> 100 `i `us -> -> 900 `i `us ]
-"117
-[; ;configure.c: 117:     sendBTString("AT");
-[e ( _sendBTString (1 :s 4C ]
-"118
-[; ;configure.c: 118:     sleep(100);
-[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
-"119
-[; ;configure.c: 119:     sendBTString("AT+BAUD2");
-[e ( _sendBTString (1 :s 5C ]
-"120
-[; ;configure.c: 120:     sleep(250);
-[e ( _sleep (1 -> -> -> 250 `i `l `ul ]
-"121
-[; ;configure.c: 121:     sendBTString("AT");
-[e ( _sendBTString (1 :s 6C ]
-"122
-[; ;configure.c: 122:     sleep(500);
-[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
-"123
-[; ;configure.c: 123:     sendBTString("AT+RESET");
-[e ( _sendBTString (1 :s 7C ]
-"124
-[; ;configure.c: 124:     sleep(500);
-[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
 "125
-[; ;configure.c: 125:     setSerialBaud(38400);
-[e ( _setSerialBaud (1 -> -> 38400 `l `us ]
+[; ;configure.c: 125:     SetDualReceive();
+[e ( _SetDualReceive ..  ]
 "126
-[; ;configure.c: 126: }
-[e :UE 1543 ]
-}
+[; ;configure.c: 126:     setSerialBaud(9600);
+[e ( _setSerialBaud (1 -> -> 9600 `i `us ]
 "128
-[; ;configure.c: 128: _Bool getBTAddress(uint8_t * MAC, _Bool isMaster) {
+[; ;configure.c: 128:     sendBTString("AT");
+[e ( _sendBTString (1 :s 4C ]
+"129
+[; ;configure.c: 129:     sleep(100);
+[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
+"130
+[; ;configure.c: 130:     sendBTString("AT+BAUD2");
+[e ( _sendBTString (1 :s 5C ]
+"131
+[; ;configure.c: 131:     sleep(250);
+[e ( _sleep (1 -> -> -> 250 `i `l `ul ]
+"132
+[; ;configure.c: 132:     sendBTString("AT");
+[e ( _sendBTString (1 :s 6C ]
+"133
+[; ;configure.c: 133:     sleep(500);
+[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
+"134
+[; ;configure.c: 134:     sendBTString("AT+RESET");
+[e ( _sendBTString (1 :s 7C ]
+"135
+[; ;configure.c: 135:     sleep(500);
+[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
+"136
+[; ;configure.c: 136:     setSerialBaud(38400);
+[e ( _setSerialBaud (1 -> -> 38400 `l `us ]
+"137
+[; ;configure.c: 137: }
+[e :UE 1550 ]
+}
+"139
+[; ;configure.c: 139: _Bool getBTAddress(uint8_t * MAC, _Bool isMaster) {
 [v _getBTAddress `(a ~T0 @X0 1 ef2`*uc`a ]
 {
 [e :U _getBTAddress ]
 [v _MAC `*uc ~T0 @X0 1 r1 ]
 [v _isMaster `a ~T0 @X0 1 r2 ]
 [f ]
-"130
-[; ;configure.c: 130:     uint8_t * addrPointer ;
-[v _addrPointer `*uc ~T0 @X0 1 a ]
-"132
-[; ;configure.c: 132:     if (isMaster)
-[e $ ! != -> _isMaster `i -> 0 `i 1545  ]
-"133
-[; ;configure.c: 133:         SetMasterTXRX();
-[e ( _SetMasterTXRX ..  ]
-[e $U 1546  ]
-"134
-[; ;configure.c: 134:     else
-[e :U 1545 ]
-"135
-[; ;configure.c: 135:         SetSlaveTXRX();
-[e ( _SetSlaveTXRX ..  ]
-[e :U 1546 ]
-"137
-[; ;configure.c: 137:     sendBTString("AT");
-[e ( _sendBTString (1 :s 8C ]
-"138
-[; ;configure.c: 138:     sleep(300);
-[e ( _sleep (1 -> -> -> 300 `i `l `ul ]
-"139
-[; ;configure.c: 139:     sleep(10);
-[e ( _sleep (1 -> -> -> 10 `i `l `ul ]
-"140
-[; ;configure.c: 140:     if (isMaster)
-[e $ ! != -> _isMaster `i -> 0 `i 1547  ]
 "141
-[; ;configure.c: 141:         sendBTString("AT+ROLE1");
-[e ( _sendBTString (1 :s 9C ]
-[e $U 1548  ]
-"142
-[; ;configure.c: 142:     else
-[e :U 1547 ]
+[; ;configure.c: 141:     uint8_t * addrPointer ;
+[v _addrPointer `*uc ~T0 @X0 1 a ]
 "143
-[; ;configure.c: 143:         sendBTString("AT+ROLE0");
-[e ( _sendBTString (1 :s 10C ]
-[e :U 1548 ]
+[; ;configure.c: 143:     if (isMaster)
+[e $ ! != -> _isMaster `i -> 0 `i 1552  ]
+"144
+[; ;configure.c: 144:         SetMasterTXRX();
+[e ( _SetMasterTXRX ..  ]
+[e $U 1553  ]
 "145
-[; ;configure.c: 145:     charsRead = receiveBTBuffer(RX_Buffer, 20, 400);
-[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 20 `i `uc -> -> 400 `i `us ]
+[; ;configure.c: 145:     else
+[e :U 1552 ]
 "146
-[; ;configure.c: 146:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
-[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 11C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+[; ;configure.c: 146:         SetSlaveTXRX();
+[e ( _SetSlaveTXRX ..  ]
+[e :U 1553 ]
+"148
+[; ;configure.c: 148:     sendBTString("AT");
+[e ( _sendBTString (1 :s 8C ]
+"149
+[; ;configure.c: 149:     sleep(300);
+[e ( _sleep (1 -> -> -> 300 `i `l `ul ]
 "150
-[; ;configure.c: 150:     sendBTString("AT+ADDR?");
-[e ( _sendBTString (1 :s 12C ]
+[; ;configure.c: 150:     sleep(10);
+[e ( _sleep (1 -> -> -> 10 `i `l `ul ]
 "151
-[; ;configure.c: 151:     charsRead = receiveBTBuffer(RX_Buffer, 30, 400);
-[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 30 `i `uc -> -> 400 `i `us ]
+[; ;configure.c: 151:     if (isMaster)
+[e $ ! != -> _isMaster `i -> 0 `i 1554  ]
 "152
-[; ;configure.c: 152:     addrPointer = (void *)strstr((void *)RX_Buffer, "ADDR:");
-[e = _addrPointer -> -> ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 13C `*v `*uc ]
+[; ;configure.c: 152:         sendBTString("AT+ROLE1");
+[e ( _sendBTString (1 :s 9C ]
+[e $U 1555  ]
+"153
+[; ;configure.c: 153:     else
+[e :U 1554 ]
 "154
-[; ;configure.c: 154:     if (addrPointer != 0) {
-[e $ ! != _addrPointer -> -> 0 `i `*uc 1549  ]
-{
-"155
-[; ;configure.c: 155:         memcpy(MAC, addrPointer + 5, 12);
-[e ( _memcpy (3 , , -> _MAC `*v -> + _addrPointer * -> -> 5 `i `x -> -> # *U _addrPointer `i `x `*Cv -> -> 12 `i `ui ]
+[; ;configure.c: 154:         sendBTString("AT+ROLE0");
+[e ( _sendBTString (1 :s 10C ]
+[e :U 1555 ]
 "156
-[; ;configure.c: 156:         pulseLEDColor( 0x030, 100, 200);
-[e ( _pulseLEDColor (3 , , -> -> 48 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+[; ;configure.c: 156:     charsRead = receiveBTBuffer(RX_Buffer, 20, 400);
+[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 20 `i `uc -> -> 400 `i `us ]
 "157
-[; ;configure.c: 157:         return 1;
-[e ) -> -> 1 `i `a ]
-[e $UE 1544  ]
-"158
-[; ;configure.c: 158:     } else {
-}
-[e $U 1550  ]
-[e :U 1549 ]
-{
-"159
-[; ;configure.c: 159:         pulseLEDColor( 0x300, 100, 200);
-[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+[; ;configure.c: 157:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
+[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 11C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
 "160
-[; ;configure.c: 160:         return 0;
-[e ) -> -> 0 `i `a ]
-[e $UE 1544  ]
+[; ;configure.c: 160:     sleep(10);
+[e ( _sleep (1 -> -> -> 10 `i `l `ul ]
 "161
-[; ;configure.c: 161:     }
-}
-[e :U 1550 ]
+[; ;configure.c: 161:     sendBTString("AT+ADDR?");
+[e ( _sendBTString (1 :s 12C ]
 "162
-[; ;configure.c: 162: }
-[e :UE 1544 ]
+[; ;configure.c: 162:     charsRead = receiveBTBuffer(RX_Buffer, 30, 400);
+[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 30 `i `uc -> -> 400 `i `us ]
+"163
+[; ;configure.c: 163:     addrPointer = (void *)strstr((void *)RX_Buffer, "ADDR:");
+[e = _addrPointer -> -> ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 13C `*v `*uc ]
+"165
+[; ;configure.c: 165:     if (addrPointer != 0) {
+[e $ ! != _addrPointer -> -> 0 `i `*uc 1556  ]
+{
+"166
+[; ;configure.c: 166:         memcpy(MAC, addrPointer + 5, 12);
+[e ( _memcpy (3 , , -> _MAC `*v -> + _addrPointer * -> -> 5 `i `x -> -> # *U _addrPointer `i `x `*Cv -> -> 12 `i `ui ]
+"167
+[; ;configure.c: 167:         pulseLEDColor( 0x030, 100, 200);
+[e ( _pulseLEDColor (3 , , -> -> 48 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+"168
+[; ;configure.c: 168:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 1551  ]
+"169
+[; ;configure.c: 169:     } else {
 }
-"164
-[; ;configure.c: 164: void setBTConnection(uint8_t * MAC, _Bool isMaster){
+[e $U 1557  ]
+[e :U 1556 ]
+{
+"170
+[; ;configure.c: 170:         pulseLEDColor( 0x300, 100, 200);
+[e ( _pulseLEDColor (3 , , -> -> 768 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+"171
+[; ;configure.c: 171:         return 0;
+[e ) -> -> 0 `i `a ]
+[e $UE 1551  ]
+"172
+[; ;configure.c: 172:     }
+}
+[e :U 1557 ]
+"173
+[; ;configure.c: 173: }
+[e :UE 1551 ]
+}
+"175
+[; ;configure.c: 175: void setBTConnection(uint8_t * MAC, _Bool isMaster){
 [v _setBTConnection `(v ~T0 @X0 1 ef2`*uc`a ]
 {
 [e :U _setBTConnection ]
 [v _MAC `*uc ~T0 @X0 1 r1 ]
 [v _isMaster `a ~T0 @X0 1 r2 ]
 [f ]
-"166
-[; ;configure.c: 166:     if (isMaster)
-[e $ ! != -> _isMaster `i -> 0 `i 1552  ]
-"167
-[; ;configure.c: 167:         SetMasterTXRX();
-[e ( _SetMasterTXRX ..  ]
-[e $U 1553  ]
-"168
-[; ;configure.c: 168:     else
-[e :U 1552 ]
-"169
-[; ;configure.c: 169:         SetSlaveTXRX();
-[e ( _SetSlaveTXRX ..  ]
-[e :U 1553 ]
-"171
-[; ;configure.c: 171:     sleep(1000);
-[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
-"172
-[; ;configure.c: 172:     sendBTString("AT");
-[e ( _sendBTString (1 :s 14C ]
-"173
-[; ;configure.c: 173:     charsRead = receiveBTBuffer(RX_Buffer, 9, 100);
-[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 9 `i `uc -> -> 100 `i `us ]
-"174
-[; ;configure.c: 174:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
-[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 15C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
-"176
-[; ;configure.c: 176:     sleep(10);
-[e ( _sleep (1 -> -> -> 10 `i `l `ul ]
 "177
-[; ;configure.c: 177:     if (*MAC != 0) {
-[e $ ! != -> *U _MAC `i -> 0 `i 1554  ]
-{
+[; ;configure.c: 177:     if (isMaster)
+[e $ ! != -> _isMaster `i -> 0 `i 1559  ]
 "178
-[; ;configure.c: 178:         sendBTString("AT+CON");
-[e ( _sendBTString (1 :s 16C ]
+[; ;configure.c: 178:         SetMasterTXRX();
+[e ( _SetMasterTXRX ..  ]
+[e $U 1560  ]
 "179
-[; ;configure.c: 179:         sendBTBuffer(MAC, 12, 1);
-[e ( _sendBTBuffer (3 , , _MAC -> -> 12 `i `uc -> -> 1 `i `a ]
+[; ;configure.c: 179:     else
+[e :U 1559 ]
 "180
-[; ;configure.c: 180:         charsRead = receiveBTBuffer(RX_Buffer, 28, 1000);
-[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 28 `i `uc -> -> 1000 `i `us ]
-"181
-[; ;configure.c: 181:         pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x300, 100, 200);
-[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 17C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 768 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+[; ;configure.c: 180:         SetSlaveTXRX();
+[e ( _SetSlaveTXRX ..  ]
+[e :U 1560 ]
 "182
-[; ;configure.c: 182:     }
-}
-[e :U 1554 ]
+[; ;configure.c: 182:     sleep(1000);
+[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
 "183
-[; ;configure.c: 183: }
-[e :UE 1551 ]
-}
+[; ;configure.c: 183:     sendBTString("AT");
+[e ( _sendBTString (1 :s 14C ]
+"184
+[; ;configure.c: 184:     charsRead = receiveBTBuffer(RX_Buffer, 9, 100);
+[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 9 `i `uc -> -> 100 `i `us ]
 "185
-[; ;configure.c: 185: void doFactoryReset() {
+[; ;configure.c: 185:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
+[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 15C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+"187
+[; ;configure.c: 187:     sleep(10);
+[e ( _sleep (1 -> -> -> 10 `i `l `ul ]
+"188
+[; ;configure.c: 188:     if (*MAC != 0) {
+[e $ ! != -> *U _MAC `i -> 0 `i 1561  ]
+{
+"189
+[; ;configure.c: 189:         sendBTString("AT+CON");
+[e ( _sendBTString (1 :s 16C ]
+"190
+[; ;configure.c: 190:         sendBTBuffer(MAC, 12, 1);
+[e ( _sendBTBuffer (3 , , _MAC -> -> 12 `i `uc -> -> 1 `i `a ]
+"191
+[; ;configure.c: 191:         charsRead = receiveBTBuffer(RX_Buffer, 28, 1000);
+[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 28 `i `uc -> -> 1000 `i `us ]
+"192
+[; ;configure.c: 192:         pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x300, 100, 200);
+[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 17C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 768 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+"193
+[; ;configure.c: 193:     }
+}
+[e :U 1561 ]
+"194
+[; ;configure.c: 194: }
+[e :UE 1558 ]
+}
+"196
+[; ;configure.c: 196: void doFactoryReset() {
 [v _doFactoryReset `(v ~T0 @X0 1 ef ]
 {
 [e :U _doFactoryReset ]
 [f ]
-"188
-[; ;configure.c: 188:     SetDualReceive();
-[e ( _SetDualReceive ..  ]
-"189
-[; ;configure.c: 189:     setSerialBaud(38400);
-[e ( _setSerialBaud (1 -> -> 38400 `l `us ]
-"190
-[; ;configure.c: 190:     sleep(500);
-[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
-"192
-[; ;configure.c: 192:     sendBTString("AT");
-[e ( _sendBTString (1 :s 18C ]
-"193
-[; ;configure.c: 193:     sleep(100);
-[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
-"194
-[; ;configure.c: 194:     sendBTString("AT");
-[e ( _sendBTString (1 :s 19C ]
-"195
-[; ;configure.c: 195:     sleep(100);
-[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
-"196
-[; ;configure.c: 196:     sendBTString("AT+BAUD0");
-[e ( _sendBTString (1 :s 20C ]
-"197
-[; ;configure.c: 197:     sleep(500);
-[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
-"198
-[; ;configure.c: 198:     sendBTString("AT+RESET");
-[e ( _sendBTString (1 :s 21C ]
 "199
-[; ;configure.c: 199:     sleep(1000);
-[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
-"200
-[; ;configure.c: 200:     setSerialBaud(9600);
-[e ( _setSerialBaud (1 -> -> 9600 `i `us ]
+[; ;configure.c: 199:     pulseLEDColor(0x003, 1000, 200);
+[e ( _pulseLEDColor (3 , , -> -> 3 `i `us -> -> 1000 `i `us -> -> 200 `i `us ]
+"201
+[; ;configure.c: 201:     SetDualReceive();
+[e ( _SetDualReceive ..  ]
 "202
-[; ;configure.c: 202:     sendBTString("AT+RENEW");
-[e ( _sendBTString (1 :s 22C ]
+[; ;configure.c: 202:     setSerialBaud(38400);
+[e ( _setSerialBaud (1 -> -> 38400 `l `us ]
 "203
-[; ;configure.c: 203:     charsRead = receiveBTBuffer(RX_Buffer, 16, 100);
-[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 16 `i `uc -> -> 100 `i `us ]
-"204
-[; ;configure.c: 204:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
-[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 23C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+[; ;configure.c: 203:     sleep(500);
+[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
 "205
-[; ;configure.c: 205:     sleep(1000);
-[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
+[; ;configure.c: 205:     sendBTString("AT");
+[e ( _sendBTString (1 :s 18C ]
+"206
+[; ;configure.c: 206:     sleep(100);
+[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
 "207
-[; ;configure.c: 207:     SetSlaveTXRX();
-[e ( _SetSlaveTXRX ..  ]
+[; ;configure.c: 207:     sendBTString("AT+CLEAR");
+[e ( _sendBTString (1 :s 19C ]
 "208
-[; ;configure.c: 208: }
-[e :UE 1555 ]
+[; ;configure.c: 208:     sleep(100);
+[e ( _sleep (1 -> -> -> 100 `i `l `ul ]
+"209
+[; ;configure.c: 209:     sendBTString("AT+BAUD0");
+[e ( _sendBTString (1 :s 20C ]
+"210
+[; ;configure.c: 210:     sleep(500);
+[e ( _sleep (1 -> -> -> 500 `i `l `ul ]
+"211
+[; ;configure.c: 211:     sendBTString("AT+RESET");
+[e ( _sendBTString (1 :s 21C ]
+"212
+[; ;configure.c: 212:     sleep(1000);
+[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
+"213
+[; ;configure.c: 213:     setSerialBaud(9600);
+[e ( _setSerialBaud (1 -> -> 9600 `i `us ]
+"215
+[; ;configure.c: 215:     sendBTString("AT+RENEW");
+[e ( _sendBTString (1 :s 22C ]
+"216
+[; ;configure.c: 216:     charsRead = receiveBTBuffer(RX_Buffer, 16, 100);
+[e = _charsRead ( _receiveBTBuffer (3 , , &U _RX_Buffer -> -> 16 `i `uc -> -> 100 `i `us ]
+"217
+[; ;configure.c: 217:     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != ((void*)0)) ? 0x030 : 0x330, 100, 200);
+[e ( _pulseLEDColor (3 , , -> ? != ( _strstr (2 , -> -> &U _RX_Buffer `*v `*Cuc :s 23C -> -> -> 0 `i `*v `*uc : -> 48 `i -> 816 `i `us -> -> 100 `i `us -> -> 200 `i `us ]
+"218
+[; ;configure.c: 218:     sleep(1000);
+[e ( _sleep (1 -> -> -> 1000 `i `l `ul ]
+"220
+[; ;configure.c: 220:     SetSlaveTXRX();
+[e ( _SetSlaveTXRX ..  ]
+"221
+[; ;configure.c: 221: }
+[e :UE 1562 ]
 }
 [a 22C 65 84 43 82 69 78 69 87 0 ]
 [a 7C 65 84 43 82 69 83 69 84 0 ]
@@ -2032,7 +2091,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 8C 65 84 0 ]
 [a 14C 65 84 0 ]
 [a 18C 65 84 0 ]
-[a 19C 65 84 0 ]
+[a 19C 65 84 43 67 76 69 65 82 0 ]
 [a 16C 65 84 43 67 79 78 0 ]
 [a 11C 79 75 0 ]
 [a 15C 79 75 0 ]

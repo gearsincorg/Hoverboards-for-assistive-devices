@@ -29,19 +29,17 @@
 #include "gd32f1x0.h"
 #include "../Inc/config.h"
 
-#define MM_PER_DEGREE 		 3.508
-#define DEGREE_PER_MM 		 0.2851
-
 // Only master communicates with steering device
+#ifdef MASTER
 //----------------------------------------------------------------------------
 // Update USART steer input
 //----------------------------------------------------------------------------
 void UpdateUSARTSteerInput(void);
 
-
 //----------------------------------------------------------------------------
 // Send frame to steer device
 //----------------------------------------------------------------------------
-int16_t		max(int16_t a, int16_t b);
+void SendSteerDevice(void);
+#endif
 
 #endif

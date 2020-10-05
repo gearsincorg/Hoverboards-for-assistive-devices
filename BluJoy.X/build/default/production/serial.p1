@@ -2,23 +2,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29 D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h
 [; ;D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h: 29: void *memset (void *, int, size_t);
 [v _memset `(*v ~T0 @X0 0 ef3`*v`i`ui ]
-"27 ./serial.h
-[; ;./serial.h: 27: void int16ToBytes(int16_t num, uint8_t * ndata);
-[v _int16ToBytes `(v ~T0 @X0 0 ef2`s`*uc ]
-"26
-[; ;./serial.h: 26: uint16_t calcCRC(uint8_t *ptr);
-[v _calcCRC `(us ~T0 @X0 0 ef1`*uc ]
-"23
-[; ;./serial.h: 23: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
+"22 ./serial.h
+[; ;./serial.h: 22: int16_t clampInt(int16_t num, int16_t limit);
+[v _clampInt `(s ~T0 @X0 0 ef2`s`s ]
+"36 D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h
+[; ;D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h: 36: char *strcat (char *restrict, const char *restrict);
+[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
+"29 ./serial.h
+[; ;./serial.h: 29: void int16cat(uint8_t * bufP, int16_t num);
+[v _int16cat `(v ~T0 @X0 0 ef2`*uc`s ]
+"24
+[; ;./serial.h: 24: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy);
 [v _sendBTBuffer `(a ~T0 @X0 0 ef3`*uc`uc`a ]
-"21
-[; ;./serial.h: 21: void flushBTRXbuffer(void);
-[v _flushBTRXbuffer `(v ~T0 @X0 0 ef ]
 "54 D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h
 [; ;D:\Program Files\Microchip\xc8\v2.20\pic\include\c99\string.h: 54: size_t strlen (const char *);
 [v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
-"9 serial.c
-[; ;serial.c: 9: extern volatile uint8_t eusart1TxBufferRemaining;
+"28 ./serial.h
+[; ;./serial.h: 28: void int16ToBytes(int16_t num, uint8_t * ndata);
+[v _int16ToBytes `(v ~T0 @X0 0 ef2`s`*uc ]
+"27
+[; ;./serial.h: 27: uint16_t calcCRC(uint8_t *ptr);
+[v _calcCRC `(us ~T0 @X0 0 ef1`*uc ]
+"21
+[; ;./serial.h: 21: void flushBTRXbuffer(void);
+[v _flushBTRXbuffer `(v ~T0 @X0 0 ef ]
+"15 serial.c
+[; ;serial.c: 15: extern volatile uint8_t eusart1TxBufferRemaining;
 [v _eusart1TxBufferRemaining `Vuc ~T0 @X0 0 e ]
 "165 ./mcc_generated_files/eusart1.h
 [; ;./mcc_generated_files/eusart1.h: 165: _Bool EUSART1_is_tx_ready(void);
@@ -1400,11 +1409,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32104
 [; ;D:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16F1xxxx_DFP/1.4.119/xc8\pic\include\proc\pic16lf18446.h: 32104: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
-"11 serial.c
-[; ;serial.c: 11: uint8_t speedBuffer[12] ;
+"17 serial.c
+[; ;serial.c: 17: _Bool sendDebugText = 0;
+[v _sendDebugText `a ~T0 @X0 1 e ]
+[i _sendDebugText
+-> -> 0 `i `a
+]
+"19
+[; ;serial.c: 19: uint8_t speedBuffer[12] ;
 [v _speedBuffer `uc ~T0 @X0 -> 12 `i e ]
-"12
-[; ;serial.c: 12: uint8_t estopBuffer[8] = {'/', 0, 0, 0xFF, 0, 0, 0, '\n'};
+"20
+[; ;serial.c: 20: uint8_t estopBuffer[8] = {'/', 0, 0, 0xFF, 0, 0, 0, '\n'};
 [v _estopBuffer `uc ~T0 @X0 -> 8 `i e ]
 [i _estopBuffer
 :U ..
@@ -1418,39 +1433,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 10 `ui `uc
 ..
 ]
-"14
-[; ;serial.c: 14: void initSerial(void) {
+"22
+[; ;serial.c: 22: uint8_t debugBuffer[16] ;
+[v _debugBuffer `uc ~T0 @X0 -> 16 `i e ]
+"24
+[; ;serial.c: 24: void initSerial(void) {
 [v _initSerial `(v ~T0 @X0 1 ef ]
 {
 [e :U _initSerial ]
 [f ]
-"16
-[; ;serial.c: 16:     memset(speedBuffer, 0, sizeof(speedBuffer));
+"26
+[; ;serial.c: 26:     memset(speedBuffer, 0, sizeof(speedBuffer));
 [e ( _memset (3 , , -> &U _speedBuffer `*v -> 0 `i -> # _speedBuffer `ui ]
-"17
-[; ;serial.c: 17:     speedBuffer[0] = '/';
+"27
+[; ;serial.c: 27:     speedBuffer[0] = '/';
 [e = *U + &U _speedBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 47 `ui `uc ]
-"18
-[; ;serial.c: 18:     speedBuffer[1] = 4;
+"28
+[; ;serial.c: 28:     speedBuffer[1] = 4;
 [e = *U + &U _speedBuffer * -> -> -> 1 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 4 `i `uc ]
-"19
-[; ;serial.c: 19:     speedBuffer[2] = 0;
+"29
+[; ;serial.c: 29:     speedBuffer[2] = 0;
 [e = *U + &U _speedBuffer * -> -> -> 2 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 0 `i `uc ]
-"20
-[; ;serial.c: 20:     speedBuffer[3] = 0x86;
+"30
+[; ;serial.c: 30:     speedBuffer[3] = 0x86;
 [e = *U + &U _speedBuffer * -> -> -> 3 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 134 `i `uc ]
-"21
-[; ;serial.c: 21:     speedBuffer[4] = 0;
+"31
+[; ;serial.c: 31:     speedBuffer[4] = 0;
 [e = *U + &U _speedBuffer * -> -> -> 4 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 0 `i `uc ]
-"22
-[; ;serial.c: 22:     speedBuffer[11] = '\n';
+"32
+[; ;serial.c: 32:     speedBuffer[11] = '\n';
 [e = *U + &U _speedBuffer * -> -> -> 11 `i `ui `ux -> -> # *U &U _speedBuffer `ui `ux -> -> 10 `ui `uc ]
-"23
-[; ;serial.c: 23: }
+"33
+[; ;serial.c: 33: }
 [e :UE 1520 ]
 }
-"25
-[; ;serial.c: 25: _Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) {
+"35
+[; ;serial.c: 35: _Bool sendBTSpeedCmd(int16_t axial, int16_t yaw, _Bool blockIfBusy) {
 [v _sendBTSpeedCmd `(a ~T0 @X0 1 ef3`s`s`a ]
 {
 [e :U _sendBTSpeedCmd ]
@@ -1458,59 +1476,101 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _yaw `s ~T0 @X0 1 r2 ]
 [v _blockIfBusy `a ~T0 @X0 1 r3 ]
 [f ]
-"26
-[; ;serial.c: 26:     int16ToBytes(axial, speedBuffer + 5);
+"36
+[; ;serial.c: 36:     axial = clampInt(axial, 5000);
+[e = _axial ( _clampInt (2 , _axial -> -> 5000 `i `s ]
+"37
+[; ;serial.c: 37:     yaw = clampInt(yaw, 5000);
+[e = _yaw ( _clampInt (2 , _yaw -> -> 5000 `i `s ]
+"40
+[; ;serial.c: 40:     if (sendDebugText){
+[e $ ! != -> _sendDebugText `i -> 0 `i 1522  ]
+{
+"41
+[; ;serial.c: 41:         debugBuffer[0] = 0;
+[e = *U + &U _debugBuffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _debugBuffer `ui `ux -> -> 0 `i `uc ]
+"42
+[; ;serial.c: 42:         strcat(debugBuffer, "> ");
+[e ( _strcat (2 , -> &U _debugBuffer `*uc :s 1C ]
+"43
+[; ;serial.c: 43:         int16cat(debugBuffer, axial);
+[e ( _int16cat (2 , &U _debugBuffer _axial ]
+"44
+[; ;serial.c: 44:         strcat(debugBuffer, ",");
+[e ( _strcat (2 , -> &U _debugBuffer `*uc :s 2C ]
+"45
+[; ;serial.c: 45:         int16cat(debugBuffer, yaw);
+[e ( _int16cat (2 , &U _debugBuffer _yaw ]
+"46
+[; ;serial.c: 46:         strcat(debugBuffer, "\n");
+[e ( _strcat (2 , -> &U _debugBuffer `*uc :s 3C ]
+"48
+[; ;serial.c: 48:         return sendBTBuffer((void *)debugBuffer, strlen(debugBuffer), blockIfBusy);
+[e ) ( _sendBTBuffer (3 , , -> -> &U _debugBuffer `*v `*uc -> ( _strlen (1 -> &U _debugBuffer `*Cuc `uc _blockIfBusy ]
+[e $UE 1521  ]
+"49
+[; ;serial.c: 49:     } else {
+}
+[e $U 1523  ]
+[e :U 1522 ]
+{
+"50
+[; ;serial.c: 50:         int16ToBytes(axial, speedBuffer + 5);
 [e ( _int16ToBytes (2 , _axial + &U _speedBuffer * -> -> 5 `i `x -> -> # *U &U _speedBuffer `i `x ]
-"27
-[; ;serial.c: 27:     int16ToBytes(yaw, speedBuffer + 7);
+"51
+[; ;serial.c: 51:         int16ToBytes(yaw, speedBuffer + 7);
 [e ( _int16ToBytes (2 , _yaw + &U _speedBuffer * -> -> 7 `i `x -> -> # *U &U _speedBuffer `i `x ]
-"28
-[; ;serial.c: 28:     calcCRC(speedBuffer);
+"52
+[; ;serial.c: 52:         calcCRC(speedBuffer);
 [e ( _calcCRC (1 &U _speedBuffer ]
-"29
-[; ;serial.c: 29:     return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
+"53
+[; ;serial.c: 53:         return sendBTBuffer((void *)speedBuffer, sizeof(speedBuffer), blockIfBusy);
 [e ) ( _sendBTBuffer (3 , , -> -> &U _speedBuffer `*v `*uc -> -> # _speedBuffer `ui `uc _blockIfBusy ]
 [e $UE 1521  ]
-"30
-[; ;serial.c: 30: }
+"54
+[; ;serial.c: 54:     }
+}
+[e :U 1523 ]
+"55
+[; ;serial.c: 55: }
 [e :UE 1521 ]
 }
-"32
-[; ;serial.c: 32: _Bool sendBTEstopCmd(void){
+"57
+[; ;serial.c: 57: _Bool sendBTEstopCmd(void){
 [v _sendBTEstopCmd `(a ~T0 @X0 1 ef ]
 {
 [e :U _sendBTEstopCmd ]
 [f ]
-"33
-[; ;serial.c: 33:     calcCRC(estopBuffer);
+"58
+[; ;serial.c: 58:     calcCRC(estopBuffer);
 [e ( _calcCRC (1 &U _estopBuffer ]
-"34
-[; ;serial.c: 34:     return sendBTBuffer((void *)estopBuffer, sizeof(estopBuffer), 1);
+"59
+[; ;serial.c: 59:     return sendBTBuffer((void *)estopBuffer, sizeof(estopBuffer), 1);
 [e ) ( _sendBTBuffer (3 , , -> -> &U _estopBuffer `*v `*uc -> -> # _estopBuffer `ui `uc -> -> 1 `i `a ]
-[e $UE 1522  ]
-"35
-[; ;serial.c: 35: }
-[e :UE 1522 ]
+[e $UE 1524  ]
+"60
+[; ;serial.c: 60: }
+[e :UE 1524 ]
 }
-"37
-[; ;serial.c: 37: void sendBTString(char * buffer) {
+"62
+[; ;serial.c: 62: void sendBTString(char * buffer) {
 [v _sendBTString `(v ~T0 @X0 1 ef1`*uc ]
 {
 [e :U _sendBTString ]
 [v _buffer `*uc ~T0 @X0 1 r1 ]
 [f ]
-"38
-[; ;serial.c: 38:     flushBTRXbuffer();
+"63
+[; ;serial.c: 63:     flushBTRXbuffer();
 [e ( _flushBTRXbuffer ..  ]
-"39
-[; ;serial.c: 39:     sendBTBuffer((void *)buffer, strlen(buffer), 1);
+"64
+[; ;serial.c: 64:     sendBTBuffer((void *)buffer, strlen(buffer), 1);
 [e ( _sendBTBuffer (3 , , -> -> _buffer `*v `*uc -> ( _strlen (1 -> _buffer `*Cuc `uc -> -> 1 `i `a ]
-"40
-[; ;serial.c: 40: }
-[e :UE 1523 ]
+"65
+[; ;serial.c: 65: }
+[e :UE 1525 ]
 }
-"42
-[; ;serial.c: 42: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy) {
+"67
+[; ;serial.c: 67: _Bool sendBTBuffer(uint8_t * buffer, uint8_t length, _Bool blockIfBusy) {
 [v _sendBTBuffer `(a ~T0 @X0 1 ef3`*uc`uc`a ]
 {
 [e :U _sendBTBuffer ]
@@ -1518,95 +1578,95 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _length `uc ~T0 @X0 1 r2 ]
 [v _blockIfBusy `a ~T0 @X0 1 r3 ]
 [f ]
-"43
-[; ;serial.c: 43:     if (blockIfBusy || (eusart1TxBufferRemaining > length)){
-[e $ ! || != -> _blockIfBusy `i -> 0 `i > -> _eusart1TxBufferRemaining `i -> _length `i 1525  ]
+"68
+[; ;serial.c: 68:     if (blockIfBusy || (eusart1TxBufferRemaining > length)){
+[e $ ! || != -> _blockIfBusy `i -> 0 `i > -> _eusart1TxBufferRemaining `i -> _length `i 1527  ]
 {
-"44
-[; ;serial.c: 44:         while (length > 0) {
-[e $U 1526  ]
+"69
+[; ;serial.c: 69:         while (length > 0) {
+[e $U 1528  ]
+[e :U 1529 ]
+{
+"71
+[; ;serial.c: 71:             while(!EUSART1_is_tx_ready());
+[e $U 1531  ]
+[e :U 1532 ]
+[e :U 1531 ]
+[e $ ! != -> ( _EUSART1_is_tx_ready ..  `i -> 0 `i 1532  ]
+[e :U 1533 ]
+"74
+[; ;serial.c: 74:             EUSART1_Write(*buffer++);
+[e ( _EUSART1_Write (1 *U ++ _buffer * -> -> 1 `i `x -> -> # *U _buffer `i `x ]
+"75
+[; ;serial.c: 75:             length--;
+[e -- _length -> -> 1 `i `uc ]
+"76
+[; ;serial.c: 76:         }
+}
+[e :U 1528 ]
+"69
+[; ;serial.c: 69:         while (length > 0) {
+[e $ > -> _length `i -> 0 `i 1529  ]
+[e :U 1530 ]
+"77
+[; ;serial.c: 77:         return 1;
+[e ) -> -> 1 `i `a ]
+[e $UE 1526  ]
+"78
+[; ;serial.c: 78:     }
+}
+[e $U 1534  ]
+"79
+[; ;serial.c: 79:     else {
 [e :U 1527 ]
 {
-"46
-[; ;serial.c: 46:             while(!EUSART1_is_tx_ready());
-[e $U 1529  ]
-[e :U 1530 ]
-[e :U 1529 ]
-[e $ ! != -> ( _EUSART1_is_tx_ready ..  `i -> 0 `i 1530  ]
-[e :U 1531 ]
-"49
-[; ;serial.c: 49:             EUSART1_Write(*buffer++);
-[e ( _EUSART1_Write (1 *U ++ _buffer * -> -> 1 `i `x -> -> # *U _buffer `i `x ]
-"50
-[; ;serial.c: 50:             length--;
-[e -- _length -> -> 1 `i `uc ]
-"51
-[; ;serial.c: 51:         }
-}
-[e :U 1526 ]
-"44
-[; ;serial.c: 44:         while (length > 0) {
-[e $ > -> _length `i -> 0 `i 1527  ]
-[e :U 1528 ]
-"52
-[; ;serial.c: 52:         return 1;
-[e ) -> -> 1 `i `a ]
-[e $UE 1524  ]
-"53
-[; ;serial.c: 53:     }
-}
-[e $U 1532  ]
-"54
-[; ;serial.c: 54:     else {
-[e :U 1525 ]
-{
-"55
-[; ;serial.c: 55:         return 0;
+"80
+[; ;serial.c: 80:         return 0;
 [e ) -> -> 0 `i `a ]
-[e $UE 1524  ]
-"56
-[; ;serial.c: 56:     }
+[e $UE 1526  ]
+"81
+[; ;serial.c: 81:     }
 }
-[e :U 1532 ]
-"57
-[; ;serial.c: 57: }
-[e :UE 1524 ]
+[e :U 1534 ]
+"82
+[; ;serial.c: 82: }
+[e :UE 1526 ]
 }
-"59
-[; ;serial.c: 59: void flushBTRXbuffer(void) {
+"84
+[; ;serial.c: 84: void flushBTRXbuffer(void) {
 [v _flushBTRXbuffer `(v ~T0 @X0 1 ef ]
 {
 [e :U _flushBTRXbuffer ]
 [f ]
-"60
-[; ;serial.c: 60:     while (EUSART1_is_rx_ready()){
-[e $U 1534  ]
-[e :U 1535 ]
-{
-"61
-[; ;serial.c: 61:         EUSART1_Read();
-[e ( _EUSART1_Read ..  ]
-"62
-[; ;serial.c: 62:         if (!EUSART1_is_rx_ready())
-[e $ ! ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1537  ]
-"63
-[; ;serial.c: 63:             sleep(5);
-[e ( _sleep (1 -> -> -> 5 `i `l `ul ]
+"85
+[; ;serial.c: 85:     while (EUSART1_is_rx_ready()){
+[e $U 1536  ]
 [e :U 1537 ]
-"64
-[; ;serial.c: 64:     }
+{
+"86
+[; ;serial.c: 86:         EUSART1_Read();
+[e ( _EUSART1_Read ..  ]
+"87
+[; ;serial.c: 87:         if (!EUSART1_is_rx_ready())
+[e $ ! ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1539  ]
+"88
+[; ;serial.c: 88:             sleep(5);
+[e ( _sleep (1 -> -> -> 5 `i `l `ul ]
+[e :U 1539 ]
+"89
+[; ;serial.c: 89:     }
 }
-[e :U 1534 ]
-"60
-[; ;serial.c: 60:     while (EUSART1_is_rx_ready()){
-[e $ != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1535  ]
 [e :U 1536 ]
-"65
-[; ;serial.c: 65: }
-[e :UE 1533 ]
+"85
+[; ;serial.c: 85:     while (EUSART1_is_rx_ready()){
+[e $ != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1537  ]
+[e :U 1538 ]
+"90
+[; ;serial.c: 90: }
+[e :UE 1535 ]
 }
-"74
-[; ;serial.c: 74: uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS) {
+"99
+[; ;serial.c: 99: uint8_t receiveBTBuffer(uint8_t * buffer, uint8_t maxChars, uint16_t timeoutMS) {
 [v _receiveBTBuffer `(uc ~T0 @X0 1 ef3`*uc`uc`us ]
 {
 [e :U _receiveBTBuffer ]
@@ -1614,166 +1674,297 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _maxChars `uc ~T0 @X0 1 r2 ]
 [v _timeoutMS `us ~T0 @X0 1 r3 ]
 [f ]
-"75
-[; ;serial.c: 75:     uint32_t startTime = getTicks();
+"100
+[; ;serial.c: 100:     uint32_t startTime = getTicks();
 [v _startTime `ul ~T0 @X0 1 a ]
 [e = _startTime ( _getTicks ..  ]
-"76
-[; ;serial.c: 76:     uint8_t charsRead = 0;
+"101
+[; ;serial.c: 101:     uint8_t charsRead = 0;
 [v _charsRead `uc ~T0 @X0 1 a ]
 [e = _charsRead -> -> 0 `i `uc ]
-"79
-[; ;serial.c: 79:     while ((charsRead < maxChars) && (getTicksSince(startTime) <= timeoutMS)) {
-[e $U 1539  ]
-[e :U 1540 ]
-{
-"80
-[; ;serial.c: 80:         if (EUSART1_is_rx_ready()) {
-[e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1542  ]
-{
-"81
-[; ;serial.c: 81:             (*buffer++ = EUSART1_Read());
-[e = *U ++ _buffer * -> -> 1 `i `x -> -> # *U _buffer `i `x ( _EUSART1_Read ..  ]
-"82
-[; ;serial.c: 82:             charsRead++;
-[e ++ _charsRead -> -> 1 `i `uc ]
-"83
-[; ;serial.c: 83:         }
-}
-[e :U 1542 ]
-"84
-[; ;serial.c: 84:     }
-}
-[e :U 1539 ]
-"79
-[; ;serial.c: 79:     while ((charsRead < maxChars) && (getTicksSince(startTime) <= timeoutMS)) {
-[e $ && < -> _charsRead `i -> _maxChars `i <= ( _getTicksSince (1 _startTime -> _timeoutMS `l 1540  ]
-[e :U 1541 ]
-"85
-[; ;serial.c: 85:     return charsRead;
-[e ) _charsRead ]
-[e $UE 1538  ]
-"86
-[; ;serial.c: 86: }
-[e :UE 1538 ]
-}
-"91
-[; ;serial.c: 91: uint16_t calcCRC(uint8_t *ptr)
-[v _calcCRC `(us ~T0 @X0 1 ef1`*uc ]
-"92
-[; ;serial.c: 92: {
-{
-[e :U _calcCRC ]
-"91
-[; ;serial.c: 91: uint16_t calcCRC(uint8_t *ptr)
-[v _ptr `*uc ~T0 @X0 1 r1 ]
-"92
-[; ;serial.c: 92: {
-[f ]
-"93
-[; ;serial.c: 93:   uint16_t crc;
-[v _crc `us ~T0 @X0 1 a ]
-"94
-[; ;serial.c: 94:   uint8_t i;
-[v _i `uc ~T0 @X0 1 a ]
-"95
-[; ;serial.c: 95:   int8_t count = ptr[1] + 5;
-[v _count `c ~T0 @X0 1 a ]
-[e = _count -> + -> *U + _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x `i -> 5 `i `c ]
-"96
-[; ;serial.c: 96:   crc = 0;
-[e = _crc -> -> 0 `i `us ]
-"98
-[; ;serial.c: 98:   while (--count >= 0)
-[e $U 1544  ]
-[e :U 1545 ]
-"99
-[; ;serial.c: 99:   {
-{
-"100
-[; ;serial.c: 100:     crc = crc ^ (uint16_t) *ptr++ << 8;
-[e = _crc -> ^ -> _crc `ui << -> -> *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x `us `ui -> 8 `i `us ]
-"101
-[; ;serial.c: 101:     i = 8;
-[e = _i -> -> 8 `i `uc ]
-"102
-[; ;serial.c: 102:     do
-[e :U 1549 ]
-"103
-[; ;serial.c: 103:     {
-{
 "104
-[; ;serial.c: 104:       if (crc & 0x8000)
-[e $ ! != & -> _crc `ui -> 32768 `ui -> -> 0 `i `ui 1550  ]
+[; ;serial.c: 104:     while ((charsRead < maxChars) && (getTicksSince(startTime) <= timeoutMS)) {
+[e $U 1541  ]
+[e :U 1542 ]
+{
 "105
-[; ;serial.c: 105:         crc = crc << 1 ^ 0x1021;
-[e = _crc -> ^ << -> _crc `ui -> 1 `i -> -> 4129 `i `ui `us ]
-[e $U 1551  ]
+[; ;serial.c: 105:         if (EUSART1_is_rx_ready()) {
+[e $ ! != -> ( _EUSART1_is_rx_ready ..  `i -> 0 `i 1544  ]
+{
 "106
-[; ;serial.c: 106:       else
-[e :U 1550 ]
+[; ;serial.c: 106:             (*buffer++ = EUSART1_Read());
+[e = *U ++ _buffer * -> -> 1 `i `x -> -> # *U _buffer `i `x ( _EUSART1_Read ..  ]
 "107
-[; ;serial.c: 107:         crc = crc << 1;
-[e = _crc -> << -> _crc `ui -> 1 `i `us ]
-[e :U 1551 ]
+[; ;serial.c: 107:             charsRead++;
+[e ++ _charsRead -> -> 1 `i `uc ]
 "108
-[; ;serial.c: 108:     } while(--i);
-}
-[e $ != -> =- _i -> -> 1 `i `uc `i -> 0 `i 1549  ]
-[e :U 1548 ]
-"109
-[; ;serial.c: 109:   }
+[; ;serial.c: 108:         }
 }
 [e :U 1544 ]
-"98
-[; ;serial.c: 98:   while (--count >= 0)
-[e $ >= -> =- _count -> -> 1 `i `c `i -> 0 `i 1545  ]
-[e :U 1546 ]
-"111
-[; ;serial.c: 111:   *ptr++ = crc & 0xFF;
-[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> & -> _crc `ui -> -> 255 `i `ui `uc ]
-"112
-[; ;serial.c: 112:   *ptr++ = (crc >> 8) & 0xFF;
-[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> & >> -> _crc `ui -> 8 `i -> -> 255 `i `ui `uc ]
-"114
-[; ;serial.c: 114:   return (crc);
-[e ) _crc ]
-[e $UE 1543  ]
-"115
-[; ;serial.c: 115: }
-[e :UE 1543 ]
+"109
+[; ;serial.c: 109:     }
 }
+[e :U 1541 ]
+"104
+[; ;serial.c: 104:     while ((charsRead < maxChars) && (getTicksSince(startTime) <= timeoutMS)) {
+[e $ && < -> _charsRead `i -> _maxChars `i <= ( _getTicksSince (1 _startTime -> _timeoutMS `l 1542  ]
+[e :U 1543 ]
+"110
+[; ;serial.c: 110:     return charsRead;
+[e ) _charsRead ]
+[e $UE 1540  ]
+"111
+[; ;serial.c: 111: }
+[e :UE 1540 ]
+}
+"116
+[; ;serial.c: 116: uint16_t calcCRC(uint8_t *ptr)
+[v _calcCRC `(us ~T0 @X0 1 ef1`*uc ]
 "117
-[; ;serial.c: 117: void int16ToBytes(int16_t num, uint8_t * ndata) {
+[; ;serial.c: 117: {
+{
+[e :U _calcCRC ]
+"116
+[; ;serial.c: 116: uint16_t calcCRC(uint8_t *ptr)
+[v _ptr `*uc ~T0 @X0 1 r1 ]
+"117
+[; ;serial.c: 117: {
+[f ]
+"118
+[; ;serial.c: 118:   uint16_t crc;
+[v _crc `us ~T0 @X0 1 a ]
+"119
+[; ;serial.c: 119:   uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"120
+[; ;serial.c: 120:   int8_t count = ptr[1] + 5;
+[v _count `c ~T0 @X0 1 a ]
+[e = _count -> + -> *U + _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x `i -> 5 `i `c ]
+"121
+[; ;serial.c: 121:   crc = 0;
+[e = _crc -> -> 0 `i `us ]
+"123
+[; ;serial.c: 123:   while (--count >= 0)
+[e $U 1546  ]
+[e :U 1547 ]
+"124
+[; ;serial.c: 124:   {
+{
+"125
+[; ;serial.c: 125:     crc = crc ^ (uint16_t) *ptr++ << 8;
+[e = _crc -> ^ -> _crc `ui << -> -> *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x `us `ui -> 8 `i `us ]
+"126
+[; ;serial.c: 126:     i = 8;
+[e = _i -> -> 8 `i `uc ]
+"127
+[; ;serial.c: 127:     do
+[e :U 1551 ]
+"128
+[; ;serial.c: 128:     {
+{
+"129
+[; ;serial.c: 129:       if (crc & 0x8000)
+[e $ ! != & -> _crc `ui -> 32768 `ui -> -> 0 `i `ui 1552  ]
+"130
+[; ;serial.c: 130:         crc = crc << 1 ^ 0x1021;
+[e = _crc -> ^ << -> _crc `ui -> 1 `i -> -> 4129 `i `ui `us ]
+[e $U 1553  ]
+"131
+[; ;serial.c: 131:       else
+[e :U 1552 ]
+"132
+[; ;serial.c: 132:         crc = crc << 1;
+[e = _crc -> << -> _crc `ui -> 1 `i `us ]
+[e :U 1553 ]
+"133
+[; ;serial.c: 133:     } while(--i);
+}
+[e $ != -> =- _i -> -> 1 `i `uc `i -> 0 `i 1551  ]
+[e :U 1550 ]
+"134
+[; ;serial.c: 134:   }
+}
+[e :U 1546 ]
+"123
+[; ;serial.c: 123:   while (--count >= 0)
+[e $ >= -> =- _count -> -> 1 `i `c `i -> 0 `i 1547  ]
+[e :U 1548 ]
+"136
+[; ;serial.c: 136:   *ptr++ = crc & 0xFF;
+[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> & -> _crc `ui -> -> 255 `i `ui `uc ]
+"137
+[; ;serial.c: 137:   *ptr++ = (crc >> 8) & 0xFF;
+[e = *U ++ _ptr * -> -> 1 `i `x -> -> # *U _ptr `i `x -> & >> -> _crc `ui -> 8 `i -> -> 255 `i `ui `uc ]
+"139
+[; ;serial.c: 139:   return (crc);
+[e ) _crc ]
+[e $UE 1545  ]
+"140
+[; ;serial.c: 140: }
+[e :UE 1545 ]
+}
+"142
+[; ;serial.c: 142: void int16ToBytes(int16_t num, uint8_t * ndata) {
 [v _int16ToBytes `(v ~T0 @X0 1 ef2`s`*uc ]
 {
 [e :U _int16ToBytes ]
 [v _num `s ~T0 @X0 1 r1 ]
 [v _ndata `*uc ~T0 @X0 1 r2 ]
 [f ]
-"118
-[; ;serial.c: 118:  for (int i = 0; i < 2; i++) {
+"143
+[; ;serial.c: 143:  for (int i = 0; i < 2; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 2 `i 1553  ]
-[e $U 1554  ]
-[e :U 1553 ]
+[e $ < _i -> 2 `i 1555  ]
+[e $U 1556  ]
+[e :U 1555 ]
 {
-"119
-[; ;serial.c: 119:   *ndata++ = ((uint8_t)(num & 0xFF));
+"144
+[; ;serial.c: 144:   *ndata++ = ((uint8_t)(num & 0xFF));
 [e = *U ++ _ndata * -> -> 1 `i `x -> -> # *U _ndata `i `x -> & -> _num `i -> 255 `i `uc ]
-"120
-[; ;serial.c: 120:   num = num >> 8;
+"145
+[; ;serial.c: 145:   num = num >> 8;
 [e = _num -> >> -> _num `i -> 8 `i `s ]
-"121
-[; ;serial.c: 121:  }
+"146
+[; ;serial.c: 146:  }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 2 `i 1553  ]
-[e :U 1554 ]
+[e $ < _i -> 2 `i 1555  ]
+[e :U 1556 ]
 }
-"122
-[; ;serial.c: 122: }
-[e :UE 1552 ]
+"147
+[; ;serial.c: 147: }
+[e :UE 1554 ]
 }
+"149
+[; ;serial.c: 149: int16_t clampInt(int16_t num, int16_t limit) {
+[v _clampInt `(s ~T0 @X0 1 ef2`s`s ]
+{
+[e :U _clampInt ]
+[v _num `s ~T0 @X0 1 r1 ]
+[v _limit `s ~T0 @X0 1 r2 ]
+[f ]
+"150
+[; ;serial.c: 150:     if (num > limit)
+[e $ ! > -> _num `i -> _limit `i 1559  ]
+"151
+[; ;serial.c: 151:         num = limit ;
+[e = _num _limit ]
+[e $U 1560  ]
+"152
+[; ;serial.c: 152:     else if (num < -limit)
+[e :U 1559 ]
+[e $ ! < -> _num `i -U -> _limit `i 1561  ]
+"153
+[; ;serial.c: 153:         num = - limit;
+[e = _num -> -U -> _limit `i `s ]
+[e :U 1561 ]
+[e :U 1560 ]
+"154
+[; ;serial.c: 154:     return num;
+[e ) _num ]
+[e $UE 1558  ]
+"155
+[; ;serial.c: 155: }
+[e :UE 1558 ]
+}
+"157
+[; ;serial.c: 157: void int16cat(uint8_t * bufP, int16_t num){
+[v _int16cat `(v ~T0 @X0 1 ef2`*uc`s ]
+{
+[e :U _int16cat ]
+[v _bufP `*uc ~T0 @X0 1 r1 ]
+[v _num `s ~T0 @X0 1 r2 ]
+[f ]
+"158
+[; ;serial.c: 158:     _Bool suppress = 1;
+[v _suppress `a ~T0 @X0 1 a ]
+[e = _suppress -> -> 1 `i `a ]
+"159
+[; ;serial.c: 159:     int16_t digit = 0;
+[v _digit `s ~T0 @X0 1 a ]
+[e = _digit -> -> 0 `i `s ]
+"160
+[; ;serial.c: 160:     int16_t divider = 10000;
+[v _divider `s ~T0 @X0 1 a ]
+[e = _divider -> -> 10000 `i `s ]
+"163
+[; ;serial.c: 163:     while (*bufP != 0)
+[e $U 1563  ]
+[e :U 1564 ]
+"164
+[; ;serial.c: 164:         bufP++;
+[e ++ _bufP * -> -> 1 `i `x -> -> # *U _bufP `i `x ]
+[e :U 1563 ]
+"163
+[; ;serial.c: 163:     while (*bufP != 0)
+[e $ != -> *U _bufP `i -> 0 `i 1564  ]
+[e :U 1565 ]
+"167
+[; ;serial.c: 167:     if (num < 0) {
+[e $ ! < -> _num `i -> 0 `i 1566  ]
+{
+"168
+[; ;serial.c: 168:         num = -num;
+[e = _num -> -U -> _num `i `s ]
+"169
+[; ;serial.c: 169:         *bufP++ = '-';
+[e = *U ++ _bufP * -> -> 1 `i `x -> -> # *U _bufP `i `x -> -> 45 `ui `uc ]
+"170
+[; ;serial.c: 170:     }
+}
+[e :U 1566 ]
+"173
+[; ;serial.c: 173:     while (divider > 0){
+[e $U 1567  ]
+[e :U 1568 ]
+{
+"174
+[; ;serial.c: 174:         digit = num / divider;
+[e = _digit -> / -> _num `i -> _divider `i `s ]
+"175
+[; ;serial.c: 175:         num = num - (digit * divider);
+[e = _num -> - -> _num `i * -> _digit `i -> _divider `i `s ]
+"176
+[; ;serial.c: 176:         divider /= 10;
+[e =/ _divider -> 10 `i ]
+"178
+[; ;serial.c: 178:         if ((digit != 0) || !suppress){
+[e $ ! || != -> _digit `i -> 0 `i ! != -> _suppress `i -> 0 `i 1570  ]
+{
+"179
+[; ;serial.c: 179:             suppress = 0;
+[e = _suppress -> -> 0 `i `a ]
+"180
+[; ;serial.c: 180:             *bufP++ = '0' + digit;
+[e = *U ++ _bufP * -> -> 1 `i `x -> -> # *U _bufP `i `x -> + -> 48 `ui -> _digit `ui `uc ]
+"181
+[; ;serial.c: 181:         }
+}
+[e :U 1570 ]
+"182
+[; ;serial.c: 182:     }
+}
+[e :U 1567 ]
+"173
+[; ;serial.c: 173:     while (divider > 0){
+[e $ > -> _divider `i -> 0 `i 1568  ]
+[e :U 1569 ]
+"184
+[; ;serial.c: 184:     if (suppress)
+[e $ ! != -> _suppress `i -> 0 `i 1571  ]
+"185
+[; ;serial.c: 185:         *bufP++ = '0';
+[e = *U ++ _bufP * -> -> 1 `i `x -> -> # *U _bufP `i `x -> -> 48 `ui `uc ]
+[e :U 1571 ]
+"187
+[; ;serial.c: 187:     *bufP++ = 0;
+[e = *U ++ _bufP * -> -> 1 `i `x -> -> # *U _bufP `i `x -> -> 0 `i `uc ]
+"188
+[; ;serial.c: 188: }
+[e :UE 1562 ]
+}
+[a 2C 44 0 ]
+[a 1C 62 32 0 ]
+[a 3C 10 0 ]

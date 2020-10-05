@@ -4,6 +4,7 @@
 #include "serial.h"
 #include "timers.h"
 #include "ui.h"
+#include "joystick.h"
 
 uint8_t slaveMAC[MAC_LENGTH] = {0,0,0,0,0,0,0,0,0,0,0,0};
 uint8_t masterMAC[MAC_LENGTH] = {0,0,0,0,0,0,0,0,0,0,0,0};
@@ -13,7 +14,6 @@ uint8_t charsRead;
 bool    powerOn = false;
 
 void    initConfiguration() {
-    
     setSerialBaud(38400);
     SetSlaveTXRX();
 }
@@ -21,6 +21,13 @@ void    initConfiguration() {
 void    SetSlaveTXRX(void){
     RX1DTPPS = 0x15;   //        RC5->EUSART1:RX1;    
     RC4PPS = 0x0F;     //EUSART1:TX1->RC4 ;    
+    RC6PPS = 0x16;     //        RC6->RC6;    
+    // sleep(5);
+}
+
+void    SetPowerdownTXRX(void){
+    RX1DTPPS = 0x15;   //        RC5->EUSART1:RX1;    
+    RC4PPS = 0x14;     //        RC4->RC4;    
     RC6PPS = 0x16;     //        RC6->RC6;    
     sleep(5);
 }
@@ -48,12 +55,17 @@ void    SetSlaveTXMasterRX(void){
 }
 
 void    turnPowerOn(){
+    POT_ENA_SetHigh();
     POWER_EN_SetLow();
+    TRISC = 0x2F;  // Pins 4 and 6,7 are outputs
+    SetSlaveTXRX();
     powerOn = true;
 }
 
 void    turnPowerOff(){
     POWER_EN_SetHigh();
+    POT_ENA_SetLow();
+    SetPowerdownTXRX();
     powerOn = false;
 }
 
@@ -145,7 +157,7 @@ bool    getBTAddress(uint8_t * MAC, bool isMaster) {
     pulseLEDColor((strstr((void *)RX_Buffer, "OK") != NULL) ? COLOR_GREEN : COLOR_YELLOW, 100, 200);
     
     // get the MAC address  Expect reply:   OK+ADDR:xxxxxxxxxxxx
-    // sleep(10);  // need to keep short to stay disconnected.
+    sleep(10);  // need to keep short to stay disconnected, dut long enough to process prior command.
     sendBTString("AT+ADDR?");
     charsRead = receiveBTBuffer(RX_Buffer, 30, 400);
     addrPointer = (void *)strstr((void *)RX_Buffer, "ADDR:");

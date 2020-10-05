@@ -26,13 +26,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "64
 [p x STVREN = ON ]
 "67
-[p x WDTCPS = WDTCPS_31 ]
+[p x WDTCPS = WDTCPS_11 ]
 "68
 [p x WDTE = OFF ]
 "69
 [p x WDTCWS = WDTCWS_7 ]
 "70
-[p x WDTCCS = SC ]
+[p x WDTCCS = LFINTOSC ]
 "73
 [p x BBSIZE = BB512 ]
 "74
