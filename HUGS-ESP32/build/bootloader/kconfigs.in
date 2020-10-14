@@ -1,0 +1,5 @@
+source "D:/Users/Phil/GitHub/esp-idf/components/efuse/Kconfig"
+source "D:/Users/Phil/GitHub/esp-idf/components/esp32/Kconfig"
+source "D:/Users/Phil/GitHub/esp-idf/components/esp_common/Kconfig"
+source "D:/Users/Phil/GitHub/esp-idf/components/log/Kconfig"
+source "D:/Users/Phil/GitHub/esp-idf/components/spi_flash/Kconfig"

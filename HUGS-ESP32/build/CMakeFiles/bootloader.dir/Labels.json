@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

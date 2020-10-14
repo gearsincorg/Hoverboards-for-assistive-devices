@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "D:/Users/Phil/GitHub/esp-idf/components/bootloader/subproject",
+    "build_dir":          "D:/Users/Phil/eclipse-workspace/HUGs/build/bootloader",
+    "config_file":        "D:/Users/Phil/eclipse-workspace/HUGs/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.3-dev-907-g6c17e3a64",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "D:/Users/Phil/GitHub/esp-idf/components/efuse/Kconfig;D:/Users/Phil/GitHub/esp-idf/components/esp32/Kconfig;D:/Users/Phil/GitHub/esp-idf/components/esp_common/Kconfig;D:/Users/Phil/GitHub/esp-idf/components/log/Kconfig;D:/Users/Phil/GitHub/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "D:/Users/Phil/GitHub/esp-idf/components/bootloader/Kconfig.projbuild;D:/Users/Phil/GitHub/esp-idf/components/esptool_py/Kconfig.projbuild;D:/Users/Phil/GitHub/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "D:/Users/Phil/GitHub/esp-idf/components/bootloader", "D:/Users/Phil/GitHub/esp-idf/components/bootloader_support", "D:/Users/Phil/GitHub/esp-idf/components/efuse", "D:/Users/Phil/GitHub/esp-idf/components/esp32", "D:/Users/Phil/GitHub/esp-idf/components/esp_common", "D:/Users/Phil/GitHub/esp-idf/components/esp_rom", "D:/Users/Phil/GitHub/esp-idf/components/esptool_py", "D:/Users/Phil/GitHub/esp-idf/components/log", "D:/Users/Phil/GitHub/esp-idf/components/bootloader/subproject/main", "D:/Users/Phil/GitHub/esp-idf/components/bootloader/subproject/components/micro-ecc", "D:/Users/Phil/GitHub/esp-idf/components/partition_table", "D:/Users/Phil/GitHub/esp-idf/components/soc", "D:/Users/Phil/GitHub/esp-idf/components/spi_flash", "D:/Users/Phil/GitHub/esp-idf/components/xtensa", "" ]
+}
