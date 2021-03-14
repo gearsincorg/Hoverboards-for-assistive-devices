@@ -68,3 +68,5 @@ dkms.conf
 *.phil
 *.map
 
+# PlatformIO directory
+.pio/
