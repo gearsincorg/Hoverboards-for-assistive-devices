@@ -141,7 +141,7 @@ int16_t bldcFilteredPwm = 0;
 //----------------------------------------------------------------------------
 // Block PWM calculation based on position
 //----------------------------------------------------------------------------
-__INLINE void blockPWM(int pwm, int pwmPos, int *y, int *b, int *g)
+static __INLINE void blockPWM(int pwm, int pwmPos, int *y, int *b, int *g)
 {
 	// Note:  These now cycle from 0 to 5 with positive applied PWM
   switch(pwmPos)
