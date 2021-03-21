@@ -50,7 +50,9 @@ const int32_t WHEEL_PERIMETER    = 530 ;  // mm
 const int32_t SPEED_TICKS_FACTOR = 188444 ;  // Divide factor by speed to get ticks per cycle, or visa versa.
 const int32_t SINE_TICKS_FACTOR  = 3010   ;  // Divide factor by speed to get ticks per degree.
 const int32_t MIN_SPEED          = 5 ;       // min usable speed in mm/S
-const int32_t MAX_PHASE_PERIOD   = SPEED_TICKS_FACTOR / MIN_SPEED ;   // one phase count @ MIN_SPEED
+// Work around "initializer element is not constant" error from gcc. Original code was:
+//            MAX_PHASE_PERIOD   = SPEED_TICKS_FACTOR / MIN_SPEED ;
+const int32_t MAX_PHASE_PERIOD   = 188444 / 5 ;   // one phase count @ MIN_SPEED
 const float MM_PER_CYCLE_FLOAT   = 5.888;	   //  (530 / 90)
 
 //----------------------------------------------------------------------------
@@ -141,7 +143,7 @@ int16_t bldcFilteredPwm = 0;
 //----------------------------------------------------------------------------
 // Block PWM calculation based on position
 //----------------------------------------------------------------------------
-__INLINE void blockPWM(int pwm, int pwmPos, int *y, int *b, int *g)
+static __INLINE void blockPWM(int pwm, int pwmPos, int *y, int *b, int *g)
 {
 	// Note:  These now cycle from 0 to 5 with positive applied PWM
   switch(pwmPos)
